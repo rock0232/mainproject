@@ -1,11 +1,10 @@
 import time
 import pytest
-import stopwatch
 from selenium.webdriver import Keys
 from selenium.webdriver.common.by import By
 from utilities.customlogger import Logger
-from pageobjects.B2Ccommonclass import commonclass
 from pageobjects.B2Bcommonclass import B2Bcommonclass
+# C:\Users\KEY\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages
 
 class Test_B2Bcommonclass:
     logger = Logger.logen()
