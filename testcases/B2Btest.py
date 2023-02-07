@@ -3,7 +3,6 @@ import pytest
 import stopwatch
 from selenium.webdriver import Keys
 from selenium.webdriver.common.by import By
-from goto import with_goto
 from utilities.customlogger import Logger
 from pageobjects.B2Ccommonclass import commonclass
 from pageobjects.B2Bcommonclass import B2Bcommonclass
