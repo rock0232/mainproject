@@ -1,0 +1,1 @@
+python -m pytest -m debug -s -v --capture=sys --html=Reports\B2Btestreport.html --self-contained-html testcases\B2Btest.py
