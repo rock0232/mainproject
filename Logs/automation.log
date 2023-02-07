@@ -1448,3 +1448,24 @@ Backtrace:
 02/07/2023 04:41:52 PM: INFO: P/L On Bet Place In Open Bet Report is 294.92
 02/07/2023 04:42:30 PM: INFO: Exposure After Place Bet Is 3042.0
 02/07/2023 04:42:49 PM: INFO: Wallet Balance After Place Bet is 197989.28
+02/07/2023 06:15:13 PM: INFO: Event Name is ZIMBABWE WEST INDIES Test Matches
+02/07/2023 06:15:13 PM: INFO: Wallet Balance Before Place Bet is 198186.28
+02/07/2023 06:15:13 PM: INFO: Exposure Before Bet Place is 2942.0
+02/07/2023 06:15:17 PM: INFO: Click on Back Rate, Back Team Name is Zimbabwe
+02/07/2023 06:15:19 PM: INFO: Set Bet Price, Bet Price = 202
+02/07/2023 06:15:21 PM: INFO: Click On Place Bet Button
+02/07/2023 06:15:27 PM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+02/07/2023 06:15:27 PM: INFO: ************* Data From Dashboard Bet list *************
+02/07/2023 06:15:27 PM: INFO: Bet Place Team Name is West Indies
+02/07/2023 06:15:27 PM: INFO: Bet Place On Back
+02/07/2023 06:15:27 PM: INFO: Bet Stake Amount is 202.0
+02/07/2023 06:15:27 PM: INFO: P/L on Bet Place is 294.92
+02/07/2023 06:15:28 PM: INFO: Click on User Profile Button
+02/07/2023 06:15:28 PM: INFO: Click on Open Bet Button In User Profile Button
+02/07/2023 06:15:38 PM: INFO: ************* Data From Open Bet Report *************
+02/07/2023 06:15:38 PM: INFO: Bet Place Team Name In Open Bet Report is West Indies
+02/07/2023 06:15:38 PM: INFO: Bet Place Type In Open Bet Report is Back
+02/07/2023 06:15:38 PM: INFO: Bet Stake Amount In Open Bet Report Is is 202
+02/07/2023 06:15:39 PM: INFO: P/L On Bet Place In Open Bet Report is 1575.6
+02/07/2023 06:15:39 PM: INFO: Exposure After Place Bet Is 3144.0
+02/07/2023 06:15:39 PM: INFO: Wallet Balance After Place Bet is 197984.28
