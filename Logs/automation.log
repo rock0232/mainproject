@@ -1475,3 +1475,85 @@ Backtrace:
 02/08/2023 11:16:01 AM: INFO: Event Name is []
 02/08/2023 11:16:01 AM: INFO: Wallet Balance Before Place Bet is 197076.28
 02/08/2023 11:16:01 AM: INFO: Exposure Before Bet Place is 4052.0
+02/08/2023 12:36:29 PM: INFO: Event Name is []
+02/08/2023 12:36:29 PM: INFO: Wallet Balance Before Place Bet is 196976.28
+02/08/2023 12:36:29 PM: INFO: Exposure Before Bet Place is 4152.0
+02/08/2023 01:05:28 PM: INFO: Wallet Balance Before Place Bet is 196976.28
+02/08/2023 01:05:28 PM: INFO: Exposure Before Bet Place is 4152.0
+02/08/2023 01:05:31 PM: INFO: Click on Back Rate, Back Team Name is Zimbabwe
+02/08/2023 01:05:33 PM: INFO: Set Bet Price, Bet Price = 202
+02/08/2023 01:05:35 PM: INFO: Click On Place Bet Button
+02/08/2023 01:05:41 PM: INFO: Message After Click on Place Bet Button This market not allow unmatch bet.
+02/08/2023 01:05:41 PM: INFO: Bet Not Place Message After Place This market not allow unmatch bet.
+02/08/2023 02:10:29 PM: INFO: Wallet Balance Before Place Bet is 196976.28
+02/08/2023 02:10:30 PM: INFO: Exposure Before Bet Place is 4152.0
+02/08/2023 02:22:36 PM: INFO: Wallet Balance Before Place Bet is 196976.28
+02/08/2023 02:22:36 PM: INFO: Exposure Before Bet Place is 4152.0
+02/08/2023 02:25:50 PM: INFO: Wallet Balance Before Place Bet is 196976.28
+02/08/2023 02:25:50 PM: INFO: Exposure Before Bet Place is 4152.0
+02/08/2023 02:29:14 PM: INFO: Wallet Balance Before Place Bet is 196976.28
+02/08/2023 02:29:14 PM: INFO: Exposure Before Bet Place is 4152.0
+02/08/2023 02:30:36 PM: INFO: Set Bet Price, Bet Price = 202
+02/08/2023 02:30:42 PM: INFO: Click On Place Bet Button
+02/08/2023 02:30:46 PM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+02/08/2023 02:30:47 PM: INFO: ************* Data From Dashboard Bet list *************
+02/08/2023 02:30:47 PM: INFO: Bet Place Team Name is Chattogram Challengers
+02/08/2023 02:30:47 PM: INFO: Bet Place On Back
+02/08/2023 02:30:47 PM: INFO: Bet Stake Amount is 202.0
+02/08/2023 02:30:47 PM: INFO: P/L on Bet Place is 195.94
+02/08/2023 02:30:48 PM: INFO: Click on User Profile Button
+02/08/2023 02:30:49 PM: INFO: Click on Open Bet Button In User Profile Button
+02/08/2023 02:30:59 PM: INFO: ************* Data From Open Bet Report *************
+02/08/2023 02:31:04 PM: INFO: Bet Place Team Name In Open Bet Report is Chattogram Challengers
+02/08/2023 02:31:04 PM: INFO: Bet Place Type In Open Bet Report is Back
+02/08/2023 02:31:04 PM: INFO: Bet Stake Amount In Open Bet Report Is is 202
+02/08/2023 02:31:04 PM: INFO: P/L On Bet Place In Open Bet Report is 195.94
+02/08/2023 02:31:04 PM: INFO: Exposure After Place Bet Is 4354.0
+02/08/2023 02:31:04 PM: INFO: Wallet Balance After Place Bet is 196774.28
+02/08/2023 02:34:19 PM: INFO: Wallet Balance Before Place Bet is 196774.28
+02/08/2023 02:34:19 PM: INFO: Exposure Before Bet Place is 4354.0
+02/08/2023 02:35:39 PM: INFO: Set Bet Price, Bet Price = 202
+02/08/2023 02:35:49 PM: INFO: Click On Place Bet Button
+02/08/2023 02:35:59 PM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+02/08/2023 02:35:59 PM: INFO: ************* Data From Dashboard Bet list *************
+02/08/2023 02:35:59 PM: INFO: Bet Place Team Name is Chattogram Challengers
+02/08/2023 02:35:59 PM: INFO: Bet Place On Back
+02/08/2023 02:35:59 PM: INFO: Bet Stake Amount is 202.0
+02/08/2023 02:35:59 PM: INFO: P/L on Bet Place is 195.94
+02/08/2023 02:35:59 PM: INFO: Click on User Profile Button
+02/08/2023 02:36:00 PM: INFO: Click on Open Bet Button In User Profile Button
+02/08/2023 02:36:10 PM: INFO: ************* Data From Open Bet Report *************
+02/08/2023 02:36:10 PM: INFO: Bet Place Team Name In Open Bet Report is Chattogram Challengers
+02/08/2023 02:36:10 PM: INFO: Bet Place Type In Open Bet Report is Back
+02/08/2023 02:36:10 PM: INFO: Bet Stake Amount In Open Bet Report Is is 202
+02/08/2023 02:36:10 PM: INFO: P/L On Bet Place In Open Bet Report is 195.94
+02/08/2023 02:36:10 PM: INFO: Exposure After Place Bet Is 4556.0
+02/08/2023 02:36:10 PM: INFO: Wallet Balance After Place Bet is 196572.28
+02/08/2023 02:39:29 PM: WARNING: User Not Login Please Try Again
+02/08/2023 02:41:04 PM: INFO: Wallet Balance Before Place Bet is 196572.28
+02/08/2023 02:41:04 PM: INFO: Exposure Before Bet Place is 4556.0
+02/08/2023 03:28:01 PM: INFO: Set Bet Price, Bet Price = 202
+02/08/2023 03:28:05 PM: INFO: Click On Place Bet Button
+02/08/2023 03:28:06 PM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+02/08/2023 03:28:06 PM: INFO: ************* Data From Dashboard Bet list *************
+02/08/2023 03:28:06 PM: INFO: Bet Place Team Name is Chattogram Challengers
+02/08/2023 03:28:06 PM: INFO: Bet Place On Back
+02/08/2023 03:28:06 PM: INFO: Bet Stake Amount is 202.0
+02/08/2023 03:28:06 PM: INFO: P/L on Bet Place is 195.94
+02/08/2023 03:28:06 PM: INFO: Click on User Profile Button
+02/08/2023 03:28:06 PM: INFO: Click on Open Bet Button In User Profile Button
+02/08/2023 03:28:16 PM: INFO: ************* Data From Open Bet Report *************
+02/08/2023 03:28:16 PM: INFO: Bet Place Team Name In Open Bet Report is Chattogram Challengers
+02/08/2023 03:28:16 PM: INFO: Bet Place Type In Open Bet Report is Back
+02/08/2023 03:28:16 PM: INFO: Bet Stake Amount In Open Bet Report Is is 202
+02/08/2023 03:28:16 PM: INFO: P/L On Bet Place In Open Bet Report is 195.94
+02/08/2023 03:28:16 PM: INFO: Exposure After Place Bet Is 4758.0
+02/08/2023 03:28:16 PM: INFO: Wallet Balance After Place Bet is 196370.28
+02/08/2023 03:45:51 PM: INFO: Click On Place Bet Button
+02/08/2023 03:45:52 PM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+02/08/2023 03:45:53 PM: INFO: Exposure After Place Bet Is 4758.0
+02/08/2023 03:45:53 PM: INFO: Wallet Balance After Place Bet is 196168.28
+02/08/2023 03:49:20 PM: INFO: Click On Place Bet Button
+02/08/2023 03:49:21 PM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+02/08/2023 03:49:21 PM: INFO: Exposure After Place Bet Is 5162.0
+02/08/2023 03:49:21 PM: INFO: Wallet Balance After Place Bet is 195966.28
