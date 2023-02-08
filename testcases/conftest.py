@@ -41,7 +41,7 @@ def _capture_screenshot(name):
 
 
 def pytest_configure(config):
-    config._metadata["Project Name"] = "uat.cloudd.live"
+    config._metadata["Project Name"] = "MainB2Btest"
     config._metadata['Module Name'] = "Test Place Bet"
     config._metadata['Tester'] = "Rock"
     config._metadata['Browser'] = "Chrome"
@@ -55,8 +55,8 @@ def pytest_metadata(metadata):
     metadata.pop("Plugins", "pytest, pytest-html, selenium")
 
 
-def exception_handler(exception_type, exception, traceback, debug_hook=sys.excepthook):
-    debug_hook(exception_type, exception, traceback)
+# def exception_handler(exception_type, exception, traceback, debug_hook=sys.excepthook):
+#     debug_hook(exception_type, exception, traceback)
 
 # --show-capture={no,stdout,stderr,log,all}
 # python -m pytest -m regression -s -v --show-capture={no,stdout,stderr,log,all} --html=Reports\reportsnew2.html testCases/test_placebet.py
