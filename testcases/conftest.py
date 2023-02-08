@@ -1,3 +1,4 @@
+import os
 import sys
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
@@ -24,10 +25,11 @@ def pytest_runtest_makereport(item, call):
 
     if report.when == 'call':
         xfail = hasattr(report, 'wasxfail')
+        filepath = os.getcwd()
         if (report.skipped and xfail) or (report.failed and not xfail):
             file_name = report.nodeid.replace("::", "_") + ".png"
             _capture_screenshot(file_name)
-            file_path = f".//{file_name}"
+            file_path = f"{filepath}//{file_name}"
             if file_name:
                 html = '<div> <img src="%s"' \
                        ' alt="screenshot" style="width:304px;height:228px;" ' \
