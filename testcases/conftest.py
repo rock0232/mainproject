@@ -6,7 +6,7 @@ import pytest
 @pytest.fixture()
 def setup():
     global driver
-    serv_obj = Service('..//chromedriver.exe')
+    serv_obj = Service('.//chromedriver.exe')
     driver = webdriver.Chrome(service=serv_obj)
     driver.implicitly_wait(25)
     return driver
@@ -27,7 +27,7 @@ def pytest_runtest_makereport(item, call):
         if (report.skipped and xfail) or (report.failed and not xfail):
             file_name = report.nodeid.replace("::", "_") + ".png"
             _capture_screenshot(file_name)
-            file_path = f"..//{file_name}"
+            file_path = f".//{file_name}"
             if file_name:
                 html = '<div> <img src="%s"' \
                        ' alt="screenshot" style="width:304px;height:228px;" ' \
