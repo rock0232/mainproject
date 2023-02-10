@@ -1,9 +1,11 @@
 import time
 import pytest
+from selenium.common import NoSuchElementException
 from selenium.webdriver import Keys
 from selenium.webdriver.common.by import By
 from utilities.customlogger import Logger
 from pageobjects.B2Bcommonclass import B2Bcommonclass
+
 # C:\Users\KEY\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages
 
 class Test_B2Bcommonclass:
@@ -186,17 +188,19 @@ class Test_B2Bcommonclass:
     def newfunction(self):
         self.cc = B2Bcommonclass(self.driver)
         self.cc.clickclose()
+        issuccess = False
         time.sleep(2)
         totalmatches, inplay = self.cc.getinplaymatchcount()
+
         if self.cc.inplay:
+            fortotalmatches = int(totalmatches / 4)
             action = None
-            for j in range(0, inplay):
-                relcount = int(totalmatches / 4)
-                for i in range(0, relcount):
+            for j in range(0, fortotalmatches):
+                for i in range(0, fortotalmatches):
                     try:
-                        elememt = self.driver.find_element(By.XPATH, self.cc.inplay_xpath)
-                        if elememt:
-                            elememt.click()
+                        inplaymatch = self.driver.find_elements(By.XPATH, self.cc.inplay_xpath)
+                        if inplaymatch[i]:
+                            inplaymatch[i].click()
                             time.sleep(4)
                     except:
                         pass
@@ -205,18 +209,26 @@ class Test_B2Bcommonclass:
                         if marketstatus:
                             self.driver.back()
                     except:
-                        action = "break"
-                        break
-                    self.driver.find_element(By.TAG_NAME, "body").send_keys(Keys.PAGE_DOWN)
-                    time.sleep(2)
-                    self.driver.find_element(By.TAG_NAME, "body").send_keys(Keys.ARROW_UP)
+                        try:
+                            if self.driver.find_element(By.XPATH, "//div[contains(@class,'suspend')]"):
+                                self.driver.back()
+                                if j == inplay-1:
+                                    self.cc.inplay = False
+                                action = "break"
+                                break
+                        except:
+                            if j == inplay:
+                                self.cc.inplay = False
+                    for s in range(0, 5):
+                        self.driver.find_element(By.TAG_NAME, "body").send_keys(Keys.ARROW_DOWN)
+                        time.sleep(0.5)
                     time.sleep(2)
                 if action == "break":
                     break
 
-        elif not self.cc.inplay:
-            relcount = int(totalmatches / 4)
-            for i in range(0, relcount):
+        if not self.cc.inplay:
+            totalmatches = int(totalmatches / 4)
+            for i in range(0, totalmatches):
                 try:
                     manualodds = self.driver.find_element(By.XPATH, self.cc.manualodds_xpath)
                     if manualodds:
@@ -239,6 +251,9 @@ class Test_B2Bcommonclass:
             else:
                 self.driver.find_element(By.XPATH, self.cc.wintossback_xpath).click()
                 time.sleep(2)
+                self.driver.find_element(By.TAG_NAME, "Body").send_keys(Keys.ARROW_DOWN)
+                self.driver.find_element(By.TAG_NAME, "Body").send_keys(Keys.ARROW_DOWN)
+                self.driver.find_element(By.TAG_NAME, "Body").send_keys(Keys.ARROW_DOWN)
                 self.driver.find_element(By.XPATH, self.cc.manualbetprice_xpath).clear()
                 self.driver.find_element(By.XPATH, self.cc.manualbetprice_xpath).send_keys(self.betprice)
             self.cc.clickplacebet()
@@ -280,10 +295,28 @@ class Test_B2Bcommonclass:
                 postwalletamount = prewalletamount - self.betprice
                 exposure = dbstake + preexposure
                 actpostwalletamount = self.cc.getwalletamount()
-                rpselection = self.cc.getreportselection()
-                rptypeofbet = self.cc.getreporttype()
-                rpstake = self.cc.getreportstake()
-                rppl = self.cc.getreportpl()
+                try:
+                    rpselection = self.cc.getreportselection()
+                    rptypeofbet = self.cc.getreporttype()
+                    rpstake = self.cc.getreportstake()
+                    rppl = self.cc.getreportpl()
+                except NoSuchElementException:
+                    self.logger.info("Data Not Display In Report or Report Is not Update")
+                    self.logger.error("Test Failed")
+                    self.logger.info("User Login With %s", self.username)
+                    self.logger.info("is bet place = %s", betplace)
+                    self.logger.info("Wallet Amount Before Place Bet %s", prewalletamount)
+                    self.logger.info("Wallet Amount After Place Bet %s", actpostwalletamount)
+                    self.logger.info("Bet Price %s", self.betprice)
+                    self.logger.info("Exposure Before Place Bet %s", preexposure)
+                    self.logger.info("Exposure After Place Bet %s", postexposure)
+                    self.logger.info("")
+                    self.logger.info("******************** Data From Dashboard Bet list ********************")
+                    self.logger.info("Bet Place Team Name is %s", dbselection)
+                    self.logger.info("Bet Place On %s", dbtypeofbet)
+                    self.logger.info("Bet Stake Amount is %s", dbstake)
+                    self.logger.info("P/L on Bet Place is %s", dbpl)
+                    assert False
 
             except Exception as e:
                 self.logger.info("exception %s", e)

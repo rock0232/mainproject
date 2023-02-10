@@ -6,6 +6,7 @@ from selenium.webdriver import ActionChains, Keys
 from selenium.webdriver.common.by import By
 
 
+
 class B2Bcommonclass:
 
     signin_xpath = "//a[@class='btn']//span[@class='animate-btn']"
@@ -68,18 +69,18 @@ class B2Bcommonclass:
                 element[j].click()
                 totalmatch = inplay[index1+1:index2]
                 tmatch = "".join(totalmatch)
-                totalmatches = int(tmatch)
+                cctotalmatches = int(tmatch)
                 self.inplay = True
                 # self.inplay = False
-                return totalmatches, intinplay
+                return cctotalmatches, intinplay
             elif intinplay == 0:
                 ind1 = inplay.index("start0")
                 ind2 = inplay.index("s0")
                 totalmatch = inplay[ind1 + 1:ind2]
                 tmatch = "".join(totalmatch)
-                totalmatches = int(tmatch)
+                cctotalmatches = int(tmatch)
                 self.inplay = False
-                return totalmatches, intinplay
+                return cctotalmatches, intinplay
 
     def clicksocceraport(self):
         self.driver.find_element(By.XPATH, self.soccer_Xpath).click()
