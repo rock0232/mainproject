@@ -286,7 +286,7 @@ class Test_B2Bcommonclass:
             else:
                 for i in range(0, 5):
                     self.driver.find_element(By.TAG_NAME, "body").send_keys(Keys.ARROW_DOWN)
-                self.driver.find_element(By.XPATH, self.cc.wintossback_xpath).click()
+                self.driver.find_element(By.XPATH, self.cc.wintossback_xpath).clear()
                 self.driver.find_element(By.XPATH, self.cc.manualbetprice_xpath).send_keys(self.betprice)
             # self.logger.info("Wallet Balance Before Place Bet is %s", prewalletamount)
             # self.logger.info("Exposure Before Bet Place is %s", preliability)
@@ -301,7 +301,6 @@ class Test_B2Bcommonclass:
             self.cc.clickplacebet()
             self.logger.info("Click On Place Bet Button")
             alertmessage = self.cc.getalertmessage()
-            self.logger.info("Message After Click on Place Bet Button %s", alertmessage)
             postexposure = None
             exposure = None
             postwalletamount = None
@@ -309,6 +308,7 @@ class Test_B2Bcommonclass:
 
             if "success" in alertmessage:
                 try:
+                    self.logger.info("Message After Click on Place Bet Button %s", alertmessage)
                     stackprice = self.cc.getstake()
                     # self.logger.info("************* Data From Dashboard Bet list *************")
                     # self.logger.info("Bet Place Team Name is %s", self.cc.getselection())
@@ -322,10 +322,10 @@ class Test_B2Bcommonclass:
                     # self.logger.info("Click on Open Bet Button In User Profile Button")
                     # time.sleep(10)
                     # self.logger.info("************* Data From Open Bet Report *************")
-                    # self.logger.info("Bet Place Team Name In Open Bet Report is %s", self.cc.getreportselection())
-                    # self.logger.info("Bet Place Type In Open Bet Report is %s", self.cc.getreporttype())
-                    # self.logger.info("Bet Stake Amount In Open Bet Report is %s", self.cc.getreportstake())
-                    # self.logger.info("P/L On Bet Place In Open Bet Report is %s", self.cc.getreportpl())
+                    self.logger.info("Bet Place Team Name In Open Bet Report is %s", self.cc.getreportselection())
+                    self.logger.info("Bet Place Type In Open Bet Report is %s", self.cc.getreporttype())
+                    self.logger.info("Bet Stake Amount In Open Bet Report is %s", self.cc.getreportstake())
+                    self.logger.info("P/L On Bet Place In Open Bet Report is %s", self.cc.getreportpl())
 
                     postexposure = self.cc.getliability()
                     postwalletamount = prewalletamount - self.betprice
@@ -333,8 +333,10 @@ class Test_B2Bcommonclass:
                     # self.logger.info("Exposure After Place Bet Is %s", postexposure)
                     actpostwalletamount = self.cc.getwalletamount()
                     # self.logger.info("Wallet Balance After Place Bet is %s", actpostwalletamount)
-                except Exception as e:
-                    self.logger.info("Exception Occurred %s", e)
+                # except Exception as e:
+                #     self.logger.info("Exception Occurred %s", e)
+                except:
+                    pass
                 assert postexposure == exposure and postwalletamount == actpostwalletamount
             else:
                 self.logger.info("Bet Not Place Message After Place %s", alertmessage)
@@ -343,7 +345,6 @@ class Test_B2Bcommonclass:
         else:
             self.logger.warning("User Not Login Please Try Again")
             assert False
-            self.driver.quit()
 
     @pytest.mark.b2bmarker
     def test_badabet(self, badabetlogin):

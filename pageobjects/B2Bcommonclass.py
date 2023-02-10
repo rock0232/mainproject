@@ -15,9 +15,9 @@ class B2Bcommonclass:
     closebutton_xpath = "//div[@class='modal modal-fixed-footer open']//i[@class='fa fa-times']"
     scrollmarket_class = "market-data"
     market_xpath = '//div[1][contains(@class,"market-data")]//div[1]//div[1]//a[1]'
-    back_xpath = "//div[@class='select-bet']//div[1]//app-market-type[1]//div[2]//div[1]//div[1]//div[2]//div[1]//div[4]//a[1]//p[1]"
+    back_xpath = '//*[@id="category-tab"]/div[1]/app-market-type/div[2]/div/div/div[1]/div/div[4]/a/p'
     lay_xpath = '//a[contains(@class,"lay-bet-btn")]//p'
-    betprice_xpath = "//div[@class='spin input-group right-align']//div[@class='input-group-prepend']//following-sibling::input"
+    betprice_xpath = '//*[@id="category-tab"]/div[1]/app-market-type/div[2]/div/div/div[2]/div/div/form/div[1]/div/div[2]/div[2]/input'
     placebet_xpath = '//button[contains(@class,"btn btn-bet")]'
     alertmessage_class = 'toast-message'
     wallet_xpath = "//li[@class='ac_bal']//span[2]"
@@ -36,10 +36,12 @@ class B2Bcommonclass:
     inplay_xpath = "//div[@class='date-time in-play']//parent::div//parent::div//following-sibling::a"
     soccer_Xpath = "//div[@class='title'][normalize-space()='Soccer']"
     numofinplaymatch_xpath = '/html/body/app-root/app-home-layout/body/app-dashboard/main/div/div/app-common-dashboard/div/ngx-slick-carousel/div/div/div//child::a//child::div//child::span'
-    wintossback_xpath = '//*[@id="category-tab"]/div[2]/app-market-type/div[2]/div/div/div[1]/div/div[4]/a/p'
+    wintossback_xpath = "//div[contains(text(),' TO WIN THE TOSS ')]//ancestor::app-market-type//child::div[contains(@class,'team-market')]//child::div[contains(@class,'notranslate bet-value v-blue back-1')]"
     manualodds_xpath = "//div//a[contains(@title,'ManualODD: 2')]"
-    manualbetprice_xpath = '//*[@id="category-tab"]/div[2]/app-market-type/div[2]/div/div/div[2]/div/div/form/div[1]/div/div[2]/div[2]/input'
+    manualbetprice_xpath = "//form[@class='form-inline ng-untouched ng-pristine ng-valid']/div/div/div[2]/div[2]/input"
     inplay = False
+    inactivemarket_xpath = "//div[contains(text(),' Match Odds')]//ancestor::div[contains(@class,'bet-semiheader is-hidden is-show')]//following-sibling::div[contains(@class,'bet-list is-hidden is-show')]/div/div[2]/div"
+    #//div[contains(text(),' Match Odds')]//parent::div[contains(@class,'bet-semiheader is-hidden is-show')]
 
     def __init__(self, driver):
         self.driver = driver
@@ -47,6 +49,7 @@ class B2Bcommonclass:
     def getinplaymatchcount(self):
         element = self.driver.find_elements(By.XPATH, self.numofinplaymatch_xpath)
         inplay = []
+        intinplay = None
         for j in range(len(element)):
             inplay.append(f"start{j}")
             for s in element[j].text:
@@ -65,17 +68,18 @@ class B2Bcommonclass:
                 element[j].click()
                 totalmatch = inplay[index1+1:index2]
                 tmatch = "".join(totalmatch)
-                inttmatch = int(tmatch)
-                self.inplay = False
-                return inttmatch
-            if intinplay == 0:
-                ind1 = inplay.index(f"start{1}")
-                ind2 = inplay.index(f"s{1}")
+                totalmatches = int(tmatch)
+                self.inplay = True
+                # self.inplay = False
+                return totalmatches, intinplay
+            elif intinplay == 0:
+                ind1 = inplay.index("start0")
+                ind2 = inplay.index("s0")
                 totalmatch = inplay[ind1 + 1:ind2]
                 tmatch = "".join(totalmatch)
                 totalmatches = int(tmatch)
                 self.inplay = False
-                return totalmatches
+                return totalmatches, intinplay
 
     def clicksocceraport(self):
         self.driver.find_element(By.XPATH, self.soccer_Xpath).click()
@@ -146,7 +150,7 @@ class B2Bcommonclass:
         self.driver.find_element(By.XPATH, self.placebet_xpath).click()
 
     def setbetprice(self, betprice):
-        # self.driver.find_element(By.XPATH, self.betprice_xpath).clear()
+        self.driver.find_element(By.XPATH, self.betprice_xpath).clear()
         self.driver.find_element(By.XPATH, self.betprice_xpath).send_keys(betprice)
 
     def clickbackrate(self):
