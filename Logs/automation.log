@@ -5480,3 +5480,34 @@ Backtrace:
 02/10/2023 06:55:43 PM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
 02/10/2023 06:55:46 PM: INFO: Test Passed
 02/10/2023 06:55:46 PM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+02/10/2023 06:58:00 PM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+02/10/2023 06:58:26 PM: INFO: Data Not Display In Report or Report Is not Update
+02/10/2023 06:58:26 PM: ERROR: Test Failed
+02/10/2023 06:58:26 PM: INFO: User Login With rocktest
+02/10/2023 06:58:26 PM: INFO: is bet place = True
+02/10/2023 06:58:26 PM: INFO: Wallet Amount Before Place Bet 200428.54
+02/10/2023 06:58:26 PM: INFO: Wallet Amount After Place Bet 200226.54
+02/10/2023 06:58:26 PM: INFO: Bet Price 202
+02/10/2023 06:58:26 PM: INFO: Exposure Before Place Bet 2626.0
+02/10/2023 06:58:26 PM: INFO: Exposure After Place Bet 2828.0
+02/10/2023 06:58:26 PM: INFO: 
+02/10/2023 06:58:26 PM: INFO: ******************** Data From Dashboard Bet list ********************
+02/10/2023 06:58:26 PM: INFO: Bet Place Team Name is South Africa Women
+02/10/2023 06:58:26 PM: INFO: Bet Place On Back
+02/10/2023 06:58:26 PM: INFO: Bet Stake Amount is 202.0
+02/10/2023 06:58:26 PM: INFO: P/L on Bet Place is 195.94
+02/10/2023 06:58:26 PM: INFO: exception assert False
+02/10/2023 06:58:26 PM: INFO: Test Passed
+02/10/2023 06:58:26 PM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+02/10/2023 07:03:17 PM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+02/10/2023 07:03:21 PM: INFO: Test Passed
+02/10/2023 07:03:21 PM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+02/10/2023 07:05:20 PM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+02/10/2023 07:05:24 PM: INFO: Test Passed
+02/10/2023 07:05:24 PM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+02/10/2023 07:12:40 PM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+02/10/2023 07:12:42 PM: INFO: Test Passed
+02/10/2023 07:12:42 PM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+02/10/2023 07:15:02 PM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+02/10/2023 07:15:04 PM: INFO: Test Passed
+02/10/2023 07:15:04 PM: INFO: Wallet Amount And Exposure are Updated After Place Bet

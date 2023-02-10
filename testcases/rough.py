@@ -195,7 +195,7 @@ class Test_B2Bcommonclass:
         if self.cc.inplay:
             fortotalmatches = int(totalmatches / 4)
             action = None
-            for j in range(0, fortotalmatches):
+            for j in range(0, inplay):
                 for i in range(0, fortotalmatches):
                     try:
                         inplaymatch = self.driver.find_elements(By.XPATH, self.cc.inplay_xpath)
@@ -214,8 +214,8 @@ class Test_B2Bcommonclass:
                                 self.driver.back()
                                 if j == inplay-1:
                                     self.cc.inplay = False
-                                action = "break"
-                                break
+                                    action = "break"
+                                    break
                         except:
                             if j == inplay:
                                 self.cc.inplay = False
@@ -249,17 +249,17 @@ class Test_B2Bcommonclass:
                 self.cc.clickbackrate()
                 self.cc.setbetprice(self.betprice)
             else:
-                self.driver.find_element(By.XPATH, self.cc.wintossback_xpath).click()
                 time.sleep(2)
                 self.driver.find_element(By.TAG_NAME, "Body").send_keys(Keys.ARROW_DOWN)
                 self.driver.find_element(By.TAG_NAME, "Body").send_keys(Keys.ARROW_DOWN)
                 self.driver.find_element(By.TAG_NAME, "Body").send_keys(Keys.ARROW_DOWN)
+                self.driver.find_element(By.XPATH, self.cc.wintossback_xpath).click()
                 self.driver.find_element(By.XPATH, self.cc.manualbetprice_xpath).clear()
                 self.driver.find_element(By.XPATH, self.cc.manualbetprice_xpath).send_keys(self.betprice)
             self.cc.clickplacebet()
             alertmessage = self.cc.getalertmessage()
             time.sleep(5)
-            print(alertmessage)
+            # print(alertmessage)
             if "success" in alertmessage:
                 break
             else:
@@ -300,7 +300,7 @@ class Test_B2Bcommonclass:
                     rptypeofbet = self.cc.getreporttype()
                     rpstake = self.cc.getreportstake()
                     rppl = self.cc.getreportpl()
-                except NoSuchElementException:
+                except:
                     self.logger.info("Data Not Display In Report or Report Is not Update")
                     self.logger.error("Test Failed")
                     self.logger.info("User Login With %s", self.username)
