@@ -326,6 +326,7 @@ class Test_B2Bcommonclass:
         else:
             self.logger.info("Bet Not Place Message After PLace Bet %s", alertmessage)
             assert False
+        self.driver.quit()
 
     @pytest.mark.b2bmarker
     @pytest.mark.debug
