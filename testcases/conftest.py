@@ -3,6 +3,7 @@ import sys
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 import pytest
+from pathlib import Path
 
 @pytest.fixture()
 def setup():
@@ -15,6 +16,9 @@ def setup():
 def pytest_html_report_title(report):
     report.title = "B2B Web App Report"
 
+
+def get_project_root() -> Path:
+    return Path(__file__).parent.parent
 
 @pytest.hookimpl(hookwrapper=True)
 def pytest_runtest_makereport(item, call):

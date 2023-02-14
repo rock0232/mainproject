@@ -16,7 +16,7 @@ class B2Bcommonclass:
     closebutton_xpath = "//div[@class='modal modal-fixed-footer open']//i[@class='fa fa-times']"
     scrollmarket_class = "market-data"
     market_xpath = '//div[1][contains(@class,"market-data")]//div[1]//div[1]//a[1]'
-    back_xpath = '//*[@id="category-tab"]/div[1]/app-market-type/div[2]/div/div/div[1]/div/div[4]/a/p'
+    back_xpath = '//*[@id="category-tab"]/div[1]/app-market-type/div[2]/div/div/div[1]/div/div[3]/a/p'
     lay_xpath = '//a[contains(@class,"lay-bet-btn")]//p'
     betprice_xpath = '//*[@id="category-tab"]/div[1]/app-market-type/div[2]/div/div/div[2]/div/div/form/div[1]/div/div[2]/div[2]/input'
     placebet_xpath = '//button[contains(@class,"btn btn-bet")]'
@@ -43,9 +43,13 @@ class B2Bcommonclass:
     inplay = False
     inactivemarket_xpath = "//div[contains(text(),' Match Odds')]//ancestor::div[contains(@class,'bet-semiheader is-hidden is-show')]//following-sibling::div[contains(@class,'bet-list is-hidden is-show')]/div/div[2]/div"
     #//div[contains(text(),' Match Odds')]//parent::div[contains(@class,'bet-semiheader is-hidden is-show')]
+    logo_class = "brand-logo"
 
     def __init__(self, driver):
         self.driver = driver
+
+    def clicklogo(self):
+        self.driver.find_element(By.CLASS_NAME, self.logo_class).click()
 
     def getinplaymatchcount(self):
         element = self.driver.find_elements(By.XPATH, self.numofinplaymatch_xpath)
@@ -65,6 +69,7 @@ class B2Bcommonclass:
             inpl = inplay[index2+1:index3]
             join = "".join(inpl)
             intinplay = int(join)
+
             if intinplay > 0:
                 element[j].click()
                 totalmatch = inplay[index1+1:index2]
@@ -73,14 +78,14 @@ class B2Bcommonclass:
                 self.inplay = True
                 # self.inplay = False
                 return cctotalmatches, intinplay
-            elif intinplay == 0:
-                ind1 = inplay.index("start0")
-                ind2 = inplay.index("s0")
-                totalmatch = inplay[ind1 + 1:ind2]
-                tmatch = "".join(totalmatch)
-                cctotalmatches = int(tmatch)
-                self.inplay = False
-                return cctotalmatches, intinplay
+        if intinplay == 0:
+            ind1 = inplay.index("start0")
+            ind2 = inplay.index("s0")
+            totalmatch = inplay[ind1 + 1:ind2]
+            tmatch = "".join(totalmatch)
+            cctotalmatches = int(tmatch)
+            self.inplay = False
+            return cctotalmatches, intinplay
 
     def clicksocceraport(self):
         self.driver.find_element(By.XPATH, self.soccer_Xpath).click()
@@ -111,8 +116,8 @@ class B2Bcommonclass:
 
     def getstake(self):
         sta = self.driver.find_element(By.XPATH, self.stake_xpath).text
-        stake = float(sta)
-        return stake
+        stake = int(sta)
+        return str(stake)
 
     def getpl(self):
         pl = self.driver.find_element(By.XPATH, self.pl_xpath).text
@@ -201,7 +206,10 @@ class B2Bcommonclass:
         self.driver.execute_script("arguments[0].scrollIntoView(true);", element)
 
     def clickclose(self):
-        self.driver.find_element(By.XPATH, self.closebutton_xpath).click()
+        WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located((By.XPATH, self.closebutton_xpath))).click()
+        # self.driver.find_element(By.XPATH, self.closebutton_xpath).click()
+        # WebDriverWait(self.driver, 10).until(
+        #             EC.visibility_of_element_located((By.CLASS_NAME, self.alertmessage_class))).text
 
     def clicklogin(self):
         self.driver.find_element(By.XPATH, self.poplogin_xpath).click()
