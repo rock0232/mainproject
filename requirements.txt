@@ -3,3 +3,4 @@ selenium
 pytest-html
 pytest-parallel
 pytest-xdist
+webdrivermanager

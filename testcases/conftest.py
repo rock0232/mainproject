@@ -4,13 +4,14 @@ from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 import pytest
 from pathlib import Path
+from pytest_html import html_report
 
 @pytest.fixture()
 def setup():
     global driver
     serv_obj = Service('.//chromedriver.exe')
     driver = webdriver.Chrome(service=serv_obj)
-    driver.implicitly_wait(25)
+    driver.implicitly_wait(10)
     return driver
 
 def pytest_html_report_title(report):

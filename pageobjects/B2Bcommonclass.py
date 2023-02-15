@@ -16,7 +16,7 @@ class B2Bcommonclass:
     closebutton_xpath = "//div[@class='modal modal-fixed-footer open']//i[@class='fa fa-times']"
     scrollmarket_class = "market-data"
     market_xpath = '//div[1][contains(@class,"market-data")]//div[1]//div[1]//a[1]'
-    back_xpath = '//*[@id="category-tab"]/div[1]/app-market-type/div[2]/div/div/div[1]/div/div[3]/a/p'
+    back_xpath = '//*[@id="category-tab"]/div[1]/app-market-type/div[2]/div/div/div[1]/div/div[4]/a/p'
     lay_xpath = '//a[contains(@class,"lay-bet-btn")]//p'
     betprice_xpath = '//*[@id="category-tab"]/div[1]/app-market-type/div[2]/div/div/div[2]/div/div/form/div[1]/div/div[2]/div[2]/input'
     placebet_xpath = '//button[contains(@class,"btn btn-bet")]'

@@ -169,7 +169,7 @@ class Test_B2Bcommonclass:
 
         if self.cc.inplay:
             for i in range(0, inplay):
-                for dp in range(0,2+i):
+                for dp in range(0,3+i):
                     self.driver.find_element(By.TAG_NAME, "body").send_keys(Keys.ARROW_DOWN)
                 try:
                     inplaymatch = self.driver.find_elements(By.XPATH, self.cc.inplay_xpath)
@@ -180,7 +180,7 @@ class Test_B2Bcommonclass:
                             marketstatus = self.driver.find_element(By.XPATH, self.cc.inactivemarket_xpath)
                             self.driver.back()
                         except:
-                            for c in range(0, 5):
+                            for c in range(0, 4):
                                 try:
                                     self.cc.clickbackrate()
                                     self.cc.setbetprice(self.betprice)
@@ -189,7 +189,7 @@ class Test_B2Bcommonclass:
                                     break
                                 alertmessage = self.cc.getalertmessage()
                                 time.sleep(5)
-                                if "success" in alertmessage or "0Unknown Error" in alertmessage or "advances Exposure limits" in alertmessage:
+                                if "success" in alertmessage or "0Unknown Error" in alertmessage or "Rate Exposure limit" in alertmessage:
                                     break
                                 else:
                                     try:
@@ -206,7 +206,7 @@ class Test_B2Bcommonclass:
                 elif i == inplay-1 and "success" not in alertmessage:
                     self.cc.inplay = False
                     break
-                self.cc.clicklogo()
+                self.driver.back()
                 time.sleep(2)
                 for s in range(0, 3):
                     self.driver.find_element(By.TAG_NAME, "body").send_keys(Keys.ARROW_DOWN)
@@ -214,7 +214,7 @@ class Test_B2Bcommonclass:
         if not self.cc.inplay:
             self.cc.clicklogo()
             for q in range(0, 7):
-                for dj in range(0, q+4):
+                for dj in range(0, q+3):
                     self.driver.find_element(By.TAG_NAME, "Body").send_keys(Keys.ARROW_DOWN)
                 try:
                     manualodds = self.driver.find_elements(By.XPATH, self.cc.manualodds_xpath)
@@ -244,7 +244,7 @@ class Test_B2Bcommonclass:
                             else:
                                 self.driver.find_element(By.XPATH, self.cc.wintossback_xpath).click()
                     except:
-                        self.cc.clicklogo()
+                        self.driver.back()
                         break
                 if "success" in alertmessage or "0Unknown Error" in alertmessage:
                     break
@@ -326,7 +326,7 @@ class Test_B2Bcommonclass:
         else:
             self.logger.info("Bet Not Place Message After PLace Bet %s", alertmessage)
             assert False
-        self.driver.quit()
+        self.driver.close()
 
     @pytest.mark.b2bmarker
     @pytest.mark.debug
