@@ -1,3 +1,5 @@
+import time
+
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver import ActionChains
@@ -15,7 +17,7 @@ class commonclass:
     market_xpath = '//div[2][contains(@class,"market-data")]//div[1]//div[1]//a[1]'
     back_xpath = '//a[contains(@class,"back-bet-btn")]//p'
     lay_xpath = '//a[contains(@class,"lay-bet-btn")]//p'
-    betprice_xpath = '//input[contains(@class,"ng-touched")]'
+    betprice_xpath = "//form[@class='form-inline ng-untouched ng-pristine ng-valid']/div[1]/div[3]//input"
     placebet_xpath = '//button[contains(@class,"btn btn-bet")]'
     exposure_xpath = "//li[@class='no-wallet']//li[2]//div[2]"
     withdrawable_xpath = "//li[@class='no-wallet']//li[1]//div[2]"
@@ -32,9 +34,27 @@ class commonclass:
     reporttype_xpath = '//tbody/tr[1]/td[5]'
     reportstake_xpath = '//tbody/tr[1]/td[7]'
     reportpl_xpath = '//tbody/tr[1]/td[8]'
+    manualodds_xpath = "//div//a[contains(@title,'ManualODD: 2')]"
+    wintoss_xpath = "//ul[contains(@class,'tabs')]//li/a[contains(text(),'Win Toss')]"
+    wintossback_xpath = "//span[contains(text(),' TO WIN THE TOSS ')]//ancestor::app-market-type//child::div[contains(@class,'team-market')]//child::div[contains(@class,'notranslate bet-value v-blue back-1')]"
+    brandlogo_xpath = "//a[@class='brand-logo']"
+    allupcoming_xpath = "//div[@class='items']//a[@class='active']"
 
     def __init__(self, driver):
         self.driver = driver
+
+    def clickbrandlogo(self):
+        self.driver.find_element(By.XPATH, self.brandlogo_xpath).click()
+
+    def setbetprice(self, betprice):
+        self.driver.find_element(By.XPATH, self.betprice_xpath).clear()
+        self.driver.find_element(By.XPATH, self.betprice_xpath).send_keys(betprice)
+
+    def clickwintossmarket(self):
+        self.driver.find_element(By.XPATH, self.wintoss_xpath).click()
+
+    def clickwintossback(self):
+        self.driver.find_element(By.XPATH, self.wintossback_xpath).click()
 
     def scrollmarketdata(self):
         element = self.driver.find_element(By.XPATH, self.scrollmarketheader)
@@ -157,6 +177,7 @@ class commonclass:
         return walletamount
 
     def getexposure(self):
+        time.sleep(2)
         exposure = self.driver.find_element(By.XPATH, self.exposure_xpath).text
         exposure1 = [exp for exp in exposure if exp != "-"]
         exposure2 = "".join(exposure1)
@@ -179,10 +200,6 @@ class commonclass:
     def clicklayrate(self):
         self.driver.find_element(By.XPATH, self.lay_xpath).click()
 
-    def setbetprice(self, betprice):
-        self.driver.find_element(By.XPATH, self.betprice_xpath).clear()
-        self.driver.find_element(By.XPATH, self.betprice_xpath).send_keys(betprice)
-
     def clickplacebet(self):
         self.driver.find_element(By.XPATH, self.placebet_xpath).click()
 
@@ -191,9 +208,18 @@ class hattrick:
 
     backliability = '//*[@id="category-tab"]/div[1]/app-market-type/div[2]/div/div/div[3]/div/div[1]/p/span[2]/span/span[3]'
     layliability = '//*[@id="category-tab"]/div[1]/app-market-type/div[2]/div/div/div[1]/div/div[1]/p/span[2]/span/span[3]'
+    upcominglogo_xpath = '//*[@id="mobile-nav"]/div[2]/li/ul/li[2]/div'
+    upcoming_xpath = '//*[@id="mobile-nav"]/div[2]/li/ul/li[2]/div/a'
 
     def __init__(self, driver):
         self.driver = driver
+
+    def clickupcoming(self):
+        a = ActionChains(self.driver)
+        element1 = self.driver.find_element(By.XPATH, self.upcominglogo_xpath)
+        act = a.move_to_element(element1)
+        act.perform()
+        self.driver.find_element(By.XPATH, self.upcominglogo_xpath).click()
 
     def getliability(self, liailitytype):
         if liailitytype == "Back":
@@ -226,9 +252,13 @@ class empire:
 class run567:
 
     liability = '//*[@id="category-tab"]/div[1]/app-market-type/div[2]/div/div/div[3]/div/div[1]/span/span[3]'
+    wintossback_xpath = '//*[@id="category-tab"]/div[2]/app-market-type/div[2]/div/div/div[1]/div/div[4]/a'
 
     def __init__(self, driver):
         self.driver = driver
+
+    def clickwintossback(self):
+        self.driver.find_element(By.XPATH, self.wintossback_xpath).click()
 
     def getliability(self):
         liability = self.driver.find_element(By.XPATH, self.liability).text

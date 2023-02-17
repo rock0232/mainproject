@@ -15,7 +15,7 @@ def setup():
     return driver
 
 def pytest_html_report_title(report):
-    report.title = "B2B Web App Report"
+    report.title = "Test Result Report"
 
 
 def get_project_root() -> Path:

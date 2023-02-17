@@ -261,10 +261,7 @@ class Test_B2Bcommonclass:
         dbtypeofbet = None
         dbstake = None
         dbpl = None
-        rpselection = None
-        rptypeofbet = None
-        rpstake = None
-        rppl = None
+
         if "success" in alertmessage:
             try:
                 dbselection = self.cc.getselection()
@@ -300,8 +297,8 @@ class Test_B2Bcommonclass:
                         self.logger.info("Bet Stake Amount is %s", dbstake)
                         self.logger.info("P/L on Bet Place is %s", dbpl)
                         time.sleep(0.5)
-                        self.driver.refresh()
-                        time.sleep(6)
+                        # self.driver.refresh()
+                        time.sleep(5)
                         rpselection = self.cc.getreportselection()
                         rptypeofbet = self.cc.getreporttype()
                         rpstake = self.cc.getreportstake()
