@@ -206,8 +206,10 @@ class Test_commonlogin:
             assert False
         self.driver.close()
 
-    @pytest.mark.debug
-    def test_run56(self, run567login):
+    @pytest.mark.runall
+    @pytest.mark.b2cmarker
+    @pytest.mark.run567
+    def test_run567(self, run567login):
         currenturl = run567login
         if "home" in currenturl:
             self.commonfunction()
@@ -216,8 +218,10 @@ class Test_commonlogin:
             self.driver.quit()
             assert False
 
-    @pytest.mark.debug
-    def test_hat(self, hattricklogin):
+    @pytest.mark.runall
+    @pytest.mark.b2cmarker
+    @pytest.mark.hattrick
+    def test_hattrick(self, hattricklogin):
         self.driver.get("https://hattrick.games/sport/Upcoming")
         time.sleep(10)
         alertmessage = ""
@@ -326,8 +330,10 @@ class Test_commonlogin:
             assert False
         self.driver.close()
 
-    @pytest.mark.debug
-    def test_emp(self, run567login):
+    @pytest.mark.runall
+    @pytest.mark.b2cmarker
+    @pytest.mark.empire
+    def test_empire(self, run567login):
         currenturl = run567login
         if "home" in currenturl:
             self.commonfunction()
@@ -336,7 +342,9 @@ class Test_commonlogin:
             self.driver.quit()
             assert False
 
-    @pytest.mark.debug
+    @pytest.mark.runall
+    @pytest.mark.b2cmarker
+    @pytest.mark.thalaiva
     def test_thalaiva(self, thalaivalogin):
         currenturl = thalaivalogin
         if "home" in currenturl:
