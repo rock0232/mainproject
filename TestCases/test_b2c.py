@@ -14,11 +14,11 @@ class Test_commonlogin:
     empire3rd = "https://3rdempire.in/login"
     run567url = "https://run567.co/login"
     thalaiva365 = "https://thalaiva365.com/login"
-    username = "android"
-    password = "Android@123"
-    # username = "rocktest"
-    # password = "Rock@1234"
-    betprice = 100
+    # username = "android"
+    # password = "Android@123"
+    username = "rocktest"
+    password = "Rock@1234"
+    betprice = 101
 
     @pytest.fixture(scope="function", autouse=False)
     def hattricklogin(self, setup):
