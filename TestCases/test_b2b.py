@@ -178,7 +178,7 @@ class Test_B2Bcommonclass:
                         time.sleep(4)
                         try:
                             marketstatus = self.driver.find_element(By.XPATH, self.cc.inactivemarket_xpath)
-                            self.driver.back()
+                            self.cc.clicklogo()
                         except:
                             for c in range(0, 4):
                                 try:
@@ -206,7 +206,7 @@ class Test_B2Bcommonclass:
                 elif i == inplay-1 and "success" not in alertmessage:
                     self.cc.inplay = False
                     break
-                self.driver.back()
+                self.cc.clicklogo()
                 time.sleep(2)
                 for s in range(0, 3):
                     self.driver.find_element(By.TAG_NAME, "body").send_keys(Keys.ARROW_DOWN)
@@ -244,7 +244,7 @@ class Test_B2Bcommonclass:
                             else:
                                 self.driver.find_element(By.XPATH, self.cc.wintossback_xpath).click()
                     except:
-                        self.driver.back()
+                        self.cc.clicklogo()
                         break
                 if "success" in alertmessage or "0Unknown Error" in alertmessage:
                     break
@@ -261,10 +261,7 @@ class Test_B2Bcommonclass:
         dbtypeofbet = None
         dbstake = None
         dbpl = None
-        rpselection = None
-        rptypeofbet = None
-        rpstake = None
-        rppl = None
+
         if "success" in alertmessage:
             try:
                 dbselection = self.cc.getselection()
@@ -328,8 +325,9 @@ class Test_B2Bcommonclass:
             assert False
         self.driver.close()
 
+    @pytest.mark.runall
     @pytest.mark.b2bmarker
-    @pytest.mark.debug
+    @pytest.mark.aura25
     def test_aura25(self, aura25login):
         try:
             login = WebDriverWait(self.driver, 15).until(EC.visibility_of_element_located((By.TAG_NAME, "app-dashboard")))
@@ -338,7 +336,9 @@ class Test_B2Bcommonclass:
             assert False
         self.newfunction()
 
+    @pytest.mark.runall
     @pytest.mark.b2bmarker
+    @pytest.mark.abdexch
     def test_abdexch(self, abdlogin):
         try:
             login = WebDriverWait(self.driver, 15).until(
@@ -348,7 +348,9 @@ class Test_B2Bcommonclass:
             assert False
         self.newfunction()
 
+    @pytest.mark.runall
     @pytest.mark.b2bmarker
+    @pytest.mark.badabet
     def test_badabet(self, badabetlogin):
         try:
             login = WebDriverWait(self.driver, 15).until(
@@ -358,7 +360,9 @@ class Test_B2Bcommonclass:
             assert False
         self.newfunction()
 
+    @pytest.mark.runall
     @pytest.mark.b2bmarker
+    @pytest.mark.infinity
     def test_infinity(self, infinitylogin):
         try:
             login = WebDriverWait(self.driver, 15).until(
@@ -368,7 +372,9 @@ class Test_B2Bcommonclass:
             assert False
         self.newfunction()
 
+    @pytest.mark.runall
     @pytest.mark.b2bmarker
+    @pytest.mark.user365
     def test_user365(self, user365login):
         try:
             login = WebDriverWait(self.driver, 15).until(
@@ -378,7 +384,9 @@ class Test_B2Bcommonclass:
             assert False
         self.newfunction()
 
+    @pytest.mark.runall
     @pytest.mark.b2bmarker
+    @pytest.mark.only333
     def test_only333(self, only333login):
         try:
             login = WebDriverWait(self.driver, 15).until(
@@ -388,7 +396,9 @@ class Test_B2Bcommonclass:
             assert False
         self.newfunction()
 
+    @pytest.mark.runall
     @pytest.mark.b2bmarker
+    @pytest.mark.pk7
     def test_pk7(self, pk7login):
         try:
             login = WebDriverWait(self.driver, 15).until(
@@ -398,7 +408,9 @@ class Test_B2Bcommonclass:
             assert False
         self.newfunction()
 
+    @pytest.mark.runall
     @pytest.mark.b2bmarker
+    @pytest.mark.gamex
     def test_gamex(self, gamexlogin):
         try:
             login = WebDriverWait(self.driver, 15).until(
@@ -408,7 +420,9 @@ class Test_B2Bcommonclass:
             assert False
         self.newfunction()
 
+    @pytest.mark.runall
     @pytest.mark.b2bmarker
+    @pytest.mark.aura26
     def test_aura26(self, aura26login):
         try:
             login = WebDriverWait(self.driver, 15).until(
@@ -418,7 +432,9 @@ class Test_B2Bcommonclass:
             assert False
         self.newfunction()
 
+    @pytest.mark.runall
     @pytest.mark.b2bmarker
+    @pytest.mark.xtra999
     def test_xtra999(self, xtra999login):
         try:
             login = WebDriverWait(self.driver, 15).until(

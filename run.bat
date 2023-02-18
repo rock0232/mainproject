@@ -1,1 +1,2 @@
-pytest -m b2bmarker -s -v -n=2 --capture=sys --html=Reports\B2BTestReport.html --self-contained-html testcases\B2Btest.py
+@REM pytest -m user365 -s -v --capture=sys --html=Reports\B2BTestReport.html --self-contained-html testcases\B2Btest.py
+pytest -m aura25 -s -v --capture=sys --html=Reports\B2BTestReport.html --self-contained-html TestCases\

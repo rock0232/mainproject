@@ -21,7 +21,7 @@ def pytest_html_report_title(report):
 def get_project_root() -> Path:
     return Path(__file__).parent.parent
 
-@pytest.hookimpl(hookwrapper=True)
+@pytest.hookimpl()
 def pytest_runtest_makereport(item, call):
     pytest_html = item.config.pluginmanager.getplugin("html")
     outcome = yield

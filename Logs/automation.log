@@ -7026,3 +7026,50 @@ Backtrace:
 02/17/2023 05:08:35 PM: INFO: Bet Place Type In Open Bet Report is Back
 02/17/2023 05:08:35 PM: INFO: Bet Stake Amount In Open Bet Report is 100
 02/17/2023 05:08:35 PM: INFO: P/L On Bet Place In Open Bet Report is 97
+02/17/2023 05:46:38 PM: INFO: Test Passed
+02/17/2023 05:46:38 PM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+02/17/2023 05:46:38 PM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+02/17/2023 05:47:42 PM: ERROR: Test Failed
+02/17/2023 05:47:42 PM: INFO: Message After Place Bet Bet has been placed successfully.
+02/17/2023 05:47:42 PM: INFO: User Login With rocktest
+02/17/2023 05:47:42 PM: INFO: Wallet Amount Before Place Bet 0.0
+02/17/2023 05:47:42 PM: INFO: Wallet Amount After Place Bet 5809.04
+02/17/2023 05:47:42 PM: INFO: Bet Price 202
+02/17/2023 05:47:42 PM: INFO: Exposure Before Place Bet 0.0
+02/17/2023 05:47:42 PM: INFO: Exposure After Place Bet 202.0
+02/17/2023 05:47:42 PM: INFO: 
+02/17/2023 05:47:42 PM: INFO: ******************** Data From Dashboard Bet list ********************
+02/17/2023 05:47:42 PM: INFO: Bet Place Team Name is Ha Noi T and T
+02/17/2023 05:47:42 PM: INFO: Bet Place On Back
+02/17/2023 05:47:42 PM: INFO: Bet Stake Amount is 202
+02/17/2023 05:47:42 PM: INFO: P/L on Bet Place is 98.98
+02/17/2023 05:47:48 PM: INFO: 
+02/17/2023 05:47:48 PM: INFO: ******************** Data From Open Bet Report ********************
+02/17/2023 05:47:48 PM: INFO: Bet Place Team Name In Open Bet Report is Ha Noi T and T
+02/17/2023 05:47:48 PM: INFO: Bet Place Type In Open Bet Report is Back
+02/17/2023 05:47:48 PM: INFO: Bet Stake Amount In Open Bet Report is 202
+02/17/2023 05:47:48 PM: INFO: P/L On Bet Place In Open Bet Report is 98.98
+02/17/2023 05:49:50 PM: INFO: Test Passed
+02/17/2023 05:49:50 PM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+02/17/2023 05:49:50 PM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+02/17/2023 05:53:45 PM: INFO: Test Passed
+02/17/2023 05:53:45 PM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+02/17/2023 05:53:45 PM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+02/17/2023 05:54:32 PM: INFO: Test Passed
+02/17/2023 05:54:32 PM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+02/17/2023 05:54:32 PM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+02/17/2023 05:55:27 PM: INFO: Test Passed
+02/17/2023 05:55:27 PM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+02/17/2023 05:55:27 PM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+02/17/2023 05:56:35 PM: INFO: Test Passed
+02/17/2023 05:56:35 PM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+02/17/2023 05:56:35 PM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+02/17/2023 06:19:06 PM: INFO: Test Passed
+02/17/2023 06:19:06 PM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+02/17/2023 06:19:06 PM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+02/17/2023 06:20:18 PM: INFO: Test Passed
+02/17/2023 06:20:18 PM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+02/17/2023 06:20:18 PM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+02/17/2023 06:23:08 PM: INFO: Test Passed
+02/17/2023 06:23:08 PM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+02/17/2023 06:23:08 PM: INFO: Wallet Amount And Exposure are Updated After Place Bet
