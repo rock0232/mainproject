@@ -330,8 +330,8 @@ class Test_commonlogin:
     @pytest.mark.runall
     @pytest.mark.b2cmarker
     @pytest.mark.empire
-    def test_empire(self, run567login):
-        currenturl = run567login
+    def test_empire(self, empirelogin):
+        currenturl = empirelogin
         if "home" in currenturl:
             self.commonfunction()
         else:
