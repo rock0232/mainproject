@@ -1,7 +1,6 @@
 import time
 import pytest
 from selenium.webdriver import Keys
-
 from utilities.customlogger import Logger
 from pageobjects.B2Ccommonclass import commonclass, hattrick, run567, empire, thalaiva
 from selenium.webdriver.common.by import By
@@ -14,10 +13,10 @@ class Test_commonlogin:
     empire3rd = "https://3rdempire.in/login"
     run567url = "https://run567.co/login"
     thalaiva365 = "https://thalaiva365.com/login"
-    # username = "android"
-    # password = "Android@123"
-    username = "rocktest"
-    password = "Rock@1234"
+    username = "android"
+    password = "Android@123"
+    # username = "rocktest"
+    # password = "Rock@1234"
     betprice = 101
 
     @pytest.fixture(scope="function", autouse=False)
@@ -105,7 +104,6 @@ class Test_commonlogin:
             manualodds = self.driver.find_elements(By.XPATH, self.cc.manualodds_xpath)
             try:
                 manualodds[i].click()
-                self.logger.info("%s", i)
             except:
                 continue
             try:
@@ -240,7 +238,6 @@ class Test_commonlogin:
             wintoss = self.driver.find_elements(By.XPATH, self.cc.manualodds_xpath)
             try:
                 wintoss[s].click()
-                self.logger.info("%s", s)
                 time.sleep(3)
                 self.cc.clickwintossmarket()
                 time.sleep(3)

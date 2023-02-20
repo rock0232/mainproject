@@ -148,7 +148,7 @@ class B2Bcommonclass:
         return walletamount
 
     def getalertmessage(self):
-        alert = WebDriverWait(self.driver, 10).until(
+        alert = WebDriverWait(self.driver, 15).until(
             EC.visibility_of_element_located((By.CLASS_NAME, self.alertmessage_class))).text
         return alert
 

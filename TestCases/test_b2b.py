@@ -159,9 +159,9 @@ class Test_B2Bcommonclass:
         self.cc.clicklogin()
 
     def newfunction(self):
+        global alertmessage
         self.cc = B2Bcommonclass(self.driver)
         self.cc.clickclose()
-        alertmessage = ""
         time.sleep(2)
         totalmatches, inplay = self.cc.getinplaymatchcount()
         prewalletamount = self.cc.getwalletamount()
@@ -173,34 +173,23 @@ class Test_B2Bcommonclass:
                     self.driver.find_element(By.TAG_NAME, "body").send_keys(Keys.ARROW_DOWN)
                 try:
                     inplaymatch = self.driver.find_elements(By.XPATH, self.cc.inplay_xpath)
-                    if inplaymatch:
-                        inplaymatch[i].click()  # 0
-                        time.sleep(4)
-                        try:
-                            marketstatus = self.driver.find_element(By.XPATH, self.cc.inactivemarket_xpath)
-                            self.cc.clicklogo()
-                        except:
-                            for c in range(0, 4):
-                                try:
-                                    self.cc.clickbackrate()
-                                    self.cc.setbetprice(self.betprice)
-                                    self.cc.clickplacebet()
-                                except:
-                                    break
-                                alertmessage = self.cc.getalertmessage()
-                                time.sleep(5)
-                                if "success" in alertmessage or "0Unknown Error" in alertmessage or "Rate Exposure limit" in alertmessage:
-                                    break
-                                else:
-                                    try:
-                                        if self.cc.inplay:
-                                            self.cc.clickbackrate()
-                                        else:
-                                            self.driver.find_element(By.XPATH, self.cc.wintossback_xpath).click()
-                                    except:
-                                        pass
+                    inplaymatch[i].click()
+                    time.sleep(4)
                 except:
-                    pass
+                    continue
+                try:
+                    for c in range(0, 4):
+
+                        self.cc.clickbackrate()
+                        self.cc.setbetprice(self.betprice)
+                        self.cc.clickplacebet()
+                        alertmessage = self.cc.getalertmessage()
+                        if "success" in alertmessage or "0Unknown Error" in alertmessage or "Rate Exposure limit" in alertmessage:
+                            break
+                        else:
+                            self.cc.clickbackrate()
+                except:
+                    self.cc.clicklogo()
                 if "success" in alertmessage or "0Unknown Error" in alertmessage:
                     break
                 elif i == inplay-1 and "success" not in alertmessage:
@@ -213,43 +202,37 @@ class Test_B2Bcommonclass:
 
         if not self.cc.inplay:
             self.cc.clicklogo()
-            for q in range(0, 7):
+            countmanualodds = self.driver.find_elements(By.XPATH, self.cc.manualodds_xpath)
+            for q in range(0, len(countmanualodds)):
                 for dj in range(0, q+3):
                     self.driver.find_element(By.TAG_NAME, "Body").send_keys(Keys.ARROW_DOWN)
+                manualodds = self.driver.find_elements(By.XPATH, self.cc.manualodds_xpath)
                 try:
-                    manualodds = self.driver.find_elements(By.XPATH, self.cc.manualodds_xpath)
-                    if manualodds:
-                        manualodds[q].click()
+                    manualodds[q].click()
                 except:
                     continue
-                time.sleep(5)
                 for sp in range(0, 4):
                     time.sleep(2)
-                    if sp < 1:
-                        self.driver.find_element(By.TAG_NAME, "Body").send_keys(Keys.ARROW_DOWN)
-                        self.driver.find_element(By.TAG_NAME, "Body").send_keys(Keys.ARROW_DOWN)
-                        self.driver.find_element(By.TAG_NAME, "Body").send_keys(Keys.ARROW_DOWN)
-                    try:
-                        self.driver.find_element(By.XPATH, self.cc.wintossback_xpath).click()
-                        self.driver.find_element(By.XPATH, self.cc.manualbetprice_xpath).clear()
-                        self.driver.find_element(By.XPATH, self.cc.manualbetprice_xpath).send_keys(self.betprice)
-                        self.cc.clickplacebet()
-                        alertmessage = self.cc.getalertmessage()
-                        time.sleep(5)
-                        if "success" in alertmessage or "0Unknown Error" in alertmessage or "advances Exposure limits" in alertmessage:
-                            break
-                        else:
-                            if self.cc.inplay:
-                                self.cc.clickbackrate()
-                            else:
-                                self.driver.find_element(By.XPATH, self.cc.wintossback_xpath).click()
-                    except:
-                        self.cc.clicklogo()
+                    self.driver.find_element(By.TAG_NAME, "Body").send_keys(Keys.ARROW_DOWN)
+                try:
+                    self.driver.find_element(By.XPATH, self.cc.wintossback_xpath).click()
+                    self.driver.find_element(By.XPATH, self.cc.manualbetprice_xpath).clear()
+                    self.driver.find_element(By.XPATH, self.cc.manualbetprice_xpath).send_keys(self.betprice)
+                    self.cc.clickplacebet()
+
+                    alertmessage = self.cc.getalertmessage()
+
+                    if "success" in alertmessage or "0Unknown Error" in alertmessage or "advances Exposure limits" in alertmessage:
                         break
+                    else:
+                        self.cc.clicklogo()
+                        self.driver.find_element(By.XPATH, self.cc.wintossback_xpath).click()
+                except:
+                    self.cc.clicklogo()
                 if "success" in alertmessage or "0Unknown Error" in alertmessage:
                     break
                 else:
-                    if q == 6:
+                    if q == len(countmanualodds)-1:
                         self.logger.info("No Matches Are Availale To Place Bet %s", alertmessage)
                         assert False
 
@@ -319,6 +302,7 @@ class Test_B2Bcommonclass:
                 assert postexposure == exposure and postwalletamount == actpostwalletamount
         elif "0Unknown Error" in alertmessage:
             self.logger.info("Bet Not Place Error Message = %s", alertmessage)
+            assert False
 
         else:
             self.logger.info("Bet Not Place Message After PLace Bet %s", alertmessage)
