@@ -184,6 +184,7 @@ class Test_B2Bcommonclass:
                         self.cc.setbetprice(self.betprice)
                         self.cc.clickplacebet()
                         alertmessage = self.cc.getalertmessage()
+                        time.sleep(7)
                         if "success" in alertmessage or "0Unknown Error" in alertmessage or "Rate Exposure limit" in alertmessage:
                             break
                         else:
