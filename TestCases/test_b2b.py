@@ -223,7 +223,7 @@ class Test_B2Bcommonclass:
 
                     alertmessage = self.cc.getalertmessage()
 
-                    if "success" in alertmessage or "0Unknown Error" in alertmessage or "advances Exposure limits" in alertmessage:
+                    if "success" in alertmessage:
                         break
                     else:
                         self.cc.clicklogo()
@@ -232,10 +232,9 @@ class Test_B2Bcommonclass:
                     self.cc.clicklogo()
                 if "success" in alertmessage or "0Unknown Error" in alertmessage:
                     break
-                else:
-                    if q == len(countmanualodds)-1:
-                        self.logger.info("No Matches Are Availale To Place Bet %s", alertmessage)
-                        assert False
+                elif q == len(countmanualodds)-1:
+                    self.logger.info("No Matches Are Availale To Place Bet %s", alertmessage)
+                    assert False
 
         postexposure = None
         exposure = None
