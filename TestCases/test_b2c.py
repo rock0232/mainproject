@@ -131,14 +131,6 @@ class Test_commonlogin:
         exposure = None
         postwalletamount = None
         actpostwalletamount = None
-        dbselection = None
-        dbtypeofbet = None
-        dbstake = None
-        dbpl = None
-        rpselection = None
-        rptypeofbet = None
-        rpstake = None
-        rppl = None
 
         if "success" in alertmessage:
             try:

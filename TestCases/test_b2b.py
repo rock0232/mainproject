@@ -316,7 +316,7 @@ class Test_B2Bcommonclass:
         try:
             login = WebDriverWait(self.driver, 15).until(EC.visibility_of_element_located((By.TAG_NAME, "app-dashboard")))
         except:
-            self.logger.info("user not login")
+            self.logger.info("User Not login, Please Run This Test Again")
             assert False
         self.newfunction()
 
@@ -328,7 +328,7 @@ class Test_B2Bcommonclass:
             login = WebDriverWait(self.driver, 15).until(
                 EC.visibility_of_element_located((By.TAG_NAME, "app-dashboard")))
         except:
-            self.logger.info("user not login")
+            self.logger.info("User Not login, Please Run This Test Again")
             assert False
         self.newfunction()
 
@@ -340,7 +340,7 @@ class Test_B2Bcommonclass:
             login = WebDriverWait(self.driver, 15).until(
                 EC.visibility_of_element_located((By.TAG_NAME, "app-dashboard")))
         except:
-            self.logger.info("user not login")
+            self.logger.info("User Not login, Please Run This Test Again")
             assert False
         self.newfunction()
 
@@ -352,7 +352,7 @@ class Test_B2Bcommonclass:
             login = WebDriverWait(self.driver, 15).until(
                 EC.visibility_of_element_located((By.TAG_NAME, "app-dashboard")))
         except:
-            self.logger.info("user not login")
+            self.logger.info("User Not login, Please Run This Test Again")
             assert False
         self.newfunction()
 
@@ -364,7 +364,7 @@ class Test_B2Bcommonclass:
             login = WebDriverWait(self.driver, 15).until(
                 EC.visibility_of_element_located((By.TAG_NAME, "app-dashboard")))
         except:
-            self.logger.info("user not login")
+            self.logger.info("User Not login, Please Run This Test Again")
             assert False
         self.newfunction()
 
@@ -376,7 +376,7 @@ class Test_B2Bcommonclass:
             login = WebDriverWait(self.driver, 15).until(
                 EC.visibility_of_element_located((By.TAG_NAME, "app-dashboard")))
         except:
-            self.logger.info("user not login")
+            self.logger.info("User Not login, Please Run This Test Again")
             assert False
         self.newfunction()
 
@@ -388,7 +388,7 @@ class Test_B2Bcommonclass:
             login = WebDriverWait(self.driver, 15).until(
                 EC.visibility_of_element_located((By.TAG_NAME, "app-dashboard")))
         except:
-            self.logger.info("user not login")
+            self.logger.info("User Not login, Please Run This Test Again")
             assert False
         self.newfunction()
 
@@ -400,7 +400,7 @@ class Test_B2Bcommonclass:
             login = WebDriverWait(self.driver, 15).until(
                 EC.visibility_of_element_located((By.TAG_NAME, "app-dashboard")))
         except:
-            self.logger.info("user not login")
+            self.logger.info("User Not login, Please Run This Test Again")
             assert False
         self.newfunction()
 
@@ -412,7 +412,7 @@ class Test_B2Bcommonclass:
             login = WebDriverWait(self.driver, 15).until(
                 EC.visibility_of_element_located((By.TAG_NAME, "app-dashboard")))
         except:
-            self.logger.info("user not login")
+            self.logger.info("User Not login, Please Run This Test Again")
             assert False
         self.newfunction()
 
@@ -424,6 +424,6 @@ class Test_B2Bcommonclass:
             login = WebDriverWait(self.driver, 15).until(
                 EC.visibility_of_element_located((By.TAG_NAME, "app-dashboard")))
         except:
-            self.logger.info("user not login")
+            self.logger.info("User Not login, Please Run This Test Again")
             assert False
         self.newfunction()
