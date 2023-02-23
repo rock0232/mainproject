@@ -193,7 +193,7 @@ class Test_B2Bcommonclass:
                     self.cc.clicklogo()
                 if "success" in alertmessage or "0Unknown Error" in alertmessage:
                     break
-                if i == inplay-1 and "success" not in alertmessage:
+                if i == inplay-1:
                     self.cc.inplay = False
                     break
                 self.cc.clicklogo()
