@@ -44,6 +44,7 @@ class B2Bcommonclass:
     inactivemarket_xpath = "//div[contains(text(),' Match Odds')]//ancestor::div[contains(@class,'bet-semiheader is-hidden is-show')]//following-sibling::div[contains(@class,'bet-list is-hidden is-show')]/div/div[2]/div"
     #//div[contains(text(),' Match Odds')]//parent::div[contains(@class,'bet-semiheader is-hidden is-show')]
     logo_class = "brand-logo"
+    slidesports_xpath = "//ngx-slick-carousel[@class='slider slick-initialized slick-slider']//button[@aria-label='Next'][normalize-space()='Next']"
 
     def __init__(self, driver):
         self.driver = driver
@@ -56,6 +57,12 @@ class B2Bcommonclass:
         inplay = []
         intinplay = None
         for j in range(len(element)):
+            if j == 7 or j ==14 or j ==21:
+                try:
+                    self.driver.find_element(By.XPATH, self.slidesports_xpath).click()
+                    time.sleep(2)
+                except:
+                    pass
             inplay.append(f"start{j}")
             for s in element[j].text:
                 if s == "\n":

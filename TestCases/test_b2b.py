@@ -159,7 +159,7 @@ class Test_B2Bcommonclass:
         self.cc.clicklogin()
 
     def newfunction(self):
-        global alertmessage
+        alertmessage = ""
         self.cc = B2Bcommonclass(self.driver)
         self.cc.clickclose()
         time.sleep(2)
