@@ -55,7 +55,7 @@ class B2Bcommonclass:
         element = self.driver.find_elements(By.XPATH, self.numofinplaymatch_xpath)
         inplay = []
         intinplay = None
-        for j in range(0,6):
+        for j in range(len(element)):
             inplay.append(f"start{j}")
             for s in element[j].text:
                 if s == "\n":
