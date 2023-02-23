@@ -48,7 +48,7 @@ def _capture_screenshot(name):
 
 
 def pytest_configure(config):
-    config._metadata["Project Name"] = "MainB2Btest"
+    config._metadata["Project Name"] = "Mainproject"
     config._metadata['Module Name'] = "Test Place Bet"
     config._metadata['Tester'] = "Rock"
     config._metadata['Browser'] = "Chrome"
