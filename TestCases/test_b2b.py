@@ -176,7 +176,7 @@ class Test_B2Bcommonclass:
                     inplaymatch[i].click()
                     time.sleep(4)
                 except:
-                    continue
+                    pass
                 try:
                     for c in range(0, 4):
 
@@ -193,7 +193,7 @@ class Test_B2Bcommonclass:
                     self.cc.clicklogo()
                 if "success" in alertmessage or "0Unknown Error" in alertmessage:
                     break
-                elif i == inplay-1 and "success" not in alertmessage:
+                if i == inplay-1 and "success" not in alertmessage:
                     self.cc.inplay = False
                     break
                 self.cc.clicklogo()
