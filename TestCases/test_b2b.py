@@ -203,7 +203,9 @@ class Test_B2Bcommonclass:
 
         if not self.cc.inplay:
             self.cc.clicklogo()
+            self.driver.find_element(By.TAG_NAME, "Body").send_keys(Keys.PAGE_DOWN)
             countmanualodds = self.driver.find_elements(By.XPATH, self.cc.manualodds_xpath)
+            self.driver.find_element(By.TAG_NAME, "Body").send_keys(Keys.PAGE_UP)
             for q in range(0, len(countmanualodds)):
                 for dj in range(0, q+3):
                     self.driver.find_element(By.TAG_NAME, "Body").send_keys(Keys.ARROW_DOWN)
