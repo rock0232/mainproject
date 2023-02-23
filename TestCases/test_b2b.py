@@ -268,6 +268,7 @@ class Test_B2Bcommonclass:
                 else:
                     try:
                         self.logger.error("Test Failed")
+                        self.logger.info("Wallet balance and Exposure Balance is not Updated After Bet place")
                         self.logger.info("Message After Place Bet %s", alertmessage)
                         self.logger.info("User Login With %s", self.username)
                         self.logger.info("Wallet Amount Before Place Bet %s", prewalletamount)
