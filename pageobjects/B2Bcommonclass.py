@@ -45,9 +45,19 @@ class B2Bcommonclass:
     #//div[contains(text(),' Match Odds')]//parent::div[contains(@class,'bet-semiheader is-hidden is-show')]
     logo_class = "brand-logo"
     slidesports_xpath = "//ngx-slick-carousel[@class='slider slick-initialized slick-slider']//button[@aria-label='Next'][normalize-space()='Next']"
+    sidebarinplaylogo_xpath = "//div[@class='sports-icon inplay']"
+    inplaytext_xpath = "//span[normalize-space()='In Play']"
+    inplaylist_CSS = "header .sidenav .upcoming-event ul li a"
 
     def __init__(self, driver):
         self.driver = driver
+
+    def clickinplay(self):
+        a = ActionChains(self.driver)
+        element1 = self.driver.find_element(By.XPATH, self.sidebarinplaylogo_xpath)
+        element2 = self.driver.find_element(By.XPATH, self.inplaytext_xpath)
+        act = a.move_to_element(element1).click(element2)
+        act.perform()
 
     def clicklogo(self):
         self.driver.find_element(By.CLASS_NAME, self.logo_class).click()

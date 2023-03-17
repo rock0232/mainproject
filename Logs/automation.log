@@ -1,3 +1,345 @@
 02/23/2023 11:44:40 AM: INFO: Test Passed
 02/23/2023 11:44:40 AM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
 02/23/2023 11:44:40 AM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+02/25/2023 10:15:29 AM: INFO: Test Passed
+02/25/2023 10:15:29 AM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+02/25/2023 10:15:29 AM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+02/25/2023 10:41:14 AM: INFO: Test Passed
+02/25/2023 10:41:14 AM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+02/25/2023 10:41:14 AM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+02/25/2023 11:36:31 AM: INFO: Test Passed
+02/25/2023 11:36:31 AM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+02/25/2023 11:36:31 AM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+02/25/2023 02:55:35 PM: INFO: Bet Not Place Message After PLace Bet 
+02/25/2023 03:01:45 PM: INFO: Test Passed
+02/25/2023 03:01:45 PM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+02/25/2023 03:01:45 PM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+02/25/2023 03:06:33 PM: INFO: Test Passed
+02/25/2023 03:06:33 PM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+02/25/2023 03:06:33 PM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+02/27/2023 10:51:34 AM: INFO: Test Passed
+02/27/2023 10:51:34 AM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+02/27/2023 10:51:34 AM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+02/27/2023 11:22:00 AM: INFO: Bet Not Place Message After PLace Bet 
+02/27/2023 11:23:26 AM: INFO: Test Passed
+02/27/2023 11:23:26 AM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+02/27/2023 11:23:26 AM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+02/27/2023 11:24:52 AM: INFO: Test Passed
+02/27/2023 11:24:52 AM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+02/27/2023 11:24:52 AM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+02/27/2023 11:34:32 AM: INFO: Test Passed
+02/27/2023 11:34:32 AM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+02/27/2023 11:34:32 AM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+02/27/2023 11:41:29 AM: INFO: Test Passed
+02/27/2023 11:41:29 AM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+02/27/2023 11:41:29 AM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+02/27/2023 11:53:03 AM: INFO: Bet Not Place Message After PLace Bet The stake(s) you have entered are below the minimum 100.
+03/16/2023 06:00:50 PM: ERROR: Test Failed
+03/16/2023 06:00:50 PM: INFO: Wallet balance and Exposure Balance is not Updated After Bet place
+03/16/2023 06:00:50 PM: INFO: Message After Place Bet Bet has been placed successfully.
+03/16/2023 06:00:50 PM: INFO: User Login With rocktest
+03/16/2023 06:00:50 PM: INFO: Wallet Amount Before Place Bet 218302.86
+03/16/2023 06:00:50 PM: INFO: Wallet Amount After Place Bet 218302.86
+03/16/2023 06:00:50 PM: INFO: Bet Price 202
+03/16/2023 06:00:50 PM: INFO: Exposure Before Place Bet 202.0
+03/16/2023 06:00:50 PM: INFO: Exposure After Place Bet 202.0
+03/16/2023 06:00:50 PM: INFO: 
+03/16/2023 06:00:50 PM: INFO: ******************** Data From Dashboard Bet list ********************
+03/16/2023 06:00:50 PM: INFO: Bet Place Team Name is South Africa
+03/16/2023 06:00:50 PM: INFO: Bet Place On Back
+03/16/2023 06:00:50 PM: INFO: Bet Stake Amount is 202
+03/16/2023 06:00:50 PM: INFO: P/L on Bet Place is 62.62
+03/16/2023 06:00:55 PM: INFO: 
+03/16/2023 06:00:55 PM: INFO: ******************** Data From Open Bet Report ********************
+03/16/2023 06:00:55 PM: INFO: Bet Place Team Name In Open Bet Report is South Africa
+03/16/2023 06:00:55 PM: INFO: Bet Place Type In Open Bet Report is Back
+03/16/2023 06:00:55 PM: INFO: Bet Stake Amount In Open Bet Report is 202
+03/16/2023 06:00:55 PM: INFO: P/L On Bet Place In Open Bet Report is 62.62
+03/16/2023 06:30:36 PM: ERROR: Test Failed
+03/16/2023 06:30:36 PM: INFO: Wallet balance and Exposure Balance is not Updated After Bet place
+03/16/2023 06:30:36 PM: INFO: Message After Place Bet Bet has been placed successfully.
+03/16/2023 06:30:36 PM: INFO: User Login With rocktest
+03/16/2023 06:30:36 PM: INFO: Wallet Amount Before Place Bet 218100.86
+03/16/2023 06:30:36 PM: INFO: Wallet Amount After Place Bet 218100.86
+03/16/2023 06:30:36 PM: INFO: Bet Price 202
+03/16/2023 06:30:36 PM: INFO: Exposure Before Place Bet 404.0
+03/16/2023 06:30:36 PM: INFO: Exposure After Place Bet 404.0
+03/16/2023 06:30:36 PM: INFO: 
+03/16/2023 06:30:36 PM: INFO: ******************** Data From Dashboard Bet list ********************
+03/16/2023 06:30:36 PM: INFO: Bet Place Team Name is South Africa
+03/16/2023 06:30:36 PM: INFO: Bet Place On Back
+03/16/2023 06:30:36 PM: INFO: Bet Stake Amount is 202
+03/16/2023 06:30:36 PM: INFO: P/L on Bet Place is 62.62
+03/16/2023 06:30:41 PM: INFO: 
+03/16/2023 06:30:41 PM: INFO: ******************** Data From Open Bet Report ********************
+03/16/2023 06:30:41 PM: INFO: Bet Place Team Name In Open Bet Report is South Africa
+03/16/2023 06:30:41 PM: INFO: Bet Place Type In Open Bet Report is Back
+03/16/2023 06:30:41 PM: INFO: Bet Stake Amount In Open Bet Report is 202
+03/16/2023 06:30:41 PM: INFO: P/L On Bet Place In Open Bet Report is 62.62
+03/16/2023 06:34:20 PM: ERROR: Test Failed
+03/16/2023 06:34:20 PM: INFO: Wallet balance and Exposure Balance is not Updated After Bet place
+03/16/2023 06:34:20 PM: INFO: Message After Place Bet Bet has been placed successfully.
+03/16/2023 06:34:20 PM: INFO: User Login With rocktest
+03/16/2023 06:34:20 PM: INFO: Wallet Amount Before Place Bet 217898.86
+03/16/2023 06:34:20 PM: INFO: Wallet Amount After Place Bet 217898.86
+03/16/2023 06:34:20 PM: INFO: Bet Price 202
+03/16/2023 06:34:20 PM: INFO: Exposure Before Place Bet 606.0
+03/16/2023 06:34:20 PM: INFO: Exposure After Place Bet 606.0
+03/16/2023 06:34:20 PM: INFO: 
+03/16/2023 06:34:20 PM: INFO: ******************** Data From Dashboard Bet list ********************
+03/16/2023 06:34:20 PM: INFO: Bet Place Team Name is South Africa
+03/16/2023 06:34:20 PM: INFO: Bet Place On Back
+03/16/2023 06:34:20 PM: INFO: Bet Stake Amount is 202
+03/16/2023 06:34:20 PM: INFO: P/L on Bet Place is 62.62
+03/16/2023 06:34:26 PM: INFO: 
+03/16/2023 06:34:26 PM: INFO: ******************** Data From Open Bet Report ********************
+03/16/2023 06:34:26 PM: INFO: Bet Place Team Name In Open Bet Report is South Africa
+03/16/2023 06:34:26 PM: INFO: Bet Place Type In Open Bet Report is Back
+03/16/2023 06:34:26 PM: INFO: Bet Stake Amount In Open Bet Report is 202
+03/16/2023 06:34:26 PM: INFO: P/L On Bet Place In Open Bet Report is 62.62
+03/16/2023 06:37:14 PM: ERROR: Test Failed
+03/16/2023 06:37:14 PM: INFO: Wallet balance and Exposure Balance is not Updated After Bet place
+03/16/2023 06:37:14 PM: INFO: Message After Place Bet Bet has been placed successfully.
+03/16/2023 06:37:14 PM: INFO: User Login With rocktest
+03/16/2023 06:37:14 PM: INFO: Wallet Amount Before Place Bet 217696.86
+03/16/2023 06:37:14 PM: INFO: Wallet Amount After Place Bet 217696.86
+03/16/2023 06:37:14 PM: INFO: Bet Price 202
+03/16/2023 06:37:14 PM: INFO: Exposure Before Place Bet 808.0
+03/16/2023 06:37:14 PM: INFO: Exposure After Place Bet 808.0
+03/16/2023 06:37:14 PM: INFO: 
+03/16/2023 06:37:14 PM: INFO: ******************** Data From Dashboard Bet list ********************
+03/16/2023 06:37:14 PM: INFO: Bet Place Team Name is South Africa
+03/16/2023 06:37:14 PM: INFO: Bet Place On Back
+03/16/2023 06:37:14 PM: INFO: Bet Stake Amount is 202
+03/16/2023 06:37:14 PM: INFO: P/L on Bet Place is 62.62
+03/16/2023 06:37:19 PM: INFO: 
+03/16/2023 06:37:19 PM: INFO: ******************** Data From Open Bet Report ********************
+03/16/2023 06:37:19 PM: INFO: Bet Place Team Name In Open Bet Report is South Africa
+03/16/2023 06:37:19 PM: INFO: Bet Place Type In Open Bet Report is Back
+03/16/2023 06:37:19 PM: INFO: Bet Stake Amount In Open Bet Report is 202
+03/16/2023 06:37:19 PM: INFO: P/L On Bet Place In Open Bet Report is 62.62
+03/16/2023 06:41:46 PM: ERROR: Test Failed
+03/16/2023 06:41:46 PM: INFO: Wallet balance and Exposure Balance is not Updated After Bet place
+03/16/2023 06:41:46 PM: INFO: Message After Place Bet Bet has been placed successfully.
+03/16/2023 06:41:46 PM: INFO: User Login With rocktest
+03/16/2023 06:41:46 PM: INFO: Wallet Amount Before Place Bet 217494.86
+03/16/2023 06:41:46 PM: INFO: Wallet Amount After Place Bet 217494.86
+03/16/2023 06:41:46 PM: INFO: Bet Price 202
+03/16/2023 06:41:46 PM: INFO: Exposure Before Place Bet 1010.0
+03/16/2023 06:41:46 PM: INFO: Exposure After Place Bet 1010.0
+03/16/2023 06:41:46 PM: INFO: 
+03/16/2023 06:41:46 PM: INFO: ******************** Data From Dashboard Bet list ********************
+03/16/2023 06:41:46 PM: INFO: Bet Place Team Name is South Africa
+03/16/2023 06:41:46 PM: INFO: Bet Place On Back
+03/16/2023 06:41:46 PM: INFO: Bet Stake Amount is 202
+03/16/2023 06:41:46 PM: INFO: P/L on Bet Place is 62.62
+03/16/2023 06:41:52 PM: INFO: 
+03/16/2023 06:41:52 PM: INFO: ******************** Data From Open Bet Report ********************
+03/16/2023 06:41:52 PM: INFO: Bet Place Team Name In Open Bet Report is South Africa
+03/16/2023 06:41:52 PM: INFO: Bet Place Type In Open Bet Report is Back
+03/16/2023 06:41:52 PM: INFO: Bet Stake Amount In Open Bet Report is 202
+03/16/2023 06:41:52 PM: INFO: P/L On Bet Place In Open Bet Report is 62.62
+03/16/2023 06:47:19 PM: INFO: Test Passed
+03/16/2023 06:47:19 PM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+03/16/2023 06:47:19 PM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+03/16/2023 06:48:42 PM: INFO: Test Passed
+03/16/2023 06:48:42 PM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+03/16/2023 06:48:42 PM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+03/16/2023 06:49:26 PM: INFO: Test Passed
+03/16/2023 06:49:26 PM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+03/16/2023 06:49:26 PM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+03/16/2023 06:50:30 PM: INFO: Test Passed
+03/16/2023 06:50:30 PM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+03/16/2023 06:50:30 PM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+03/16/2023 06:51:55 PM: INFO: Test Passed
+03/16/2023 06:51:55 PM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+03/16/2023 06:51:55 PM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+03/16/2023 06:54:04 PM: INFO: Test Passed
+03/16/2023 06:54:04 PM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+03/16/2023 06:54:04 PM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+03/16/2023 06:55:09 PM: INFO: Test Passed
+03/16/2023 06:55:09 PM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+03/16/2023 06:55:09 PM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+03/16/2023 06:56:28 PM: INFO: Test Passed
+03/16/2023 06:56:28 PM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+03/16/2023 06:56:28 PM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+03/16/2023 06:57:14 PM: INFO: Test Passed
+03/16/2023 06:57:14 PM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+03/16/2023 06:57:14 PM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+03/16/2023 06:57:53 PM: INFO: Test Passed
+03/16/2023 06:57:53 PM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+03/16/2023 06:57:53 PM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+03/16/2023 06:58:46 PM: INFO: Test Passed
+03/16/2023 06:58:46 PM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+03/16/2023 06:58:46 PM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+03/16/2023 06:59:57 PM: INFO: Test Passed
+03/16/2023 06:59:57 PM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+03/16/2023 06:59:57 PM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+03/16/2023 07:00:58 PM: ERROR: Test Failed
+03/16/2023 07:00:58 PM: INFO: Wallet balance and Exposure Balance is not Updated After Bet place
+03/16/2023 07:00:58 PM: INFO: Message After Place Bet Bet has been placed successfully.
+03/16/2023 07:00:58 PM: INFO: User Login With rocktest
+03/16/2023 07:00:58 PM: INFO: Wallet Amount Before Place Bet 22622.39
+03/16/2023 07:00:58 PM: INFO: Wallet Amount After Place Bet 22622.39
+03/16/2023 07:00:58 PM: INFO: Bet Price 202
+03/16/2023 07:00:58 PM: INFO: Exposure Before Place Bet 606.0
+03/16/2023 07:00:58 PM: INFO: Exposure After Place Bet 606.0
+03/16/2023 07:00:58 PM: INFO: 
+03/16/2023 07:00:58 PM: INFO: ******************** Data From Dashboard Bet list ********************
+03/16/2023 07:00:58 PM: INFO: Bet Place Team Name is India
+03/16/2023 07:00:58 PM: INFO: Bet Place On Back
+03/16/2023 07:00:58 PM: INFO: Bet Stake Amount is 202
+03/16/2023 07:00:58 PM: INFO: P/L on Bet Place is 195.94
+03/16/2023 07:01:04 PM: INFO: 
+03/16/2023 07:01:04 PM: INFO: ******************** Data From Open Bet Report ********************
+03/16/2023 07:01:04 PM: INFO: Bet Place Team Name In Open Bet Report is India
+03/16/2023 07:01:04 PM: INFO: Bet Place Type In Open Bet Report is Back
+03/16/2023 07:01:04 PM: INFO: Bet Stake Amount In Open Bet Report is 202
+03/16/2023 07:01:04 PM: INFO: P/L On Bet Place In Open Bet Report is 195.94
+03/16/2023 07:02:28 PM: INFO: Test Passed
+03/16/2023 07:02:28 PM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+03/16/2023 07:02:28 PM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+03/16/2023 07:03:32 PM: INFO: Test Passed
+03/16/2023 07:03:32 PM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+03/16/2023 07:03:32 PM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+03/16/2023 07:04:26 PM: INFO: Test Passed
+03/16/2023 07:04:26 PM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+03/16/2023 07:04:26 PM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+03/16/2023 07:05:19 PM: INFO: Test Passed
+03/16/2023 07:05:19 PM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+03/16/2023 07:05:19 PM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+03/16/2023 07:06:13 PM: INFO: Test Passed
+03/16/2023 07:06:13 PM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+03/16/2023 07:06:13 PM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+03/16/2023 07:07:07 PM: INFO: Test Passed
+03/16/2023 07:07:07 PM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+03/16/2023 07:07:07 PM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+03/16/2023 07:08:00 PM: INFO: Test Passed
+03/16/2023 07:08:00 PM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+03/16/2023 07:08:00 PM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+03/16/2023 07:09:21 PM: INFO: Test Passed
+03/16/2023 07:09:21 PM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+03/16/2023 07:09:21 PM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+03/16/2023 07:10:17 PM: INFO: Test Passed
+03/16/2023 07:10:17 PM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+03/16/2023 07:10:17 PM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+03/16/2023 07:11:39 PM: INFO: Test Passed
+03/16/2023 07:11:39 PM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+03/16/2023 07:11:39 PM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+03/16/2023 07:12:31 PM: INFO: Test Passed
+03/16/2023 07:12:31 PM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+03/16/2023 07:12:31 PM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+03/16/2023 07:13:37 PM: INFO: Test Passed
+03/16/2023 07:13:37 PM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+03/16/2023 07:13:37 PM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+03/16/2023 07:14:30 PM: INFO: Test Passed
+03/16/2023 07:14:30 PM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+03/16/2023 07:14:30 PM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+03/16/2023 07:15:23 PM: INFO: Test Passed
+03/16/2023 07:15:23 PM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+03/16/2023 07:15:23 PM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+03/16/2023 07:19:48 PM: INFO: Test Passed
+03/16/2023 07:19:48 PM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+03/16/2023 07:19:48 PM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+03/16/2023 07:20:57 PM: INFO: Test Passed
+03/16/2023 07:20:57 PM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+03/16/2023 07:20:57 PM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+03/16/2023 07:21:50 PM: INFO: Test Passed
+03/16/2023 07:21:50 PM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+03/16/2023 07:21:50 PM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+03/16/2023 07:23:08 PM: INFO: Test Passed
+03/16/2023 07:23:08 PM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+03/16/2023 07:23:08 PM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+03/16/2023 07:23:08 PM: INFO: User Not login, Please Run This Test Again
+03/16/2023 07:28:34 PM: INFO: User Not login, Please Run This Test Again
+03/16/2023 07:28:38 PM: INFO: User Not login, Please Run This Test Again
+03/16/2023 07:30:41 PM: INFO: Test Passed
+03/16/2023 07:30:41 PM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+03/16/2023 07:30:41 PM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+03/16/2023 07:31:01 PM: INFO: Test Passed
+03/16/2023 07:31:01 PM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+03/16/2023 07:31:01 PM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+03/16/2023 07:35:56 PM: INFO: Test Passed
+03/16/2023 07:35:56 PM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+03/16/2023 07:35:56 PM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+03/16/2023 07:36:31 PM: INFO: User Not login, Please Run This Test Again
+03/16/2023 07:37:42 PM: INFO: Test Passed
+03/16/2023 07:37:42 PM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+03/16/2023 07:37:42 PM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+03/16/2023 07:39:14 PM: ERROR: Test Failed
+03/16/2023 07:39:14 PM: INFO: Wallet balance and Exposure Balance is not Updated After Bet place
+03/16/2023 07:39:14 PM: INFO: Message After Place Bet Bet has been placed successfully.
+03/16/2023 07:39:14 PM: INFO: User Login With rocktest
+03/16/2023 07:39:14 PM: INFO: Wallet Amount Before Place Bet 17976.39
+03/16/2023 07:39:14 PM: INFO: Wallet Amount After Place Bet 17572.39
+03/16/2023 07:39:14 PM: INFO: Bet Price 202
+03/16/2023 07:39:14 PM: INFO: Exposure Before Place Bet 5252.0
+03/16/2023 07:39:14 PM: INFO: Exposure After Place Bet 5656.0
+03/16/2023 07:39:14 PM: INFO: 
+03/16/2023 07:39:14 PM: INFO: ******************** Data From Dashboard Bet list ********************
+03/16/2023 07:39:14 PM: INFO: Bet Place Team Name is South Africa
+03/16/2023 07:39:14 PM: INFO: Bet Place On Back
+03/16/2023 07:39:14 PM: INFO: Bet Stake Amount is 202
+03/16/2023 07:39:14 PM: INFO: P/L on Bet Place is 60.6
+03/16/2023 07:39:16 PM: ERROR: Test Failed
+03/16/2023 07:39:16 PM: INFO: Wallet balance and Exposure Balance is not Updated After Bet place
+03/16/2023 07:39:16 PM: INFO: Message After Place Bet Bet has been placed successfully.
+03/16/2023 07:39:16 PM: INFO: User Login With rocktest
+03/16/2023 07:39:16 PM: INFO: Wallet Amount Before Place Bet 17976.39
+03/16/2023 07:39:16 PM: INFO: Wallet Amount After Place Bet 17572.39
+03/16/2023 07:39:16 PM: INFO: Bet Price 202
+03/16/2023 07:39:16 PM: INFO: Exposure Before Place Bet 5252.0
+03/16/2023 07:39:16 PM: INFO: Exposure After Place Bet 5656.0
+03/16/2023 07:39:16 PM: INFO: 
+03/16/2023 07:39:16 PM: INFO: ******************** Data From Dashboard Bet list ********************
+03/16/2023 07:39:16 PM: INFO: Bet Place Team Name is South Africa
+03/16/2023 07:39:16 PM: INFO: Bet Place On Back
+03/16/2023 07:39:16 PM: INFO: Bet Stake Amount is 202
+03/16/2023 07:39:16 PM: INFO: P/L on Bet Place is 60.6
+03/16/2023 07:39:20 PM: INFO: 
+03/16/2023 07:39:20 PM: INFO: ******************** Data From Open Bet Report ********************
+03/16/2023 07:39:20 PM: INFO: Bet Place Team Name In Open Bet Report is South Africa
+03/16/2023 07:39:20 PM: INFO: Bet Place Type In Open Bet Report is Back
+03/16/2023 07:39:20 PM: INFO: Bet Stake Amount In Open Bet Report is 202
+03/16/2023 07:39:20 PM: INFO: P/L On Bet Place In Open Bet Report is 60.6
+03/16/2023 07:39:21 PM: INFO: 
+03/16/2023 07:39:21 PM: INFO: ******************** Data From Open Bet Report ********************
+03/16/2023 07:39:21 PM: INFO: Bet Place Team Name In Open Bet Report is South Africa
+03/16/2023 07:39:21 PM: INFO: Bet Place Type In Open Bet Report is Back
+03/16/2023 07:39:21 PM: INFO: Bet Stake Amount In Open Bet Report is 202
+03/16/2023 07:39:21 PM: INFO: P/L On Bet Place In Open Bet Report is 60.6
+03/16/2023 07:40:29 PM: INFO: User Not login, Please Run This Test Again
+03/16/2023 07:40:38 PM: INFO: User Not login, Please Run This Test Again
+03/17/2023 09:58:35 AM: INFO: Test Passed
+03/17/2023 09:58:35 AM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+03/17/2023 09:58:35 AM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+03/17/2023 10:06:59 AM: INFO: Test Passed
+03/17/2023 10:06:59 AM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+03/17/2023 10:06:59 AM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+03/17/2023 10:17:44 AM: INFO: Test Passed
+03/17/2023 10:17:44 AM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+03/17/2023 10:17:44 AM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+03/17/2023 10:23:26 AM: INFO: Test Passed
+03/17/2023 10:23:26 AM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+03/17/2023 10:23:26 AM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+03/17/2023 10:26:37 AM: ERROR: Test Failed
+03/17/2023 10:26:37 AM: INFO: Wallet balance and Exposure Balance is not Updated After Bet place
+03/17/2023 10:26:37 AM: INFO: Message After Place Bet Bet has been placed successfully.
+03/17/2023 10:26:37 AM: INFO: User Login With rocktest
+03/17/2023 10:26:37 AM: INFO: Wallet Amount Before Place Bet 217696.86
+03/17/2023 10:26:37 AM: INFO: Wallet Amount After Place Bet 217292.86
+03/17/2023 10:26:37 AM: INFO: Bet Price 202
+03/17/2023 10:26:37 AM: INFO: Exposure Before Place Bet 808.0
+03/17/2023 10:26:37 AM: INFO: Exposure After Place Bet 1212.0
+03/17/2023 10:26:37 AM: INFO: 
+03/17/2023 10:26:37 AM: INFO: ******************** Data From Dashboard Bet list ********************
+03/17/2023 10:26:37 AM: INFO: Bet Place Team Name is Bangladesh
+03/17/2023 10:26:37 AM: INFO: Bet Place On Back
+03/17/2023 10:26:37 AM: INFO: Bet Stake Amount is 202
+03/17/2023 10:26:37 AM: INFO: P/L on Bet Place is 195.94
+03/17/2023 10:26:42 AM: INFO: 
+03/17/2023 10:26:42 AM: INFO: ******************** Data From Open Bet Report ********************
+03/17/2023 10:26:42 AM: INFO: Bet Place Team Name In Open Bet Report is Bangladesh
+03/17/2023 10:26:42 AM: INFO: Bet Place Type In Open Bet Report is Back
+03/17/2023 10:26:42 AM: INFO: Bet Stake Amount In Open Bet Report is 202
+03/17/2023 10:26:42 AM: INFO: P/L On Bet Place In Open Bet Report is 195.94
