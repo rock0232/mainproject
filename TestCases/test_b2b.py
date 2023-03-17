@@ -38,22 +38,15 @@ class Test_B2Bcommonclass:
     Sunexchange = "https://Sunexchange.in"
     sevenxbet = "https://7xbet.bet"
     saiexch24 = "https://saiexch24.com"
-    world247 = "https://world247.bet"
-    bisleriexch = "https://bisleriexch.com"
-    mk444 = "https://mk444.bet"
     lords99 = "https://lords99.com"
     bengal22 = "https://bengal22.bet"
     all365day = "https://all365day.com"
-    babaexc = "https://babaexc.in"
     Spworld365 = "https://Spworld365.com"
-    Lico000 = "https://Lico000.com"
     euro11 = "https://euro11.net"
     royalbet444 = "https://royalbet444.vip"
-    playwin247 = "https://playwin247"
-    futrebook = "https://futrebook.bet"
+    playwin247 = "https://playwin247.bet"
     jk3434 = "https://jk3434.bet"
     bajibet9 = "https://bajibet9.com"
-##########################################################
     abdexch = "https://abdexch.com/#/login"
     aura25 = "https://aura25.bet/#/login"
     badabet = "https://badaabet.com/#/login"
@@ -97,20 +90,6 @@ class Test_B2Bcommonclass:
         self.cc.setpassword(self.newpassword)
         self.cc.clicklogin()
 
-
-    @pytest.fixture(scope="function", autouse=False)
-    def futrebooklogin(self, setup):
-        self.driver = setup
-        self.driver.maximize_window()
-        self.cc = B2Bcommonclass(self.driver)
-        self.driver.get(self.futrebook)
-        time.sleep(5)
-        self.cc.clicksignin()
-        time.sleep(3)
-        self.cc.setusername(self.newusername)
-        self.cc.setpassword(self.newpassword)
-        self.cc.clicklogin()
-
     @pytest.fixture(scope="function", autouse=False)
     def playwin247login(self, setup):
         self.driver = setup
@@ -123,7 +102,6 @@ class Test_B2Bcommonclass:
         self.cc.setusername(self.newusername)
         self.cc.setpassword(self.newpassword)
         self.cc.clicklogin()
-
 
     @pytest.fixture(scope="function", autouse=False)
     def royalbet444login(self, setup):
@@ -138,7 +116,6 @@ class Test_B2Bcommonclass:
         self.cc.setpassword(self.newpassword)
         self.cc.clicklogin()
 
-
     @pytest.fixture(scope="function", autouse=False)
     def euro11login(self, setup):
         self.driver = setup
@@ -151,21 +128,6 @@ class Test_B2Bcommonclass:
         self.cc.setusername(self.newusername)
         self.cc.setpassword(self.newpassword)
         self.cc.clicklogin()
-
-
-    @pytest.fixture(scope="function", autouse=False)
-    def Lico000login(self, setup):
-        self.driver = setup
-        self.driver.maximize_window()
-        self.cc = B2Bcommonclass(self.driver)
-        self.driver.get(self.Lico000)
-        time.sleep(5)
-        self.cc.clicksignin()
-        time.sleep(3)
-        self.cc.setusername(self.newusername)
-        self.cc.setpassword(self.newpassword)
-        self.cc.clicklogin()
-
 
     @pytest.fixture(scope="function", autouse=False)
     def Spworld365login(self, setup):
@@ -180,21 +142,6 @@ class Test_B2Bcommonclass:
         self.cc.setpassword(self.newpassword)
         self.cc.clicklogin()
 
-
-    @pytest.fixture(scope="function", autouse=False)
-    def babaexclogin(self, setup):
-        self.driver = setup
-        self.driver.maximize_window()
-        self.cc = B2Bcommonclass(self.driver)
-        self.driver.get(self.babaexc)
-        time.sleep(5)
-        self.cc.clicksignin()
-        time.sleep(3)
-        self.cc.setusername(self.newusername)
-        self.cc.setpassword(self.newpassword)
-        self.cc.clicklogin()
-
-
     @pytest.fixture(scope="function", autouse=False)
     def all365daylogin(self, setup):
         self.driver = setup
@@ -207,7 +154,6 @@ class Test_B2Bcommonclass:
         self.cc.setusername(self.newusername)
         self.cc.setpassword(self.newpassword)
         self.cc.clicklogin()
-
 
     @pytest.fixture(scope="function", autouse=False)
     def bengal22login(self, setup):
@@ -222,7 +168,6 @@ class Test_B2Bcommonclass:
         self.cc.setpassword(self.newpassword)
         self.cc.clicklogin()
 
-
     @pytest.fixture(scope="function", autouse=False)
     def lords99login(self, setup):
         self.driver = setup
@@ -235,49 +180,6 @@ class Test_B2Bcommonclass:
         self.cc.setusername(self.newusername)
         self.cc.setpassword(self.newpassword)
         self.cc.clicklogin()
-
-
-    @pytest.fixture(scope="function", autouse=False)
-    def mk444login(self, setup):
-        self.driver = setup
-        self.driver.maximize_window()
-        self.cc = B2Bcommonclass(self.driver)
-        self.driver.get(self.mk444)
-        time.sleep(5)
-        self.cc.clicksignin()
-        time.sleep(3)
-        self.cc.setusername(self.newusername)
-        self.cc.setpassword(self.newpassword)
-        self.cc.clicklogin()
-
-
-    @pytest.fixture(scope="function", autouse=False)
-    def bisleriexchlogin(self, setup):
-        self.driver = setup
-        self.driver.maximize_window()
-        self.cc = B2Bcommonclass(self.driver)
-        self.driver.get(self.bisleriexch)
-        time.sleep(5)
-        self.cc.clicksignin()
-        time.sleep(3)
-        self.cc.setusername(self.newusername)
-        self.cc.setpassword(self.newpassword)
-        self.cc.clicklogin()
-
-
-    @pytest.fixture(scope="function", autouse=False)
-    def world247login(self, setup):
-        self.driver = setup
-        self.driver.maximize_window()
-        self.cc = B2Bcommonclass(self.driver)
-        self.driver.get(self.world247)
-        time.sleep(5)
-        self.cc.clicksignin()
-        time.sleep(3)
-        self.cc.setusername(self.newusername)
-        self.cc.setpassword(self.newpassword)
-        self.cc.clicklogin()
-
 
     @pytest.fixture(scope="function", autouse=False)
     def saiexch24login(self, setup):
@@ -292,7 +194,6 @@ class Test_B2Bcommonclass:
         self.cc.setpassword(self.newpassword)
         self.cc.clicklogin()
 
-
     @pytest.fixture(scope="function", autouse=False)
     def sevenxbetlogin(self, setup):
         self.driver = setup
@@ -305,7 +206,6 @@ class Test_B2Bcommonclass:
         self.cc.setusername(self.newusername)
         self.cc.setpassword(self.newpassword)
         self.cc.clicklogin()
-
 
     @pytest.fixture(scope="function", autouse=False)
     def Sunexchangelogin(self, setup):
@@ -320,7 +220,6 @@ class Test_B2Bcommonclass:
         self.cc.setpassword(self.newpassword)
         self.cc.clicklogin()
 
-
     @pytest.fixture(scope="function", autouse=False)
     def probet9login(self, setup):
         self.driver = setup
@@ -333,7 +232,6 @@ class Test_B2Bcommonclass:
         self.cc.setusername(self.newusername)
         self.cc.setpassword(self.newpassword)
         self.cc.clicklogin()
-
 
     @pytest.fixture(scope="function", autouse=False)
     def skyexch1login(self, setup):
@@ -348,7 +246,6 @@ class Test_B2Bcommonclass:
         self.cc.setpassword(self.newpassword)
         self.cc.clicklogin()
 
-
     @pytest.fixture(scope="function", autouse=False)
     def fancybooklogin(self, setup):
         self.driver = setup
@@ -361,7 +258,6 @@ class Test_B2Bcommonclass:
         self.cc.setusername(self.newusername)
         self.cc.setpassword(self.newpassword)
         self.cc.clicklogin()
-
 
     @pytest.fixture(scope="function", autouse=False)
     def gold9login(self, setup):
@@ -376,7 +272,6 @@ class Test_B2Bcommonclass:
         self.cc.setpassword(self.newpassword)
         self.cc.clicklogin()
 
-
     @pytest.fixture(scope="function", autouse=False)
     def spice11login(self, setup):
         self.driver = setup
@@ -389,7 +284,6 @@ class Test_B2Bcommonclass:
         self.cc.setusername(self.newusername)
         self.cc.setpassword(self.newpassword)
         self.cc.clicklogin()
-
 
     @pytest.fixture(scope="function", autouse=False)
     def nineskyexchlogin(self, setup):
@@ -404,7 +298,6 @@ class Test_B2Bcommonclass:
         self.cc.setpassword(self.newpassword)
         self.cc.clicklogin()
 
-
     @pytest.fixture(scope="function", autouse=False)
     def powerbetslogin(self, setup):
         self.driver = setup
@@ -417,7 +310,6 @@ class Test_B2Bcommonclass:
         self.cc.setusername(self.newusername)
         self.cc.setpassword(self.newpassword)
         self.cc.clicklogin()
-
 
     @pytest.fixture(scope="function", autouse=False)
     def bright99login(self, setup):
@@ -432,7 +324,6 @@ class Test_B2Bcommonclass:
         self.cc.setpassword(self.newpassword)
         self.cc.clicklogin()
 
-
     @pytest.fixture(scope="function", autouse=False)
     def khelo365login(self, setup):
         self.driver = setup
@@ -445,7 +336,6 @@ class Test_B2Bcommonclass:
         self.cc.setusername(self.newusername)
         self.cc.setpassword(self.newpassword)
         self.cc.clicklogin()
-
 
     @pytest.fixture(scope="function", autouse=False)
     def orange11login(self, setup):
@@ -460,7 +350,6 @@ class Test_B2Bcommonclass:
         self.cc.setpassword(self.newpassword)
         self.cc.clicklogin()
 
-
     @pytest.fixture(scope="function", autouse=False)
     def cricbuzlogin(self, setup):
         self.driver = setup
@@ -473,7 +362,6 @@ class Test_B2Bcommonclass:
         self.cc.setusername(self.newusername)
         self.cc.setpassword(self.newpassword)
         self.cc.clicklogin()
-
 
     @pytest.fixture(scope="function", autouse=False)
     def runexchlogin(self, setup):
@@ -488,7 +376,6 @@ class Test_B2Bcommonclass:
         self.cc.setpassword(self.newpassword)
         self.cc.clicklogin()
 
-
     @pytest.fixture(scope="function", autouse=False)
     def winexchlogin(self, setup):
         self.driver = setup
@@ -502,7 +389,6 @@ class Test_B2Bcommonclass:
         self.cc.setpassword(self.newpassword)
         self.cc.clicklogin()
 
-
     @pytest.fixture(scope="function", autouse=False)
     def elevenwonderlogin(self, setup):
         self.driver = setup
@@ -515,7 +401,6 @@ class Test_B2Bcommonclass:
         self.cc.setusername(self.newusername)
         self.cc.setpassword(self.newpassword)
         self.cc.clicklogin()
- #######################################################
 
     @pytest.fixture(scope="function", autouse=False)
     def probook9login(self, setup):
@@ -595,7 +480,6 @@ class Test_B2Bcommonclass:
         self.cc.setpassword(self.newpassword)
         self.cc.clicklogin()
 
-
     @pytest.fixture(scope="function", autouse=False)
     def aura24login(self, setup):
         self.driver = setup
@@ -609,7 +493,6 @@ class Test_B2Bcommonclass:
         self.cc.setpassword(self.newpassword)
         self.cc.clicklogin()
 
-###################################################################################################
     @pytest.fixture(scope="function", autouse=False)
     def aura25login(self, setup):
         self.driver = setup
@@ -1013,8 +896,6 @@ class Test_B2Bcommonclass:
             assert False
         self.newfunction()
 
-#####################################################################
-
     @pytest.mark.runall
     @pytest.mark.b2bmarker
     def test_aura24(self, aura24login):
@@ -1025,7 +906,6 @@ class Test_B2Bcommonclass:
             self.logger.info("User Not login, Please Run This Test Again")
             assert False
         self.newfunction()
-
 
     @pytest.mark.runall
     @pytest.mark.b2bmarker
@@ -1038,7 +918,6 @@ class Test_B2Bcommonclass:
             assert False
         self.newfunction()
 
-
     @pytest.mark.runall
     @pytest.mark.b2bmarker
     def test_greenexch(self, greenexchlogin):
@@ -1049,7 +928,6 @@ class Test_B2Bcommonclass:
             self.logger.info("User Not login, Please Run This Test Again")
             assert False
         self.newfunction()
-
 
     @pytest.mark.runall
     @pytest.mark.b2bmarker
@@ -1062,7 +940,6 @@ class Test_B2Bcommonclass:
             assert False
         self.newfunction()
 
-
     @pytest.mark.runall
     @pytest.mark.b2bmarker
     def test_parkinplay(self, parkinplaylogin):
@@ -1073,7 +950,6 @@ class Test_B2Bcommonclass:
             self.logger.info("User Not login, Please Run This Test Again")
             assert False
         self.newfunction()
-
 
     @pytest.mark.runall
     @pytest.mark.b2bmarker
@@ -1086,7 +962,6 @@ class Test_B2Bcommonclass:
             assert False
         self.newfunction()
 
-
     @pytest.mark.runall
     @pytest.mark.b2bmarker
     def test_probook9(self, probook9login):
@@ -1097,7 +972,6 @@ class Test_B2Bcommonclass:
             self.logger.info("User Not login, Please Run This Test Again")
             assert False
         self.newfunction()
-
 
     @pytest.mark.runall
     @pytest.mark.b2bmarker
@@ -1110,7 +984,6 @@ class Test_B2Bcommonclass:
             assert False
         self.newfunction()
 
-
     @pytest.mark.runall
     @pytest.mark.b2bmarker
     def test_winexch(self, winexchlogin):
@@ -1121,7 +994,6 @@ class Test_B2Bcommonclass:
             self.logger.info("User Not login, Please Run This Test Again")
             assert False
         self.newfunction()
-
 
     @pytest.mark.runall
     @pytest.mark.b2bmarker
@@ -1134,7 +1006,6 @@ class Test_B2Bcommonclass:
             assert False
         self.newfunction()
 
-
     @pytest.mark.runall
     @pytest.mark.b2bmarker
     def test_cricbuz(self, cricbuzlogin):
@@ -1145,7 +1016,6 @@ class Test_B2Bcommonclass:
             self.logger.info("User Not login, Please Run This Test Again")
             assert False
         self.newfunction()
-
 
     @pytest.mark.runall
     @pytest.mark.b2bmarker
@@ -1158,7 +1028,6 @@ class Test_B2Bcommonclass:
             assert False
         self.newfunction()
 
-
     @pytest.mark.runall
     @pytest.mark.b2bmarker
     def test_khelo365(self, khelo365login):
@@ -1169,7 +1038,6 @@ class Test_B2Bcommonclass:
             self.logger.info("User Not login, Please Run This Test Again")
             assert False
         self.newfunction()
-
 
     @pytest.mark.runall
     @pytest.mark.b2bmarker
@@ -1182,7 +1050,6 @@ class Test_B2Bcommonclass:
             assert False
         self.newfunction()
 
-
     @pytest.mark.runall
     @pytest.mark.b2bmarker
     def test_powerbets(self, powerbetslogin):
@@ -1193,7 +1060,6 @@ class Test_B2Bcommonclass:
             self.logger.info("User Not login, Please Run This Test Again")
             assert False
         self.newfunction()
-
 
     @pytest.mark.runall
     @pytest.mark.b2bmarker
@@ -1206,7 +1072,6 @@ class Test_B2Bcommonclass:
             assert False
         self.newfunction()
 
-
     @pytest.mark.runall
     @pytest.mark.b2bmarker
     def test_spice11(self, spice11login):
@@ -1217,7 +1082,6 @@ class Test_B2Bcommonclass:
             self.logger.info("User Not login, Please Run This Test Again")
             assert False
         self.newfunction()
-
 
     @pytest.mark.runall
     @pytest.mark.b2bmarker
@@ -1230,7 +1094,6 @@ class Test_B2Bcommonclass:
             assert False
         self.newfunction()
 
-
     @pytest.mark.runall
     @pytest.mark.b2bmarker
     def test_fancybook(self, fancybooklogin):
@@ -1241,7 +1104,6 @@ class Test_B2Bcommonclass:
             self.logger.info("User Not login, Please Run This Test Again")
             assert False
         self.newfunction()
-
 
     @pytest.mark.runall
     @pytest.mark.b2bmarker
@@ -1254,7 +1116,6 @@ class Test_B2Bcommonclass:
             assert False
         self.newfunction()
 
-
     @pytest.mark.runall
     @pytest.mark.b2bmarker
     def test_probet9login(self, probet9login):
@@ -1266,7 +1127,6 @@ class Test_B2Bcommonclass:
             assert False
         self.newfunction()
 
-    @pytest.mark.newrunall1
     @pytest.mark.runall
     @pytest.mark.b2bmarker
     def test_Sunexchange(self, Sunexchangelogin):
@@ -1278,7 +1138,6 @@ class Test_B2Bcommonclass:
             assert False
         self.newfunction()
 
-    @pytest.mark.newrunall1
     @pytest.mark.runall
     @pytest.mark.b2bmarker
     def test_sevenxbet(self, sevenxbetlogin):
@@ -1293,7 +1152,6 @@ class Test_B2Bcommonclass:
 
     @pytest.mark.runall
     @pytest.mark.b2bmarker
-    @pytest.mark.newrunall1
     def test_saiexch24(self, saiexch24login):
         try:
             login = WebDriverWait(self.driver, 15).until(
@@ -1303,49 +1161,8 @@ class Test_B2Bcommonclass:
             assert False
         self.newfunction()
 
-
     @pytest.mark.runall
     @pytest.mark.b2bmarker
-    @pytest.mark.newrunall1
-    def test_world247(self, world247login):
-        try:
-            login = WebDriverWait(self.driver, 15).until(
-                EC.visibility_of_element_located((By.TAG_NAME, "app-dashboard")))
-        except:
-            self.logger.info("User Not login, Please Run This Test Again")
-            assert False
-        self.newfunction()
-
-
-    @pytest.mark.runall
-    @pytest.mark.b2bmarker
-    @pytest.mark.newrunall1
-    def test_bisleriexch(self, bisleriexchlogin):
-        try:
-            login = WebDriverWait(self.driver, 15).until(
-                EC.visibility_of_element_located((By.TAG_NAME, "app-dashboard")))
-        except:
-            self.logger.info("User Not login, Please Run This Test Again")
-            assert False
-        self.newfunction()
-
-
-    @pytest.mark.runall
-    @pytest.mark.b2bmarker
-    @pytest.mark.newrunall1
-    def test_mk444(self, mk444login):
-        try:
-            login = WebDriverWait(self.driver, 15).until(
-                EC.visibility_of_element_located((By.TAG_NAME, "app-dashboard")))
-        except:
-            self.logger.info("User Not login, Please Run This Test Again")
-            assert False
-        self.newfunction()
-
-
-    @pytest.mark.runall
-    @pytest.mark.b2bmarker
-    @pytest.mark.newrunall1
     def test_lords99(self, lords99login):
         try:
             login = WebDriverWait(self.driver, 15).until(
@@ -1355,10 +1172,8 @@ class Test_B2Bcommonclass:
             assert False
         self.newfunction()
 
-
     @pytest.mark.runall
     @pytest.mark.b2bmarker
-    @pytest.mark.newrunall1
     def test_bengal22(self, bengal22login):
         try:
             login = WebDriverWait(self.driver, 15).until(
@@ -1368,10 +1183,8 @@ class Test_B2Bcommonclass:
             assert False
         self.newfunction()
 
-
     @pytest.mark.runall
     @pytest.mark.b2bmarker
-    @pytest.mark.newrunall1
     def test_all365day(self, all365daylogin):
         try:
             login = WebDriverWait(self.driver, 15).until(
@@ -1381,23 +1194,8 @@ class Test_B2Bcommonclass:
             assert False
         self.newfunction()
 
-
     @pytest.mark.runall
     @pytest.mark.b2bmarker
-    @pytest.mark.newrunall1
-    def test_babaexc(self, babaexclogin):
-        try:
-            login = WebDriverWait(self.driver, 15).until(
-                EC.visibility_of_element_located((By.TAG_NAME, "app-dashboard")))
-        except:
-            self.logger.info("User Not login, Please Run This Test Again")
-            assert False
-        self.newfunction()
-
-
-    @pytest.mark.runall
-    @pytest.mark.b2bmarker
-    @pytest.mark.newrunall1
     def test_Spworld365(self, Spworld365login):
         try:
             login = WebDriverWait(self.driver, 15).until(
@@ -1407,23 +1205,8 @@ class Test_B2Bcommonclass:
             assert False
         self.newfunction()
 
-
     @pytest.mark.runall
     @pytest.mark.b2bmarker
-    @pytest.mark.newrunall1
-    def test_Lico000(self, Lico000login):
-        try:
-            login = WebDriverWait(self.driver, 15).until(
-                EC.visibility_of_element_located((By.TAG_NAME, "app-dashboard")))
-        except:
-            self.logger.info("User Not login, Please Run This Test Again")
-            assert False
-        self.newfunction()
-
-
-    @pytest.mark.runall
-    @pytest.mark.b2bmarker
-    @pytest.mark.newrunall1
     def test_euro11(self, euro11login):
         try:
             login = WebDriverWait(self.driver, 15).until(
@@ -1433,10 +1216,8 @@ class Test_B2Bcommonclass:
             assert False
         self.newfunction()
 
-
     @pytest.mark.runall
     @pytest.mark.b2bmarker
-    @pytest.mark.newrunall1
     def test_royalbet444(self, royalbet444login):
         try:
             login = WebDriverWait(self.driver, 15).until(
@@ -1446,10 +1227,8 @@ class Test_B2Bcommonclass:
             assert False
         self.newfunction()
 
-
     @pytest.mark.runall
     @pytest.mark.b2bmarker
-    @pytest.mark.newrunall1
     def test_playwin247(self, playwin247login):
         try:
             login = WebDriverWait(self.driver, 15).until(
@@ -1459,23 +1238,8 @@ class Test_B2Bcommonclass:
             assert False
         self.newfunction()
 
-
     @pytest.mark.runall
     @pytest.mark.b2bmarker
-    @pytest.mark.newrunall1
-    def test_futrebook(self, futrebooklogin):
-        try:
-            login = WebDriverWait(self.driver, 15).until(
-                EC.visibility_of_element_located((By.TAG_NAME, "app-dashboard")))
-        except:
-            self.logger.info("User Not login, Please Run This Test Again")
-            assert False
-        self.newfunction()
-
-
-    @pytest.mark.runall
-    @pytest.mark.b2bmarker
-    @pytest.mark.newrunall1
     def test_jk3434(self, jk3434login):
         try:
             login = WebDriverWait(self.driver, 15).until(
@@ -1485,10 +1249,8 @@ class Test_B2Bcommonclass:
             assert False
         self.newfunction()
 
-
     @pytest.mark.runall
     @pytest.mark.b2bmarker
-    @pytest.mark.newrunall1
     def test_bajibet9(self, bajibet9login):
         try:
             login = WebDriverWait(self.driver, 15).until(
