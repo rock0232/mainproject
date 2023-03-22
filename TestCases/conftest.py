@@ -6,20 +6,21 @@ import pytest
 from pathlib import Path
 from pytest_html import html_report
 
+
+def get_project_root() -> Path:
+    return Path(__file__).parent.parent
+
 @pytest.fixture()
 def setup():
     global driver
-    serv_obj = Service('.//chromedriver.exe')
+    filepath = get_project_root()
+    serv_obj = Service(f'{filepath}/chromedriver.exe')
     driver = webdriver.Chrome(service=serv_obj)
     driver.implicitly_wait(10)
     return driver
 
 def pytest_html_report_title(report):
     report.title = "Test Result Report"
-
-
-def get_project_root() -> Path:
-    return Path(__file__).parent.parent
 
 @pytest.hookimpl(hookwrapper=True)
 def pytest_runtest_makereport(item, call):
