@@ -14,7 +14,7 @@ def get_project_root() -> Path:
 def setup():
     global driver
     filepath = get_project_root()
-    serv_obj = Service(f'{filepath}/chromedriver.exe')
+    serv_obj = Service(f'{filepath}\chromedriver.exe')
     driver = webdriver.Chrome(service=serv_obj)
     driver.implicitly_wait(10)
     return driver
