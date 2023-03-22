@@ -22,6 +22,7 @@ def get_project_root() -> Path:
 @pytest.fixture()
 def setup():
     # Initialize Chrome Driver
+    global driver
     chrome_options = webdriver.ChromeOptions()
     chrome_options.add_argument('--headless')
     driver = webdriver.Chrome(options=chrome_options)
