@@ -13,5 +13,7 @@ RUN pip install -r requirements.txt
 # Expose 5001 as unused ports for testing purposes
 
 # EXPOSE 8000 8080
-ENV GROUP-["pytest","aura25"]
+# ENV GROUP-["pytest","aura25"]
 # CMD ["pytest", "-m aura25 -s -v --capture=sys --html=Reports/aura26TestReport.html --self-contained-html /src/TestCases/"]
+
+CMD [ "pytest", "-vv", "-s", "test_selenium.py" ]
