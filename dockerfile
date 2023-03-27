@@ -1,30 +1,21 @@
-FROM python:3.10-alpine
+#RUN apt update -y
+
+#FROM python:3.10-alpine
 
 # Install Chrome WebDriver
-RUN CHROMEDRIVER_VERSION=`curl -sS chromedriver.storage.googleapis.com/LATEST_RELEASE` && \
-    mkdir -p /opt/chromedriver-$CHROMEDRIVER_VERSION && \
-    curl -sS -o /tmp/chromedriver_linux64.zip http://chromedriver.storage.googleapis.com/$CHROMEDRIVER_VERSION/chromedriver_linux64.zip && \
-    unzip -qq /tmp/chromedriver_linux64.zip -d /opt/chromedriver-$CHROMEDRIVER_VERSION && \
-    rm /tmp/chromedriver_linux64.zip && \
-    chmod +x /opt/chromedriver-$CHROMEDRIVER_VERSION/chromedriver && \
-    ln -fs /opt/chromedriver-$CHROMEDRIVER_VERSION/chromedriver /usr/local/bin/chromedriver
+
 
 # Install Google Chrome
-RUN curl -sS -o - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add - && \
-    echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list && \
-    apt-get -yqq update && \
-    apt-get -yqq install google-chrome-stable && \
-    rm -rf /var/lib/apt/lists/*
 
-WORKDIR /src
+# #WORKDIR /src
 
-COPY . .
+# #COPY . .
 
-ADD requirements.txt /src
+# #ADD requirements.txt /src
 
-RUN pip install --upgrade pip
+##RUN pip install --upgrade pip
 
-RUN pip install -r requirements.txt
+##RUN pip install -r requirements.txt
 
 
 # Expose 5001 as unused ports for testing purposes
@@ -33,4 +24,34 @@ RUN pip install -r requirements.txt
 # ENV GROUP-["pytest","aura25"]
 # CMD ["pytest", "-m aura25 -s -v --capture=sys --html=Reports/aura26TestReport.html --self-contained-html /src/TestCases/"]
 
-CMD [ "pytest", "-m aura25", "-vv", "-s", "--capture=sys", "--html=Reports/aura26TestReport.html", "--self-contained-html" , "/src/TestCases/" ]
+##CMD [ "pytest", "-m aura25", "-vv", "-s", "--capture=sys", "--html=Reports/aura26TestReport.html", "--self-contained-html" , "/src/TestCases/" ]
+
+# FROM ubuntu
+
+RUN apt update -y
+
+WORKDIR app
+
+COPY . /app/
+
+RUN apt install -y wget unzip
+
+ARG DEBIAN_FRONTEND=noninteractive
+
+RUN apt-get install -y tzdata
+
+CHROME_VERSION=”google-chrome-stable”
+CHROME_MAJOR_VERSION=$(google-chrome --version | sed -E "s/.* ([0–9]+)(\.[0–9]+){3}.*/\1/")
+#.    Please note that the steps mentioned below now can be 
+#.    replaced with Web driver manager which do the the download
+#.    and setup of driver
+CHROME_DRIVER_VERSION=$(wget — no-verbose -O — “https://chromedriver.storage.googleapis.com/LATEST_RELEASE_${CHROME_MAJOR_VERSION}");
+echo “Using chromedriver version: “$CHROME_DRIVER_VERSION
+wget — no-verbose -O /tmp/chromedriver_linux64.zip https://chromedriver.storage.googleapis.com/$CHROME_DRIVER_VERSION/chromedriver_linux64.zip
+rm -rf /opt/selenium/chromedriver
+unzip /tmp/chromedriver_linux64.zip -d /opt/selenium
+rm /tmp/chromedriver_linux64.zip
+mv /opt/selenium/chromedriver /opt/selenium/chromedriver-$CHROME_DRIVER_VERSION
+chmod 755 /opt/selenium/chromedriver-$CHROME_DRIVER_VERSION
+ln -fs /opt/selenium/chromedriver-$CHROME_DRIVER_VERSION /usr/bin/chromedriver
+
