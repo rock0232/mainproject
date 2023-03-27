@@ -16,4 +16,4 @@ RUN pip install -r requirements.txt
 # ENV GROUP-["pytest","aura25"]
 # CMD ["pytest", "-m aura25 -s -v --capture=sys --html=Reports/aura26TestReport.html --self-contained-html /src/TestCases/"]
 
-CMD [ "pytest", "-m aura25", "-vv", "-s", "/src/TestCases/" ]
+CMD [ "pytest", "-m aura25", "-vv", "-s", "--capture=sys", "--html=Reports/aura26TestReport.html", "--self-contained-html" , "/src/TestCases/" ]
