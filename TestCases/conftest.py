@@ -9,32 +9,32 @@ from pytest_html import html_report
 
 def get_project_root() -> Path:
     return Path(__file__).parent.parent
-#
-# @pytest.fixture()
-# def setup():
-#     global driver
-#     filepath = get_project_root()
-#     # serv_obj = Service(f'{filepath}/chromedriver.exe')
-#     # serv_obj = Service("/var/lib/jenkins/workspace/demo/chromedriver.exe")
-#     serv_obj = Service("/chromedriver.exe")
-#     # driver = webdriver.Chrome(executable_path="f{filepath}/chromedriver.exe")
-#     driver = webdriver.Chrome(service=serv_obj)
-#     driver.implicitly_wait(10)
-#     return driver
 
 @pytest.fixture()
 def setup():
-    # Initialize Chrome Driver
     global driver
-    chrome_options = webdriver.ChromeOptions()
-    chrome_options.add_argument('--headless')
-    driver = webdriver.Chrome(options=chrome_options)
+    filepath = get_project_root()
+    # serv_obj = Service(f'{filepath}/chromedriver.exe')
+    # serv_obj = Service("/var/lib/jenkins/workspace/demo/chromedriver.exe")
+    serv_obj = Service("/var/lib/jenkins/workspace/demo/chromedriver.exe")
+    # driver = webdriver.Chrome(executable_path="f{filepath}/chromedriver.exe")
+    driver = webdriver.Chrome(service=serv_obj)
+    driver.implicitly_wait(10)
+    return driver
 
-    # Return Chrome Driver instance
-    yield driver
+# @pytest.fixture()
+# def setup():
+#     # Initialize Chrome Driver
+#     global driver
+#     chrome_options = webdriver.ChromeOptions()
+#     chrome_options.add_argument('--headless')
+#     driver = webdriver.Chrome(options=chrome_options)
 
-    # Teardown Chrome Driver instance
-    driver.quit()
+#     # Return Chrome Driver instance
+#     yield driver
+
+#     # Teardown Chrome Driver instance
+#     driver.quit()
 
 
 def pytest_html_report_title(report):
