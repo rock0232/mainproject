@@ -14,17 +14,17 @@ def get_project_root() -> Path:
 def setup():
     global driver
     filepath = get_project_root()
-    # serv_obj = Service(f'{filepath}/chromedriver.exe')
+    serv_obj = Service(f'{filepath}/chromedriver.exe')
     # serv_obj = Service("/var/lib/jenkins/workspace/demo/chromedriver.exe")
     # serv_obj = Service("/var/lib/jenkins/workspace/demo/chromedriver.exe")
     
     # live server 
     
-    serv_obj = Service("/var/lib/jenkins/workspace/demo/google-chrome-stable_current_amd64.deb")
+#     serv_obj = Service("/var/lib/jenkins/workspace/demo/google-chrome-stable_current_amd64.deb")
     
     # driver = webdriver.Chrome(executable_path="f{filepath}/chromedriver.exe")
-    driver = webdriver.Chrome()
-    # driver = webdriver.Chrome(service=serv_obj)
+#     driver = webdriver.Chrome()
+    driver = webdriver.Chrome(service=serv_obj)
     driver.implicitly_wait(10)
     return driver
 
