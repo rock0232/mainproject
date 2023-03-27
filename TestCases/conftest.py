@@ -14,7 +14,7 @@ def get_project_root() -> Path:
 def setup():
     global driver
     filepath = get_project_root()
-    serv_obj = Service(f'{filepath}/chromedriver.exe')
+    # serv_obj = Service(f'{filepath}/chromedriver.exe')
     # serv_obj = Service("/var/lib/jenkins/workspace/demo/chromedriver.exe")
     # serv_obj = Service("/var/lib/jenkins/workspace/demo/chromedriver.exe")
     
