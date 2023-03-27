@@ -24,7 +24,7 @@ def setup():
     
     # driver = webdriver.Chrome(executable_path="f{filepath}/chromedriver.exe")
 #     driver = webdriver.Chrome()
-    driver = webdriver.Chrome(service=serv_obj)
+    driver = webdriver.Chrome(f'{filepath}/chromedriver.exe')
     driver.implicitly_wait(10)
     return driver
 

@@ -28,11 +28,13 @@
 
 # FROM ubuntu
 
-RUN apt update -y
+# RUN apt update -y
 
 WORKDIR app
 
 COPY . /app/
+
+ADD requirements.txt /app
 
 RUN apt install -y wget unzip
 
@@ -55,3 +57,4 @@ mv /opt/selenium/chromedriver /opt/selenium/chromedriver-$CHROME_DRIVER_VERSION
 chmod 755 /opt/selenium/chromedriver-$CHROME_DRIVER_VERSION
 ln -fs /opt/selenium/chromedriver-$CHROME_DRIVER_VERSION /usr/bin/chromedriver
 
+CMD [ "pytest", "-m aura25", "-v", "-s", "--capture=sys", "--html=Reports/aura26TestReport.html", "--self-contained-html" , "/app/TestCases/" ]
