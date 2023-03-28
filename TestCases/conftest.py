@@ -20,11 +20,12 @@ def setup():
     
     # live server 
     
-#     serv_obj = Service("/var/lib/jenkins/workspace/demo/google-chrome-stable_current_amd64.deb")
+    # serv_obj = Service("/var/lib/jenkins/workspace/demo/google-chrome-stable_current_amd64.deb")
     
     # driver = webdriver.Chrome(executable_path="f{filepath}/chromedriver.exe")
-#     driver = webdriver.Chrome()
-    driver = webdriver.Chrome(f'{filepath}/chromedriver.exe')
+    # driver = webdriver.Chrome()
+    # driver = webdriver.Chrome(f'{filepath}/chromedriver.exe')
+    driver = webdriver.Chrome("/usr/local/bin/chromedriver.deb")
     driver.implicitly_wait(10)
     return driver
 
