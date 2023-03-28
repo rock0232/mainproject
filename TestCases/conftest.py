@@ -1,7 +1,7 @@
 import os
 import sys
 from selenium import webdriver
-from selenium.webdriver.chrome.service import Service
+# from selenium.webdriver.chrome.service import Service
 import pytest
 from pathlib import Path
 from pytest_html import html_report
