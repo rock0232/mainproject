@@ -21,7 +21,7 @@ def setup():
     global driver
     chrome_options = Options()
     filepath = get_project_root()
-    serv_obj = Service(f'{filepath}/chromedriver.exe')
+    serv_obj = Service("/var/lib/jenkins/workspace/demo/chromedriver")
     chrome_options.add_argument('--headless')
     # optional
     chrome_options.add_argument('--no-sandbox')
