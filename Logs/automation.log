@@ -455,3 +455,9 @@
 03/29/2023 12:55:33 PM: INFO: Get LATEST chromedriver version for google-chrome 111.0.5563
 03/29/2023 12:55:42 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\111.0.5563\chromedriver.exe] found in cache
 03/29/2023 12:56:45 PM: INFO: Bet Not Place Message After PLace Bet 
+03/29/2023 01:07:25 PM: INFO: ====== WebDriver manager ======
+03/29/2023 01:07:25 PM: INFO: Get LATEST chromedriver version for google-chrome 111.0.5563
+03/29/2023 01:07:26 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\111.0.5563\chromedriver.exe] found in cache
+03/29/2023 01:08:35 PM: INFO: Test Passed
+03/29/2023 01:08:35 PM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+03/29/2023 01:08:35 PM: INFO: Wallet Amount And Exposure are Updated After Place Bet
