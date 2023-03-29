@@ -81,7 +81,7 @@ def pytest_runtest_makereport(item, call):
         if (report.skipped and xfail) or (report.failed and not xfail):
             file_name = report.nodeid.replace("::", "_") + ".png"
             _capture_screenshot(file_name)
-            file_path = f"http://206.189.134.183:8000/{file_name}"
+            file_path = f"http://206.189.134.183:8000/TestCases/{file_name}"
             if file_name:
                 html = '<div> <img src="%s"' \
                        ' alt="screenshot" style="width:304px;height:228px;" ' \
