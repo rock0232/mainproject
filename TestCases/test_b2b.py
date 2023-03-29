@@ -782,6 +782,7 @@ class Test_B2Bcommonclass:
     @pytest.mark.b2bmarker
     @pytest.mark.aura25
     def test_aura25(self, aura25login):
+        assert False
         try:
             login = WebDriverWait(self.driver, 15).until(EC.visibility_of_element_located((By.TAG_NAME, "app-dashboard")))
         except:
