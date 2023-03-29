@@ -67,7 +67,7 @@ class Test_B2Bcommonclass:
     @pytest.fixture(scope="function", autouse=False)
     def bajibet9login(self, setup):
         self.driver = setup
-        self.driver.maximize_window()
+        self.driver.set_window_size(1366,768)
         self.cc = B2Bcommonclass(self.driver)
         self.driver.get(self.bajibet9)
         time.sleep(5)
@@ -81,7 +81,7 @@ class Test_B2Bcommonclass:
     @pytest.fixture(scope="function", autouse=False)
     def jk3434login(self, setup):
         self.driver = setup
-        self.driver.maximize_window()
+        self.driver.set_window_size(1366,768)
         self.cc = B2Bcommonclass(self.driver)
         self.driver.get(self.jk3434)
         time.sleep(5)
@@ -94,7 +94,7 @@ class Test_B2Bcommonclass:
     @pytest.fixture(scope="function", autouse=False)
     def playwin247login(self, setup):
         self.driver = setup
-        self.driver.maximize_window()
+        self.driver.set_window_size(1366,768)
         self.cc = B2Bcommonclass(self.driver)
         self.driver.get(self.playwin247)
         time.sleep(5)
@@ -107,7 +107,7 @@ class Test_B2Bcommonclass:
     @pytest.fixture(scope="function", autouse=False)
     def royalbet444login(self, setup):
         self.driver = setup
-        self.driver.maximize_window()
+        self.driver.set_window_size(1366,768)
         self.cc = B2Bcommonclass(self.driver)
         self.driver.get(self.royalbet444)
         time.sleep(5)
@@ -120,7 +120,7 @@ class Test_B2Bcommonclass:
     @pytest.fixture(scope="function", autouse=False)
     def euro11login(self, setup):
         self.driver = setup
-        self.driver.maximize_window()
+        self.driver.set_window_size(1366,768)
         self.cc = B2Bcommonclass(self.driver)
         self.driver.get(self.euro11)
         time.sleep(5)
@@ -133,7 +133,7 @@ class Test_B2Bcommonclass:
     @pytest.fixture(scope="function", autouse=False)
     def Spworld365login(self, setup):
         self.driver = setup
-        self.driver.maximize_window()
+        self.driver.set_window_size(1366,768)
         self.cc = B2Bcommonclass(self.driver)
         self.driver.get(self.Spworld365)
         time.sleep(5)
@@ -146,7 +146,7 @@ class Test_B2Bcommonclass:
     @pytest.fixture(scope="function", autouse=False)
     def all365daylogin(self, setup):
         self.driver = setup
-        self.driver.maximize_window()
+        self.driver.set_window_size(1366,768)
         self.cc = B2Bcommonclass(self.driver)
         self.driver.get(self.all365day)
         time.sleep(5)
@@ -159,7 +159,7 @@ class Test_B2Bcommonclass:
     @pytest.fixture(scope="function", autouse=False)
     def bengal22login(self, setup):
         self.driver = setup
-        self.driver.maximize_window()
+        self.driver.set_window_size(1366,768)
         self.cc = B2Bcommonclass(self.driver)
         self.driver.get(self.bengal22)
         time.sleep(5)
@@ -172,7 +172,7 @@ class Test_B2Bcommonclass:
     @pytest.fixture(scope="function", autouse=False)
     def lords99login(self, setup):
         self.driver = setup
-        self.driver.maximize_window()
+        self.driver.set_window_size(1366,768)
         self.cc = B2Bcommonclass(self.driver)
         self.driver.get(self.lords99)
         time.sleep(5)
@@ -185,7 +185,7 @@ class Test_B2Bcommonclass:
     @pytest.fixture(scope="function", autouse=False)
     def saiexch24login(self, setup):
         self.driver = setup
-        self.driver.maximize_window()
+        self.driver.set_window_size(1366,768)
         self.cc = B2Bcommonclass(self.driver)
         self.driver.get(self.saiexch24)
         time.sleep(5)
@@ -198,7 +198,7 @@ class Test_B2Bcommonclass:
     @pytest.fixture(scope="function", autouse=False)
     def sevenxbetlogin(self, setup):
         self.driver = setup
-        self.driver.maximize_window()
+        self.driver.set_window_size(1366,768)
         self.cc = B2Bcommonclass(self.driver)
         self.driver.get(self.sevenxbet)
         time.sleep(5)
@@ -211,7 +211,7 @@ class Test_B2Bcommonclass:
     @pytest.fixture(scope="function", autouse=False)
     def Sunexchangelogin(self, setup):
         self.driver = setup
-        self.driver.maximize_window()
+        self.driver.set_window_size(1366,768)
         self.cc = B2Bcommonclass(self.driver)
         self.driver.get(self.Sunexchange)
         time.sleep(5)
@@ -224,7 +224,7 @@ class Test_B2Bcommonclass:
     @pytest.fixture(scope="function", autouse=False)
     def probet9login(self, setup):
         self.driver = setup
-        self.driver.maximize_window()
+        self.driver.set_window_size(1366,768)
         self.cc = B2Bcommonclass(self.driver)
         self.driver.get(self.probet9)
         time.sleep(5)
@@ -237,7 +237,7 @@ class Test_B2Bcommonclass:
     @pytest.fixture(scope="function", autouse=False)
     def skyexch1login(self, setup):
         self.driver = setup
-        self.driver.maximize_window()
+        self.driver.set_window_size(1366,768)
         self.cc = B2Bcommonclass(self.driver)
         self.driver.get(self.skyexch1)
         time.sleep(5)
@@ -250,7 +250,7 @@ class Test_B2Bcommonclass:
     @pytest.fixture(scope="function", autouse=False)
     def fancybooklogin(self, setup):
         self.driver = setup
-        self.driver.maximize_window()
+        self.driver.set_window_size(1366,768)
         self.cc = B2Bcommonclass(self.driver)
         self.driver.get(self.fancybook)
         time.sleep(5)
@@ -263,7 +263,7 @@ class Test_B2Bcommonclass:
     @pytest.fixture(scope="function", autouse=False)
     def gold9login(self, setup):
         self.driver = setup
-        self.driver.maximize_window()
+        self.driver.set_window_size(1366,768)
         self.cc = B2Bcommonclass(self.driver)
         self.driver.get(self.gold9)
         time.sleep(5)
@@ -276,7 +276,7 @@ class Test_B2Bcommonclass:
     @pytest.fixture(scope="function", autouse=False)
     def spice11login(self, setup):
         self.driver = setup
-        self.driver.maximize_window()
+        self.driver.set_window_size(1366,768)
         self.cc = B2Bcommonclass(self.driver)
         self.driver.get(self.spice11)
         time.sleep(5)
@@ -289,7 +289,7 @@ class Test_B2Bcommonclass:
     @pytest.fixture(scope="function", autouse=False)
     def nineskyexchlogin(self, setup):
         self.driver = setup
-        self.driver.maximize_window()
+        self.driver.set_window_size(1366,768)
         self.cc = B2Bcommonclass(self.driver)
         self.driver.get(self.nineskyexch)
         time.sleep(5)
@@ -302,7 +302,7 @@ class Test_B2Bcommonclass:
     @pytest.fixture(scope="function", autouse=False)
     def powerbetslogin(self, setup):
         self.driver = setup
-        self.driver.maximize_window()
+        self.driver.set_window_size(1366,768)
         self.cc = B2Bcommonclass(self.driver)
         self.driver.get(self.powerbets)
         time.sleep(5)
@@ -315,7 +315,7 @@ class Test_B2Bcommonclass:
     @pytest.fixture(scope="function", autouse=False)
     def bright99login(self, setup):
         self.driver = setup
-        self.driver.maximize_window()
+        self.driver.set_window_size(1366,768)
         self.cc = B2Bcommonclass(self.driver)
         self.driver.get(self.bright99)
         time.sleep(5)
@@ -328,7 +328,7 @@ class Test_B2Bcommonclass:
     @pytest.fixture(scope="function", autouse=False)
     def khelo365login(self, setup):
         self.driver = setup
-        self.driver.maximize_window()
+        self.driver.set_window_size(1366,768)
         self.cc = B2Bcommonclass(self.driver)
         self.driver.get(self.khelo365)
         time.sleep(5)
@@ -341,7 +341,7 @@ class Test_B2Bcommonclass:
     @pytest.fixture(scope="function", autouse=False)
     def orange11login(self, setup):
         self.driver = setup
-        self.driver.maximize_window()
+        self.driver.set_window_size(1366,768)
         self.cc = B2Bcommonclass(self.driver)
         self.driver.get(self.orange11)
         time.sleep(5)
@@ -354,7 +354,7 @@ class Test_B2Bcommonclass:
     @pytest.fixture(scope="function", autouse=False)
     def cricbuzlogin(self, setup):
         self.driver = setup
-        self.driver.maximize_window()
+        self.driver.set_window_size(1366,768)
         self.cc = B2Bcommonclass(self.driver)
         self.driver.get(self.cricbuz)
         time.sleep(5)
@@ -367,7 +367,7 @@ class Test_B2Bcommonclass:
     @pytest.fixture(scope="function", autouse=False)
     def runexchlogin(self, setup):
         self.driver = setup
-        self.driver.maximize_window()
+        self.driver.set_window_size(1366,768)
         self.cc = B2Bcommonclass(self.driver)
         self.driver.get(self.runexch)
         time.sleep(5)
@@ -380,7 +380,7 @@ class Test_B2Bcommonclass:
     @pytest.fixture(scope="function", autouse=False)
     def winexchlogin(self, setup):
         self.driver = setup
-        self.driver.maximize_window()
+        self.driver.set_window_size(1366,768)
         self.cc = B2Bcommonclass(self.driver)
         self.driver.get(self.winexch)
         time.sleep(5)
@@ -393,7 +393,7 @@ class Test_B2Bcommonclass:
     @pytest.fixture(scope="function", autouse=False)
     def elevenwonderlogin(self, setup):
         self.driver = setup
-        self.driver.maximize_window()
+        self.driver.set_window_size(1366,768)
         self.cc = B2Bcommonclass(self.driver)
         self.driver.get(self.elevenwonder)
         time.sleep(5)
@@ -406,7 +406,7 @@ class Test_B2Bcommonclass:
     @pytest.fixture(scope="function", autouse=False)
     def probook9login(self, setup):
         self.driver = setup
-        self.driver.maximize_window()
+        self.driver.set_window_size(1366,768)
         self.cc = B2Bcommonclass(self.driver)
         self.driver.get(self.butterflyexch)
         time.sleep(5)
@@ -419,7 +419,7 @@ class Test_B2Bcommonclass:
     @pytest.fixture(scope="function", autouse=False)
     def butterflyexchlogin(self, setup):
         self.driver = setup
-        self.driver.maximize_window()
+        self.driver.set_window_size(1366,768)
         self.cc = B2Bcommonclass(self.driver)
         self.driver.get(self.butterflyexch)
         time.sleep(5)
@@ -432,7 +432,7 @@ class Test_B2Bcommonclass:
     @pytest.fixture(scope="function", autouse=False)
     def parkinplaylogin(self, setup):
         self.driver = setup
-        self.driver.maximize_window()
+        self.driver.set_window_size(1366,768)
         self.cc = B2Bcommonclass(self.driver)
         self.driver.get(self.parkinplay)
         time.sleep(5)
@@ -445,7 +445,7 @@ class Test_B2Bcommonclass:
     @pytest.fixture(scope="function", autouse=False)
     def best365login(self, setup):
         self.driver = setup
-        self.driver.maximize_window()
+        self.driver.set_window_size(1366,768)
         self.cc = B2Bcommonclass(self.driver)
         self.driver.get(self.best365)
         time.sleep(5)
@@ -458,7 +458,7 @@ class Test_B2Bcommonclass:
     @pytest.fixture(scope="function", autouse=False)
     def greenexchlogin(self, setup):
         self.driver = setup
-        self.driver.maximize_window()
+        self.driver.set_window_size(1366,768)
         self.cc = B2Bcommonclass(self.driver)
         self.driver.get(self.greenexch)
         time.sleep(5)
@@ -471,7 +471,7 @@ class Test_B2Bcommonclass:
     @pytest.fixture(scope="function", autouse=False)
     def parklogin(self, setup):
         self.driver = setup
-        self.driver.maximize_window()
+        self.driver.set_window_size(1366,768)
         self.cc = B2Bcommonclass(self.driver)
         self.driver.get(self.park)
         time.sleep(5)
@@ -484,7 +484,7 @@ class Test_B2Bcommonclass:
     @pytest.fixture(scope="function", autouse=False)
     def aura24login(self, setup):
         self.driver = setup
-        self.driver.maximize_window()
+        self.driver.set_window_size(1366,768)
         self.cc = B2Bcommonclass(self.driver)
         self.driver.get(self.aura24)
         time.sleep(5)
@@ -510,7 +510,7 @@ class Test_B2Bcommonclass:
     @pytest.fixture(scope="function", autouse=False)
     def abdlogin(self, setup):
         self.driver = setup
-        self.driver.maximize_window()
+        self.driver.set_window_size(1366,768)
         self.cc = B2Bcommonclass(self.driver)
         self.driver.get(self.abdexch)
         time.sleep(5)
@@ -523,7 +523,7 @@ class Test_B2Bcommonclass:
     @pytest.fixture(scope="function", autouse=False)
     def badabetlogin(self, setup):
         self.driver = setup
-        self.driver.maximize_window()
+        self.driver.set_window_size(1366,768)
         self.cc = B2Bcommonclass(self.driver)
         self.driver.get(self.badabet)
         time.sleep(5)
@@ -536,7 +536,7 @@ class Test_B2Bcommonclass:
     @pytest.fixture(scope="function", autouse=False)
     def infinitylogin(self, setup):
         self.driver = setup
-        self.driver.maximize_window()
+        self.driver.set_window_size(1366,768)
         self.cc = B2Bcommonclass(self.driver)
         self.driver.get(self.infinity)
         time.sleep(5)
@@ -549,7 +549,7 @@ class Test_B2Bcommonclass:
     @pytest.fixture(scope="function", autouse=False)
     def user365login(self, setup):
         self.driver = setup
-        self.driver.maximize_window()
+        self.driver.set_window_size(1366,768)
         self.cc = B2Bcommonclass(self.driver)
         self.driver.get(self.user365)
         time.sleep(5)
@@ -562,7 +562,7 @@ class Test_B2Bcommonclass:
     @pytest.fixture(scope="function", autouse=False)
     def only333login(self, setup):
         self.driver = setup
-        self.driver.maximize_window()
+        self.driver.set_window_size(1366,768)
         self.cc = B2Bcommonclass(self.driver)
         self.driver.get(self.only333)
         time.sleep(5)
@@ -575,7 +575,7 @@ class Test_B2Bcommonclass:
     @pytest.fixture(scope="function", autouse=False)
     def pk7login(self, setup):
         self.driver = setup
-        self.driver.maximize_window()
+        self.driver.set_window_size(1366,768)
         self.cc = B2Bcommonclass(self.driver)
         self.driver.get(self.pk7)
         time.sleep(5)
@@ -588,7 +588,7 @@ class Test_B2Bcommonclass:
     @pytest.fixture(scope="function", autouse=False)
     def gamexlogin(self, setup):
         self.driver = setup
-        self.driver.maximize_window()
+        self.driver.set_window_size(1366,768)
         self.cc = B2Bcommonclass(self.driver)
         self.driver.get(self.gamex)
         time.sleep(5)
@@ -601,7 +601,7 @@ class Test_B2Bcommonclass:
     @pytest.fixture(scope="function", autouse=False)
     def aura26login(self, setup):
         self.driver = setup
-        self.driver.maximize_window()
+        self.driver.set_window_size(1366,768)
         self.cc = B2Bcommonclass(self.driver)
         self.driver.get(self.aura26)
         time.sleep(5)
@@ -614,7 +614,7 @@ class Test_B2Bcommonclass:
     @pytest.fixture(scope="function", autouse=False)
     def xtra999login(self, setup):
         self.driver = setup
-        self.driver.maximize_window()
+        self.driver.set_window_size(1366,768)
         self.cc = B2Bcommonclass(self.driver)
         self.driver.get(self.xtra999)
         time.sleep(5)
