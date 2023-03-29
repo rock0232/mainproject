@@ -5,7 +5,7 @@ from selenium.webdriver.chrome.service import Service
 import pytest
 from pathlib import Path
 from pytest_html import html_report
-
+from selenium.webdriver.chrome.options import Options
 
 def get_project_root() -> Path:
     return Path(__file__).parent.parent
@@ -26,8 +26,8 @@ def setup():
     # optional
     chrome_options.add_argument('--disable-dev-shm-usage')
 
-    driver = webdriver.Chrome(ChromeDriverManager().install(),options=chrome_options)
-
+    # driver = webdriver.Chrome(ChromeDriverManager().install(),options=chrome_options)
+    driver = webdriver.Chrome(executable_path='/var/lib/jenkins/workspace/demo/chromedriver', options=chrome_options)
 
 # @pytest.fixture()
 # def setup():

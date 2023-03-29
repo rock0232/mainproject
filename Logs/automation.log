@@ -392,3 +392,6 @@
 03/29/2023 11:56:13 AM: INFO: ====== WebDriver manager ======
 03/29/2023 11:56:14 AM: INFO: Get LATEST chromedriver version for google-chrome 111.0.5563
 03/29/2023 11:56:14 AM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\111.0.5563\chromedriver.exe] found in cache
+03/29/2023 12:09:52 PM: INFO: ====== WebDriver manager ======
+03/29/2023 12:09:55 PM: INFO: Get LATEST chromedriver version for google-chrome 111.0.5563
+03/29/2023 12:09:58 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\111.0.5563\chromedriver.exe] found in cache
