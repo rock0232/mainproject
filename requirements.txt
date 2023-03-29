@@ -4,3 +4,4 @@ pytest-html == 3.2.0
 pytest-parallel == 0.1.1
 pytest-xdist == 3.2.1
 webdrivermanager
+webdriver_manager
