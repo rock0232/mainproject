@@ -10,6 +10,25 @@ from pytest_html import html_report
 def get_project_root() -> Path:
     return Path(__file__).parent.parent
 
+
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.chrome.service import Service
+from webdriver_manager.chrome import ChromeDriverManager
+
+@pytest.fixture()
+def setup():
+    global driver
+    chrome_options = Options()
+    chrome_options.add_argument('--headless')
+    # optional
+    chrome_options.add_argument('--no-sandbox')
+    # optional
+    chrome_options.add_argument('--disable-dev-shm-usage')
+
+    driver = webdriver.Chrome(ChromeDriverManager().install(),options=chrome_options)
+
+
 # @pytest.fixture()
 # def setup():
 #     global driver
@@ -28,19 +47,19 @@ def get_project_root() -> Path:
 #     driver.implicitly_wait(10)
 #     return driver
 
-@pytest.fixture()
-def setup():
-    # Initialize Chrome Driver
-    global driver
-    chrome_options = webdriver.ChromeOptions()
-    chrome_options.add_argument('--headless')
-    driver = webdriver.Chrome(options=chrome_options)
-
-    # Return Chrome Driver instance
-    yield driver
-
-    # Teardown Chrome Driver instance
-    driver.quit()
+# @pytest.fixture()
+# def setup():
+#     # Initialize Chrome Driver
+#     global driver
+#     chrome_options = webdriver.ChromeOptions()
+#     chrome_options.add_argument('--headless')
+#     driver = webdriver.Chrome(options=chrome_options)
+#
+#     # Return Chrome Driver instance
+#     yield driver
+#
+#     # Teardown Chrome Driver instance
+#     driver.quit()
 
 
 def pytest_html_report_title(report):
