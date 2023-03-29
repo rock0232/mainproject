@@ -26,8 +26,8 @@ def setup():
     # optional
     chrome_options.add_argument('--disable-dev-shm-usage')
 
-    # driver = webdriver.Chrome(ChromeDriverManager().install(),options=chrome_options)
-    driver = webdriver.Chrome(executable_path='/var/lib/jenkins/workspace/demo/chromedriver', options=chrome_options)
+    driver = webdriver.Chrome(ChromeDriverManager().install(),options=chrome_options)
+    # driver = webdriver.Chrome(executable_path='/var/lib/jenkins/workspace/demo/chromedriver', options=chrome_options)
 
 # @pytest.fixture()
 # def setup():
