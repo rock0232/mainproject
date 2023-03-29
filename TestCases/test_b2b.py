@@ -497,7 +497,7 @@ class Test_B2Bcommonclass:
     @pytest.fixture(scope="function", autouse=False)
     def aura25login(self,setup):
         self.driver = setup
-        self.driver.maximize_window()
+        self.driver.set_window_size(1366,768)
         self.cc = B2Bcommonclass(self.driver)
         self.driver.get(self.aura25)
         time.sleep(5)
