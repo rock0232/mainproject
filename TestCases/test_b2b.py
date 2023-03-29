@@ -6,6 +6,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from utilities.customlogger import Logger
+from TestCases.conftest import setup
 from pageobjects.B2Bcommonclass import B2Bcommonclass
 
 
@@ -494,7 +495,7 @@ class Test_B2Bcommonclass:
         self.cc.clicklogin()
 
     @pytest.fixture(scope="function", autouse=False)
-    def aura25login(self, setup):
+    def aura25login(self,setup):
         self.driver = setup
         self.driver.maximize_window()
         self.cc = B2Bcommonclass(self.driver)
