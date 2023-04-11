@@ -26,7 +26,7 @@ def setup():
     driver = webdriver.Chrome(ChromeDriverManager().install(),options=chrome_options)
     driver.implicitly_wait(10)
     yield driver
-    driver.quit()
+    # driver.quit()
 
 # @pytest.fixture()
 # def setup():
