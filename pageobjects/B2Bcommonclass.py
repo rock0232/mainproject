@@ -40,7 +40,7 @@ class B2Bcommonclass:
     wintossback_xpath = "//div[contains(text(),' TO WIN THE TOSS ')]//ancestor::app-market-type//child::div[contains(@class,'team-market')]//child::div[contains(@class,'notranslate bet-value v-blue back-1')]"
     manualodds_xpath = "//div//a[contains(@title,'ManualODD: 2')]"
     manualbetprice_xpath = "//form[@class='form-inline ng-untouched ng-pristine ng-valid']/div/div/div[2]/div[2]/input"
-    inplay = False
+    inplay = True
     inactivemarket_xpath = "//div[contains(text(),' Match Odds')]//ancestor::div[contains(@class,'bet-semiheader is-hidden is-show')]//following-sibling::div[contains(@class,'bet-list is-hidden is-show')]/div/div[2]/div"
     #//div[contains(text(),' Match Odds')]//parent::div[contains(@class,'bet-semiheader is-hidden is-show')]
     logo_class = "brand-logo"
@@ -48,6 +48,7 @@ class B2Bcommonclass:
     sidebarinplaylogo_xpath = "//div[@class='sports-icon inplay']"
     inplaytext_xpath = "//span[normalize-space()='In Play']"
     inplaylist_CSS = "header .sidenav .upcoming-event ul li a"
+    homebutton = "//ul[@class='left']//a[@class='active']"
 
     def __init__(self, driver):
         self.driver = driver
@@ -57,6 +58,7 @@ class B2Bcommonclass:
         element1 = self.driver.find_element(By.XPATH, self.sidebarinplaylogo_xpath)
         element2 = self.driver.find_element(By.XPATH, self.inplaytext_xpath)
         act = a.move_to_element(element1).click(element2)
+        time.sleep(1)
         act.perform()
 
     def clicklogo(self):

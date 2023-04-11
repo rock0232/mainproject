@@ -16,26 +16,26 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 
-# @pytest.fixture()
-# def setup():
-#     global driver
-#     chrome_options = Options()
-#     chrome_options.add_argument('--headless')
-#     chrome_options.add_argument('--no-sandbox')
-#     chrome_options.add_argument('--disable-dev-shm-usage')
-#     driver = webdriver.Chrome(ChromeDriverManager().install(),options=chrome_options)
-#     driver.implicitly_wait(10)
-#     yield driver
-#     driver.quit()
-
 @pytest.fixture()
 def setup():
     global driver
-    filepath = get_project_root()
-    serv_obj = Service(f'{filepath}/chromedriver.exe')
-    driver = webdriver.Chrome(service=serv_obj)
+    chrome_options = Options()
+    chrome_options.add_argument('--headless')
+    chrome_options.add_argument('--no-sandbox')
+    chrome_options.add_argument('--disable-dev-shm-usage')
+    driver = webdriver.Chrome(ChromeDriverManager().install(),options=chrome_options)
     driver.implicitly_wait(10)
-    return driver
+    yield driver
+    driver.quit()
+
+# @pytest.fixture()
+# def setup():
+#     global driver
+#     filepath = get_project_root()
+#     serv_obj = Service(f'{filepath}/chromedriver.exe')
+#     driver = webdriver.Chrome(service=serv_obj)
+#     driver.implicitly_wait(10)
+#     return driver
 
 def pytest_html_report_title(report):
     report.title = "Test Result Report"
@@ -53,8 +53,8 @@ def pytest_runtest_makereport(item, call):
         if (report.skipped and xfail) or (report.failed and not xfail):
             file_name = report.nodeid.replace("::", "_") + ".png"
             _capture_screenshot(file_name)
-            # file_path = f"http://206.189.134.183:8000/{file_name}"
-            file_path = f"{filepath}/{file_name}"
+            file_path = f"http://206.189.134.183:8000/{file_name}"
+            # file_path = f"{filepath}/{file_name}"
             if file_name:
                 html = '<div> <img src="%s"' \
                        ' alt="screenshot" style="width:304px;height:228px;" ' \

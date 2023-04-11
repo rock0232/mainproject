@@ -629,80 +629,58 @@ class Test_B2Bcommonclass:
         self.cc = B2Bcommonclass(self.driver)
         self.cc.clickclose()
         time.sleep(2)
-        totalmatches, inplay = self.cc.getinplaymatchcount()
         prewalletamount = self.cc.getwalletamount()
         preexposure = self.cc.getliability()
+        element = self.driver.find_elements(By.XPATH, self.cc.manualodds_xpath)
+        for sc in range(0,len(element)):
+            element1 = self.driver.find_elements(By.XPATH, self.cc.manualodds_xpath)
+            self.driver.execute_script("arguments[0].scrollIntoView();", element1[sc])
+            time.sleep(2)
+            element1[sc].click()
+            time.sleep(5)
+            backelement = self.driver.find_element(By.XPATH, self.cc.wintossback_xpath)
+            self.driver.execute_script("arguments[0].scrollIntoView();", backelement)
+            time.sleep(1)
+            self.driver.find_element(By.XPATH, self.cc.wintossback_xpath).click()
+            self.driver.find_element(By.XPATH, self.cc.manualbetprice_xpath).clear()
+            self.driver.find_element(By.XPATH, self.cc.manualbetprice_xpath).send_keys(self.betprice)
+            self.cc.clickplacebet()
+            alertmessage = self.cc.getalertmessage()
+            if "success" in alertmessage:
+                self.cc.inplay = False
+                break
+            else:
+                self.cc.clicklogo()
 
         if self.cc.inplay:
-            for i in range(0, inplay):
-                for dp in range(0,3+i):
-                    self.driver.find_element(By.TAG_NAME, "body").send_keys(Keys.ARROW_DOWN)
-                try:
-                    inplaymatch = self.driver.find_elements(By.XPATH, self.cc.inplay_xpath)
-                    inplaymatch[i].click()
-                    time.sleep(4)
-                except:
-                    pass
+            self.cc.clickinplay()
+            totalinplaymatches = self.driver.find_elements(By.CSS_SELECTOR, self.cc.inplaylist_CSS)
+            for s in range(0, len(totalinplaymatches)):
+                time.sleep(5)
+                matches = self.driver.find_elements(By.CSS_SELECTOR, self.cc.inplaylist_CSS)
+                self.driver.execute_script("arguments[0].scrollIntoView();",matches[s])
+                time.sleep(2)
+                matches[s].click()
+                time.sleep(5)
                 try:
                     for c in range(0, 4):
-
                         self.cc.clickbackrate()
                         self.cc.setbetprice(self.betprice)
                         self.cc.clickplacebet()
-                        alertmessage = self.cc.getalertmessage()
-                        time.sleep(7)
+                        alertmessage = WebDriverWait(self.driver, 15).until(
+            EC.visibility_of_element_located((By.CLASS_NAME, self.cc.alertmessage_class))).text
+                        # time.sleep(7)
                         if "success" in alertmessage or "0Unknown Error" in alertmessage or "Rate Exposure limit" in alertmessage:
                             break
                         else:
                             self.cc.clickbackrate()
                 except:
                     self.cc.clicklogo()
-                if "success" in alertmessage or "0Unknown Error" in alertmessage:
+                if "success" in alertmessage:
+                    assert "success" in alertmessage
                     break
-                if i == inplay-1:
-                    self.cc.inplay = False
-                    break
-                self.cc.clicklogo()
-                time.sleep(2)
-                for s in range(0, 3):
-                    self.driver.find_element(By.TAG_NAME, "body").send_keys(Keys.ARROW_DOWN)
-
-        if not self.cc.inplay:
-            self.cc.clicklogo()
-            self.driver.find_element(By.TAG_NAME, "Body").send_keys(Keys.PAGE_DOWN)
-            countmanualodds = self.driver.find_elements(By.XPATH, self.cc.manualodds_xpath)
-            self.driver.find_element(By.TAG_NAME, "Body").send_keys(Keys.PAGE_UP)
-            for q in range(0, len(countmanualodds)):
-                for dj in range(0, q+3):
-                    self.driver.find_element(By.TAG_NAME, "Body").send_keys(Keys.ARROW_DOWN)
-                manualodds = self.driver.find_elements(By.XPATH, self.cc.manualodds_xpath)
-                try:
-                    manualodds[q].click()
-                except:
-                    continue
-                for sp in range(0, 4):
-                    time.sleep(2)
-                    self.driver.find_element(By.TAG_NAME, "Body").send_keys(Keys.ARROW_DOWN)
-                try:
-                    self.driver.find_element(By.XPATH, self.cc.wintossback_xpath).click()
-                    self.driver.find_element(By.XPATH, self.cc.manualbetprice_xpath).clear()
-                    self.driver.find_element(By.XPATH, self.cc.manualbetprice_xpath).send_keys(self.betprice)
-                    self.cc.clickplacebet()
-
-                    alertmessage = self.cc.getalertmessage()
-
-                    if "success" in alertmessage:
-                        break
-                    else:
-                        self.cc.clicklogo()
-                        self.driver.find_element(By.XPATH, self.cc.wintossback_xpath).click()
-                except:
-                    self.cc.clicklogo()
-                if "success" in alertmessage or "0Unknown Error" in alertmessage:
-                    break
-                elif q == len(countmanualodds)-1:
-                    self.logger.info("No Matches Are Availale To Place Bet %s", alertmessage)
-                    assert False
+            else:
+                self.logger.info("No Matches Are Availale To Place Bet %s", alertmessage)
 
         postexposure = None
         exposure = None

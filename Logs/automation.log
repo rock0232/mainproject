@@ -464,3 +464,33 @@
 03/29/2023 06:30:50 PM: INFO: Test Passed
 03/29/2023 06:30:50 PM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
 03/29/2023 06:30:50 PM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+04/08/2023 11:18:11 AM: INFO: User Not login, Please Run This Test Again
+04/08/2023 11:20:15 AM: INFO: User Not login, Please Run This Test Again
+04/08/2023 11:21:36 AM: INFO: User Not login, Please Run This Test Again
+04/08/2023 11:27:30 AM: INFO: User Not login, Please Run This Test Again
+04/08/2023 11:27:34 AM: WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000022EB5638950>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/620155e558b0f0a965af7661a5e1d3d1/screenshot
+04/08/2023 11:27:38 AM: WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000022EB5639210>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/620155e558b0f0a965af7661a5e1d3d1/screenshot
+04/08/2023 07:05:11 PM: INFO: User Not login, Please Run This Test Again
+04/08/2023 07:06:05 PM: INFO: User Not login, Please Run This Test Again
+04/08/2023 07:07:23 PM: INFO: User Not login, Please Run This Test Again
+04/10/2023 11:44:36 AM: INFO: Test Passed
+04/10/2023 11:44:36 AM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+04/10/2023 11:44:36 AM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+04/10/2023 12:22:12 PM: INFO: Test Passed
+04/10/2023 12:22:12 PM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+04/10/2023 12:22:12 PM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+04/11/2023 11:55:49 AM: INFO: Test Passed
+04/11/2023 11:55:49 AM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+04/11/2023 11:55:49 AM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+04/11/2023 11:57:10 AM: INFO: Test Passed
+04/11/2023 11:57:10 AM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+04/11/2023 11:57:10 AM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+04/11/2023 11:59:14 AM: INFO: Test Passed
+04/11/2023 11:59:14 AM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+04/11/2023 11:59:14 AM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+04/11/2023 12:01:52 PM: INFO: Test Passed
+04/11/2023 12:01:52 PM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+04/11/2023 12:01:52 PM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+04/11/2023 12:02:56 PM: INFO: Test Passed
+04/11/2023 12:02:56 PM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+04/11/2023 12:02:56 PM: INFO: Wallet Amount And Exposure are Updated After Place Bet
