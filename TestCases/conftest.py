@@ -1,20 +1,15 @@
-import os
-import sys
-from selenium import webdriver
-from selenium.webdriver.chrome.service import Service
-import pytest
-from pathlib import Path
-from pytest_html import html_report
+from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.chrome.options import Options
+from pytest_html import html_report
+from selenium import webdriver
+from pathlib import Path
+import pytest
+import sys
+import os
 
 def get_project_root() -> Path:
     return Path(__file__).parent.parent
 
-
-from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.chrome.service import Service
-from webdriver_manager.chrome import ChromeDriverManager
 
 @pytest.fixture()
 def setup():
@@ -31,9 +26,10 @@ def setup():
 # @pytest.fixture()
 # def setup():
 #     global driver
-#     filepath = get_project_root()
-#     serv_obj = Service(f'{filepath}/chromedriver.exe')
-#     driver = webdriver.Chrome(service=serv_obj)
+#     # filepath = get_project_root()
+#     # serv_obj = Service(f'{filepath}/chromedriver.exe')
+#     # driver = webdriver.Chrome(service=serv_obj)
+#     driver = webdriver.Chrome(ChromeDriverManager().install())
 #     driver.implicitly_wait(10)
 #     return driver
 
