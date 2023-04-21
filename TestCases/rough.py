@@ -98,9 +98,9 @@ class Test_B2Bcommonclass:
 
     def test_aura25(self, aura25login):
         try:
-            login = WebDriverWait(self.driver, 15).until(EC.visibility_of_element_located((By.TAG_NAME, "app-dashboard")))
+            login = WebDriverWait(self.driver, 15).until(
+                EC.visibility_of_element_located((By.TAG_NAME, "app-dashboard")))
         except:
             self.logger.info("User Not login, Please Run This Test Again")
             assert False
         self.newfunction()
-        
