@@ -39,7 +39,7 @@ class B2Bcommonclass:
     numofinplaymatch_xpath = '/html/body/app-root/app-home-layout/body/app-dashboard/main/div/div/app-common-dashboard/div/ngx-slick-carousel/div/div/div//child::a//child::div//child::span'
     wintossback_xpath = "//div[contains(text(),' TO WIN THE TOSS ')]//ancestor::app-market-type//child::div[contains(@class,'team-market')]//child::div[contains(@class,'notranslate bet-value v-blue back-1')]"
     manualodds_xpath = "//div//a[contains(@title,'ManualODD: 2')]"
-    manualbetprice_xpath = "//form[@class='form-inline ng-untouched ng-pristine ng-valid']/div/div/div[2]/div[2]/input"
+    manualbetprice_css = "div[class='hide-on-med-and-down'] div:nth-child(2) > input"
     inplay = True
     inactivemarket_xpath = "//div[contains(text(),' Match Odds')]//ancestor::div[contains(@class,'bet-semiheader is-hidden is-show')]//following-sibling::div[contains(@class,'bet-list is-hidden is-show')]/div/div[2]/div"
     #//div[contains(text(),' Match Odds')]//parent::div[contains(@class,'bet-semiheader is-hidden is-show')]

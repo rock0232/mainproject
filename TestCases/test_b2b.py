@@ -642,8 +642,8 @@ class Test_B2Bcommonclass:
             self.driver.execute_script("arguments[0].scrollIntoView();", backelement)
             time.sleep(1)
             self.driver.find_element(By.XPATH, self.cc.wintossback_xpath).click()
-            self.driver.find_element(By.XPATH, self.cc.manualbetprice_xpath).clear()
-            self.driver.find_element(By.XPATH, self.cc.manualbetprice_xpath).send_keys(self.betprice)
+            self.driver.find_element(By.CSS_SELECTOR, self.cc.manualbetprice_css).clear()
+            self.driver.find_element(By.CSS_SELECTOR, self.cc.manualbetprice_css).send_keys(self.betprice)
             self.cc.clickplacebet()
             alertmessage = self.cc.getalertmessage()
             if "success" in alertmessage:
