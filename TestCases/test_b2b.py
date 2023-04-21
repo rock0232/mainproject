@@ -35,7 +35,7 @@ class Test_B2Bcommonclass:
     gold9 = "https://gold9.in"
     fancybook = "https://fancybook.live"
     skyexch1 = "https://skyexch1.net"
-    probet9 = "https://probet9.net"
+    # probet9 = "https://probet9.net"
     Sunexchange = "https://Sunexchange.in"
     sevenxbet = "https://7xbet.bet"
     saiexch24 = "https://saiexch24.com"
@@ -221,18 +221,18 @@ class Test_B2Bcommonclass:
         self.cc.setpassword(self.newpassword)
         self.cc.clicklogin()
 
-    @pytest.fixture(scope="function", autouse=False)
-    def probet9login(self, setup):
-        self.driver = setup
-        self.driver.set_window_size(1366,768)
-        self.cc = B2Bcommonclass(self.driver)
-        self.driver.get(self.probet9)
-        time.sleep(5)
-        self.cc.clicksignin()
-        time.sleep(3)
-        self.cc.setusername(self.newusername)
-        self.cc.setpassword(self.newpassword)
-        self.cc.clicklogin()
+    # @pytest.fixture(scope="function", autouse=False)
+    # def probet9login(self, setup):
+    #     self.driver = setup
+    #     self.driver.set_window_size(1366,768)
+    #     self.cc = B2Bcommonclass(self.driver)
+    #     self.driver.get(self.probet9)
+    #     time.sleep(5)
+    #     self.cc.clicksignin()
+    #     time.sleep(3)
+    #     self.cc.setusername(self.newusername)
+    #     self.cc.setpassword(self.newpassword)
+    #     self.cc.clicklogin()
 
     @pytest.fixture(scope="function", autouse=False)
     def skyexch1login(self, setup):
@@ -1094,17 +1094,17 @@ class Test_B2Bcommonclass:
             self.logger.info("User Not login, Please Run This Test Again")
             assert False
         self.newfunction()
-
-    @pytest.mark.runall
-    @pytest.mark.b2bmarker
-    def test_probet9login(self, probet9login):
-        try:
-            login = WebDriverWait(self.driver, 15).until(
-                EC.visibility_of_element_located((By.TAG_NAME, "app-dashboard")))
-        except:
-            self.logger.info("User Not login, Please Run This Test Again")
-            assert False
-        self.newfunction()
+    #
+    # @pytest.mark.runall
+    # @pytest.mark.b2bmarker
+    # def test_probet9login(self, probet9login):
+    #     try:
+    #         login = WebDriverWait(self.driver, 15).until(
+    #             EC.visibility_of_element_located((By.TAG_NAME, "app-dashboard")))
+    #     except:
+    #         self.logger.info("User Not login, Please Run This Test Again")
+    #         assert False
+    #     self.newfunction()
 
     @pytest.mark.runall
     @pytest.mark.b2bmarker
