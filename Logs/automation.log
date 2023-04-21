@@ -526,3 +526,9 @@
 04/21/2023 11:35:07 AM: INFO: Test Passed
 04/21/2023 11:35:07 AM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
 04/21/2023 11:35:07 AM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+04/21/2023 12:20:44 PM: INFO: ====== WebDriver manager ======
+04/21/2023 12:20:44 PM: INFO: Get LATEST chromedriver version for google-chrome 112.0.5615
+04/21/2023 12:20:45 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\112.0.5615\chromedriver.exe] found in cache
+04/21/2023 12:21:15 PM: INFO: Test Passed
+04/21/2023 12:21:15 PM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+04/21/2023 12:21:15 PM: INFO: Wallet Amount And Exposure are Updated After Place Bet
