@@ -37,7 +37,7 @@ class B2Bcommonclass:
     inplay_xpath = "//div[@class='date-time in-play']//parent::div//parent::div//following-sibling::a"
     soccer_Xpath = "//div[@class='title'][normalize-space()='Soccer']"
     numofinplaymatch_xpath = '/html/body/app-root/app-home-layout/body/app-dashboard/main/div/div/app-common-dashboard/div/ngx-slick-carousel/div/div/div//child::a//child::div//child::span'
-    wintossback_xpath = "//div[contains(text(),' TO WIN THE TOSS ')]//ancestor::app-market-type//child::div[contains(@class,'team-market')]//child::div[contains(@class,'notranslate bet-value v-blue back-1')]"
+    wintossback_css = "body > app-market:nth-child(3) > main:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > app-match:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(4) > div:nth-child(2) > app-market-type:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(4)"
     manualodds_xpath = "//div//a[contains(@title,'ManualODD: 2')]"
     manualbetprice_css = "div[class='hide-on-med-and-down'] div:nth-child(2) > input"
     inplay = True

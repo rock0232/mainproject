@@ -36,10 +36,13 @@ def setup():
 #     # driver = webdriver.Chrome(service=serv_obj)
 #     driver = webdriver.Chrome(ChromeDriverManager().install())
 #     driver.implicitly_wait(10)
-#     return driver
+#     yield driver
 
 def pytest_html_report_title(report):
     report.title = "Test Result Report"
+
+def getcurrenturl():
+    return str(driver.current_url)
 
 @pytest.hookimpl(hookwrapper=True)
 def pytest_runtest_makereport(item, call):
@@ -61,6 +64,7 @@ def pytest_runtest_makereport(item, call):
                        ' alt="screenshot" style="width:304px;height:228px;" ' \
                        'onclick="window.open(this.src)" align="right"/></div>' % file_path
                 extra.append(pytest_html.extras.html(html))
+                extra.append(pytest_html.extras.url(getcurrenturl()))
                 driver.quit()
         report.extra = extra
 

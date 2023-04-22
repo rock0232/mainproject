@@ -565,3 +565,687 @@
 04/21/2023 05:40:43 PM: INFO: Test Passed
 04/21/2023 05:40:43 PM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
 04/21/2023 05:40:43 PM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+04/21/2023 06:04:03 PM: INFO: ====== WebDriver manager ======
+04/21/2023 06:04:05 PM: INFO: Get LATEST chromedriver version for google-chrome 112.0.5615
+04/21/2023 06:04:07 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\112.0.5615\chromedriver.exe] found in cache
+04/21/2023 06:04:58 PM: INFO: Test Passed
+04/21/2023 06:04:58 PM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+04/21/2023 06:04:58 PM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+04/21/2023 06:05:41 PM: INFO: ====== WebDriver manager ======
+04/21/2023 06:05:42 PM: INFO: Get LATEST chromedriver version for google-chrome 112.0.5615
+04/21/2023 06:05:43 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\112.0.5615\chromedriver.exe] found in cache
+04/21/2023 06:06:11 PM: INFO: Test Passed
+04/21/2023 06:06:11 PM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+04/21/2023 06:06:11 PM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+04/21/2023 06:15:05 PM: INFO: ====== WebDriver manager ======
+04/21/2023 06:15:06 PM: INFO: Get LATEST chromedriver version for google-chrome 112.0.5615
+04/21/2023 06:15:07 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\112.0.5615\chromedriver.exe] found in cache
+04/21/2023 06:15:53 PM: ERROR: Test Failed
+04/21/2023 06:15:53 PM: INFO: Wallet balance and Exposure Balance is not Updated After Bet place
+04/21/2023 06:15:53 PM: INFO: Message After Place Bet Bet has been placed successfully.
+04/21/2023 06:15:53 PM: INFO: User Login With rocktest
+04/21/2023 06:15:53 PM: INFO: Wallet Amount Before Place Bet 21074.57
+04/21/2023 06:15:53 PM: INFO: Wallet Amount After Place Bet 21074.57
+04/21/2023 06:15:53 PM: INFO: Bet Price 202
+04/21/2023 06:15:53 PM: INFO: Exposure Before Place Bet 808.0
+04/21/2023 06:15:53 PM: INFO: Exposure After Place Bet 808.0
+04/21/2023 06:15:53 PM: INFO: 
+04/21/2023 06:15:53 PM: INFO: ******************** Data From Dashboard Bet list ********************
+04/21/2023 06:15:53 PM: INFO: Bet Place Team Name is Chennai Super Kings
+04/21/2023 06:15:53 PM: INFO: Bet Place On Back
+04/21/2023 06:15:53 PM: INFO: Bet Stake Amount is 202
+04/21/2023 06:15:53 PM: INFO: P/L on Bet Place is 195.94
+04/21/2023 06:15:58 PM: INFO: 
+04/21/2023 06:15:58 PM: INFO: ******************** Data From Open Bet Report ********************
+04/21/2023 06:15:58 PM: INFO: Bet Place Team Name In Open Bet Report is Chennai Super Kings
+04/21/2023 06:15:58 PM: INFO: Bet Place Type In Open Bet Report is Back
+04/21/2023 06:15:58 PM: INFO: Bet Stake Amount In Open Bet Report is 202
+04/21/2023 06:15:58 PM: INFO: P/L On Bet Place In Open Bet Report is 195.94
+04/21/2023 06:17:01 PM: INFO: ====== WebDriver manager ======
+04/21/2023 06:17:02 PM: INFO: Get LATEST chromedriver version for google-chrome 112.0.5615
+04/21/2023 06:17:03 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\112.0.5615\chromedriver.exe] found in cache
+04/21/2023 06:17:46 PM: ERROR: Test Failed
+04/21/2023 06:17:46 PM: INFO: Wallet balance and Exposure Balance is not Updated After Bet place
+04/21/2023 06:17:46 PM: INFO: Message After Place Bet Bet has been placed successfully.
+04/21/2023 06:17:46 PM: INFO: User Login With rocktest
+04/21/2023 06:17:46 PM: INFO: Wallet Amount Before Place Bet 20872.57
+04/21/2023 06:17:46 PM: INFO: Wallet Amount After Place Bet 20872.57
+04/21/2023 06:17:46 PM: INFO: Bet Price 202
+04/21/2023 06:17:46 PM: INFO: Exposure Before Place Bet 1010.0
+04/21/2023 06:17:46 PM: INFO: Exposure After Place Bet 1010.0
+04/21/2023 06:17:46 PM: INFO: 
+04/21/2023 06:17:46 PM: INFO: ******************** Data From Dashboard Bet list ********************
+04/21/2023 06:17:46 PM: INFO: Bet Place Team Name is Chennai Super Kings
+04/21/2023 06:17:46 PM: INFO: Bet Place On Back
+04/21/2023 06:17:46 PM: INFO: Bet Stake Amount is 202
+04/21/2023 06:17:46 PM: INFO: P/L on Bet Place is 195.94
+04/21/2023 06:17:51 PM: INFO: 
+04/21/2023 06:17:51 PM: INFO: ******************** Data From Open Bet Report ********************
+04/21/2023 06:17:51 PM: INFO: Bet Place Team Name In Open Bet Report is Chennai Super Kings
+04/21/2023 06:17:51 PM: INFO: Bet Place Type In Open Bet Report is Back
+04/21/2023 06:17:51 PM: INFO: Bet Stake Amount In Open Bet Report is 202
+04/21/2023 06:17:51 PM: INFO: P/L On Bet Place In Open Bet Report is 195.94
+04/21/2023 06:18:13 PM: INFO: ====== WebDriver manager ======
+04/21/2023 06:18:14 PM: INFO: Get LATEST chromedriver version for google-chrome 112.0.5615
+04/21/2023 06:18:15 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\112.0.5615\chromedriver.exe] found in cache
+04/21/2023 06:19:00 PM: ERROR: Test Failed
+04/21/2023 06:19:00 PM: INFO: Wallet balance and Exposure Balance is not Updated After Bet place
+04/21/2023 06:19:00 PM: INFO: Message After Place Bet Bet has been placed successfully.
+04/21/2023 06:19:00 PM: INFO: User Login With rocktest
+04/21/2023 06:19:00 PM: INFO: Wallet Amount Before Place Bet 20670.57
+04/21/2023 06:19:00 PM: INFO: Wallet Amount After Place Bet 20670.57
+04/21/2023 06:19:00 PM: INFO: Bet Price 202
+04/21/2023 06:19:00 PM: INFO: Exposure Before Place Bet 1212.0
+04/21/2023 06:19:00 PM: INFO: Exposure After Place Bet 1212.0
+04/21/2023 06:19:00 PM: INFO: 
+04/21/2023 06:19:00 PM: INFO: ******************** Data From Dashboard Bet list ********************
+04/21/2023 06:19:00 PM: INFO: Bet Place Team Name is Chennai Super Kings
+04/21/2023 06:19:00 PM: INFO: Bet Place On Back
+04/21/2023 06:19:00 PM: INFO: Bet Stake Amount is 202
+04/21/2023 06:19:00 PM: INFO: P/L on Bet Place is 195.94
+04/21/2023 06:19:05 PM: INFO: 
+04/21/2023 06:19:05 PM: INFO: ******************** Data From Open Bet Report ********************
+04/21/2023 06:19:05 PM: INFO: Bet Place Team Name In Open Bet Report is Chennai Super Kings
+04/21/2023 06:19:05 PM: INFO: Bet Place Type In Open Bet Report is Back
+04/21/2023 06:19:05 PM: INFO: Bet Stake Amount In Open Bet Report is 202
+04/21/2023 06:19:05 PM: INFO: P/L On Bet Place In Open Bet Report is 195.94
+04/21/2023 10:31:28 PM: INFO: ====== WebDriver manager ======
+04/21/2023 10:31:28 PM: INFO: Get LATEST chromedriver version for google-chrome 112.0.5615
+04/21/2023 10:31:32 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\112.0.5615\chromedriver.exe] found in cache
+04/21/2023 10:36:50 PM: INFO: ====== WebDriver manager ======
+04/21/2023 10:36:51 PM: INFO: Get LATEST chromedriver version for google-chrome 112.0.5615
+04/21/2023 10:36:52 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\112.0.5615\chromedriver.exe] found in cache
+04/21/2023 10:44:35 PM: INFO: ====== WebDriver manager ======
+04/21/2023 10:44:35 PM: INFO: Get LATEST chromedriver version for google-chrome 112.0.5615
+04/21/2023 10:44:37 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\112.0.5615\chromedriver.exe] found in cache
+04/21/2023 10:55:39 PM: INFO: ====== WebDriver manager ======
+04/21/2023 10:55:39 PM: INFO: Get LATEST chromedriver version for google-chrome 112.0.5615
+04/21/2023 10:55:41 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\112.0.5615\chromedriver.exe] found in cache
+04/21/2023 10:58:20 PM: INFO: ====== WebDriver manager ======
+04/21/2023 10:58:20 PM: INFO: Get LATEST chromedriver version for google-chrome 112.0.5615
+04/21/2023 10:58:21 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\112.0.5615\chromedriver.exe] found in cache
+04/22/2023 12:11:13 AM: INFO: ====== WebDriver manager ======
+04/22/2023 12:11:13 AM: INFO: Get LATEST chromedriver version for google-chrome 112.0.5615
+04/22/2023 12:11:15 AM: INFO: About to download new driver from https://chromedriver.storage.googleapis.com/112.0.5615.49/chromedriver_win32.zip
+04/22/2023 12:11:40 AM: INFO: Driver has been saved in cache [C:\Users\KEY\.wdm\drivers\chromedriver\win32\112.0.5615]
+04/22/2023 12:12:05 AM: INFO: ====== WebDriver manager ======
+04/22/2023 12:12:06 AM: INFO: Get LATEST chromedriver version for google-chrome 112.0.5615
+04/22/2023 12:12:07 AM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\112.0.5615\chromedriver.exe] found in cache
+04/22/2023 12:13:33 AM: INFO: ====== WebDriver manager ======
+04/22/2023 12:13:34 AM: INFO: Get LATEST chromedriver version for google-chrome 112.0.5615
+04/22/2023 12:13:35 AM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\112.0.5615\chromedriver.exe] found in cache
+04/22/2023 01:06:49 AM: INFO: ====== WebDriver manager ======
+04/22/2023 01:06:50 AM: INFO: Get LATEST chromedriver version for google-chrome 112.0.5615
+04/22/2023 01:06:51 AM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\112.0.5615\chromedriver.exe] found in cache
+04/22/2023 01:08:21 AM: INFO: ====== WebDriver manager ======
+04/22/2023 01:08:22 AM: INFO: Get LATEST chromedriver version for google-chrome 112.0.5615
+04/22/2023 01:08:23 AM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\112.0.5615\chromedriver.exe] found in cache
+04/22/2023 01:09:05 AM: INFO: ====== WebDriver manager ======
+04/22/2023 01:09:06 AM: INFO: Get LATEST chromedriver version for google-chrome 112.0.5615
+04/22/2023 01:09:07 AM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\112.0.5615\chromedriver.exe] found in cache
+04/22/2023 01:09:58 AM: INFO: ====== WebDriver manager ======
+04/22/2023 01:09:59 AM: INFO: Get LATEST chromedriver version for google-chrome 112.0.5615
+04/22/2023 01:10:00 AM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\112.0.5615\chromedriver.exe] found in cache
+04/22/2023 01:10:46 AM: INFO: ====== WebDriver manager ======
+04/22/2023 01:10:46 AM: INFO: Get LATEST chromedriver version for google-chrome 112.0.5615
+04/22/2023 01:10:48 AM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\112.0.5615\chromedriver.exe] found in cache
+04/22/2023 01:11:43 AM: INFO: ====== WebDriver manager ======
+04/22/2023 01:11:44 AM: INFO: Get LATEST chromedriver version for google-chrome 112.0.5615
+04/22/2023 01:11:45 AM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\112.0.5615\chromedriver.exe] found in cache
+04/22/2023 01:16:43 AM: INFO: ====== WebDriver manager ======
+04/22/2023 01:16:44 AM: INFO: Get LATEST chromedriver version for google-chrome 112.0.5615
+04/22/2023 01:16:45 AM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\112.0.5615\chromedriver.exe] found in cache
+04/22/2023 02:35:42 AM: INFO: ====== WebDriver manager ======
+04/22/2023 02:35:42 AM: INFO: Get LATEST chromedriver version for google-chrome 112.0.5615
+04/22/2023 02:35:43 AM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\112.0.5615\chromedriver.exe] found in cache
+04/22/2023 02:36:25 AM: INFO: ====== WebDriver manager ======
+04/22/2023 02:36:26 AM: INFO: Get LATEST chromedriver version for google-chrome 112.0.5615
+04/22/2023 02:36:27 AM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\112.0.5615\chromedriver.exe] found in cache
+04/22/2023 02:37:06 AM: INFO: Test Passed
+04/22/2023 02:37:06 AM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+04/22/2023 02:37:06 AM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+04/22/2023 03:29:13 PM: INFO: ====== WebDriver manager ======
+04/22/2023 03:29:14 PM: INFO: Get LATEST chromedriver version for google-chrome 112.0.5615
+04/22/2023 03:29:15 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\112.0.5615\chromedriver.exe] found in cache
+04/22/2023 03:37:58 PM: INFO: ====== WebDriver manager ======
+04/22/2023 03:37:59 PM: INFO: Get LATEST chromedriver version for google-chrome 112.0.5615
+04/22/2023 03:38:00 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\112.0.5615\chromedriver.exe] found in cache
+04/22/2023 03:43:48 PM: INFO: ====== WebDriver manager ======
+04/22/2023 03:43:48 PM: INFO: Get LATEST chromedriver version for google-chrome 112.0.5615
+04/22/2023 03:43:50 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\112.0.5615\chromedriver.exe] found in cache
+04/22/2023 03:50:04 PM: INFO: ====== WebDriver manager ======
+04/22/2023 03:50:05 PM: INFO: Get LATEST chromedriver version for google-chrome 112.0.5615
+04/22/2023 03:50:06 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\112.0.5615\chromedriver.exe] found in cache
+04/22/2023 03:55:45 PM: INFO: ====== WebDriver manager ======
+04/22/2023 03:55:47 PM: INFO: Get LATEST chromedriver version for google-chrome 112.0.5615
+04/22/2023 03:55:49 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\112.0.5615\chromedriver.exe] found in cache
+04/22/2023 03:56:36 PM: ERROR: Test Failed
+04/22/2023 03:56:36 PM: INFO: Wallet balance and Exposure Balance is not Updated After Bet place
+04/22/2023 03:56:36 PM: INFO: Message After Place Bet Bet has been placed successfully.
+04/22/2023 03:56:36 PM: INFO: User Login With rocktest
+04/22/2023 03:56:36 PM: INFO: Wallet Amount Before Place Bet 22144.15
+04/22/2023 03:56:36 PM: INFO: Wallet Amount After Place Bet 22144.15
+04/22/2023 03:56:36 PM: INFO: Bet Price 202
+04/22/2023 03:56:36 PM: INFO: Exposure Before Place Bet 606.0
+04/22/2023 03:56:36 PM: INFO: Exposure After Place Bet 606.0
+04/22/2023 03:56:36 PM: INFO: 
+04/22/2023 03:56:36 PM: INFO: ******************** Data From Dashboard Bet list ********************
+04/22/2023 03:56:36 PM: INFO: Bet Place Team Name is Mumbai Indians
+04/22/2023 03:56:36 PM: INFO: Bet Place On Back
+04/22/2023 03:56:36 PM: INFO: Bet Stake Amount is 202
+04/22/2023 03:56:36 PM: INFO: P/L on Bet Place is 195.94
+04/22/2023 03:56:42 PM: INFO: 
+04/22/2023 03:56:42 PM: INFO: ******************** Data From Open Bet Report ********************
+04/22/2023 03:56:42 PM: INFO: Bet Place Team Name In Open Bet Report is Mumbai Indians
+04/22/2023 03:56:42 PM: INFO: Bet Place Type In Open Bet Report is Back
+04/22/2023 03:56:42 PM: INFO: Bet Stake Amount In Open Bet Report is 202
+04/22/2023 03:56:42 PM: INFO: P/L On Bet Place In Open Bet Report is 195.94
+04/22/2023 04:09:37 PM: INFO: ====== WebDriver manager ======
+04/22/2023 04:09:38 PM: INFO: Get LATEST chromedriver version for google-chrome 112.0.5615
+04/22/2023 04:09:39 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\112.0.5615\chromedriver.exe] found in cache
+04/22/2023 04:10:32 PM: ERROR: Test Failed
+04/22/2023 04:10:32 PM: INFO: Wallet balance and Exposure Balance is not Updated After Bet place
+04/22/2023 04:10:32 PM: INFO: Message After Place Bet Bet has been placed successfully.
+04/22/2023 04:10:32 PM: INFO: User Login With rocktest
+04/22/2023 04:10:32 PM: INFO: Wallet Amount Before Place Bet 21942.15
+04/22/2023 04:10:32 PM: INFO: Wallet Amount After Place Bet 21942.15
+04/22/2023 04:10:32 PM: INFO: Bet Price 202
+04/22/2023 04:10:32 PM: INFO: Exposure Before Place Bet 808.0
+04/22/2023 04:10:32 PM: INFO: Exposure After Place Bet 808.0
+04/22/2023 04:10:32 PM: INFO: 
+04/22/2023 04:10:32 PM: INFO: ******************** Data From Dashboard Bet list ********************
+04/22/2023 04:10:32 PM: INFO: Bet Place Team Name is Mumbai Indians
+04/22/2023 04:10:32 PM: INFO: Bet Place On Back
+04/22/2023 04:10:32 PM: INFO: Bet Stake Amount is 202
+04/22/2023 04:10:32 PM: INFO: P/L on Bet Place is 195.94
+04/22/2023 04:10:38 PM: INFO: 
+04/22/2023 04:10:38 PM: INFO: ******************** Data From Open Bet Report ********************
+04/22/2023 04:10:38 PM: INFO: Bet Place Team Name In Open Bet Report is Mumbai Indians
+04/22/2023 04:10:38 PM: INFO: Bet Place Type In Open Bet Report is Back
+04/22/2023 04:10:38 PM: INFO: Bet Stake Amount In Open Bet Report is 202
+04/22/2023 04:10:38 PM: INFO: P/L On Bet Place In Open Bet Report is 195.94
+04/22/2023 04:11:35 PM: INFO: ====== WebDriver manager ======
+04/22/2023 04:11:36 PM: INFO: Get LATEST chromedriver version for google-chrome 112.0.5615
+04/22/2023 04:11:36 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\112.0.5615\chromedriver.exe] found in cache
+04/22/2023 04:12:26 PM: ERROR: Test Failed
+04/22/2023 04:12:26 PM: INFO: Wallet balance and Exposure Balance is not Updated After Bet place
+04/22/2023 04:12:26 PM: INFO: Message After Place Bet Bet has been placed successfully.
+04/22/2023 04:12:26 PM: INFO: User Login With rocktest
+04/22/2023 04:12:26 PM: INFO: Wallet Amount Before Place Bet 21740.15
+04/22/2023 04:12:26 PM: INFO: Wallet Amount After Place Bet 21740.15
+04/22/2023 04:12:26 PM: INFO: Bet Price 202
+04/22/2023 04:12:26 PM: INFO: Exposure Before Place Bet 1010.0
+04/22/2023 04:12:26 PM: INFO: Exposure After Place Bet 1010.0
+04/22/2023 04:12:26 PM: INFO: 
+04/22/2023 04:12:26 PM: INFO: ******************** Data From Dashboard Bet list ********************
+04/22/2023 04:12:26 PM: INFO: Bet Place Team Name is Mumbai Indians
+04/22/2023 04:12:26 PM: INFO: Bet Place On Back
+04/22/2023 04:12:26 PM: INFO: Bet Stake Amount is 202
+04/22/2023 04:12:26 PM: INFO: P/L on Bet Place is 195.94
+04/22/2023 04:12:31 PM: INFO: 
+04/22/2023 04:12:31 PM: INFO: ******************** Data From Open Bet Report ********************
+04/22/2023 04:12:31 PM: INFO: Bet Place Team Name In Open Bet Report is Mumbai Indians
+04/22/2023 04:12:31 PM: INFO: Bet Place Type In Open Bet Report is Back
+04/22/2023 04:12:31 PM: INFO: Bet Stake Amount In Open Bet Report is 202
+04/22/2023 04:12:31 PM: INFO: P/L On Bet Place In Open Bet Report is 195.94
+04/22/2023 04:31:44 PM: INFO: ====== WebDriver manager ======
+04/22/2023 04:31:44 PM: INFO: Get LATEST chromedriver version for google-chrome 112.0.5615
+04/22/2023 04:31:46 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\112.0.5615\chromedriver.exe] found in cache
+04/22/2023 04:32:33 PM: ERROR: Test Failed
+04/22/2023 04:32:33 PM: INFO: Wallet balance and Exposure Balance is not Updated After Bet place
+04/22/2023 04:32:33 PM: INFO: Message After Place Bet Bet has been placed successfully.
+04/22/2023 04:32:33 PM: INFO: User Login With rocktest
+04/22/2023 04:32:33 PM: INFO: Wallet Amount Before Place Bet 21538.15
+04/22/2023 04:32:33 PM: INFO: Wallet Amount After Place Bet 21538.15
+04/22/2023 04:32:33 PM: INFO: Bet Price 202
+04/22/2023 04:32:33 PM: INFO: Exposure Before Place Bet 1212.0
+04/22/2023 04:32:33 PM: INFO: Exposure After Place Bet 1212.0
+04/22/2023 04:32:33 PM: INFO: 
+04/22/2023 04:32:33 PM: INFO: ******************** Data From Dashboard Bet list ********************
+04/22/2023 04:32:33 PM: INFO: Bet Place Team Name is Mumbai Indians
+04/22/2023 04:32:33 PM: INFO: Bet Place On Back
+04/22/2023 04:32:33 PM: INFO: Bet Stake Amount is 202
+04/22/2023 04:32:33 PM: INFO: P/L on Bet Place is 195.94
+04/22/2023 04:32:38 PM: INFO: 
+04/22/2023 04:32:38 PM: INFO: ******************** Data From Open Bet Report ********************
+04/22/2023 04:32:38 PM: INFO: Bet Place Team Name In Open Bet Report is Mumbai Indians
+04/22/2023 04:32:38 PM: INFO: Bet Place Type In Open Bet Report is Back
+04/22/2023 04:32:38 PM: INFO: Bet Stake Amount In Open Bet Report is 202
+04/22/2023 04:32:38 PM: INFO: P/L On Bet Place In Open Bet Report is 195.94
+04/22/2023 04:32:45 PM: WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000216389395D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/13e421b024fdec9973bb230ef55cbc88/url
+04/22/2023 04:32:49 PM: WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002163C238390>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/13e421b024fdec9973bb230ef55cbc88/url
+04/22/2023 04:32:53 PM: WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002163C38F190>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/13e421b024fdec9973bb230ef55cbc88/url
+04/22/2023 04:33:38 PM: INFO: ====== WebDriver manager ======
+04/22/2023 04:33:38 PM: INFO: Get LATEST chromedriver version for google-chrome 112.0.5615
+04/22/2023 04:33:39 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\112.0.5615\chromedriver.exe] found in cache
+04/22/2023 04:34:28 PM: ERROR: Test Failed
+04/22/2023 04:34:28 PM: INFO: Wallet balance and Exposure Balance is not Updated After Bet place
+04/22/2023 04:34:28 PM: INFO: Message After Place Bet Bet has been placed successfully.
+04/22/2023 04:34:28 PM: INFO: User Login With rocktest
+04/22/2023 04:34:28 PM: INFO: Wallet Amount Before Place Bet 21336.15
+04/22/2023 04:34:28 PM: INFO: Wallet Amount After Place Bet 21336.15
+04/22/2023 04:34:28 PM: INFO: Bet Price 202
+04/22/2023 04:34:28 PM: INFO: Exposure Before Place Bet 1414.0
+04/22/2023 04:34:28 PM: INFO: Exposure After Place Bet 1414.0
+04/22/2023 04:34:28 PM: INFO: 
+04/22/2023 04:34:28 PM: INFO: ******************** Data From Dashboard Bet list ********************
+04/22/2023 04:34:28 PM: INFO: Bet Place Team Name is Mumbai Indians
+04/22/2023 04:34:28 PM: INFO: Bet Place On Back
+04/22/2023 04:34:28 PM: INFO: Bet Stake Amount is 202
+04/22/2023 04:34:28 PM: INFO: P/L on Bet Place is 195.94
+04/22/2023 04:34:34 PM: INFO: 
+04/22/2023 04:34:34 PM: INFO: ******************** Data From Open Bet Report ********************
+04/22/2023 04:34:34 PM: INFO: Bet Place Team Name In Open Bet Report is Mumbai Indians
+04/22/2023 04:34:34 PM: INFO: Bet Place Type In Open Bet Report is Back
+04/22/2023 04:34:34 PM: INFO: Bet Stake Amount In Open Bet Report is 202
+04/22/2023 04:34:34 PM: INFO: P/L On Bet Place In Open Bet Report is 195.94
+04/22/2023 04:34:40 PM: WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000024F7D9ADA90>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/fa107708185ea39f266048ac954f21a6/url
+04/22/2023 04:34:45 PM: WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000024F7D9AE950>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/fa107708185ea39f266048ac954f21a6/url
+04/22/2023 04:34:49 PM: WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000024F7D9C2B10>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/fa107708185ea39f266048ac954f21a6/url
+04/22/2023 04:36:00 PM: INFO: ====== WebDriver manager ======
+04/22/2023 04:36:01 PM: INFO: Get LATEST chromedriver version for google-chrome 112.0.5615
+04/22/2023 04:36:02 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\112.0.5615\chromedriver.exe] found in cache
+04/22/2023 04:37:13 PM: ERROR: Test Failed
+04/22/2023 04:37:13 PM: INFO: Wallet balance and Exposure Balance is not Updated After Bet place
+04/22/2023 04:37:13 PM: INFO: Message After Place Bet Bet has been placed successfully.
+04/22/2023 04:37:13 PM: INFO: User Login With rocktest
+04/22/2023 04:37:13 PM: INFO: Wallet Amount Before Place Bet 21134.15
+04/22/2023 04:37:13 PM: INFO: Wallet Amount After Place Bet 21134.15
+04/22/2023 04:37:13 PM: INFO: Bet Price 202
+04/22/2023 04:37:13 PM: INFO: Exposure Before Place Bet 1616.0
+04/22/2023 04:37:13 PM: INFO: Exposure After Place Bet 1616.0
+04/22/2023 04:37:13 PM: INFO: 
+04/22/2023 04:37:13 PM: INFO: ******************** Data From Dashboard Bet list ********************
+04/22/2023 04:37:13 PM: INFO: Bet Place Team Name is Mumbai Indians
+04/22/2023 04:37:13 PM: INFO: Bet Place On Back
+04/22/2023 04:37:13 PM: INFO: Bet Stake Amount is 202
+04/22/2023 04:37:13 PM: INFO: P/L on Bet Place is 195.94
+04/22/2023 04:37:29 PM: INFO:  
+04/22/2023 04:37:29 PM: INFO: Data Not Display In Report or Report Is not Update
+04/22/2023 04:37:36 PM: WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000029ADDD8C190>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/940da84d2fc5ecc3a6791ac28ef31240/url
+04/22/2023 04:37:40 PM: WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000029ADDD9FC90>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/940da84d2fc5ecc3a6791ac28ef31240/url
+04/22/2023 04:37:44 PM: WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000029ADDD9C490>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/940da84d2fc5ecc3a6791ac28ef31240/url
+04/22/2023 04:38:59 PM: INFO: ====== WebDriver manager ======
+04/22/2023 04:39:00 PM: INFO: Get LATEST chromedriver version for google-chrome 112.0.5615
+04/22/2023 04:39:01 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\112.0.5615\chromedriver.exe] found in cache
+04/22/2023 04:39:57 PM: ERROR: Test Failed
+04/22/2023 04:39:57 PM: INFO: Wallet balance and Exposure Balance is not Updated After Bet place
+04/22/2023 04:39:57 PM: INFO: Message After Place Bet Bet has been placed successfully.
+04/22/2023 04:39:57 PM: INFO: User Login With rocktest
+04/22/2023 04:39:57 PM: INFO: Wallet Amount Before Place Bet 20932.15
+04/22/2023 04:39:57 PM: INFO: Wallet Amount After Place Bet 20932.15
+04/22/2023 04:39:57 PM: INFO: Bet Price 202
+04/22/2023 04:39:57 PM: INFO: Exposure Before Place Bet 1818.0
+04/22/2023 04:39:57 PM: INFO: Exposure After Place Bet 1818.0
+04/22/2023 04:39:57 PM: INFO: 
+04/22/2023 04:39:57 PM: INFO: ******************** Data From Dashboard Bet list ********************
+04/22/2023 04:39:57 PM: INFO: Bet Place Team Name is Mumbai Indians
+04/22/2023 04:39:57 PM: INFO: Bet Place On Back
+04/22/2023 04:39:57 PM: INFO: Bet Stake Amount is 202
+04/22/2023 04:39:57 PM: INFO: P/L on Bet Place is 195.94
+04/22/2023 04:40:13 PM: INFO:  
+04/22/2023 04:40:13 PM: INFO: Data Not Display In Report or Report Is not Update
+04/22/2023 04:40:20 PM: WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000021A4757DBD0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/ace14b62387841c632f9482fa384585a/url
+04/22/2023 04:40:24 PM: WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000021A4757CA50>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/ace14b62387841c632f9482fa384585a/url
+04/22/2023 04:40:28 PM: WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000021A47591A50>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/ace14b62387841c632f9482fa384585a/url
+04/22/2023 04:42:41 PM: INFO: ====== WebDriver manager ======
+04/22/2023 04:42:41 PM: INFO: Get LATEST chromedriver version for google-chrome 112.0.5615
+04/22/2023 04:42:43 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\112.0.5615\chromedriver.exe] found in cache
+04/22/2023 04:43:53 PM: ERROR: Test Failed
+04/22/2023 04:43:53 PM: INFO: Wallet balance and Exposure Balance is not Updated After Bet place
+04/22/2023 04:43:53 PM: INFO: Message After Place Bet Bet has been placed successfully.
+04/22/2023 04:43:53 PM: INFO: User Login With rocktest
+04/22/2023 04:43:53 PM: INFO: Wallet Amount Before Place Bet 20730.15
+04/22/2023 04:43:53 PM: INFO: Wallet Amount After Place Bet 20730.15
+04/22/2023 04:43:53 PM: INFO: Bet Price 202
+04/22/2023 04:43:53 PM: INFO: Exposure Before Place Bet 2020.0
+04/22/2023 04:43:53 PM: INFO: Exposure After Place Bet 2020.0
+04/22/2023 04:43:53 PM: INFO: 
+04/22/2023 04:43:53 PM: INFO: ******************** Data From Dashboard Bet list ********************
+04/22/2023 04:43:53 PM: INFO: Bet Place Team Name is Mumbai Indians
+04/22/2023 04:43:53 PM: INFO: Bet Place On Back
+04/22/2023 04:43:53 PM: INFO: Bet Stake Amount is 202
+04/22/2023 04:43:53 PM: INFO: P/L on Bet Place is 195.94
+04/22/2023 04:43:59 PM: INFO: 
+04/22/2023 04:43:59 PM: INFO: ******************** Data From Open Bet Report ********************
+04/22/2023 04:43:59 PM: INFO: Bet Place Team Name In Open Bet Report is Mumbai Indians
+04/22/2023 04:43:59 PM: INFO: Bet Place Type In Open Bet Report is Back
+04/22/2023 04:43:59 PM: INFO: Bet Stake Amount In Open Bet Report is 202
+04/22/2023 04:43:59 PM: INFO: P/L On Bet Place In Open Bet Report is 195.94
+04/22/2023 04:44:05 PM: WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001E9FD6CF610>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/1b2e6ebe5ce833d3780b6f5089fbfa3c/url
+04/22/2023 04:44:10 PM: WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001E9FC94C750>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/1b2e6ebe5ce833d3780b6f5089fbfa3c/url
+04/22/2023 04:44:14 PM: WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001E9FD680DD0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/1b2e6ebe5ce833d3780b6f5089fbfa3c/url
+04/22/2023 04:45:10 PM: INFO: ====== WebDriver manager ======
+04/22/2023 04:45:10 PM: INFO: Get LATEST chromedriver version for google-chrome 112.0.5615
+04/22/2023 04:45:12 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\112.0.5615\chromedriver.exe] found in cache
+04/22/2023 04:46:03 PM: ERROR: Test Failed
+04/22/2023 04:46:03 PM: INFO: Wallet balance and Exposure Balance is not Updated After Bet place
+04/22/2023 04:46:03 PM: INFO: Message After Place Bet Bet has been placed successfully.
+04/22/2023 04:46:03 PM: INFO: User Login With rocktest
+04/22/2023 04:46:03 PM: INFO: Wallet Amount Before Place Bet 20528.15
+04/22/2023 04:46:03 PM: INFO: Wallet Amount After Place Bet 20528.15
+04/22/2023 04:46:03 PM: INFO: Bet Price 202
+04/22/2023 04:46:03 PM: INFO: Exposure Before Place Bet 2222.0
+04/22/2023 04:46:03 PM: INFO: Exposure After Place Bet 2222.0
+04/22/2023 04:46:03 PM: INFO: 
+04/22/2023 04:46:03 PM: INFO: ******************** Data From Dashboard Bet list ********************
+04/22/2023 04:46:03 PM: INFO: Bet Place Team Name is Mumbai Indians
+04/22/2023 04:46:03 PM: INFO: Bet Place On Back
+04/22/2023 04:46:03 PM: INFO: Bet Stake Amount is 202
+04/22/2023 04:46:03 PM: INFO: P/L on Bet Place is 195.94
+04/22/2023 04:46:09 PM: INFO: 
+04/22/2023 04:46:09 PM: INFO: ******************** Data From Open Bet Report ********************
+04/22/2023 04:46:09 PM: INFO: Bet Place Team Name In Open Bet Report is Mumbai Indians
+04/22/2023 04:46:09 PM: INFO: Bet Place Type In Open Bet Report is Back
+04/22/2023 04:46:09 PM: INFO: Bet Stake Amount In Open Bet Report is 202
+04/22/2023 04:46:09 PM: INFO: P/L On Bet Place In Open Bet Report is 195.94
+04/22/2023 04:47:14 PM: INFO: ====== WebDriver manager ======
+04/22/2023 04:47:15 PM: INFO: Get LATEST chromedriver version for google-chrome 112.0.5615
+04/22/2023 04:47:16 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\112.0.5615\chromedriver.exe] found in cache
+04/22/2023 04:48:04 PM: ERROR: Test Failed
+04/22/2023 04:48:04 PM: INFO: Wallet balance and Exposure Balance is not Updated After Bet place
+04/22/2023 04:48:04 PM: INFO: Message After Place Bet Bet has been placed successfully.
+04/22/2023 04:48:04 PM: INFO: User Login With rocktest
+04/22/2023 04:48:04 PM: INFO: Wallet Amount Before Place Bet 20326.15
+04/22/2023 04:48:04 PM: INFO: Wallet Amount After Place Bet 20326.15
+04/22/2023 04:48:04 PM: INFO: Bet Price 202
+04/22/2023 04:48:04 PM: INFO: Exposure Before Place Bet 2424.0
+04/22/2023 04:48:04 PM: INFO: Exposure After Place Bet 2424.0
+04/22/2023 04:48:04 PM: INFO: 
+04/22/2023 04:48:04 PM: INFO: ******************** Data From Dashboard Bet list ********************
+04/22/2023 04:48:04 PM: INFO: Bet Place Team Name is Mumbai Indians
+04/22/2023 04:48:04 PM: INFO: Bet Place On Back
+04/22/2023 04:48:04 PM: INFO: Bet Stake Amount is 202
+04/22/2023 04:48:04 PM: INFO: P/L on Bet Place is 195.94
+04/22/2023 04:48:09 PM: INFO: 
+04/22/2023 04:48:09 PM: INFO: ******************** Data From Open Bet Report ********************
+04/22/2023 04:48:09 PM: INFO: Bet Place Team Name In Open Bet Report is Mumbai Indians
+04/22/2023 04:48:09 PM: INFO: Bet Place Type In Open Bet Report is Back
+04/22/2023 04:48:09 PM: INFO: Bet Stake Amount In Open Bet Report is 202
+04/22/2023 04:48:09 PM: INFO: P/L On Bet Place In Open Bet Report is 195.94
+04/22/2023 04:48:16 PM: WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001E8C79FFA10>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/f45ed83164bbff67dd8d3b4dbd878181/url
+04/22/2023 04:48:20 PM: WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001E8C78E7410>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/f45ed83164bbff67dd8d3b4dbd878181/url
+04/22/2023 04:48:24 PM: WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001E8C79B1490>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/f45ed83164bbff67dd8d3b4dbd878181/url
+04/22/2023 04:51:57 PM: INFO: ====== WebDriver manager ======
+04/22/2023 04:51:57 PM: INFO: Get LATEST chromedriver version for google-chrome 112.0.5615
+04/22/2023 04:51:59 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\112.0.5615\chromedriver.exe] found in cache
+04/22/2023 04:52:47 PM: ERROR: Test Failed
+04/22/2023 04:52:47 PM: INFO: Wallet balance and Exposure Balance is not Updated After Bet place
+04/22/2023 04:52:47 PM: INFO: Message After Place Bet Bet has been placed successfully.
+04/22/2023 04:52:47 PM: INFO: User Login With rocktest
+04/22/2023 04:52:47 PM: INFO: Wallet Amount Before Place Bet 20124.15
+04/22/2023 04:52:47 PM: INFO: Wallet Amount After Place Bet 20124.15
+04/22/2023 04:52:47 PM: INFO: Bet Price 202
+04/22/2023 04:52:47 PM: INFO: Exposure Before Place Bet 2626.0
+04/22/2023 04:52:47 PM: INFO: Exposure After Place Bet 2626.0
+04/22/2023 04:52:47 PM: INFO: 
+04/22/2023 04:52:47 PM: INFO: ******************** Data From Dashboard Bet list ********************
+04/22/2023 04:52:47 PM: INFO: Bet Place Team Name is Mumbai Indians
+04/22/2023 04:52:47 PM: INFO: Bet Place On Back
+04/22/2023 04:52:47 PM: INFO: Bet Stake Amount is 202
+04/22/2023 04:52:47 PM: INFO: P/L on Bet Place is 195.94
+04/22/2023 04:52:53 PM: INFO: 
+04/22/2023 04:52:53 PM: INFO: ******************** Data From Open Bet Report ********************
+04/22/2023 04:52:53 PM: INFO: Bet Place Team Name In Open Bet Report is Mumbai Indians
+04/22/2023 04:52:53 PM: INFO: Bet Place Type In Open Bet Report is Back
+04/22/2023 04:52:53 PM: INFO: Bet Stake Amount In Open Bet Report is 202
+04/22/2023 04:52:53 PM: INFO: P/L On Bet Place In Open Bet Report is 195.94
+04/22/2023 04:52:59 PM: WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001534709ED10>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/38d080c241bfd4b766bbfc5dfdb20696/url
+04/22/2023 04:53:04 PM: WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000015347033A10>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/38d080c241bfd4b766bbfc5dfdb20696/url
+04/22/2023 04:53:08 PM: WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000015347047290>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/38d080c241bfd4b766bbfc5dfdb20696/url
+04/22/2023 04:58:55 PM: INFO: ====== WebDriver manager ======
+04/22/2023 04:58:56 PM: INFO: Get LATEST chromedriver version for google-chrome 112.0.5615
+04/22/2023 04:58:57 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\112.0.5615\chromedriver.exe] found in cache
+04/22/2023 04:59:43 PM: ERROR: Test Failed
+04/22/2023 04:59:43 PM: INFO: Wallet balance and Exposure Balance is not Updated After Bet place
+04/22/2023 04:59:43 PM: INFO: Message After Place Bet Bet has been placed successfully.
+04/22/2023 04:59:43 PM: INFO: User Login With rocktest
+04/22/2023 04:59:43 PM: INFO: Wallet Amount Before Place Bet 19922.15
+04/22/2023 04:59:43 PM: INFO: Wallet Amount After Place Bet 19922.15
+04/22/2023 04:59:43 PM: INFO: Bet Price 202
+04/22/2023 04:59:43 PM: INFO: Exposure Before Place Bet 2828.0
+04/22/2023 04:59:43 PM: INFO: Exposure After Place Bet 2828.0
+04/22/2023 04:59:43 PM: INFO: 
+04/22/2023 04:59:43 PM: INFO: ******************** Data From Dashboard Bet list ********************
+04/22/2023 04:59:43 PM: INFO: Bet Place Team Name is Mumbai Indians
+04/22/2023 04:59:43 PM: INFO: Bet Place On Back
+04/22/2023 04:59:43 PM: INFO: Bet Stake Amount is 202
+04/22/2023 04:59:43 PM: INFO: P/L on Bet Place is 195.94
+04/22/2023 04:59:49 PM: INFO: 
+04/22/2023 04:59:49 PM: INFO: ******************** Data From Open Bet Report ********************
+04/22/2023 04:59:49 PM: INFO: Bet Place Team Name In Open Bet Report is Mumbai Indians
+04/22/2023 04:59:49 PM: INFO: Bet Place Type In Open Bet Report is Back
+04/22/2023 04:59:49 PM: INFO: Bet Stake Amount In Open Bet Report is 202
+04/22/2023 04:59:49 PM: INFO: P/L On Bet Place In Open Bet Report is 195.94
+04/22/2023 04:59:56 PM: WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002224C13F710>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/baa3a377f4231354e44a57293180f72d/url
+04/22/2023 05:00:00 PM: WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002224C13E110>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/baa3a377f4231354e44a57293180f72d/url
+04/22/2023 05:00:04 PM: WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002224C0D28D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/baa3a377f4231354e44a57293180f72d/url
+04/22/2023 05:06:39 PM: INFO: ====== WebDriver manager ======
+04/22/2023 05:06:40 PM: INFO: Get LATEST chromedriver version for google-chrome 112.0.5615
+04/22/2023 05:06:41 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\112.0.5615\chromedriver.exe] found in cache
+04/22/2023 05:07:27 PM: ERROR: Test Failed
+04/22/2023 05:07:27 PM: INFO: Wallet balance and Exposure Balance is not Updated After Bet place
+04/22/2023 05:07:27 PM: INFO: Message After Place Bet Bet has been placed successfully.
+04/22/2023 05:07:27 PM: INFO: User Login With rocktest
+04/22/2023 05:07:27 PM: INFO: Wallet Amount Before Place Bet 19720.15
+04/22/2023 05:07:27 PM: INFO: Wallet Amount After Place Bet 19720.15
+04/22/2023 05:07:27 PM: INFO: Bet Price 202
+04/22/2023 05:07:27 PM: INFO: Exposure Before Place Bet 3030.0
+04/22/2023 05:07:27 PM: INFO: Exposure After Place Bet 3030.0
+04/22/2023 05:07:27 PM: INFO: 
+04/22/2023 05:07:27 PM: INFO: ******************** Data From Dashboard Bet list ********************
+04/22/2023 05:07:27 PM: INFO: Bet Place Team Name is Mumbai Indians
+04/22/2023 05:07:27 PM: INFO: Bet Place On Back
+04/22/2023 05:07:27 PM: INFO: Bet Stake Amount is 202
+04/22/2023 05:07:27 PM: INFO: P/L on Bet Place is 195.94
+04/22/2023 05:07:33 PM: INFO: 
+04/22/2023 05:07:33 PM: INFO: ******************** Data From Open Bet Report ********************
+04/22/2023 05:07:33 PM: INFO: Bet Place Team Name In Open Bet Report is Mumbai Indians
+04/22/2023 05:07:33 PM: INFO: Bet Place Type In Open Bet Report is Back
+04/22/2023 05:07:33 PM: INFO: Bet Stake Amount In Open Bet Report is 202
+04/22/2023 05:07:33 PM: INFO: P/L On Bet Place In Open Bet Report is 195.94
+04/22/2023 05:15:25 PM: INFO: ====== WebDriver manager ======
+04/22/2023 05:15:26 PM: INFO: Get LATEST chromedriver version for google-chrome 112.0.5615
+04/22/2023 05:15:27 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\112.0.5615\chromedriver.exe] found in cache
+04/22/2023 05:22:24 PM: INFO: ====== WebDriver manager ======
+04/22/2023 05:22:24 PM: INFO: Get LATEST chromedriver version for google-chrome 112.0.5615
+04/22/2023 05:22:26 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\112.0.5615\chromedriver.exe] found in cache
+04/22/2023 05:30:13 PM: INFO: ====== WebDriver manager ======
+04/22/2023 05:30:14 PM: INFO: Get LATEST chromedriver version for google-chrome 112.0.5615
+04/22/2023 05:30:15 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\112.0.5615\chromedriver.exe] found in cache
+04/22/2023 05:30:48 PM: INFO: ====== WebDriver manager ======
+04/22/2023 05:30:49 PM: INFO: Get LATEST chromedriver version for google-chrome 112.0.5615
+04/22/2023 05:30:50 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\112.0.5615\chromedriver.exe] found in cache
+04/22/2023 05:31:24 PM: INFO: ====== WebDriver manager ======
+04/22/2023 05:31:25 PM: INFO: Get LATEST chromedriver version for google-chrome 112.0.5615
+04/22/2023 05:31:26 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\112.0.5615\chromedriver.exe] found in cache
+04/22/2023 05:31:47 PM: INFO: ====== WebDriver manager ======
+04/22/2023 05:31:47 PM: INFO: Get LATEST chromedriver version for google-chrome 112.0.5615
+04/22/2023 05:31:48 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\112.0.5615\chromedriver.exe] found in cache
+04/22/2023 05:32:18 PM: INFO: ====== WebDriver manager ======
+04/22/2023 05:32:19 PM: INFO: Get LATEST chromedriver version for google-chrome 112.0.5615
+04/22/2023 05:32:20 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\112.0.5615\chromedriver.exe] found in cache
+04/22/2023 05:33:41 PM: INFO: ====== WebDriver manager ======
+04/22/2023 05:33:42 PM: INFO: Get LATEST chromedriver version for google-chrome 112.0.5615
+04/22/2023 05:33:43 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\112.0.5615\chromedriver.exe] found in cache
+04/22/2023 05:46:37 PM: INFO: ====== WebDriver manager ======
+04/22/2023 05:46:37 PM: INFO: Get LATEST chromedriver version for google-chrome 112.0.5615
+04/22/2023 05:46:39 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\112.0.5615\chromedriver.exe] found in cache
+04/22/2023 05:47:13 PM: INFO: Test Passed
+04/22/2023 05:47:13 PM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+04/22/2023 05:47:13 PM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+04/22/2023 05:47:54 PM: INFO: ====== WebDriver manager ======
+04/22/2023 05:47:54 PM: INFO: Get LATEST chromedriver version for google-chrome 112.0.5615
+04/22/2023 05:47:55 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\112.0.5615\chromedriver.exe] found in cache
+04/22/2023 05:48:35 PM: INFO: Test Passed
+04/22/2023 05:48:35 PM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+04/22/2023 05:48:35 PM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+04/22/2023 05:51:05 PM: INFO: ====== WebDriver manager ======
+04/22/2023 05:51:05 PM: INFO: Get LATEST chromedriver version for google-chrome 112.0.5615
+04/22/2023 05:51:06 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\112.0.5615\chromedriver.exe] found in cache
+04/22/2023 05:51:58 PM: ERROR: Test Failed
+04/22/2023 05:51:58 PM: INFO: Wallet balance and Exposure Balance is not Updated After Bet place
+04/22/2023 05:51:58 PM: INFO: Message After Place Bet Bet has been placed successfully.
+04/22/2023 05:51:58 PM: INFO: User Login With rocktest
+04/22/2023 05:51:58 PM: INFO: Wallet Amount Before Place Bet 19518.15
+04/22/2023 05:51:58 PM: INFO: Wallet Amount After Place Bet 19518.15
+04/22/2023 05:51:58 PM: INFO: Bet Price 202
+04/22/2023 05:51:58 PM: INFO: Exposure Before Place Bet 3232.0
+04/22/2023 05:51:58 PM: INFO: Exposure After Place Bet 3232.0
+04/22/2023 05:51:58 PM: INFO: 
+04/22/2023 05:51:58 PM: INFO: ******************** Data From Dashboard Bet list ********************
+04/22/2023 05:51:58 PM: INFO: Bet Place Team Name is Mumbai Indians
+04/22/2023 05:51:58 PM: INFO: Bet Place On Back
+04/22/2023 05:51:58 PM: INFO: Bet Stake Amount is 202
+04/22/2023 05:51:58 PM: INFO: P/L on Bet Place is 195.94
+04/22/2023 05:52:04 PM: INFO: 
+04/22/2023 05:52:04 PM: INFO: ******************** Data From Open Bet Report ********************
+04/22/2023 05:52:04 PM: INFO: Bet Place Team Name In Open Bet Report is Mumbai Indians
+04/22/2023 05:52:04 PM: INFO: Bet Place Type In Open Bet Report is Back
+04/22/2023 05:52:04 PM: INFO: Bet Stake Amount In Open Bet Report is 202
+04/22/2023 05:52:04 PM: INFO: P/L On Bet Place In Open Bet Report is 195.94
+04/22/2023 06:25:58 PM: INFO: ====== WebDriver manager ======
+04/22/2023 06:25:59 PM: INFO: Get LATEST chromedriver version for google-chrome 112.0.5615
+04/22/2023 06:26:00 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\112.0.5615\chromedriver.exe] found in cache
+04/22/2023 06:27:05 PM: ERROR: Test Failed
+04/22/2023 06:27:05 PM: INFO: Wallet balance and Exposure Balance is not Updated After Bet place
+04/22/2023 06:27:05 PM: INFO: Message After Place Bet Bet has been placed successfully.
+04/22/2023 06:27:05 PM: INFO: User Login With rocktest
+04/22/2023 06:27:05 PM: INFO: Wallet Amount Before Place Bet 19316.15
+04/22/2023 06:27:05 PM: INFO: Wallet Amount After Place Bet 19316.15
+04/22/2023 06:27:05 PM: INFO: Bet Price 202
+04/22/2023 06:27:05 PM: INFO: Exposure Before Place Bet 3434.0
+04/22/2023 06:27:05 PM: INFO: Exposure After Place Bet 3434.0
+04/22/2023 06:27:05 PM: INFO: 
+04/22/2023 06:27:05 PM: INFO: ******************** Data From Dashboard Bet list ********************
+04/22/2023 06:27:05 PM: INFO: Bet Place Team Name is Royal Challengers Bangalore
+04/22/2023 06:27:05 PM: INFO: Bet Place On Back
+04/22/2023 06:27:05 PM: INFO: Bet Stake Amount is 202
+04/22/2023 06:27:05 PM: INFO: P/L on Bet Place is 195.94
+04/22/2023 06:27:11 PM: INFO: 
+04/22/2023 06:27:11 PM: INFO: ******************** Data From Open Bet Report ********************
+04/22/2023 06:27:11 PM: INFO: Bet Place Team Name In Open Bet Report is Royal Challengers Bangalore
+04/22/2023 06:27:11 PM: INFO: Bet Place Type In Open Bet Report is Back
+04/22/2023 06:27:11 PM: INFO: Bet Stake Amount In Open Bet Report is 202
+04/22/2023 06:27:11 PM: INFO: P/L On Bet Place In Open Bet Report is 195.94
+04/22/2023 06:27:18 PM: WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001462E3672D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/7966d3074439d4b24b451c21a9ca2ab7/url
+04/22/2023 06:27:22 PM: WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001462E3D0750>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/7966d3074439d4b24b451c21a9ca2ab7/url
+04/22/2023 06:27:26 PM: WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001462E65EB10>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/7966d3074439d4b24b451c21a9ca2ab7/url
+04/22/2023 06:29:53 PM: INFO: ====== WebDriver manager ======
+04/22/2023 06:29:54 PM: INFO: Get LATEST chromedriver version for google-chrome 112.0.5615
+04/22/2023 06:29:55 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\112.0.5615\chromedriver.exe] found in cache
+04/22/2023 06:30:55 PM: ERROR: Test Failed
+04/22/2023 06:30:55 PM: INFO: Wallet balance and Exposure Balance is not Updated After Bet place
+04/22/2023 06:30:55 PM: INFO: Message After Place Bet Bet has been placed successfully.
+04/22/2023 06:30:55 PM: INFO: User Login With rocktest
+04/22/2023 06:30:55 PM: INFO: Wallet Amount Before Place Bet 19114.15
+04/22/2023 06:30:55 PM: INFO: Wallet Amount After Place Bet 19114.15
+04/22/2023 06:30:55 PM: INFO: Bet Price 202
+04/22/2023 06:30:55 PM: INFO: Exposure Before Place Bet 3636.0
+04/22/2023 06:30:55 PM: INFO: Exposure After Place Bet 3636.0
+04/22/2023 06:30:55 PM: INFO: 
+04/22/2023 06:30:55 PM: INFO: ******************** Data From Dashboard Bet list ********************
+04/22/2023 06:30:55 PM: INFO: Bet Place Team Name is Royal Challengers Bangalore
+04/22/2023 06:30:55 PM: INFO: Bet Place On Back
+04/22/2023 06:30:55 PM: INFO: Bet Stake Amount is 202
+04/22/2023 06:30:55 PM: INFO: P/L on Bet Place is 195.94
+04/22/2023 06:31:01 PM: INFO: 
+04/22/2023 06:31:01 PM: INFO: ******************** Data From Open Bet Report ********************
+04/22/2023 06:31:01 PM: INFO: Bet Place Team Name In Open Bet Report is Royal Challengers Bangalore
+04/22/2023 06:31:01 PM: INFO: Bet Place Type In Open Bet Report is Back
+04/22/2023 06:31:01 PM: INFO: Bet Stake Amount In Open Bet Report is 202
+04/22/2023 06:31:01 PM: INFO: P/L On Bet Place In Open Bet Report is 195.94
+04/22/2023 06:31:07 PM: WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000013287627C90>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/ff659dde8f3d964cddd83aba6643feca/url
+04/22/2023 06:31:12 PM: WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000013287625D50>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/ff659dde8f3d964cddd83aba6643feca/url
+04/22/2023 06:31:16 PM: WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000132875D3BD0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/ff659dde8f3d964cddd83aba6643feca/url
+04/22/2023 07:03:29 PM: INFO: ====== WebDriver manager ======
+04/22/2023 07:03:30 PM: INFO: Get LATEST chromedriver version for google-chrome 112.0.5615
+04/22/2023 07:03:31 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\112.0.5615\chromedriver.exe] found in cache
+04/22/2023 07:04:27 PM: ERROR: Test Failed
+04/22/2023 07:04:27 PM: INFO: Wallet balance and Exposure Balance is not Updated After Bet place
+04/22/2023 07:04:27 PM: INFO: Message After Place Bet Bet has been placed successfully.
+04/22/2023 07:04:27 PM: INFO: User Login With rocktest
+04/22/2023 07:04:27 PM: INFO: Wallet Amount Before Place Bet 18912.15
+04/22/2023 07:04:27 PM: INFO: Wallet Amount After Place Bet 18912.15
+04/22/2023 07:04:27 PM: INFO: Bet Price 202
+04/22/2023 07:04:27 PM: INFO: Exposure Before Place Bet 3838.0
+04/22/2023 07:04:27 PM: INFO: Exposure After Place Bet 3838.0
+04/22/2023 07:04:27 PM: INFO: 
+04/22/2023 07:04:27 PM: INFO: ******************** Data From Dashboard Bet list ********************
+04/22/2023 07:04:27 PM: INFO: Bet Place Team Name is Royal Challengers Bangalore
+04/22/2023 07:04:27 PM: INFO: Bet Place On Back
+04/22/2023 07:04:27 PM: INFO: Bet Stake Amount is 202
+04/22/2023 07:04:27 PM: INFO: P/L on Bet Place is 195.94
+04/22/2023 07:04:32 PM: INFO: 
+04/22/2023 07:04:32 PM: INFO: ******************** Data From Open Bet Report ********************
+04/22/2023 07:04:32 PM: INFO: Bet Place Team Name In Open Bet Report is Royal Challengers Bangalore
+04/22/2023 07:04:32 PM: INFO: Bet Place Type In Open Bet Report is Back
+04/22/2023 07:04:32 PM: INFO: Bet Stake Amount In Open Bet Report is 202
+04/22/2023 07:04:32 PM: INFO: P/L On Bet Place In Open Bet Report is 195.94
+04/22/2023 07:09:34 PM: INFO: ====== WebDriver manager ======
+04/22/2023 07:09:35 PM: INFO: Get LATEST chromedriver version for google-chrome 112.0.5615
+04/22/2023 07:09:36 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\112.0.5615\chromedriver.exe] found in cache
+04/22/2023 07:10:30 PM: INFO: ====== WebDriver manager ======
+04/22/2023 07:10:31 PM: INFO: Get LATEST chromedriver version for google-chrome 112.0.5615
+04/22/2023 07:10:32 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\112.0.5615\chromedriver.exe] found in cache
+04/22/2023 07:11:25 PM: INFO: Test Passed
+04/22/2023 07:11:25 PM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+04/22/2023 07:11:25 PM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+04/22/2023 07:11:26 PM: INFO: ====== WebDriver manager ======
+04/22/2023 07:11:26 PM: INFO: Get LATEST chromedriver version for google-chrome 112.0.5615
+04/22/2023 07:11:27 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\112.0.5615\chromedriver.exe] found in cache
+04/22/2023 07:12:36 PM: INFO: Test Passed
+04/22/2023 07:12:36 PM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+04/22/2023 07:12:36 PM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+04/22/2023 07:12:36 PM: INFO: ====== WebDriver manager ======
+04/22/2023 07:12:36 PM: INFO: Get LATEST chromedriver version for google-chrome 112.0.5615
+04/22/2023 07:12:37 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\112.0.5615\chromedriver.exe] found in cache
+04/22/2023 07:14:23 PM: INFO: Test Passed
+04/22/2023 07:14:23 PM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+04/22/2023 07:14:23 PM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+04/22/2023 07:17:26 PM: INFO: ====== WebDriver manager ======
+04/22/2023 07:17:27 PM: INFO: Get LATEST chromedriver version for google-chrome 112.0.5615
+04/22/2023 07:17:28 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\112.0.5615\chromedriver.exe] found in cache
+04/22/2023 07:18:00 PM: INFO: ====== WebDriver manager ======
+04/22/2023 07:18:01 PM: INFO: Get LATEST chromedriver version for google-chrome 112.0.5615
+04/22/2023 07:18:05 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\112.0.5615\chromedriver.exe] found in cache
+04/22/2023 07:18:58 PM: INFO: ====== WebDriver manager ======
+04/22/2023 07:18:58 PM: INFO: Get LATEST chromedriver version for google-chrome 112.0.5615
+04/22/2023 07:19:11 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\112.0.5615\chromedriver.exe] found in cache
+04/22/2023 07:20:27 PM: INFO: User Not login, Please Run This Test Again
+04/22/2023 07:20:30 PM: INFO: ====== WebDriver manager ======
+04/22/2023 07:20:35 PM: INFO: Get LATEST chromedriver version for google-chrome 112.0.5615
+04/22/2023 07:20:48 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\112.0.5615\chromedriver.exe] found in cache
+04/22/2023 07:23:43 PM: INFO: ====== WebDriver manager ======
+04/22/2023 07:23:43 PM: INFO: Get LATEST chromedriver version for google-chrome 112.0.5615
+04/22/2023 07:23:45 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\112.0.5615\chromedriver.exe] found in cache
+04/22/2023 07:24:35 PM: INFO: Test Passed
+04/22/2023 07:24:35 PM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+04/22/2023 07:24:35 PM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+04/22/2023 07:24:44 PM: INFO: ====== WebDriver manager ======
+04/22/2023 07:24:44 PM: INFO: Get LATEST chromedriver version for google-chrome 112.0.5615
+04/22/2023 07:24:45 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\112.0.5615\chromedriver.exe] found in cache
+04/22/2023 07:25:34 PM: INFO: Test Passed
+04/22/2023 07:25:34 PM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+04/22/2023 07:25:34 PM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+04/22/2023 07:27:16 PM: INFO: ====== WebDriver manager ======
+04/22/2023 07:27:17 PM: INFO: Get LATEST chromedriver version for google-chrome 112.0.5615
+04/22/2023 07:27:18 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\112.0.5615\chromedriver.exe] found in cache
+04/22/2023 07:28:17 PM: INFO: Test Passed
+04/22/2023 07:28:17 PM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+04/22/2023 07:28:17 PM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+04/22/2023 07:28:17 PM: INFO: ====== WebDriver manager ======
+04/22/2023 07:28:18 PM: INFO: Get LATEST chromedriver version for google-chrome 112.0.5615
+04/22/2023 07:28:19 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\112.0.5615\chromedriver.exe] found in cache
+04/22/2023 07:29:08 PM: INFO: Test Passed
+04/22/2023 07:29:08 PM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+04/22/2023 07:29:08 PM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+04/22/2023 07:29:08 PM: INFO: ====== WebDriver manager ======
+04/22/2023 07:29:09 PM: INFO: Get LATEST chromedriver version for google-chrome 112.0.5615
+04/22/2023 07:29:10 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\112.0.5615\chromedriver.exe] found in cache
+04/22/2023 07:30:12 PM: INFO: Test Passed
+04/22/2023 07:30:12 PM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+04/22/2023 07:30:12 PM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+04/22/2023 07:30:12 PM: INFO: ====== WebDriver manager ======
+04/22/2023 07:30:13 PM: INFO: Get LATEST chromedriver version for google-chrome 112.0.5615
+04/22/2023 07:30:14 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\112.0.5615\chromedriver.exe] found in cache

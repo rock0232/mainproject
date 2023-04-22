@@ -1,5 +1,6 @@
 import time
 import pytest
+import pytest_html.extras
 from selenium.common import NoSuchElementException
 from selenium.webdriver import Keys
 from selenium.webdriver.common.by import By
@@ -633,23 +634,27 @@ class Test_B2Bcommonclass:
         preexposure = self.cc.getliability()
         element = self.driver.find_elements(By.XPATH, self.cc.manualodds_xpath)
         for sc in range(0,len(element)):
-            element1 = self.driver.find_elements(By.XPATH, self.cc.manualodds_xpath)
-            self.driver.execute_script("arguments[0].scrollIntoView();", element1[sc])
-            time.sleep(2)
-            element1[sc].click()
-            time.sleep(5)
-            backelement = self.driver.find_element(By.XPATH, self.cc.wintossback_xpath)
-            self.driver.execute_script("arguments[0].scrollIntoView();", backelement)
-            time.sleep(1)
-            self.driver.find_element(By.XPATH, self.cc.wintossback_xpath).click()
-            self.driver.find_element(By.CSS_SELECTOR, self.cc.manualbetprice_css).clear()
-            self.driver.find_element(By.CSS_SELECTOR, self.cc.manualbetprice_css).send_keys(self.betprice)
-            self.cc.clickplacebet()
-            alertmessage = self.cc.getalertmessage()
-            if "success" in alertmessage:
-                self.cc.inplay = False
-                break
-            else:
+            try:
+                element1 = self.driver.find_elements(By.XPATH, self.cc.manualodds_xpath)
+                self.driver.execute_script("arguments[0].scrollIntoView();", element1[sc])
+                time.sleep(2)
+                element1[sc].click()
+                time.sleep(5)
+                backelement = self.driver.find_element(By.CSS_SELECTOR, self.cc.wintossback_css)
+                self.driver.execute_script("arguments[0].scrollIntoView();", backelement)
+                time.sleep(1)
+                WebDriverWait(self.driver, 15).until(EC.presence_of_element_located((By.CSS_SELECTOR, self.cc.wintossback_css)))
+                self.driver.find_element(By.CSS_SELECTOR, self.cc.wintossback_css).click()
+                self.driver.find_element(By.CSS_SELECTOR, self.cc.manualbetprice_css).clear()
+                self.driver.find_element(By.CSS_SELECTOR, self.cc.manualbetprice_css).send_keys(self.betprice)
+                self.cc.clickplacebet()
+                alertmessage = self.cc.getalertmessage()
+                if "success" in alertmessage:
+                    self.cc.inplay = False
+                    break
+                else:
+                    self.cc.clicklogo()
+            except:
                 self.cc.clicklogo()
 
         if self.cc.inplay:
@@ -759,6 +764,7 @@ class Test_B2Bcommonclass:
     @pytest.mark.runall
     @pytest.mark.b2bmarker
     @pytest.mark.aura25
+    @pytest.mark.test
     def test_aura25(self, aura25login):
         try:
             login = WebDriverWait(self.driver, 15).until(EC.visibility_of_element_located((By.TAG_NAME, "app-dashboard")))
@@ -770,6 +776,7 @@ class Test_B2Bcommonclass:
     @pytest.mark.runall
     @pytest.mark.b2bmarker
     @pytest.mark.abdexch
+    @pytest.mark.test
     def test_abdexch(self, abdlogin):
         try:
             login = WebDriverWait(self.driver, 15).until(
@@ -782,6 +789,7 @@ class Test_B2Bcommonclass:
     @pytest.mark.runall
     @pytest.mark.b2bmarker
     @pytest.mark.badabet
+    @pytest.mark.test
     def test_badabet(self, badabetlogin):
         try:
             login = WebDriverWait(self.driver, 15).until(
@@ -794,6 +802,7 @@ class Test_B2Bcommonclass:
     @pytest.mark.runall
     @pytest.mark.b2bmarker
     @pytest.mark.infinity
+    @pytest.mark.test
     def test_infinity(self, infinitylogin):
         try:
             login = WebDriverWait(self.driver, 15).until(
