@@ -1634,3 +1634,27 @@
 04/24/2023 03:54:51 AM: INFO: Bet Place Type In Open Bet Report is Back
 04/24/2023 03:54:51 AM: INFO: Bet Stake Amount In Open Bet Report is 202
 04/24/2023 03:54:51 AM: INFO: P/L On Bet Place In Open Bet Report is 195.94
+04/24/2023 04:00:31 AM: INFO: ====== WebDriver manager ======
+04/24/2023 04:00:32 AM: INFO: Get LATEST chromedriver version for google-chrome 112.0.5615
+04/24/2023 04:00:33 AM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\112.0.5615\chromedriver.exe] found in cache
+04/24/2023 04:01:18 AM: ERROR: Test Failed
+04/24/2023 04:01:18 AM: INFO: Wallet balance and Exposure Balance is not Updated After Bet place
+04/24/2023 04:01:18 AM: INFO: Message After Place Bet Bet has been placed successfully.
+04/24/2023 04:01:18 AM: INFO: User Login With rocktest
+04/24/2023 04:01:18 AM: INFO: Wallet Amount Before Place Bet 21839.13
+04/24/2023 04:01:18 AM: INFO: Wallet Amount After Place Bet 21839.13
+04/24/2023 04:01:18 AM: INFO: Bet Price 202
+04/24/2023 04:01:18 AM: INFO: Exposure Before Place Bet 3232.0
+04/24/2023 04:01:18 AM: INFO: Exposure After Place Bet 3232.0
+04/24/2023 04:01:18 AM: INFO: 
+04/24/2023 04:01:18 AM: INFO: ******************** Data From Dashboard Bet list ********************
+04/24/2023 04:01:18 AM: INFO: Bet Place Team Name is Sunrisers Hyderabad
+04/24/2023 04:01:18 AM: INFO: Bet Place On Back
+04/24/2023 04:01:18 AM: INFO: Bet Stake Amount is 202
+04/24/2023 04:01:18 AM: INFO: P/L on Bet Place is 195.94
+04/24/2023 04:01:18 AM: INFO: 
+04/24/2023 04:01:18 AM: INFO: ******************** Data From Open Bet Report ********************
+04/24/2023 04:01:18 AM: INFO: Bet Place Team Name In Open Bet Report is Sunrisers Hyderabad
+04/24/2023 04:01:18 AM: INFO: Bet Place Type In Open Bet Report is Back
+04/24/2023 04:01:18 AM: INFO: Bet Stake Amount In Open Bet Report is 202
+04/24/2023 04:01:18 AM: INFO: P/L On Bet Place In Open Bet Report is 195.94
