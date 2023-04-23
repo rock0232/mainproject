@@ -42,7 +42,15 @@ def pytest_html_report_title(report):
     report.title = "Test Result Report"
 
 def getcurrenturl():
-    return str(driver.current_url)
+    url = driver.current_url
+    urllst = []
+    for i in url:
+        if i == "#":
+            break
+        else:
+            urllst.append(i)
+    newurl = "".join(urllst)
+    return str(newurl)
 
 @pytest.hookimpl(hookwrapper=True)
 def pytest_runtest_makereport(item, call):
@@ -57,16 +65,16 @@ def pytest_runtest_makereport(item, call):
         if (report.skipped and xfail) or (report.failed and not xfail):
             file_name = report.nodeid.replace("::", "_") + ".png"
             _capture_screenshot(file_name)
-            file_path = f"http://159.65.148.205:8000/{file_name}"
-            # file_path = f"{filepath}/{file_name}"
+            # file_path = f"http://159.65.148.205:8000/{file_name}"
+            file_path = f"{filepath}/{file_name}"
             if file_name:
                 html = '<div> <img src="%s"' \
                        ' alt="screenshot" style="width:304px;height:228px;" ' \
                        'onclick="window.open(this.src)" align="right"/></div>' % file_path
                 extra.append(pytest_html.extras.html(html))
-                extra.append(pytest_html.extras.url(getcurrenturl()))
-                driver.quit()
-        report.extra = extra
+                extra.append(pytest_html.extras.url(getcurrenturl(), name=getcurrenturl()))
+    report.extra = extra
+    # driver.quit()
 
 def _capture_screenshot(name):
     driver.get_screenshot_as_file(name)

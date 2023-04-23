@@ -710,7 +710,7 @@ class Test_B2Bcommonclass:
                 exposure = float(dbstake) + preexposure
                 actpostwalletamount = self.cc.getwalletamount()
 
-                if postexposure == exposure and postwalletamount == actpostwalletamount:
+                if int(postexposure) == int(exposure) and int(postwalletamount) == int(actpostwalletamount):
                     self.logger.info("Test Passed")
                     self.logger.info("Message After Click on Place Bet Button %s", alertmessage)
                     self.logger.info("Wallet Amount And Exposure are Updated After Place Bet")
@@ -731,9 +731,7 @@ class Test_B2Bcommonclass:
                         self.logger.info("Bet Place On %s", dbtypeofbet)
                         self.logger.info("Bet Stake Amount is %s", dbstake)
                         self.logger.info("P/L on Bet Place is %s", dbpl)
-                        time.sleep(0.5)
-                        # self.driver.refresh()
-                        time.sleep(5)
+
                         rpselection = self.cc.getreportselection()
                         rptypeofbet = self.cc.getreporttype()
                         rpstake = self.cc.getreportstake()
@@ -749,9 +747,9 @@ class Test_B2Bcommonclass:
                     except:
                         self.logger.info(" ")
                         self.logger.info("Data Not Display In Report or Report Is not Update")
-                assert postexposure == exposure and postwalletamount == actpostwalletamount
+                assert int(postexposure) == int(exposure) and int(postwalletamount) == int(actpostwalletamount)
             except:
-                assert postexposure == exposure and postwalletamount == actpostwalletamount
+                assert int(postexposure) == int(exposure) and int(postwalletamount) == int(actpostwalletamount)
         elif "0Unknown Error" in alertmessage:
             self.logger.info("Bet Not Place Error Message = %s", alertmessage)
             assert False

@@ -110,6 +110,7 @@ class B2Bcommonclass:
         self.driver.find_element(By.XPATH, self.soccer_Xpath).click()
 
     def getreportselection(self):
+        WebDriverWait(self.driver, 15).until(EC.visibility_of_element_located((By.XPATH, self.reportselection_xpath)))
         selection = self.driver.find_element(By.XPATH, self.reportselection_xpath).text
         return selection
 
