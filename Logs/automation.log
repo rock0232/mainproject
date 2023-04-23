@@ -1658,3 +1658,109 @@
 04/24/2023 04:01:18 AM: INFO: Bet Place Type In Open Bet Report is Back
 04/24/2023 04:01:18 AM: INFO: Bet Stake Amount In Open Bet Report is 202
 04/24/2023 04:01:18 AM: INFO: P/L On Bet Place In Open Bet Report is 195.94
+04/24/2023 04:40:05 AM: INFO: ====== WebDriver manager ======
+04/24/2023 04:40:05 AM: INFO: Get LATEST chromedriver version for google-chrome 112.0.5615
+04/24/2023 04:40:06 AM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\112.0.5615\chromedriver.exe] found in cache
+04/24/2023 04:40:25 AM: WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001BE421670D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/7a9e5d212dea57d109904adce61ad482/element
+04/24/2023 04:40:30 AM: WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001BE42167E50>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/7a9e5d212dea57d109904adce61ad482/element
+04/24/2023 04:40:34 AM: WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001BE42170B10>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/7a9e5d212dea57d109904adce61ad482/element
+04/24/2023 04:40:38 AM: INFO: User Not login, Please Run This Test Again
+04/24/2023 04:40:42 AM: WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001BE42DCA650>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/7a9e5d212dea57d109904adce61ad482/screenshot
+04/24/2023 04:40:46 AM: WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001BE42DCB410>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/7a9e5d212dea57d109904adce61ad482/screenshot
+04/24/2023 04:40:51 AM: WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001BE42DCBC90>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/7a9e5d212dea57d109904adce61ad482/screenshot
+04/24/2023 04:41:15 AM: INFO: ====== WebDriver manager ======
+04/24/2023 04:41:15 AM: INFO: Get LATEST chromedriver version for google-chrome 112.0.5615
+04/24/2023 04:41:16 AM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\112.0.5615\chromedriver.exe] found in cache
+04/24/2023 04:42:00 AM: ERROR: Test Failed
+04/24/2023 04:42:00 AM: INFO: Wallet balance and Exposure Balance is not Updated After Bet place
+04/24/2023 04:42:00 AM: INFO: Message After Place Bet Bet has been placed successfully.
+04/24/2023 04:42:00 AM: INFO: User Login With rocktest
+04/24/2023 04:42:00 AM: INFO: Wallet Amount Before Place Bet 21233.13
+04/24/2023 04:42:00 AM: INFO: Wallet Amount After Place Bet 21233.13
+04/24/2023 04:42:00 AM: INFO: Bet Price 202
+04/24/2023 04:42:00 AM: INFO: Exposure Before Place Bet 3838.0
+04/24/2023 04:42:00 AM: INFO: Exposure After Place Bet 3838.0
+04/24/2023 04:42:00 AM: INFO: 
+04/24/2023 04:42:00 AM: INFO: ******************** Data From Dashboard Bet list ********************
+04/24/2023 04:42:00 AM: INFO: Bet Place Team Name is Sunrisers Hyderabad
+04/24/2023 04:42:00 AM: INFO: Bet Place On Back
+04/24/2023 04:42:00 AM: INFO: Bet Stake Amount is 202
+04/24/2023 04:42:00 AM: INFO: P/L on Bet Place is 195.94
+04/24/2023 04:42:00 AM: INFO: 
+04/24/2023 04:42:00 AM: INFO: ******************** Data From Open Bet Report ********************
+04/24/2023 04:42:00 AM: INFO: Bet Place Team Name In Open Bet Report is Sunrisers Hyderabad
+04/24/2023 04:42:00 AM: INFO: Bet Place Type In Open Bet Report is Back
+04/24/2023 04:42:00 AM: INFO: Bet Stake Amount In Open Bet Report is 202
+04/24/2023 04:42:00 AM: INFO: P/L On Bet Place In Open Bet Report is 195.94
+04/24/2023 04:42:18 AM: INFO: ====== WebDriver manager ======
+04/24/2023 04:42:19 AM: INFO: Get LATEST chromedriver version for google-chrome 112.0.5615
+04/24/2023 04:42:20 AM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\112.0.5615\chromedriver.exe] found in cache
+04/24/2023 04:43:19 AM: ERROR: Test Failed
+04/24/2023 04:43:19 AM: INFO: Wallet balance and Exposure Balance is not Updated After Bet place
+04/24/2023 04:43:19 AM: INFO: Message After Place Bet Bet has been placed successfully.
+04/24/2023 04:43:19 AM: INFO: User Login With rocktest
+04/24/2023 04:43:19 AM: INFO: Wallet Amount Before Place Bet 21031.13
+04/24/2023 04:43:19 AM: INFO: Wallet Amount After Place Bet 21031.13
+04/24/2023 04:43:19 AM: INFO: Bet Price 202
+04/24/2023 04:43:19 AM: INFO: Exposure Before Place Bet 4040.0
+04/24/2023 04:43:19 AM: INFO: Exposure After Place Bet 4040.0
+04/24/2023 04:43:19 AM: INFO: 
+04/24/2023 04:43:19 AM: INFO: ******************** Data From Dashboard Bet list ********************
+04/24/2023 04:43:19 AM: INFO: Bet Place Team Name is Sunrisers Hyderabad
+04/24/2023 04:43:19 AM: INFO: Bet Place On Back
+04/24/2023 04:43:19 AM: INFO: Bet Stake Amount is 202
+04/24/2023 04:43:19 AM: INFO: P/L on Bet Place is 195.94
+04/24/2023 04:43:19 AM: INFO: 
+04/24/2023 04:43:19 AM: INFO: ******************** Data From Open Bet Report ********************
+04/24/2023 04:43:19 AM: INFO: Bet Place Team Name In Open Bet Report is Sunrisers Hyderabad
+04/24/2023 04:43:19 AM: INFO: Bet Place Type In Open Bet Report is Back
+04/24/2023 04:43:19 AM: INFO: Bet Stake Amount In Open Bet Report is 202
+04/24/2023 04:43:19 AM: INFO: P/L On Bet Place In Open Bet Report is 195.94
+04/24/2023 04:49:30 AM: INFO: ====== WebDriver manager ======
+04/24/2023 04:49:30 AM: INFO: Get LATEST chromedriver version for google-chrome 112.0.5615
+04/24/2023 04:49:31 AM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\112.0.5615\chromedriver.exe] found in cache
+04/24/2023 04:50:10 AM: ERROR: Test Failed
+04/24/2023 04:50:10 AM: INFO: Wallet balance and Exposure Balance is not Updated After Bet place
+04/24/2023 04:50:10 AM: INFO: Message After Place Bet Bet has been placed successfully.
+04/24/2023 04:50:10 AM: INFO: User Login With rocktest
+04/24/2023 04:50:10 AM: INFO: Wallet Amount Before Place Bet 20829.13
+04/24/2023 04:50:10 AM: INFO: Wallet Amount After Place Bet 20829.13
+04/24/2023 04:50:10 AM: INFO: Bet Price 202
+04/24/2023 04:50:10 AM: INFO: Exposure Before Place Bet 4242.0
+04/24/2023 04:50:10 AM: INFO: Exposure After Place Bet 4242.0
+04/24/2023 04:50:10 AM: INFO: 
+04/24/2023 04:50:10 AM: INFO: ******************** Data From Dashboard Bet list ********************
+04/24/2023 04:50:10 AM: INFO: Bet Place Team Name is Sunrisers Hyderabad
+04/24/2023 04:50:10 AM: INFO: Bet Place On Back
+04/24/2023 04:50:10 AM: INFO: Bet Stake Amount is 202
+04/24/2023 04:50:10 AM: INFO: P/L on Bet Place is 195.94
+04/24/2023 04:50:10 AM: INFO: 
+04/24/2023 04:50:10 AM: INFO: ******************** Data From Open Bet Report ********************
+04/24/2023 04:50:10 AM: INFO: Bet Place Team Name In Open Bet Report is Sunrisers Hyderabad
+04/24/2023 04:50:10 AM: INFO: Bet Place Type In Open Bet Report is Back
+04/24/2023 04:50:10 AM: INFO: Bet Stake Amount In Open Bet Report is 202
+04/24/2023 04:50:10 AM: INFO: P/L On Bet Place In Open Bet Report is 195.94
+04/24/2023 04:51:38 AM: INFO: ====== WebDriver manager ======
+04/24/2023 04:51:38 AM: INFO: Get LATEST chromedriver version for google-chrome 112.0.5615
+04/24/2023 04:51:39 AM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\112.0.5615\chromedriver.exe] found in cache
+04/24/2023 04:52:17 AM: ERROR: Test Failed
+04/24/2023 04:52:17 AM: INFO: Wallet balance and Exposure Balance is not Updated After Bet place
+04/24/2023 04:52:17 AM: INFO: Message After Place Bet Bet has been placed successfully.
+04/24/2023 04:52:17 AM: INFO: User Login With rocktest
+04/24/2023 04:52:17 AM: INFO: Wallet Amount Before Place Bet 20627.13
+04/24/2023 04:52:17 AM: INFO: Wallet Amount After Place Bet 20627.13
+04/24/2023 04:52:17 AM: INFO: Bet Price 202
+04/24/2023 04:52:17 AM: INFO: Exposure Before Place Bet 4444.0
+04/24/2023 04:52:17 AM: INFO: Exposure After Place Bet 4444.0
+04/24/2023 04:52:17 AM: INFO: 
+04/24/2023 04:52:17 AM: INFO: ******************** Data From Dashboard Bet list ********************
+04/24/2023 04:52:17 AM: INFO: Bet Place Team Name is Sunrisers Hyderabad
+04/24/2023 04:52:17 AM: INFO: Bet Place On Back
+04/24/2023 04:52:17 AM: INFO: Bet Stake Amount is 202
+04/24/2023 04:52:17 AM: INFO: P/L on Bet Place is 195.94
+04/24/2023 04:52:17 AM: INFO: 
+04/24/2023 04:52:17 AM: INFO: ******************** Data From Open Bet Report ********************
+04/24/2023 04:52:17 AM: INFO: Bet Place Team Name In Open Bet Report is Sunrisers Hyderabad
+04/24/2023 04:52:17 AM: INFO: Bet Place Type In Open Bet Report is Back
+04/24/2023 04:52:17 AM: INFO: Bet Stake Amount In Open Bet Report is 202
+04/24/2023 04:52:17 AM: INFO: P/L On Bet Place In Open Bet Report is 195.94

@@ -629,7 +629,7 @@ class Test_B2Bcommonclass:
         alertmessage = ""
         self.cc = B2Bcommonclass(self.driver)
         self.cc.clickclose()
-        time.sleep(2)
+        time.sleep(1.5)
         prewalletamount = self.cc.getwalletamount()
         preexposure = self.cc.getliability()
         element = self.driver.find_elements(By.XPATH, self.cc.manualodds_xpath)
@@ -637,12 +637,12 @@ class Test_B2Bcommonclass:
             try:
                 element1 = self.driver.find_elements(By.XPATH, self.cc.manualodds_xpath)
                 self.driver.execute_script("arguments[0].scrollIntoView();", element1[sc])
-                time.sleep(2)
+                time.sleep(2.2)
                 element1[sc].click()
-                time.sleep(5)
+                WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located((By.CSS_SELECTOR, self.cc.wintossback_css)))
                 backelement = self.driver.find_element(By.CSS_SELECTOR, self.cc.wintossback_css)
                 self.driver.execute_script("arguments[0].scrollIntoView();", backelement)
-                time.sleep(1)
+
                 WebDriverWait(self.driver, 15).until(EC.presence_of_element_located((By.CSS_SELECTOR, self.cc.wintossback_css)))
                 self.driver.find_element(By.CSS_SELECTOR, self.cc.wintossback_css).click()
                 self.driver.find_element(By.CSS_SELECTOR, self.cc.manualbetprice_css).clear()
