@@ -1,13 +1,12 @@
 import time
 import pytest
-import pytest_html.extras
-from selenium.common import NoSuchElementException
-from selenium.webdriver import Keys
+# import pytest_html.extras
+# from selenium.common import NoSuchElementException
+# from selenium.webdriver import Keys
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from utilities.customlogger import Logger
-from TestCases.conftest import setup
 from pageobjects.B2Bcommonclass import B2Bcommonclass
 
 
@@ -65,565 +64,564 @@ class Test_B2Bcommonclass:
     newpassword = "First@666"
     betprice = 202
 
-    @pytest.fixture(scope="function", autouse=False)
-    def bajibet9login(self, setup):
-        self.driver = setup
-        self.driver.set_window_size(1366,768)
-        self.cc = B2Bcommonclass(self.driver)
-        self.driver.get(self.bajibet9)
-        time.sleep(5)
-        self.cc.clicksignin()
-        time.sleep(3)
-        self.cc.setusername(self.newusername)
-        self.cc.setpassword(self.newpassword)
-        self.cc.clicklogin()
-
-
-    @pytest.fixture(scope="function", autouse=False)
-    def jk3434login(self, setup):
-        self.driver = setup
-        self.driver.set_window_size(1366,768)
-        self.cc = B2Bcommonclass(self.driver)
-        self.driver.get(self.jk3434)
-        time.sleep(5)
-        self.cc.clicksignin()
-        time.sleep(3)
-        self.cc.setusername(self.newusername)
-        self.cc.setpassword(self.newpassword)
-        self.cc.clicklogin()
-
-    @pytest.fixture(scope="function", autouse=False)
-    def playwin247login(self, setup):
-        self.driver = setup
-        self.driver.set_window_size(1366,768)
-        self.cc = B2Bcommonclass(self.driver)
-        self.driver.get(self.playwin247)
-        time.sleep(5)
-        self.cc.clicksignin()
-        time.sleep(3)
-        self.cc.setusername(self.newusername)
-        self.cc.setpassword(self.newpassword)
-        self.cc.clicklogin()
-
-    @pytest.fixture(scope="function", autouse=False)
-    def royalbet444login(self, setup):
-        self.driver = setup
-        self.driver.set_window_size(1366,768)
-        self.cc = B2Bcommonclass(self.driver)
-        self.driver.get(self.royalbet444)
-        time.sleep(5)
-        self.cc.clicksignin()
-        time.sleep(3)
-        self.cc.setusername(self.newusername)
-        self.cc.setpassword(self.newpassword)
-        self.cc.clicklogin()
-
-    @pytest.fixture(scope="function", autouse=False)
-    def euro11login(self, setup):
-        self.driver = setup
-        self.driver.set_window_size(1366,768)
-        self.cc = B2Bcommonclass(self.driver)
-        self.driver.get(self.euro11)
-        time.sleep(5)
-        self.cc.clicksignin()
-        time.sleep(3)
-        self.cc.setusername(self.newusername)
-        self.cc.setpassword(self.newpassword)
-        self.cc.clicklogin()
-
-    @pytest.fixture(scope="function", autouse=False)
-    def Spworld365login(self, setup):
-        self.driver = setup
-        self.driver.set_window_size(1366,768)
-        self.cc = B2Bcommonclass(self.driver)
-        self.driver.get(self.Spworld365)
-        time.sleep(5)
-        self.cc.clicksignin()
-        time.sleep(3)
-        self.cc.setusername(self.newusername)
-        self.cc.setpassword(self.newpassword)
-        self.cc.clicklogin()
-
-    @pytest.fixture(scope="function", autouse=False)
-    def all365daylogin(self, setup):
-        self.driver = setup
-        self.driver.set_window_size(1366,768)
-        self.cc = B2Bcommonclass(self.driver)
-        self.driver.get(self.all365day)
-        time.sleep(5)
-        self.cc.clicksignin()
-        time.sleep(3)
-        self.cc.setusername(self.newusername)
-        self.cc.setpassword(self.newpassword)
-        self.cc.clicklogin()
-
-    @pytest.fixture(scope="function", autouse=False)
-    def bengal22login(self, setup):
-        self.driver = setup
-        self.driver.set_window_size(1366,768)
-        self.cc = B2Bcommonclass(self.driver)
-        self.driver.get(self.bengal22)
-        time.sleep(5)
-        self.cc.clicksignin()
-        time.sleep(3)
-        self.cc.setusername(self.newusername)
-        self.cc.setpassword(self.newpassword)
-        self.cc.clicklogin()
-
-    @pytest.fixture(scope="function", autouse=False)
-    def lords99login(self, setup):
-        self.driver = setup
-        self.driver.set_window_size(1366,768)
-        self.cc = B2Bcommonclass(self.driver)
-        self.driver.get(self.lords99)
-        time.sleep(5)
-        self.cc.clicksignin()
-        time.sleep(3)
-        self.cc.setusername(self.newusername)
-        self.cc.setpassword(self.newpassword)
-        self.cc.clicklogin()
-
-    @pytest.fixture(scope="function", autouse=False)
-    def saiexch24login(self, setup):
-        self.driver = setup
-        self.driver.set_window_size(1366,768)
-        self.cc = B2Bcommonclass(self.driver)
-        self.driver.get(self.saiexch24)
-        time.sleep(5)
-        self.cc.clicksignin()
-        time.sleep(3)
-        self.cc.setusername(self.newusername)
-        self.cc.setpassword(self.newpassword)
-        self.cc.clicklogin()
-
-    @pytest.fixture(scope="function", autouse=False)
-    def sevenxbetlogin(self, setup):
-        self.driver = setup
-        self.driver.set_window_size(1366,768)
-        self.cc = B2Bcommonclass(self.driver)
-        self.driver.get(self.sevenxbet)
-        time.sleep(5)
-        self.cc.clicksignin()
-        time.sleep(3)
-        self.cc.setusername(self.newusername)
-        self.cc.setpassword(self.newpassword)
-        self.cc.clicklogin()
-
-    @pytest.fixture(scope="function", autouse=False)
-    def Sunexchangelogin(self, setup):
-        self.driver = setup
-        self.driver.set_window_size(1366,768)
-        self.cc = B2Bcommonclass(self.driver)
-        self.driver.get(self.Sunexchange)
-        time.sleep(5)
-        self.cc.clicksignin()
-        time.sleep(3)
-        self.cc.setusername(self.newusername)
-        self.cc.setpassword(self.newpassword)
-        self.cc.clicklogin()
-
     # @pytest.fixture(scope="function", autouse=False)
-    # def probet9login(self, setup):
+    # def bajibet9login(self,setup):
     #     self.driver = setup
     #     self.driver.set_window_size(1366,768)
     #     self.cc = B2Bcommonclass(self.driver)
-    #     self.driver.get(self.probet9)
+    #     self.driver.get(self.bajibet9)
     #     time.sleep(5)
     #     self.cc.clicksignin()
     #     time.sleep(3)
     #     self.cc.setusername(self.newusername)
     #     self.cc.setpassword(self.newpassword)
     #     self.cc.clicklogin()
-
-    @pytest.fixture(scope="function", autouse=False)
-    def skyexch1login(self, setup):
-        self.driver = setup
-        self.driver.set_window_size(1366,768)
-        self.cc = B2Bcommonclass(self.driver)
-        self.driver.get(self.skyexch1)
-        time.sleep(5)
-        self.cc.clicksignin()
-        time.sleep(3)
-        self.cc.setusername(self.newusername)
-        self.cc.setpassword(self.newpassword)
-        self.cc.clicklogin()
-
-    @pytest.fixture(scope="function", autouse=False)
-    def fancybooklogin(self, setup):
-        self.driver = setup
-        self.driver.set_window_size(1366,768)
-        self.cc = B2Bcommonclass(self.driver)
-        self.driver.get(self.fancybook)
-        time.sleep(5)
-        self.cc.clicksignin()
-        time.sleep(3)
-        self.cc.setusername(self.newusername)
-        self.cc.setpassword(self.newpassword)
-        self.cc.clicklogin()
-
-    @pytest.fixture(scope="function", autouse=False)
-    def gold9login(self, setup):
-        self.driver = setup
-        self.driver.set_window_size(1366,768)
-        self.cc = B2Bcommonclass(self.driver)
-        self.driver.get(self.gold9)
-        time.sleep(5)
-        self.cc.clicksignin()
-        time.sleep(3)
-        self.cc.setusername(self.newusername)
-        self.cc.setpassword(self.newpassword)
-        self.cc.clicklogin()
-
-    @pytest.fixture(scope="function", autouse=False)
-    def spice11login(self, setup):
-        self.driver = setup
-        self.driver.set_window_size(1366,768)
-        self.cc = B2Bcommonclass(self.driver)
-        self.driver.get(self.spice11)
-        time.sleep(5)
-        self.cc.clicksignin()
-        time.sleep(3)
-        self.cc.setusername(self.newusername)
-        self.cc.setpassword(self.newpassword)
-        self.cc.clicklogin()
-
-    @pytest.fixture(scope="function", autouse=False)
-    def nineskyexchlogin(self, setup):
-        self.driver = setup
-        self.driver.set_window_size(1366,768)
-        self.cc = B2Bcommonclass(self.driver)
-        self.driver.get(self.nineskyexch)
-        time.sleep(5)
-        self.cc.clicksignin()
-        time.sleep(3)
-        self.cc.setusername(self.newusername)
-        self.cc.setpassword(self.newpassword)
-        self.cc.clicklogin()
-
-    @pytest.fixture(scope="function", autouse=False)
-    def powerbetslogin(self, setup):
-        self.driver = setup
-        self.driver.set_window_size(1366,768)
-        self.cc = B2Bcommonclass(self.driver)
-        self.driver.get(self.powerbets)
-        time.sleep(5)
-        self.cc.clicksignin()
-        time.sleep(3)
-        self.cc.setusername(self.newusername)
-        self.cc.setpassword(self.newpassword)
-        self.cc.clicklogin()
-
-    @pytest.fixture(scope="function", autouse=False)
-    def bright99login(self, setup):
-        self.driver = setup
-        self.driver.set_window_size(1366,768)
-        self.cc = B2Bcommonclass(self.driver)
-        self.driver.get(self.bright99)
-        time.sleep(5)
-        self.cc.clicksignin()
-        time.sleep(3)
-        self.cc.setusername(self.newusername)
-        self.cc.setpassword(self.newpassword)
-        self.cc.clicklogin()
-
-    @pytest.fixture(scope="function", autouse=False)
-    def khelo365login(self, setup):
-        self.driver = setup
-        self.driver.set_window_size(1366,768)
-        self.cc = B2Bcommonclass(self.driver)
-        self.driver.get(self.khelo365)
-        time.sleep(5)
-        self.cc.clicksignin()
-        time.sleep(3)
-        self.cc.setusername(self.newusername)
-        self.cc.setpassword(self.newpassword)
-        self.cc.clicklogin()
-
-    @pytest.fixture(scope="function", autouse=False)
-    def orange11login(self, setup):
-        self.driver = setup
-        self.driver.set_window_size(1366,768)
-        self.cc = B2Bcommonclass(self.driver)
-        self.driver.get(self.orange11)
-        time.sleep(5)
-        self.cc.clicksignin()
-        time.sleep(3)
-        self.cc.setusername(self.newusername)
-        self.cc.setpassword(self.newpassword)
-        self.cc.clicklogin()
-
-    @pytest.fixture(scope="function", autouse=False)
-    def cricbuzlogin(self, setup):
-        self.driver = setup
-        self.driver.set_window_size(1366,768)
-        self.cc = B2Bcommonclass(self.driver)
-        self.driver.get(self.cricbuz)
-        time.sleep(5)
-        self.cc.clicksignin()
-        time.sleep(3)
-        self.cc.setusername(self.newusername)
-        self.cc.setpassword(self.newpassword)
-        self.cc.clicklogin()
-
-    @pytest.fixture(scope="function", autouse=False)
-    def runexchlogin(self, setup):
-        self.driver = setup
-        self.driver.set_window_size(1366,768)
-        self.cc = B2Bcommonclass(self.driver)
-        self.driver.get(self.runexch)
-        time.sleep(5)
-        self.cc.clicksignin()
-        time.sleep(3)
-        self.cc.setusername(self.newusername)
-        self.cc.setpassword(self.newpassword)
-        self.cc.clicklogin()
-
-    @pytest.fixture(scope="function", autouse=False)
-    def winexchlogin(self, setup):
-        self.driver = setup
-        self.driver.set_window_size(1366,768)
-        self.cc = B2Bcommonclass(self.driver)
-        self.driver.get(self.winexch)
-        time.sleep(5)
-        self.cc.clicksignin()
-        time.sleep(3)
-        self.cc.setusername(self.newusername)
-        self.cc.setpassword(self.newpassword)
-        self.cc.clicklogin()
-
-    @pytest.fixture(scope="function", autouse=False)
-    def elevenwonderlogin(self, setup):
-        self.driver = setup
-        self.driver.set_window_size(1366,768)
-        self.cc = B2Bcommonclass(self.driver)
-        self.driver.get(self.elevenwonder)
-        time.sleep(5)
-        self.cc.clicksignin()
-        time.sleep(3)
-        self.cc.setusername(self.newusername)
-        self.cc.setpassword(self.newpassword)
-        self.cc.clicklogin()
-
-    @pytest.fixture(scope="function", autouse=False)
-    def probook9login(self, setup):
-        self.driver = setup
-        self.driver.set_window_size(1366,768)
-        self.cc = B2Bcommonclass(self.driver)
-        self.driver.get(self.butterflyexch)
-        time.sleep(5)
-        self.cc.clicksignin()
-        time.sleep(3)
-        self.cc.setusername(self.newusername)
-        self.cc.setpassword(self.newpassword)
-        self.cc.clicklogin()
-
-    @pytest.fixture(scope="function", autouse=False)
-    def butterflyexchlogin(self, setup):
-        self.driver = setup
-        self.driver.set_window_size(1366,768)
-        self.cc = B2Bcommonclass(self.driver)
-        self.driver.get(self.butterflyexch)
-        time.sleep(5)
-        self.cc.clicksignin()
-        time.sleep(3)
-        self.cc.setusername(self.newusername)
-        self.cc.setpassword(self.newpassword)
-        self.cc.clicklogin()
-
-    @pytest.fixture(scope="function", autouse=False)
-    def parkinplaylogin(self, setup):
-        self.driver = setup
-        self.driver.set_window_size(1366,768)
-        self.cc = B2Bcommonclass(self.driver)
-        self.driver.get(self.parkinplay)
-        time.sleep(5)
-        self.cc.clicksignin()
-        time.sleep(3)
-        self.cc.setusername(self.newusername)
-        self.cc.setpassword(self.newpassword)
-        self.cc.clicklogin()
-
-    @pytest.fixture(scope="function", autouse=False)
-    def best365login(self, setup):
-        self.driver = setup
-        self.driver.set_window_size(1366,768)
-        self.cc = B2Bcommonclass(self.driver)
-        self.driver.get(self.best365)
-        time.sleep(5)
-        self.cc.clicksignin()
-        time.sleep(3)
-        self.cc.setusername(self.newusername)
-        self.cc.setpassword(self.newpassword)
-        self.cc.clicklogin()
-
-    @pytest.fixture(scope="function", autouse=False)
-    def greenexchlogin(self, setup):
-        self.driver = setup
-        self.driver.set_window_size(1366,768)
-        self.cc = B2Bcommonclass(self.driver)
-        self.driver.get(self.greenexch)
-        time.sleep(5)
-        self.cc.clicksignin()
-        time.sleep(3)
-        self.cc.setusername(self.newusername)
-        self.cc.setpassword(self.newpassword)
-        self.cc.clicklogin()
-
-    @pytest.fixture(scope="function", autouse=False)
-    def parklogin(self, setup):
-        self.driver = setup
-        self.driver.set_window_size(1366,768)
-        self.cc = B2Bcommonclass(self.driver)
-        self.driver.get(self.park)
-        time.sleep(5)
-        self.cc.clicksignin()
-        time.sleep(3)
-        self.cc.setusername(self.newusername)
-        self.cc.setpassword(self.newpassword)
-        self.cc.clicklogin()
-
-    @pytest.fixture(scope="function", autouse=False)
-    def aura24login(self, setup):
-        self.driver = setup
-        self.driver.set_window_size(1366,768)
-        self.cc = B2Bcommonclass(self.driver)
-        self.driver.get(self.aura24)
-        time.sleep(5)
-        self.cc.clicksignin()
-        time.sleep(3)
-        self.cc.setusername(self.newusername)
-        self.cc.setpassword(self.newpassword)
-        self.cc.clicklogin()
-
-    @pytest.fixture(scope="function", autouse=False)
-    def aura25login(self,setup):
-        self.driver = setup
-        self.driver.set_window_size(1366,768)
-        self.cc = B2Bcommonclass(self.driver)
-        self.driver.get(self.aura25)
-        time.sleep(5)
-        self.cc.clicksignin()
-        time.sleep(3)
-        self.cc.setusername(self.username)
-        self.cc.setpassword(self.password)
-        self.cc.clicklogin()
-
-    @pytest.fixture(scope="function", autouse=False)
-    def abdlogin(self, setup):
-        self.driver = setup
-        self.driver.set_window_size(1366,768)
-        self.cc = B2Bcommonclass(self.driver)
-        self.driver.get(self.abdexch)
-        time.sleep(5)
-        self.cc.clicksignin()
-        time.sleep(3)
-        self.cc.setusername(self.username)
-        self.cc.setpassword(self.password)
-        self.cc.clicklogin()
-
-    @pytest.fixture(scope="function", autouse=False)
-    def badabetlogin(self, setup):
-        self.driver = setup
-        self.driver.set_window_size(1366,768)
-        self.cc = B2Bcommonclass(self.driver)
-        self.driver.get(self.badabet)
-        time.sleep(5)
-        self.cc.clicksignin()
-        time.sleep(3)
-        self.cc.setusername(self.username)
-        self.cc.setpassword(self.password)
-        self.cc.clicklogin()
-
-    @pytest.fixture(scope="function", autouse=False)
-    def infinitylogin(self, setup):
-        self.driver = setup
-        self.driver.set_window_size(1366,768)
-        self.cc = B2Bcommonclass(self.driver)
-        self.driver.get(self.infinity)
-        time.sleep(5)
-        self.cc.clicksignin()
-        time.sleep(3)
-        self.cc.setusername(self.username)
-        self.cc.setpassword(self.password)
-        self.cc.clicklogin()
-
-    @pytest.fixture(scope="function", autouse=False)
-    def user365login(self, setup):
-        self.driver = setup
-        self.driver.set_window_size(1366,768)
-        self.cc = B2Bcommonclass(self.driver)
-        self.driver.get(self.user365)
-        time.sleep(5)
-        self.cc.clicksignin()
-        time.sleep(3)
-        self.cc.setusername(self.username)
-        self.cc.setpassword(self.password)
-        self.cc.clicklogin()
-
-    @pytest.fixture(scope="function", autouse=False)
-    def only333login(self, setup):
-        self.driver = setup
-        self.driver.set_window_size(1366,768)
-        self.cc = B2Bcommonclass(self.driver)
-        self.driver.get(self.only333)
-        time.sleep(5)
-        self.cc.clicksignin()
-        time.sleep(3)
-        self.cc.setusername(self.username)
-        self.cc.setpassword(self.password)
-        self.cc.clicklogin()
-
-    @pytest.fixture(scope="function", autouse=False)
-    def pk7login(self, setup):
-        self.driver = setup
-        self.driver.set_window_size(1366,768)
-        self.cc = B2Bcommonclass(self.driver)
-        self.driver.get(self.pk7)
-        time.sleep(5)
-        self.cc.clicksignin()
-        time.sleep(3)
-        self.cc.setusername(self.username)
-        self.cc.setpassword(self.password)
-        self.cc.clicklogin()
-
-    @pytest.fixture(scope="function", autouse=False)
-    def gamexlogin(self, setup):
-        self.driver = setup
-        self.driver.set_window_size(1366,768)
-        self.cc = B2Bcommonclass(self.driver)
-        self.driver.get(self.gamex)
-        time.sleep(5)
-        self.cc.clicksignin()
-        time.sleep(3)
-        self.cc.setusername(self.username)
-        self.cc.setpassword(self.password)
-        self.cc.clicklogin()
-
-    @pytest.fixture(scope="function", autouse=False)
-    def aura26login(self, setup):
-        self.driver = setup
-        self.driver.set_window_size(1366,768)
-        self.cc = B2Bcommonclass(self.driver)
-        self.driver.get(self.aura26)
-        time.sleep(5)
-        self.cc.clicksignin()
-        time.sleep(3)
-        self.cc.setusername(self.username)
-        self.cc.setpassword(self.password)
-        self.cc.clicklogin()
-
-    @pytest.fixture(scope="function", autouse=False)
-    def xtra999login(self, setup):
-        self.driver = setup
-        self.driver.set_window_size(1366,768)
-        self.cc = B2Bcommonclass(self.driver)
-        self.driver.get(self.xtra999)
-        time.sleep(5)
-        self.cc.clicksignin()
-        time.sleep(3)
-        self.cc.setusername(self.username)
-        self.cc.setpassword(self.password)
-        self.cc.clicklogin()
+    #
+    # @pytest.fixture(scope="function", autouse=False)
+    # def jk3434login(self,setup):
+    #     self.driver = setup
+    #     self.driver.set_window_size(1366,768)
+    #     self.cc = B2Bcommonclass(self.driver)
+    #     self.driver.get(self.jk3434)
+    #     time.sleep(5)
+    #     self.cc.clicksignin()
+    #     time.sleep(3)
+    #     self.cc.setusername(self.newusername)
+    #     self.cc.setpassword(self.newpassword)
+    #     self.cc.clicklogin()
+    #
+    # @pytest.fixture(scope="function", autouse=False)
+    # def playwin247login(self,setup):
+    #     self.driver = setup
+    #     self.driver.set_window_size(1366,768)
+    #     self.cc = B2Bcommonclass(self.driver)
+    #     self.driver.get(self.playwin247)
+    #     time.sleep(5)
+    #     self.cc.clicksignin()
+    #     time.sleep(3)
+    #     self.cc.setusername(self.newusername)
+    #     self.cc.setpassword(self.newpassword)
+    #     self.cc.clicklogin()
+    #
+    # @pytest.fixture(scope="function", autouse=False)
+    # def royalbet444login(self,setup):
+    #     self.driver = setup
+    #     self.driver.set_window_size(1366,768)
+    #     self.cc = B2Bcommonclass(self.driver)
+    #     self.driver.get(self.royalbet444)
+    #     time.sleep(5)
+    #     self.cc.clicksignin()
+    #     time.sleep(3)
+    #     self.cc.setusername(self.newusername)
+    #     self.cc.setpassword(self.newpassword)
+    #     self.cc.clicklogin()
+    #
+    # @pytest.fixture(scope="function", autouse=False)
+    # def euro11login(self,setup):
+    #     self.driver = setup
+    #     self.driver.set_window_size(1366,768)
+    #     self.cc = B2Bcommonclass(self.driver)
+    #     self.driver.get(self.euro11)
+    #     time.sleep(5)
+    #     self.cc.clicksignin()
+    #     time.sleep(3)
+    #     self.cc.setusername(self.newusername)
+    #     self.cc.setpassword(self.newpassword)
+    #     self.cc.clicklogin()
+    #
+    # @pytest.fixture(scope="function", autouse=False)
+    # def spworld365login(self,setup):
+    #     self.driver = setup
+    #     self.driver.set_window_size(1366,768)
+    #     self.cc = B2Bcommonclass(self.driver)
+    #     self.driver.get(self.Spworld365)
+    #     time.sleep(5)
+    #     self.cc.clicksignin()
+    #     time.sleep(3)
+    #     self.cc.setusername(self.newusername)
+    #     self.cc.setpassword(self.newpassword)
+    #     self.cc.clicklogin()
+    #
+    # @pytest.fixture(scope="function", autouse=False)
+    # def all365daylogin(self,setup):
+    #     self.driver = setup
+    #     self.driver.set_window_size(1366,768)
+    #     self.cc = B2Bcommonclass(self.driver)
+    #     self.driver.get(self.all365day)
+    #     time.sleep(5)
+    #     self.cc.clicksignin()
+    #     time.sleep(3)
+    #     self.cc.setusername(self.newusername)
+    #     self.cc.setpassword(self.newpassword)
+    #     self.cc.clicklogin()
+    #
+    # @pytest.fixture(scope="function", autouse=False)
+    # def bengal22login(self,setup):
+    #     self.driver = setup
+    #     self.driver.set_window_size(1366,768)
+    #     self.cc = B2Bcommonclass(self.driver)
+    #     self.driver.get(self.bengal22)
+    #     time.sleep(5)
+    #     self.cc.clicksignin()
+    #     time.sleep(3)
+    #     self.cc.setusername(self.newusername)
+    #     self.cc.setpassword(self.newpassword)
+    #     self.cc.clicklogin()
+    #
+    # @pytest.fixture(scope="function", autouse=False)
+    # def lords99login(self,setup):
+    #     self.driver = setup
+    #     self.driver.set_window_size(1366,768)
+    #     self.cc = B2Bcommonclass(self.driver)
+    #     self.driver.get(self.lords99)
+    #     time.sleep(5)
+    #     self.cc.clicksignin()
+    #     time.sleep(3)
+    #     self.cc.setusername(self.newusername)
+    #     self.cc.setpassword(self.newpassword)
+    #     self.cc.clicklogin()
+    #
+    # @pytest.fixture(scope="function", autouse=False)
+    # def saiexch24login(self,setup):
+    #     self.driver = setup
+    #     self.driver.set_window_size(1366,768)
+    #     self.cc = B2Bcommonclass(self.driver)
+    #     self.driver.get(self.saiexch24)
+    #     time.sleep(5)
+    #     self.cc.clicksignin()
+    #     time.sleep(3)
+    #     self.cc.setusername(self.newusername)
+    #     self.cc.setpassword(self.newpassword)
+    #     self.cc.clicklogin()
+    #
+    # @pytest.fixture(scope="function", autouse=False)
+    # def sevenxbetlogin(self,setup):
+    #     self.driver = setup
+    #     self.driver.set_window_size(1366,768)
+    #     self.cc = B2Bcommonclass(self.driver)
+    #     self.driver.get(self.sevenxbet)
+    #     time.sleep(5)
+    #     self.cc.clicksignin()
+    #     time.sleep(3)
+    #     self.cc.setusername(self.newusername)
+    #     self.cc.setpassword(self.newpassword)
+    #     self.cc.clicklogin()
+    #
+    # @pytest.fixture(scope="function", autouse=False)
+    # def sunexchangelogin(self,setup):
+    #     self.driver = setup
+    #     self.driver.set_window_size(1366,768)
+    #     self.cc = B2Bcommonclass(self.driver)
+    #     self.driver.get(self.Sunexchange)
+    #     time.sleep(5)
+    #     self.cc.clicksignin()
+    #     time.sleep(3)
+    #     self.cc.setusername(self.newusername)
+    #     self.cc.setpassword(self.newpassword)
+    #     self.cc.clicklogin()
+    #
+    # # @pytest.fixture(scope="function", autouse=False)
+    # # def probet9login(self,setup):
+    # #     self.driver = setup
+    # #     self.driver.set_window_size(1366,768)
+    # #     self.cc = B2Bcommonclass(self.driver)
+    # #     self.driver.get(self.probet9)
+    # #     time.sleep(5)
+    # #     self.cc.clicksignin()
+    # #     time.sleep(3)
+    # #     self.cc.setusername(self.newusername)
+    # #     self.cc.setpassword(self.newpassword)
+    # #     self.cc.clicklogin()
+    #
+    # @pytest.fixture(scope="function", autouse=False)
+    # def skyexch1login(self,setup):
+    #     self.driver = setup
+    #     self.driver.set_window_size(1366,768)
+    #     self.cc = B2Bcommonclass(self.driver)
+    #     self.driver.get(self.skyexch1)
+    #     time.sleep(5)
+    #     self.cc.clicksignin()
+    #     time.sleep(3)
+    #     self.cc.setusername(self.newusername)
+    #     self.cc.setpassword(self.newpassword)
+    #     self.cc.clicklogin()
+    #
+    # @pytest.fixture(scope="function", autouse=False)
+    # def fancybooklogin(self,setup):
+    #     self.driver = setup
+    #     self.driver.set_window_size(1366,768)
+    #     self.cc = B2Bcommonclass(self.driver)
+    #     self.driver.get(self.fancybook)
+    #     time.sleep(5)
+    #     self.cc.clicksignin()
+    #     time.sleep(3)
+    #     self.cc.setusername(self.newusername)
+    #     self.cc.setpassword(self.newpassword)
+    #     self.cc.clicklogin()
+    #
+    # @pytest.fixture(scope="function", autouse=False)
+    # def gold9login(self,setup):
+    #     self.driver = setup
+    #     self.driver.set_window_size(1366,768)
+    #     self.cc = B2Bcommonclass(self.driver)
+    #     self.driver.get(self.gold9)
+    #     time.sleep(5)
+    #     self.cc.clicksignin()
+    #     time.sleep(3)
+    #     self.cc.setusername(self.newusername)
+    #     self.cc.setpassword(self.newpassword)
+    #     self.cc.clicklogin()
+    #
+    # @pytest.fixture(scope="function", autouse=False)
+    # def spice11login(self,setup):
+    #     self.driver = setup
+    #     self.driver.set_window_size(1366,768)
+    #     self.cc = B2Bcommonclass(self.driver)
+    #     self.driver.get(self.spice11)
+    #     time.sleep(5)
+    #     self.cc.clicksignin()
+    #     time.sleep(3)
+    #     self.cc.setusername(self.newusername)
+    #     self.cc.setpassword(self.newpassword)
+    #     self.cc.clicklogin()
+    #
+    # @pytest.fixture(scope="function", autouse=False)
+    # def nineskyexchlogin(self,setup):
+    #     self.driver = setup
+    #     self.driver.set_window_size(1366,768)
+    #     self.cc = B2Bcommonclass(self.driver)
+    #     self.driver.get(self.nineskyexch)
+    #     time.sleep(5)
+    #     self.cc.clicksignin()
+    #     time.sleep(3)
+    #     self.cc.setusername(self.newusername)
+    #     self.cc.setpassword(self.newpassword)
+    #     self.cc.clicklogin()
+    #
+    # @pytest.fixture(scope="function", autouse=False)
+    # def powerbetslogin(self,setup):
+    #     self.driver = setup
+    #     self.driver.set_window_size(1366,768)
+    #     self.cc = B2Bcommonclass(self.driver)
+    #     self.driver.get(self.powerbets)
+    #     time.sleep(5)
+    #     self.cc.clicksignin()
+    #     time.sleep(3)
+    #     self.cc.setusername(self.newusername)
+    #     self.cc.setpassword(self.newpassword)
+    #     self.cc.clicklogin()
+    #
+    # @pytest.fixture(scope="function", autouse=False)
+    # def bright99login(self,setup):
+    #     self.driver = setup
+    #     self.driver.set_window_size(1366,768)
+    #     self.cc = B2Bcommonclass(self.driver)
+    #     self.driver.get(self.bright99)
+    #     time.sleep(5)
+    #     self.cc.clicksignin()
+    #     time.sleep(3)
+    #     self.cc.setusername(self.newusername)
+    #     self.cc.setpassword(self.newpassword)
+    #     self.cc.clicklogin()
+    #
+    # @pytest.fixture(scope="function", autouse=False)
+    # def khelo365login(self,setup):
+    #     self.driver = setup
+    #     self.driver.set_window_size(1366,768)
+    #     self.cc = B2Bcommonclass(self.driver)
+    #     self.driver.get(self.khelo365)
+    #     time.sleep(5)
+    #     self.cc.clicksignin()
+    #     time.sleep(3)
+    #     self.cc.setusername(self.newusername)
+    #     self.cc.setpassword(self.newpassword)
+    #     self.cc.clicklogin()
+    #
+    # @pytest.fixture(scope="function", autouse=False)
+    # def orange11login(self,setup):
+    #     self.driver = setup
+    #     self.driver.set_window_size(1366,768)
+    #     self.cc = B2Bcommonclass(self.driver)
+    #     self.driver.get(self.orange11)
+    #     time.sleep(5)
+    #     self.cc.clicksignin()
+    #     time.sleep(3)
+    #     self.cc.setusername(self.newusername)
+    #     self.cc.setpassword(self.newpassword)
+    #     self.cc.clicklogin()
+    #
+    # @pytest.fixture(scope="function", autouse=False)
+    # def cricbuzlogin(self,setup):
+    #     self.driver = setup
+    #     self.driver.set_window_size(1366,768)
+    #     self.cc = B2Bcommonclass(self.driver)
+    #     self.driver.get(self.cricbuz)
+    #     time.sleep(5)
+    #     self.cc.clicksignin()
+    #     time.sleep(3)
+    #     self.cc.setusername(self.newusername)
+    #     self.cc.setpassword(self.newpassword)
+    #     self.cc.clicklogin()
+    #
+    # @pytest.fixture(scope="function", autouse=False)
+    # def runexchlogin(self,setup):
+    #     self.driver = setup
+    #     self.driver.set_window_size(1366,768)
+    #     self.cc = B2Bcommonclass(self.driver)
+    #     self.driver.get(self.runexch)
+    #     time.sleep(5)
+    #     self.cc.clicksignin()
+    #     time.sleep(3)
+    #     self.cc.setusername(self.newusername)
+    #     self.cc.setpassword(self.newpassword)
+    #     self.cc.clicklogin()
+    #
+    # @pytest.fixture(scope="function", autouse=False)
+    # def winexchlogin(self,setup):
+    #     self.driver = setup
+    #     self.driver.set_window_size(1366,768)
+    #     self.cc = B2Bcommonclass(self.driver)
+    #     self.driver.get(self.winexch)
+    #     time.sleep(5)
+    #     self.cc.clicksignin()
+    #     time.sleep(3)
+    #     self.cc.setusername(self.newusername)
+    #     self.cc.setpassword(self.newpassword)
+    #     self.cc.clicklogin()
+    #
+    # @pytest.fixture(scope="function", autouse=False)
+    # def elevenwonderlogin(self,setup):
+    #     self.driver = setup
+    #     self.driver.set_window_size(1366,768)
+    #     self.cc = B2Bcommonclass(self.driver)
+    #     self.driver.get(self.elevenwonder)
+    #     time.sleep(5)
+    #     self.cc.clicksignin()
+    #     time.sleep(3)
+    #     self.cc.setusername(self.newusername)
+    #     self.cc.setpassword(self.newpassword)
+    #     self.cc.clicklogin()
+    #
+    # @pytest.fixture(scope="function", autouse=False)
+    # def probook9login(self,setup):
+    #     self.driver = setup
+    #     self.driver.set_window_size(1366,768)
+    #     self.cc = B2Bcommonclass(self.driver)
+    #     self.driver.get(self.butterflyexch)
+    #     time.sleep(5)
+    #     self.cc.clicksignin()
+    #     time.sleep(3)
+    #     self.cc.setusername(self.newusername)
+    #     self.cc.setpassword(self.newpassword)
+    #     self.cc.clicklogin()
+    #
+    # @pytest.fixture(scope="function", autouse=False)
+    # def butterflyexchlogin(self,setup):
+    #     self.driver = setup
+    #     self.driver.set_window_size(1366,768)
+    #     self.cc = B2Bcommonclass(self.driver)
+    #     self.driver.get(self.butterflyexch)
+    #     time.sleep(5)
+    #     self.cc.clicksignin()
+    #     time.sleep(3)
+    #     self.cc.setusername(self.newusername)
+    #     self.cc.setpassword(self.newpassword)
+    #     self.cc.clicklogin()
+    #
+    # @pytest.fixture(scope="function", autouse=False)
+    # def parkinplaylogin(self,setup):
+    #     self.driver = setup
+    #     self.driver.set_window_size(1366,768)
+    #     self.cc = B2Bcommonclass(self.driver)
+    #     self.driver.get(self.parkinplay)
+    #     time.sleep(5)
+    #     self.cc.clicksignin()
+    #     time.sleep(3)
+    #     self.cc.setusername(self.newusername)
+    #     self.cc.setpassword(self.newpassword)
+    #     self.cc.clicklogin()
+    #
+    # @pytest.fixture(scope="function", autouse=False)
+    # def best365login(self,setup):
+    #     self.driver = setup
+    #     self.driver.set_window_size(1366,768)
+    #     self.cc = B2Bcommonclass(self.driver)
+    #     self.driver.get(self.best365)
+    #     time.sleep(5)
+    #     self.cc.clicksignin()
+    #     time.sleep(3)
+    #     self.cc.setusername(self.newusername)
+    #     self.cc.setpassword(self.newpassword)
+    #     self.cc.clicklogin()
+    #
+    # @pytest.fixture(scope="function", autouse=False)
+    # def greenexchlogin(self,setup):
+    #     self.driver = setup
+    #     self.driver.set_window_size(1366,768)
+    #     self.cc = B2Bcommonclass(self.driver)
+    #     self.driver.get(self.greenexch)
+    #     time.sleep(5)
+    #     self.cc.clicksignin()
+    #     time.sleep(3)
+    #     self.cc.setusername(self.newusername)
+    #     self.cc.setpassword(self.newpassword)
+    #     self.cc.clicklogin()
+    #
+    # @pytest.fixture(scope="function", autouse=False)
+    # def parklogin(self,setup):
+    #     self.driver = setup
+    #     self.driver.set_window_size(1366,768)
+    #     self.cc = B2Bcommonclass(self.driver)
+    #     self.driver.get(self.park)
+    #     time.sleep(5)
+    #     self.cc.clicksignin()
+    #     time.sleep(3)
+    #     self.cc.setusername(self.newusername)
+    #     self.cc.setpassword(self.newpassword)
+    #     self.cc.clicklogin()
+    #
+    # @pytest.fixture(scope="function", autouse=False)
+    # def aura24login(self,setup):
+    #     self.driver = setup
+    #     self.driver.set_window_size(1366,768)
+    #     self.cc = B2Bcommonclass(self.driver)
+    #     self.driver.get(self.aura24)
+    #     time.sleep(5)
+    #     self.cc.clicksignin()
+    #     time.sleep(3)
+    #     self.cc.setusername(self.newusername)
+    #     self.cc.setpassword(self.newpassword)
+    #     self.cc.clicklogin()
+    #
+    # @pytest.fixture(scope="function", autouse=False)
+    # def aura25login(self,setup):
+    #     self.driver = setup
+    #     self.driver.set_window_size(1366,768)
+    #     self.cc = B2Bcommonclass(self.driver)
+    #     self.driver.get(self.aura25)
+    #     time.sleep(5)
+    #     self.cc.clicksignin()
+    #     time.sleep(3)
+    #     self.cc.setusername(self.username)
+    #     self.cc.setpassword(self.password)
+    #     self.cc.clicklogin()
+    #
+    # @pytest.fixture(scope="function", autouse=False)
+    # def abdlogin(self,setup):
+    #     self.driver = setup
+    #     self.driver.set_window_size(1366,768)
+    #     self.cc = B2Bcommonclass(self.driver)
+    #     self.driver.get(self.abdexch)
+    #     time.sleep(5)
+    #     self.cc.clicksignin()
+    #     time.sleep(3)
+    #     self.cc.setusername(self.username)
+    #     self.cc.setpassword(self.password)
+    #     self.cc.clicklogin()
+    #
+    # @pytest.fixture(scope="function", autouse=False)
+    # def badabetlogin(self,setup):
+    #     self.driver = setup
+    #     self.driver.set_window_size(1366,768)
+    #     self.cc = B2Bcommonclass(self.driver)
+    #     self.driver.get(self.badabet)
+    #     time.sleep(5)
+    #     self.cc.clicksignin()
+    #     time.sleep(3)
+    #     self.cc.setusername(self.username)
+    #     self.cc.setpassword(self.password)
+    #     self.cc.clicklogin()
+    #
+    # @pytest.fixture(scope="function", autouse=False)
+    # def infinitylogin(self,setup):
+    #     self.driver = setup
+    #     self.driver.set_window_size(1366,768)
+    #     self.cc = B2Bcommonclass(self.driver)
+    #     self.driver.get(self.infinity)
+    #     time.sleep(5)
+    #     self.cc.clicksignin()
+    #     time.sleep(3)
+    #     self.cc.setusername(self.username)
+    #     self.cc.setpassword(self.password)
+    #     self.cc.clicklogin()
+    #
+    # @pytest.fixture(scope="function", autouse=False)
+    # def user365login(self,setup):
+    #     self.driver = setup
+    #     self.driver.set_window_size(1366,768)
+    #     self.cc = B2Bcommonclass(self.driver)
+    #     self.driver.get(self.user365)
+    #     time.sleep(5)
+    #     self.cc.clicksignin()
+    #     time.sleep(3)
+    #     self.cc.setusername(self.username)
+    #     self.cc.setpassword(self.password)
+    #     self.cc.clicklogin()
+    #
+    # @pytest.fixture(scope="function", autouse=False)
+    # def only333login(self,setup):
+    #     self.driver = setup
+    #     self.driver.set_window_size(1366,768)
+    #     self.cc = B2Bcommonclass(self.driver)
+    #     self.driver.get(self.only333)
+    #     time.sleep(5)
+    #     self.cc.clicksignin()
+    #     time.sleep(3)
+    #     self.cc.setusername(self.username)
+    #     self.cc.setpassword(self.password)
+    #     self.cc.clicklogin()
+    #
+    # @pytest.fixture(scope="function", autouse=False)
+    # def pk7login(self,setup):
+    #     self.driver = setup
+    #     self.driver.set_window_size(1366,768)
+    #     self.cc = B2Bcommonclass(self.driver)
+    #     self.driver.get(self.pk7)
+    #     time.sleep(5)
+    #     self.cc.clicksignin()
+    #     time.sleep(3)
+    #     self.cc.setusername(self.username)
+    #     self.cc.setpassword(self.password)
+    #     self.cc.clicklogin()
+    #
+    # @pytest.fixture(scope="function", autouse=False)
+    # def gamexlogin(self,setup):
+    #     self.driver = setup
+    #     self.driver.set_window_size(1366,768)
+    #     self.cc = B2Bcommonclass(self.driver)
+    #     self.driver.get(self.gamex)
+    #     time.sleep(5)
+    #     self.cc.clicksignin()
+    #     time.sleep(3)
+    #     self.cc.setusername(self.username)
+    #     self.cc.setpassword(self.password)
+    #     self.cc.clicklogin()
+    #
+    # @pytest.fixture(scope="function", autouse=False)
+    # def aura26login(self,setup):
+    #     self.driver = setup
+    #     self.driver.set_window_size(1366,768)
+    #     self.cc = B2Bcommonclass(self.driver)
+    #     self.driver.get(self.aura26)
+    #     time.sleep(5)
+    #     self.cc.clicksignin()
+    #     time.sleep(3)
+    #     self.cc.setusername(self.username)
+    #     self.cc.setpassword(self.password)
+    #     self.cc.clicklogin()
+    #
+    # @pytest.fixture(scope="function", autouse=False)
+    # def xtra999login(self,setup):
+    #     self.driver = setup
+    #     self.driver.set_window_size(1366,768)
+    #     self.cc = B2Bcommonclass(self.driver)
+    #     self.driver.get(self.xtra999)
+    #     time.sleep(5)
+    #     self.cc.clicksignin()
+    #     time.sleep(3)
+    #     self.cc.setusername(self.username)
+    #     self.cc.setpassword(self.password)
+    #     self.cc.clicklogin()
 
     def newfunction(self):
         alertmessage = ""
@@ -672,8 +670,7 @@ class Test_B2Bcommonclass:
                         self.cc.clickbackrate()
                         self.cc.setbetprice(self.betprice)
                         self.cc.clickplacebet()
-                        alertmessage = WebDriverWait(self.driver, 15).until(
-            EC.visibility_of_element_located((By.CLASS_NAME, self.cc.alertmessage_class))).text
+                        alertmessage = WebDriverWait(self.driver, 15).until(EC.visibility_of_element_located((By.CLASS_NAME, self.cc.alertmessage_class))).text
                         # time.sleep(7)
                         if "success" in alertmessage or "0Unknown Error" in alertmessage or "Rate Exposure limit" in alertmessage:
                             break
@@ -763,9 +760,19 @@ class Test_B2Bcommonclass:
     @pytest.mark.b2bmarker
     @pytest.mark.aura25
     @pytest.mark.test
-    def test_aura25(self, aura25login):
+    def test_aura25(self, setup):
+        self.driver = setup
+        self.driver.set_window_size(1366,768)
+        self.cc = B2Bcommonclass(self.driver)
+        self.driver.get(self.aura25)
+        time.sleep(5)
+        self.cc.clicksignin()
+        time.sleep(3)
+        self.cc.setusername(self.username)
+        self.cc.setpassword(self.password)
+        self.cc.clicklogin()
         try:
-            login = WebDriverWait(self.driver, 15).until(EC.visibility_of_element_located((By.TAG_NAME, "app-dashboard")))
+            WebDriverWait(self.driver, 15).until(EC.visibility_of_element_located((By.TAG_NAME, "app-dashboard")))
         except:
             self.logger.info("User Not login, Please Run This Test Again")
             assert False
@@ -775,9 +782,19 @@ class Test_B2Bcommonclass:
     @pytest.mark.b2bmarker
     @pytest.mark.abdexch
     @pytest.mark.test
-    def test_abdexch(self, abdlogin):
+    def test_abdexch(self, setup):
+        self.driver = setup
+        self.driver.set_window_size(1366,768)
+        self.cc = B2Bcommonclass(self.driver)
+        self.driver.get(self.abdexch)
+        time.sleep(5)
+        self.cc.clicksignin()
+        time.sleep(3)
+        self.cc.setusername(self.username)
+        self.cc.setpassword(self.password)
+        self.cc.clicklogin()
         try:
-            login = WebDriverWait(self.driver, 15).until(
+            WebDriverWait(self.driver, 15).until(
                 EC.visibility_of_element_located((By.TAG_NAME, "app-dashboard")))
         except:
             self.logger.info("User Not login, Please Run This Test Again")
@@ -788,9 +805,19 @@ class Test_B2Bcommonclass:
     @pytest.mark.b2bmarker
     @pytest.mark.badabet
     @pytest.mark.test
-    def test_badabet(self, badabetlogin):
+    def test_badabet(self, setup):
+        self.driver = setup
+        self.driver.set_window_size(1366,768)
+        self.cc = B2Bcommonclass(self.driver)
+        self.driver.get(self.badabet)
+        time.sleep(5)
+        self.cc.clicksignin()
+        time.sleep(3)
+        self.cc.setusername(self.username)
+        self.cc.setpassword(self.password)
+        self.cc.clicklogin()
         try:
-            login = WebDriverWait(self.driver, 15).until(
+            WebDriverWait(self.driver, 15).until(
                 EC.visibility_of_element_located((By.TAG_NAME, "app-dashboard")))
         except:
             self.logger.info("User Not login, Please Run This Test Again")
@@ -801,9 +828,19 @@ class Test_B2Bcommonclass:
     @pytest.mark.b2bmarker
     @pytest.mark.infinity
     @pytest.mark.test
-    def test_infinity(self, infinitylogin):
+    def test_infinity(self, setup):
+        self.driver = setup
+        self.driver.set_window_size(1366,768)
+        self.cc = B2Bcommonclass(self.driver)
+        self.driver.get(self.infinity)
+        time.sleep(5)
+        self.cc.clicksignin()
+        time.sleep(3)
+        self.cc.setusername(self.username)
+        self.cc.setpassword(self.password)
+        self.cc.clicklogin()
         try:
-            login = WebDriverWait(self.driver, 15).until(
+            WebDriverWait(self.driver, 15).until(
                 EC.visibility_of_element_located((By.TAG_NAME, "app-dashboard")))
         except:
             self.logger.info("User Not login, Please Run This Test Again")
@@ -813,9 +850,19 @@ class Test_B2Bcommonclass:
     @pytest.mark.runall
     @pytest.mark.b2bmarker
     @pytest.mark.user365
-    def test_user365(self, user365login):
+    def test_user365(self, setup):
+        self.driver = setup
+        self.driver.set_window_size(1366,768)
+        self.cc = B2Bcommonclass(self.driver)
+        self.driver.get(self.user365)
+        time.sleep(5)
+        self.cc.clicksignin()
+        time.sleep(3)
+        self.cc.setusername(self.username)
+        self.cc.setpassword(self.password)
+        self.cc.clicklogin()
         try:
-            login = WebDriverWait(self.driver, 15).until(
+            WebDriverWait(self.driver, 15).until(
                 EC.visibility_of_element_located((By.TAG_NAME, "app-dashboard")))
         except:
             self.logger.info("User Not login, Please Run This Test Again")
@@ -825,9 +872,19 @@ class Test_B2Bcommonclass:
     @pytest.mark.runall
     @pytest.mark.b2bmarker
     @pytest.mark.only333
-    def test_only333(self, only333login):
+    def test_only333(self, setup):
+        self.driver = setup
+        self.driver.set_window_size(1366,768)
+        self.cc = B2Bcommonclass(self.driver)
+        self.driver.get(self.only333)
+        time.sleep(5)
+        self.cc.clicksignin()
+        time.sleep(3)
+        self.cc.setusername(self.username)
+        self.cc.setpassword(self.password)
+        self.cc.clicklogin()
         try:
-            login = WebDriverWait(self.driver, 15).until(
+            WebDriverWait(self.driver, 15).until(
                 EC.visibility_of_element_located((By.TAG_NAME, "app-dashboard")))
         except:
             self.logger.info("User Not login, Please Run This Test Again")
@@ -837,9 +894,19 @@ class Test_B2Bcommonclass:
     @pytest.mark.runall
     @pytest.mark.b2bmarker
     @pytest.mark.pk7
-    def test_pk7(self, pk7login):
+    def test_pk7(self, setup):
+        self.driver = setup
+        self.driver.set_window_size(1366,768)
+        self.cc = B2Bcommonclass(self.driver)
+        self.driver.get(self.pk7)
+        time.sleep(5)
+        self.cc.clicksignin()
+        time.sleep(3)
+        self.cc.setusername(self.username)
+        self.cc.setpassword(self.password)
+        self.cc.clicklogin()
         try:
-            login = WebDriverWait(self.driver, 15).until(
+            WebDriverWait(self.driver, 15).until(
                 EC.visibility_of_element_located((By.TAG_NAME, "app-dashboard")))
         except:
             self.logger.info("User Not login, Please Run This Test Again")
@@ -849,9 +916,19 @@ class Test_B2Bcommonclass:
     @pytest.mark.runall
     @pytest.mark.b2bmarker
     @pytest.mark.gamex
-    def test_gamex(self, gamexlogin):
+    def test_gamex(self, setup):
+        self.driver = setup
+        self.driver.set_window_size(1366,768)
+        self.cc = B2Bcommonclass(self.driver)
+        self.driver.get(self.gamex)
+        time.sleep(5)
+        self.cc.clicksignin()
+        time.sleep(3)
+        self.cc.setusername(self.username)
+        self.cc.setpassword(self.password)
+        self.cc.clicklogin()
         try:
-            login = WebDriverWait(self.driver, 15).until(
+            WebDriverWait(self.driver, 15).until(
                 EC.visibility_of_element_located((By.TAG_NAME, "app-dashboard")))
         except:
             self.logger.info("User Not login, Please Run This Test Again")
@@ -861,9 +938,19 @@ class Test_B2Bcommonclass:
     @pytest.mark.runall
     @pytest.mark.b2bmarker
     @pytest.mark.aura26
-    def test_aura26(self, aura26login):
+    def test_aura26(self, setup):
+        self.driver = setup
+        self.driver.set_window_size(1366,768)
+        self.cc = B2Bcommonclass(self.driver)
+        self.driver.get(self.aura26)
+        time.sleep(5)
+        self.cc.clicksignin()
+        time.sleep(3)
+        self.cc.setusername(self.username)
+        self.cc.setpassword(self.password)
+        self.cc.clicklogin()
         try:
-            login = WebDriverWait(self.driver, 15).until(
+            WebDriverWait(self.driver, 15).until(
                 EC.visibility_of_element_located((By.TAG_NAME, "app-dashboard")))
         except:
             self.logger.info("User Not login, Please Run This Test Again")
@@ -873,9 +960,19 @@ class Test_B2Bcommonclass:
     @pytest.mark.runall
     @pytest.mark.b2bmarker
     @pytest.mark.xtra999
-    def test_xtra999(self, xtra999login):
+    def test_xtra999(self, setup):
+        self.driver = setup
+        self.driver.set_window_size(1366,768)
+        self.cc = B2Bcommonclass(self.driver)
+        self.driver.get(self.xtra999)
+        time.sleep(5)
+        self.cc.clicksignin()
+        time.sleep(3)
+        self.cc.setusername(self.username)
+        self.cc.setpassword(self.password)
+        self.cc.clicklogin()
         try:
-            login = WebDriverWait(self.driver, 15).until(
+            WebDriverWait(self.driver, 15).until(
                 EC.visibility_of_element_located((By.TAG_NAME, "app-dashboard")))
         except:
             self.logger.info("User Not login, Please Run This Test Again")
@@ -884,9 +981,19 @@ class Test_B2Bcommonclass:
 
     @pytest.mark.runall
     @pytest.mark.b2bmarker
-    def test_aura24(self, aura24login):
+    def test_aura24(self, setup):
+        self.driver = setup
+        self.driver.set_window_size(1366,768)
+        self.cc = B2Bcommonclass(self.driver)
+        self.driver.get(self.aura24)
+        time.sleep(5)
+        self.cc.clicksignin()
+        time.sleep(3)
+        self.cc.setusername(self.newusername)
+        self.cc.setpassword(self.newpassword)
+        self.cc.clicklogin()
         try:
-            login = WebDriverWait(self.driver, 15).until(
+            WebDriverWait(self.driver, 15).until(
                 EC.visibility_of_element_located((By.TAG_NAME, "app-dashboard")))
         except:
             self.logger.info("User Not login, Please Run This Test Again")
@@ -895,9 +1002,19 @@ class Test_B2Bcommonclass:
 
     @pytest.mark.runall
     @pytest.mark.b2bmarker
-    def test_park(self, parklogin):
+    def test_park(self, setup):
+        self.driver = setup
+        self.driver.set_window_size(1366,768)
+        self.cc = B2Bcommonclass(self.driver)
+        self.driver.get(self.park)
+        time.sleep(5)
+        self.cc.clicksignin()
+        time.sleep(3)
+        self.cc.setusername(self.newusername)
+        self.cc.setpassword(self.newpassword)
+        self.cc.clicklogin()
         try:
-            login = WebDriverWait(self.driver, 15).until(
+            WebDriverWait(self.driver, 15).until(
                 EC.visibility_of_element_located((By.TAG_NAME, "app-dashboard")))
         except:
             self.logger.info("User Not login, Please Run This Test Again")
@@ -906,9 +1023,19 @@ class Test_B2Bcommonclass:
 
     @pytest.mark.runall
     @pytest.mark.b2bmarker
-    def test_greenexch(self, greenexchlogin):
+    def test_greenexch(self, setup):
+        self.driver = setup
+        self.driver.set_window_size(1366,768)
+        self.cc = B2Bcommonclass(self.driver)
+        self.driver.get(self.greenexch)
+        time.sleep(5)
+        self.cc.clicksignin()
+        time.sleep(3)
+        self.cc.setusername(self.newusername)
+        self.cc.setpassword(self.newpassword)
+        self.cc.clicklogin()
         try:
-            login = WebDriverWait(self.driver, 15).until(
+            WebDriverWait(self.driver, 15).until(
                 EC.visibility_of_element_located((By.TAG_NAME, "app-dashboard")))
         except:
             self.logger.info("User Not login, Please Run This Test Again")
@@ -917,9 +1044,19 @@ class Test_B2Bcommonclass:
 
     @pytest.mark.runall
     @pytest.mark.b2bmarker
-    def test_best365(self, best365login):
+    def test_best365(self, setup):
+        self.driver = setup
+        self.driver.set_window_size(1366,768)
+        self.cc = B2Bcommonclass(self.driver)
+        self.driver.get(self.best365)
+        time.sleep(5)
+        self.cc.clicksignin()
+        time.sleep(3)
+        self.cc.setusername(self.newusername)
+        self.cc.setpassword(self.newpassword)
+        self.cc.clicklogin()
         try:
-            login = WebDriverWait(self.driver, 15).until(
+            WebDriverWait(self.driver, 15).until(
                 EC.visibility_of_element_located((By.TAG_NAME, "app-dashboard")))
         except:
             self.logger.info("User Not login, Please Run This Test Again")
@@ -928,9 +1065,19 @@ class Test_B2Bcommonclass:
 
     @pytest.mark.runall
     @pytest.mark.b2bmarker
-    def test_parkinplay(self, parkinplaylogin):
+    def test_parkinplay(self, setup):
+        self.driver = setup
+        self.driver.set_window_size(1366,768)
+        self.cc = B2Bcommonclass(self.driver)
+        self.driver.get(self.parkinplay)
+        time.sleep(5)
+        self.cc.clicksignin()
+        time.sleep(3)
+        self.cc.setusername(self.newusername)
+        self.cc.setpassword(self.newpassword)
+        self.cc.clicklogin()
         try:
-            login = WebDriverWait(self.driver, 15).until(
+            WebDriverWait(self.driver, 15).until(
                 EC.visibility_of_element_located((By.TAG_NAME, "app-dashboard")))
         except:
             self.logger.info("User Not login, Please Run This Test Again")
@@ -939,9 +1086,19 @@ class Test_B2Bcommonclass:
 
     @pytest.mark.runall
     @pytest.mark.b2bmarker
-    def test_butterflyexch(self, butterflyexchlogin):
+    def test_butterflyexch(self, setup):
+        self.driver = setup
+        self.driver.set_window_size(1366,768)
+        self.cc = B2Bcommonclass(self.driver)
+        self.driver.get(self.butterflyexch)
+        time.sleep(5)
+        self.cc.clicksignin()
+        time.sleep(3)
+        self.cc.setusername(self.newusername)
+        self.cc.setpassword(self.newpassword)
+        self.cc.clicklogin()
         try:
-            login = WebDriverWait(self.driver, 15).until(
+            WebDriverWait(self.driver, 15).until(
                 EC.visibility_of_element_located((By.TAG_NAME, "app-dashboard")))
         except:
             self.logger.info("User Not login, Please Run This Test Again")
@@ -950,9 +1107,19 @@ class Test_B2Bcommonclass:
 
     @pytest.mark.runall
     @pytest.mark.b2bmarker
-    def test_probook9(self, probook9login):
+    def test_probook9(self, setup):
+        self.driver = setup
+        self.driver.set_window_size(1366,768)
+        self.cc = B2Bcommonclass(self.driver)
+        self.driver.get(self.butterflyexch)
+        time.sleep(5)
+        self.cc.clicksignin()
+        time.sleep(3)
+        self.cc.setusername(self.newusername)
+        self.cc.setpassword(self.newpassword)
+        self.cc.clicklogin()
         try:
-            login = WebDriverWait(self.driver, 15).until(
+            WebDriverWait(self.driver, 15).until(
                 EC.visibility_of_element_located((By.TAG_NAME, "app-dashboard")))
         except:
             self.logger.info("User Not login, Please Run This Test Again")
@@ -961,9 +1128,19 @@ class Test_B2Bcommonclass:
 
     @pytest.mark.runall
     @pytest.mark.b2bmarker
-    def test_elevenwonder(self, elevenwonderlogin):
+    def test_elevenwonder(self, setup):
+        self.driver = setup
+        self.driver.set_window_size(1366,768)
+        self.cc = B2Bcommonclass(self.driver)
+        self.driver.get(self.elevenwonder)
+        time.sleep(5)
+        self.cc.clicksignin()
+        time.sleep(3)
+        self.cc.setusername(self.newusername)
+        self.cc.setpassword(self.newpassword)
+        self.cc.clicklogin()
         try:
-            login = WebDriverWait(self.driver, 15).until(
+            WebDriverWait(self.driver, 15).until(
                 EC.visibility_of_element_located((By.TAG_NAME, "app-dashboard")))
         except:
             self.logger.info("User Not login, Please Run This Test Again")
@@ -972,9 +1149,19 @@ class Test_B2Bcommonclass:
 
     @pytest.mark.runall
     @pytest.mark.b2bmarker
-    def test_winexch(self, winexchlogin):
+    def test_winexch(self, setup):
+        self.driver = setup
+        self.driver.set_window_size(1366,768)
+        self.cc = B2Bcommonclass(self.driver)
+        self.driver.get(self.winexch)
+        time.sleep(5)
+        self.cc.clicksignin()
+        time.sleep(3)
+        self.cc.setusername(self.newusername)
+        self.cc.setpassword(self.newpassword)
+        self.cc.clicklogin()
         try:
-            login = WebDriverWait(self.driver, 15).until(
+            WebDriverWait(self.driver, 15).until(
                 EC.visibility_of_element_located((By.TAG_NAME, "app-dashboard")))
         except:
             self.logger.info("User Not login, Please Run This Test Again")
@@ -983,9 +1170,19 @@ class Test_B2Bcommonclass:
 
     @pytest.mark.runall
     @pytest.mark.b2bmarker
-    def test_runexch(self, runexchlogin):
+    def test_runexch(self, setup):
+        self.driver = setup
+        self.driver.set_window_size(1366,768)
+        self.cc = B2Bcommonclass(self.driver)
+        self.driver.get(self.runexch)
+        time.sleep(5)
+        self.cc.clicksignin()
+        time.sleep(3)
+        self.cc.setusername(self.newusername)
+        self.cc.setpassword(self.newpassword)
+        self.cc.clicklogin()
         try:
-            login = WebDriverWait(self.driver, 15).until(
+            WebDriverWait(self.driver, 15).until(
                 EC.visibility_of_element_located((By.TAG_NAME, "app-dashboard")))
         except:
             self.logger.info("User Not login, Please Run This Test Again")
@@ -994,9 +1191,19 @@ class Test_B2Bcommonclass:
 
     @pytest.mark.runall
     @pytest.mark.b2bmarker
-    def test_cricbuz(self, cricbuzlogin):
+    def test_cricbuz(self, setup):
+        self.driver = setup
+        self.driver.set_window_size(1366,768)
+        self.cc = B2Bcommonclass(self.driver)
+        self.driver.get(self.cricbuz)
+        time.sleep(5)
+        self.cc.clicksignin()
+        time.sleep(3)
+        self.cc.setusername(self.newusername)
+        self.cc.setpassword(self.newpassword)
+        self.cc.clicklogin()
         try:
-            login = WebDriverWait(self.driver, 15).until(
+            WebDriverWait(self.driver, 15).until(
                 EC.visibility_of_element_located((By.TAG_NAME, "app-dashboard")))
         except:
             self.logger.info("User Not login, Please Run This Test Again")
@@ -1005,9 +1212,19 @@ class Test_B2Bcommonclass:
 
     @pytest.mark.runall
     @pytest.mark.b2bmarker
-    def test_orange11(self, orange11login):
+    def test_orange11(self, setup):
+        self.driver = setup
+        self.driver.set_window_size(1366,768)
+        self.cc = B2Bcommonclass(self.driver)
+        self.driver.get(self.orange11)
+        time.sleep(5)
+        self.cc.clicksignin()
+        time.sleep(3)
+        self.cc.setusername(self.newusername)
+        self.cc.setpassword(self.newpassword)
+        self.cc.clicklogin()
         try:
-            login = WebDriverWait(self.driver, 15).until(
+            WebDriverWait(self.driver, 15).until(
                 EC.visibility_of_element_located((By.TAG_NAME, "app-dashboard")))
         except:
             self.logger.info("User Not login, Please Run This Test Again")
@@ -1016,9 +1233,19 @@ class Test_B2Bcommonclass:
 
     @pytest.mark.runall
     @pytest.mark.b2bmarker
-    def test_khelo365(self, khelo365login):
+    def test_khelo365(self, setup):
+        self.driver = setup
+        self.driver.set_window_size(1366,768)
+        self.cc = B2Bcommonclass(self.driver)
+        self.driver.get(self.khelo365)
+        time.sleep(5)
+        self.cc.clicksignin()
+        time.sleep(3)
+        self.cc.setusername(self.newusername)
+        self.cc.setpassword(self.newpassword)
+        self.cc.clicklogin()
         try:
-            login = WebDriverWait(self.driver, 15).until(
+            WebDriverWait(self.driver, 15).until(
                 EC.visibility_of_element_located((By.TAG_NAME, "app-dashboard")))
         except:
             self.logger.info("User Not login, Please Run This Test Again")
@@ -1027,9 +1254,19 @@ class Test_B2Bcommonclass:
 
     @pytest.mark.runall
     @pytest.mark.b2bmarker
-    def test_bright99(self, bright99login):
+    def test_bright99(self, setup):
+        self.driver = setup
+        self.driver.set_window_size(1366,768)
+        self.cc = B2Bcommonclass(self.driver)
+        self.driver.get(self.bright99)
+        time.sleep(5)
+        self.cc.clicksignin()
+        time.sleep(3)
+        self.cc.setusername(self.newusername)
+        self.cc.setpassword(self.newpassword)
+        self.cc.clicklogin()
         try:
-            login = WebDriverWait(self.driver, 15).until(
+            WebDriverWait(self.driver, 15).until(
                 EC.visibility_of_element_located((By.TAG_NAME, "app-dashboard")))
         except:
             self.logger.info("User Not login, Please Run This Test Again")
@@ -1038,9 +1275,19 @@ class Test_B2Bcommonclass:
 
     @pytest.mark.runall
     @pytest.mark.b2bmarker
-    def test_powerbets(self, powerbetslogin):
+    def test_powerbets(self, setup):
+        self.driver = setup
+        self.driver.set_window_size(1366,768)
+        self.cc = B2Bcommonclass(self.driver)
+        self.driver.get(self.powerbets)
+        time.sleep(5)
+        self.cc.clicksignin()
+        time.sleep(3)
+        self.cc.setusername(self.newusername)
+        self.cc.setpassword(self.newpassword)
+        self.cc.clicklogin()
         try:
-            login = WebDriverWait(self.driver, 15).until(
+            WebDriverWait(self.driver, 15).until(
                 EC.visibility_of_element_located((By.TAG_NAME, "app-dashboard")))
         except:
             self.logger.info("User Not login, Please Run This Test Again")
@@ -1049,9 +1296,19 @@ class Test_B2Bcommonclass:
 
     @pytest.mark.runall
     @pytest.mark.b2bmarker
-    def test_nineskyexch(self, nineskyexchlogin):
+    def test_nineskyexch(self, setup):
+        self.driver = setup
+        self.driver.set_window_size(1366,768)
+        self.cc = B2Bcommonclass(self.driver)
+        self.driver.get(self.nineskyexch)
+        time.sleep(5)
+        self.cc.clicksignin()
+        time.sleep(3)
+        self.cc.setusername(self.newusername)
+        self.cc.setpassword(self.newpassword)
+        self.cc.clicklogin()
         try:
-            login = WebDriverWait(self.driver, 15).until(
+            WebDriverWait(self.driver, 15).until(
                 EC.visibility_of_element_located((By.TAG_NAME, "app-dashboard")))
         except:
             self.logger.info("User Not login, Please Run This Test Again")
@@ -1060,9 +1317,19 @@ class Test_B2Bcommonclass:
 
     @pytest.mark.runall
     @pytest.mark.b2bmarker
-    def test_spice11(self, spice11login):
+    def test_spice11(self, setup):
+        self.driver = setup
+        self.driver.set_window_size(1366,768)
+        self.cc = B2Bcommonclass(self.driver)
+        self.driver.get(self.spice11)
+        time.sleep(5)
+        self.cc.clicksignin()
+        time.sleep(3)
+        self.cc.setusername(self.newusername)
+        self.cc.setpassword(self.newpassword)
+        self.cc.clicklogin()
         try:
-            login = WebDriverWait(self.driver, 15).until(
+            WebDriverWait(self.driver, 15).until(
                 EC.visibility_of_element_located((By.TAG_NAME, "app-dashboard")))
         except:
             self.logger.info("User Not login, Please Run This Test Again")
@@ -1071,9 +1338,19 @@ class Test_B2Bcommonclass:
 
     @pytest.mark.runall
     @pytest.mark.b2bmarker
-    def test_gold9login(self, gold9login):
+    def test_gold9login(self, setup):
+        self.driver = setup
+        self.driver.set_window_size(1366,768)
+        self.cc = B2Bcommonclass(self.driver)
+        self.driver.get(self.gold9)
+        time.sleep(5)
+        self.cc.clicksignin()
+        time.sleep(3)
+        self.cc.setusername(self.newusername)
+        self.cc.setpassword(self.newpassword)
+        self.cc.clicklogin()
         try:
-            login = WebDriverWait(self.driver, 15).until(
+            WebDriverWait(self.driver, 15).until(
                 EC.visibility_of_element_located((By.TAG_NAME, "app-dashboard")))
         except:
             self.logger.info("User Not login, Please Run This Test Again")
@@ -1082,9 +1359,19 @@ class Test_B2Bcommonclass:
 
     @pytest.mark.runall
     @pytest.mark.b2bmarker
-    def test_fancybook(self, fancybooklogin):
+    def test_fancybook(self, setup):
+        self.driver = setup
+        self.driver.set_window_size(1366,768)
+        self.cc = B2Bcommonclass(self.driver)
+        self.driver.get(self.fancybook)
+        time.sleep(5)
+        self.cc.clicksignin()
+        time.sleep(3)
+        self.cc.setusername(self.newusername)
+        self.cc.setpassword(self.newpassword)
+        self.cc.clicklogin()
         try:
-            login = WebDriverWait(self.driver, 15).until(
+            WebDriverWait(self.driver, 15).until(
                 EC.visibility_of_element_located((By.TAG_NAME, "app-dashboard")))
         except:
             self.logger.info("User Not login, Please Run This Test Again")
@@ -1093,9 +1380,19 @@ class Test_B2Bcommonclass:
 
     @pytest.mark.runall
     @pytest.mark.b2bmarker
-    def test_skyexch1(self, skyexch1login):
+    def test_skyexch1(self, setup):
+        self.driver = setup
+        self.driver.set_window_size(1366,768)
+        self.cc = B2Bcommonclass(self.driver)
+        self.driver.get(self.skyexch1)
+        time.sleep(5)
+        self.cc.clicksignin()
+        time.sleep(3)
+        self.cc.setusername(self.newusername)
+        self.cc.setpassword(self.newpassword)
+        self.cc.clicklogin()
         try:
-            login = WebDriverWait(self.driver, 15).until(
+            WebDriverWait(self.driver, 15).until(
                 EC.visibility_of_element_located((By.TAG_NAME, "app-dashboard")))
         except:
             self.logger.info("User Not login, Please Run This Test Again")
@@ -1104,9 +1401,9 @@ class Test_B2Bcommonclass:
     #
     # @pytest.mark.runall
     # @pytest.mark.b2bmarker
-    # def test_probet9login(self, probet9login):
+    # def test_probet9login(self, setup):
     #     try:
-    #         login = WebDriverWait(self.driver, 15).until(
+    #         WebDriverWait(self.driver, 15).until(
     #             EC.visibility_of_element_located((By.TAG_NAME, "app-dashboard")))
     #     except:
     #         self.logger.info("User Not login, Please Run This Test Again")
@@ -1115,9 +1412,19 @@ class Test_B2Bcommonclass:
 
     @pytest.mark.runall
     @pytest.mark.b2bmarker
-    def test_Sunexchange(self, Sunexchangelogin):
+    def test_Sunexchange(self, setup):
+        self.driver = setup
+        self.driver.set_window_size(1366,768)
+        self.cc = B2Bcommonclass(self.driver)
+        self.driver.get(self.Sunexchange)
+        time.sleep(5)
+        self.cc.clicksignin()
+        time.sleep(3)
+        self.cc.setusername(self.newusername)
+        self.cc.setpassword(self.newpassword)
+        self.cc.clicklogin()
         try:
-            login = WebDriverWait(self.driver, 15).until(
+            WebDriverWait(self.driver, 15).until(
                 EC.visibility_of_element_located((By.TAG_NAME, "app-dashboard")))
         except:
             self.logger.info("User Not login, Please Run This Test Again")
@@ -1126,32 +1433,19 @@ class Test_B2Bcommonclass:
 
     @pytest.mark.runall
     @pytest.mark.b2bmarker
-    def test_sevenxbet(self, sevenxbetlogin):
+    def test_sevenxbet(self, setup):
+        self.driver = setup
+        self.driver.set_window_size(1366,768)
+        self.cc = B2Bcommonclass(self.driver)
+        self.driver.get(self.sevenxbet)
+        time.sleep(5)
+        self.cc.clicksignin()
+        time.sleep(3)
+        self.cc.setusername(self.newusername)
+        self.cc.setpassword(self.newpassword)
+        self.cc.clicklogin()
         try:
-            login = WebDriverWait(self.driver, 15).until(
-                EC.visibility_of_element_located((By.TAG_NAME, "app-dashboard")))
-        except:
-            self.logger.info("User Not login, Please Run This Test Again")
-            assert False
-        self.newfunction()
-
-
-    @pytest.mark.runall
-    @pytest.mark.b2bmarker
-    def test_saiexch24(self, saiexch24login):
-        try:
-            login = WebDriverWait(self.driver, 15).until(
-                EC.visibility_of_element_located((By.TAG_NAME, "app-dashboard")))
-        except:
-            self.logger.info("User Not login, Please Run This Test Again")
-            assert False
-        self.newfunction()
-
-    @pytest.mark.runall
-    @pytest.mark.b2bmarker
-    def test_lords99(self, lords99login):
-        try:
-            login = WebDriverWait(self.driver, 15).until(
+            WebDriverWait(self.driver, 15).until(
                 EC.visibility_of_element_located((By.TAG_NAME, "app-dashboard")))
         except:
             self.logger.info("User Not login, Please Run This Test Again")
@@ -1160,9 +1454,19 @@ class Test_B2Bcommonclass:
 
     @pytest.mark.runall
     @pytest.mark.b2bmarker
-    def test_bengal22(self, bengal22login):
+    def test_saiexch24(self, setup):
+        self.driver = setup
+        self.driver.set_window_size(1366,768)
+        self.cc = B2Bcommonclass(self.driver)
+        self.driver.get(self.saiexch24)
+        time.sleep(5)
+        self.cc.clicksignin()
+        time.sleep(3)
+        self.cc.setusername(self.newusername)
+        self.cc.setpassword(self.newpassword)
+        self.cc.clicklogin()
         try:
-            login = WebDriverWait(self.driver, 15).until(
+            WebDriverWait(self.driver, 15).until(
                 EC.visibility_of_element_located((By.TAG_NAME, "app-dashboard")))
         except:
             self.logger.info("User Not login, Please Run This Test Again")
@@ -1171,9 +1475,19 @@ class Test_B2Bcommonclass:
 
     @pytest.mark.runall
     @pytest.mark.b2bmarker
-    def test_all365day(self, all365daylogin):
+    def test_lords99(self, setup):
+        self.driver = setup
+        self.driver.set_window_size(1366,768)
+        self.cc = B2Bcommonclass(self.driver)
+        self.driver.get(self.lords99)
+        time.sleep(5)
+        self.cc.clicksignin()
+        time.sleep(3)
+        self.cc.setusername(self.newusername)
+        self.cc.setpassword(self.newpassword)
+        self.cc.clicklogin()
         try:
-            login = WebDriverWait(self.driver, 15).until(
+            WebDriverWait(self.driver, 15).until(
                 EC.visibility_of_element_located((By.TAG_NAME, "app-dashboard")))
         except:
             self.logger.info("User Not login, Please Run This Test Again")
@@ -1182,9 +1496,19 @@ class Test_B2Bcommonclass:
 
     @pytest.mark.runall
     @pytest.mark.b2bmarker
-    def test_Spworld365(self, Spworld365login):
+    def test_bengal22(self, setup):
+        self.driver = setup
+        self.driver.set_window_size(1366,768)
+        self.cc = B2Bcommonclass(self.driver)
+        self.driver.get(self.bengal22)
+        time.sleep(5)
+        self.cc.clicksignin()
+        time.sleep(3)
+        self.cc.setusername(self.newusername)
+        self.cc.setpassword(self.newpassword)
+        self.cc.clicklogin()
         try:
-            login = WebDriverWait(self.driver, 15).until(
+            WebDriverWait(self.driver, 15).until(
                 EC.visibility_of_element_located((By.TAG_NAME, "app-dashboard")))
         except:
             self.logger.info("User Not login, Please Run This Test Again")
@@ -1193,9 +1517,19 @@ class Test_B2Bcommonclass:
 
     @pytest.mark.runall
     @pytest.mark.b2bmarker
-    def test_euro11(self, euro11login):
+    def test_all365day(self, setup):
+        self.driver = setup
+        self.driver.set_window_size(1366,768)
+        self.cc = B2Bcommonclass(self.driver)
+        self.driver.get(self.all365day)
+        time.sleep(5)
+        self.cc.clicksignin()
+        time.sleep(3)
+        self.cc.setusername(self.newusername)
+        self.cc.setpassword(self.newpassword)
+        self.cc.clicklogin()
         try:
-            login = WebDriverWait(self.driver, 15).until(
+            WebDriverWait(self.driver, 15).until(
                 EC.visibility_of_element_located((By.TAG_NAME, "app-dashboard")))
         except:
             self.logger.info("User Not login, Please Run This Test Again")
@@ -1204,9 +1538,19 @@ class Test_B2Bcommonclass:
 
     @pytest.mark.runall
     @pytest.mark.b2bmarker
-    def test_royalbet444(self, royalbet444login):
+    def test_Spworld365(self, setup):
+        self.driver = setup
+        self.driver.set_window_size(1366,768)
+        self.cc = B2Bcommonclass(self.driver)
+        self.driver.get(self.Spworld365)
+        time.sleep(5)
+        self.cc.clicksignin()
+        time.sleep(3)
+        self.cc.setusername(self.newusername)
+        self.cc.setpassword(self.newpassword)
+        self.cc.clicklogin()
         try:
-            login = WebDriverWait(self.driver, 15).until(
+            WebDriverWait(self.driver, 15).until(
                 EC.visibility_of_element_located((By.TAG_NAME, "app-dashboard")))
         except:
             self.logger.info("User Not login, Please Run This Test Again")
@@ -1215,9 +1559,19 @@ class Test_B2Bcommonclass:
 
     @pytest.mark.runall
     @pytest.mark.b2bmarker
-    def test_playwin247(self, playwin247login):
+    def test_euro11(self, setup):
+        self.driver = setup
+        self.driver.set_window_size(1366,768)
+        self.cc = B2Bcommonclass(self.driver)
+        self.driver.get(self.euro11)
+        time.sleep(5)
+        self.cc.clicksignin()
+        time.sleep(3)
+        self.cc.setusername(self.newusername)
+        self.cc.setpassword(self.newpassword)
+        self.cc.clicklogin()
         try:
-            login = WebDriverWait(self.driver, 15).until(
+            WebDriverWait(self.driver, 15).until(
                 EC.visibility_of_element_located((By.TAG_NAME, "app-dashboard")))
         except:
             self.logger.info("User Not login, Please Run This Test Again")
@@ -1226,9 +1580,19 @@ class Test_B2Bcommonclass:
 
     @pytest.mark.runall
     @pytest.mark.b2bmarker
-    def test_jk3434(self, jk3434login):
+    def test_royalbet444(self, setup):
+        self.driver = setup
+        self.driver.set_window_size(1366,768)
+        self.cc = B2Bcommonclass(self.driver)
+        self.driver.get(self.royalbet444)
+        time.sleep(5)
+        self.cc.clicksignin()
+        time.sleep(3)
+        self.cc.setusername(self.newusername)
+        self.cc.setpassword(self.newpassword)
+        self.cc.clicklogin()
         try:
-            login = WebDriverWait(self.driver, 15).until(
+            WebDriverWait(self.driver, 15).until(
                 EC.visibility_of_element_located((By.TAG_NAME, "app-dashboard")))
         except:
             self.logger.info("User Not login, Please Run This Test Again")
@@ -1237,9 +1601,61 @@ class Test_B2Bcommonclass:
 
     @pytest.mark.runall
     @pytest.mark.b2bmarker
-    def test_bajibet9(self, bajibet9login):
+    def test_playwin247(self, setup):
+        self.driver = setup
+        self.driver.set_window_size(1366,768)
+        self.cc = B2Bcommonclass(self.driver)
+        self.driver.get(self.playwin247)
+        time.sleep(5)
+        self.cc.clicksignin()
+        time.sleep(3)
+        self.cc.setusername(self.newusername)
+        self.cc.setpassword(self.newpassword)
+        self.cc.clicklogin()
         try:
-            login = WebDriverWait(self.driver, 15).until(
+            WebDriverWait(self.driver, 15).until(
+                EC.visibility_of_element_located((By.TAG_NAME, "app-dashboard")))
+        except:
+            self.logger.info("User Not login, Please Run This Test Again")
+            assert False
+        self.newfunction()
+
+    @pytest.mark.runall
+    @pytest.mark.b2bmarker
+    def test_jk3434(self, setup):
+        self.driver = setup
+        self.driver.set_window_size(1366,768)
+        self.cc = B2Bcommonclass(self.driver)
+        self.driver.get(self.jk3434)
+        time.sleep(5)
+        self.cc.clicksignin()
+        time.sleep(3)
+        self.cc.setusername(self.newusername)
+        self.cc.setpassword(self.newpassword)
+        self.cc.clicklogin()
+        try:
+            WebDriverWait(self.driver, 15).until(
+                EC.visibility_of_element_located((By.TAG_NAME, "app-dashboard")))
+        except:
+            self.logger.info("User Not login, Please Run This Test Again")
+            assert False
+        self.newfunction()
+
+    @pytest.mark.runall
+    @pytest.mark.b2bmarker
+    def test_bajibet9(self, setup):
+        self.driver = setup
+        self.driver.set_window_size(1366,768)
+        self.cc = B2Bcommonclass(self.driver)
+        self.driver.get(self.bajibet9)
+        time.sleep(5)
+        self.cc.clicksignin()
+        time.sleep(3)
+        self.cc.setusername(self.newusername)
+        self.cc.setpassword(self.newpassword)
+        self.cc.clicklogin()
+        try:
+            WebDriverWait(self.driver, 15).until(
                 EC.visibility_of_element_located((By.TAG_NAME, "app-dashboard")))
         except:
             self.logger.info("User Not login, Please Run This Test Again")

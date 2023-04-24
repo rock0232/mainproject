@@ -144,6 +144,7 @@ class B2Bcommonclass:
         return pl
 
     def getselection(self):
+        WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located((By.XPATH, self.betteamname_xpath)))
         teamname = self.driver.find_element(By.XPATH, self.betteamname_xpath).text
         return teamname
 
@@ -158,6 +159,7 @@ class B2Bcommonclass:
         self.driver.find_element(By.XPATH, self.userporfile_xpath).click()
 
     def getliability(self):
+        WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located((By.XPATH, self.liability_xpath)))
         lia = self.driver.find_element(By.XPATH, self.liability_xpath).text
         liability = float(lia)
         return liability
