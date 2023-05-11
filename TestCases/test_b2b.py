@@ -625,6 +625,7 @@ class Test_B2Bcommonclass:
 
     def newfunction(self):
         alertmessage = ""
+        self.driver.implicitly_wait(15)
         self.cc = B2Bcommonclass(self.driver)
         self.cc.clickclose()
         time.sleep(1.5)
