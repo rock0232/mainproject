@@ -37,7 +37,7 @@ class Test_B2Bcommonclass:
     #     time.sleep(3)
     #     self.cc.setusername(self.username)
     #     self.cc.setpassword(self.password)
-    #     self.cc.clicklogin()
+    #     self.cc.clicklogin() #
 
     def newfunction(self):
         alertmessage = ""
