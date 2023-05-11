@@ -2049,3 +2049,83 @@
 04/24/2023 09:28:46 AM: INFO: Test Passed
 04/24/2023 09:28:46 AM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
 04/24/2023 09:28:46 AM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+04/26/2023 10:42:05 PM: INFO: ====== WebDriver manager ======
+04/26/2023 10:42:06 PM: INFO: Get LATEST chromedriver version for google-chrome 112.0.5615
+04/26/2023 10:42:07 PM: INFO: About to download new driver from https://chromedriver.storage.googleapis.com/112.0.5615.49/chromedriver_win32.zip
+04/26/2023 10:47:58 PM: INFO: Driver has been saved in cache [C:\Users\KEY\.wdm\drivers\chromedriver\win32\112.0.5615]
+04/29/2023 12:56:39 PM: INFO: ====== WebDriver manager ======
+04/29/2023 12:56:40 PM: INFO: Get LATEST chromedriver version for google-chrome 112.0.5615
+04/29/2023 12:56:42 PM: INFO: About to download new driver from https://chromedriver.storage.googleapis.com/112.0.5615.49/chromedriver_win32.zip
+04/29/2023 12:59:06 PM: INFO: Driver has been saved in cache [C:\Users\KEY\.wdm\drivers\chromedriver\win32\112.0.5615]
+04/29/2023 01:01:56 PM: INFO: User Not login, Please Run This Test Again
+04/29/2023 01:02:13 PM: INFO: ====== WebDriver manager ======
+04/29/2023 01:02:13 PM: INFO: Get LATEST chromedriver version for google-chrome 112.0.5615
+04/29/2023 01:02:16 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\112.0.5615\chromedriver.exe] found in cache
+04/29/2023 01:03:03 PM: INFO: ====== WebDriver manager ======
+04/29/2023 01:03:04 PM: INFO: Get LATEST chromedriver version for google-chrome 112.0.5615
+04/29/2023 01:03:06 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\112.0.5615\chromedriver.exe] found in cache
+04/29/2023 01:06:00 PM: INFO: User Not login, Please Run This Test Again
+04/29/2023 01:06:11 PM: INFO: ====== WebDriver manager ======
+04/29/2023 01:06:11 PM: INFO: Get LATEST chromedriver version for google-chrome 112.0.5615
+04/29/2023 01:06:15 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\112.0.5615\chromedriver.exe] found in cache
+04/29/2023 05:18:32 PM: INFO: ====== WebDriver manager ======
+04/29/2023 05:18:34 PM: INFO: Get LATEST geckodriver version for 112.0 firefox
+04/29/2023 05:18:36 PM: INFO: There is no [win64] geckodriver for browser 112.0 in cache
+04/29/2023 05:18:36 PM: INFO: Getting latest mozilla release info for v0.33.0
+04/29/2023 05:18:36 PM: INFO: About to download new driver from https://github.com/mozilla/geckodriver/releases/download/v0.33.0/geckodriver-v0.33.0-win64.zip
+04/29/2023 05:19:22 PM: INFO: Driver has been saved in cache [C:\Users\KEY\.wdm\drivers\geckodriver\win64\0.33]
+04/29/2023 05:19:37 PM: INFO: ====== WebDriver manager ======
+04/29/2023 05:19:38 PM: INFO: Get LATEST geckodriver version for 112.0 firefox
+04/29/2023 05:19:40 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\geckodriver\win64\0.33\geckodriver.exe] found in cache
+04/29/2023 05:22:17 PM: INFO: ====== WebDriver manager ======
+04/29/2023 05:22:18 PM: INFO: Get LATEST geckodriver version for 112.0 firefox
+04/29/2023 05:22:20 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\geckodriver\win64\0.33\geckodriver.exe] found in cache
+04/29/2023 05:23:09 PM: INFO: ====== WebDriver manager ======
+04/29/2023 05:23:10 PM: INFO: Get LATEST geckodriver version for 112.0 firefox
+04/29/2023 05:23:12 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\geckodriver\win64\0.33\geckodriver.exe] found in cache
+04/29/2023 05:24:31 PM: INFO: ====== WebDriver manager ======
+04/29/2023 05:24:32 PM: INFO: Get LATEST geckodriver version for 112.0 firefox
+04/29/2023 05:24:34 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\geckodriver\win64\0.33\geckodriver.exe] found in cache
+04/29/2023 05:26:14 PM: INFO: ====== WebDriver manager ======
+04/29/2023 05:26:15 PM: INFO: Get LATEST geckodriver version for 112.0 firefox
+04/29/2023 05:26:17 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\geckodriver\win64\0.33\geckodriver.exe] found in cache
+04/29/2023 05:26:51 PM: INFO: ====== WebDriver manager ======
+04/29/2023 05:26:52 PM: INFO: Get LATEST geckodriver version for 112.0 firefox
+04/29/2023 05:26:54 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\geckodriver\win64\0.33\geckodriver.exe] found in cache
+04/29/2023 05:32:24 PM: INFO: ====== WebDriver manager ======
+04/29/2023 05:32:25 PM: INFO: Get LATEST geckodriver version for 112.0 firefox
+04/29/2023 05:32:27 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\geckodriver\win64\0.33\geckodriver.exe] found in cache
+04/29/2023 05:33:23 PM: INFO: ====== WebDriver manager ======
+04/29/2023 05:33:24 PM: INFO: Get LATEST geckodriver version for 112.0 firefox
+04/29/2023 05:33:26 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\geckodriver\win64\0.33\geckodriver.exe] found in cache
+04/29/2023 06:48:56 PM: INFO: ====== WebDriver manager ======
+04/29/2023 06:48:57 PM: INFO: Get LATEST chromedriver version for google-chrome 112.0.5615
+04/29/2023 06:49:00 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\112.0.5615\chromedriver.exe] found in cache
+04/29/2023 06:52:19 PM: INFO: ====== WebDriver manager ======
+04/29/2023 06:52:19 PM: INFO: Get LATEST chromedriver version for google-chrome 112.0.5615
+04/29/2023 06:52:29 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\112.0.5615\chromedriver.exe] found in cache
+04/29/2023 06:53:39 PM: INFO: ====== WebDriver manager ======
+04/29/2023 06:53:40 PM: INFO: Get LATEST chromedriver version for google-chrome 112.0.5615
+04/29/2023 06:53:44 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\112.0.5615\chromedriver.exe] found in cache
+05/09/2023 01:55:15 PM: INFO: ====== WebDriver manager ======
+05/09/2023 01:55:22 PM: INFO: Get LATEST chromedriver version for google-chrome 112.0.5615
+05/09/2023 01:55:30 PM: INFO: About to download new driver from https://chromedriver.storage.googleapis.com/112.0.5615.49/chromedriver_win32.zip
+05/09/2023 01:55:35 PM: INFO: Driver has been saved in cache [C:\Users\KEY\.wdm\drivers\chromedriver\win32\112.0.5615]
+05/09/2023 01:56:34 PM: INFO: ====== WebDriver manager ======
+05/09/2023 01:56:35 PM: INFO: Get LATEST chromedriver version for google-chrome 112.0.5615
+05/09/2023 01:56:36 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\112.0.5615\chromedriver.exe] found in cache
+05/10/2023 03:36:08 PM: INFO: ====== WebDriver manager ======
+05/10/2023 03:36:09 PM: INFO: Get LATEST chromedriver version for google-chrome 112.0.5615
+05/10/2023 03:36:11 PM: INFO: About to download new driver from https://chromedriver.storage.googleapis.com/112.0.5615.49/chromedriver_win32.zip
+05/10/2023 03:36:15 PM: INFO: Driver has been saved in cache [C:\Users\KEY\.wdm\drivers\chromedriver\win32\112.0.5615]
+05/10/2023 03:38:17 PM: INFO: ====== WebDriver manager ======
+05/10/2023 03:38:18 PM: INFO: Get LATEST chromedriver version for google-chrome 112.0.5615
+05/10/2023 03:38:19 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\112.0.5615\chromedriver.exe] found in cache
+05/10/2023 03:40:32 PM: INFO: ====== WebDriver manager ======
+05/10/2023 03:40:33 PM: INFO: Get LATEST chromedriver version for google-chrome 112.0.5615
+05/10/2023 03:40:40 PM: INFO: ====== WebDriver manager ======
+05/10/2023 03:40:41 PM: INFO: Get LATEST chromedriver version for google-chrome 112.0.5615
+05/10/2023 03:40:42 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\112.0.5615\chromedriver.exe] found in cache
+05/10/2023 03:47:43 PM: INFO: ====== WebDriver manager ======
+05/10/2023 03:47:44 PM: INFO: Get LATEST chromedriver version for google-chrome 112.0.5615
+05/10/2023 03:47:44 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\112.0.5615\chromedriver.exe] found in cache

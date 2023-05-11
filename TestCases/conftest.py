@@ -15,7 +15,7 @@ def get_project_root() -> Path:
 def setup():
     global driver
     chrome_options = Options()
-    chrome_options.add_argument('--headless')
+    # chrome_options.add_argument('--headless')
     ###
     chrome_options.add_argument("--disable-extensions")
     chrome_options.add_argument("--disable-gpu")
@@ -65,8 +65,8 @@ def pytest_runtest_makereport(item, call):
         if (report.skipped and xfail) or (report.failed and not xfail):
             file_name = report.nodeid.replace("::", "_") + ".png"
             _capture_screenshot(file_name)
-            file_path = f"http://159.65.148.205:8000/{file_name}"
-            # file_path = f"{filepath}/{file_name}"
+            # file_path = f"http://159.65.148.205:8000/{file_name}"
+            file_path = f"{filepath}/{file_name}"
             if file_name:
                 html = '<div> <img src="%s"' \
                        ' alt="screenshot" style="width:304px;height:228px;" ' \
