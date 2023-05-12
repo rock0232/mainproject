@@ -762,10 +762,16 @@ class Test_B2Bcommonclass:
     @pytest.mark.aura25
     @pytest.mark.test
     def test_aura25(self, setup):
+        # define the headers with the cookie information
+        cookies = {
+            "name":"cf_clearance",
+            "value":"4FQofPYfRcOaDErKc33RjqrMJLYqdaLrDTv5LDm7zRY-1683875838-0-150"
+        }
         self.driver = setup
         self.driver.set_window_size(1366,768)
         self.cc = B2Bcommonclass(self.driver)
         self.driver.get(self.aura25)
+        self.driver.add_cookie(cookies)
         time.sleep(5)
         self.cc.clicksignin()
         time.sleep(3)
@@ -920,10 +926,15 @@ class Test_B2Bcommonclass:
     @pytest.mark.b2bmarker
     @pytest.mark.gamex
     def test_gamex(self, setup):
+        cookies = {
+            "name": "cf_clearance",
+            "value": "hr.biwKQL3llsQe0r0zg1M0nq.JqHVUJh_7w2KMPy5U-1683881227-0-150"
+        }
         self.driver = setup
         self.driver.set_window_size(1366,768)
         self.cc = B2Bcommonclass(self.driver)
         self.driver.get(self.gamex)
+        self.driver.add_cookie(cookies)
         time.sleep(5)
         self.cc.clicksignin()
         time.sleep(3)
@@ -1114,7 +1125,7 @@ class Test_B2Bcommonclass:
         self.driver = setup
         self.driver.set_window_size(1366,768)
         self.cc = B2Bcommonclass(self.driver)
-        self.driver.get(self.butterflyexch)
+        self.driver.get(self.probook9)
         time.sleep(5)
         self.cc.clicksignin()
         time.sleep(3)

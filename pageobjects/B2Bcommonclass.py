@@ -245,6 +245,7 @@ class B2Bcommonclass:
         self.driver.find_element(By.ID, self.username_id).send_keys(username)
 
     def clicksignin(self):
+        WebDriverWait(self.driver, 15).until(EC.visibility_of_element_located((By.XPATH, self.signin_xpath)))
         self.driver.find_element(By.XPATH, self.signin_xpath).click()
 
 

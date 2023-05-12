@@ -2129,3 +2129,387 @@
 05/10/2023 03:47:43 PM: INFO: ====== WebDriver manager ======
 05/10/2023 03:47:44 PM: INFO: Get LATEST chromedriver version for google-chrome 112.0.5615
 05/10/2023 03:47:44 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\112.0.5615\chromedriver.exe] found in cache
+05/11/2023 04:40:53 PM: INFO: ====== WebDriver manager ======
+05/11/2023 04:40:54 PM: INFO: Get LATEST chromedriver version for google-chrome 112.0.5615
+05/11/2023 04:40:55 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\112.0.5615\chromedriver.exe] found in cache
+05/11/2023 04:42:52 PM: INFO: ====== WebDriver manager ======
+05/11/2023 04:42:52 PM: INFO: Get LATEST chromedriver version for google-chrome 112.0.5615
+05/11/2023 04:42:53 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\112.0.5615\chromedriver.exe] found in cache
+05/11/2023 04:43:50 PM: INFO: ====== WebDriver manager ======
+05/11/2023 04:43:52 PM: INFO: Get LATEST chromedriver version for google-chrome 112.0.5615
+05/11/2023 04:43:53 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\112.0.5615\chromedriver.exe] found in cache
+05/11/2023 04:48:05 PM: INFO: ====== WebDriver manager ======
+05/11/2023 04:48:05 PM: INFO: Get LATEST chromedriver version for google-chrome 112.0.5615
+05/11/2023 04:48:06 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\112.0.5615\chromedriver.exe] found in cache
+05/11/2023 04:53:34 PM: INFO: ====== WebDriver manager ======
+05/11/2023 04:53:34 PM: INFO: Get LATEST chromedriver version for google-chrome 112.0.5615
+05/11/2023 04:53:35 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\112.0.5615\chromedriver.exe] found in cache
+05/11/2023 04:56:05 PM: INFO: ====== WebDriver manager ======
+05/11/2023 04:56:06 PM: INFO: Get LATEST chromedriver version for google-chrome 112.0.5615
+05/11/2023 04:56:07 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\112.0.5615\chromedriver.exe] found in cache
+05/11/2023 04:57:08 PM: INFO: ====== WebDriver manager ======
+05/11/2023 04:57:09 PM: INFO: Get LATEST chromedriver version for google-chrome 112.0.5615
+05/11/2023 04:57:10 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\112.0.5615\chromedriver.exe] found in cache
+05/11/2023 04:58:04 PM: INFO: ====== WebDriver manager ======
+05/11/2023 04:58:05 PM: INFO: Get LATEST chromedriver version for google-chrome 112.0.5615
+05/11/2023 04:58:06 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\112.0.5615\chromedriver.exe] found in cache
+05/11/2023 04:59:04 PM: INFO: Test Passed
+05/11/2023 04:59:04 PM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+05/11/2023 04:59:04 PM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+05/11/2023 04:59:07 PM: INFO: ====== WebDriver manager ======
+05/11/2023 04:59:08 PM: INFO: Get LATEST chromedriver version for google-chrome 112.0.5615
+05/11/2023 04:59:09 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\112.0.5615\chromedriver.exe] found in cache
+05/11/2023 05:00:29 PM: INFO: Test Passed
+05/11/2023 05:00:29 PM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+05/11/2023 05:00:29 PM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+05/11/2023 05:00:32 PM: INFO: ====== WebDriver manager ======
+05/11/2023 05:00:33 PM: INFO: Get LATEST chromedriver version for google-chrome 112.0.5615
+05/11/2023 05:00:34 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\112.0.5615\chromedriver.exe] found in cache
+05/11/2023 05:02:04 PM: ERROR: Test Failed
+05/11/2023 05:02:04 PM: INFO: Wallet balance and Exposure Balance is not Updated After Bet place
+05/11/2023 05:02:04 PM: INFO: Message After Place Bet Bet has been placed successfully.
+05/11/2023 05:02:04 PM: INFO: User Login With rocktest
+05/11/2023 05:02:04 PM: INFO: Wallet Amount Before Place Bet 21607.19
+05/11/2023 05:02:04 PM: INFO: Wallet Amount After Place Bet 21607.19
+05/11/2023 05:02:04 PM: INFO: Bet Price 202
+05/11/2023 05:02:04 PM: INFO: Exposure Before Place Bet 0.0
+05/11/2023 05:02:04 PM: INFO: Exposure After Place Bet 0.0
+05/11/2023 05:02:04 PM: INFO: 
+05/11/2023 05:02:04 PM: INFO: ******************** Data From Dashboard Bet list ********************
+05/11/2023 05:02:04 PM: INFO: Bet Place Team Name is Mumbai Indians
+05/11/2023 05:02:04 PM: INFO: Bet Place On Back
+05/11/2023 05:02:04 PM: INFO: Bet Stake Amount is 202
+05/11/2023 05:02:04 PM: INFO: P/L on Bet Place is 195.94
+05/11/2023 05:02:20 PM: INFO:  
+05/11/2023 05:02:20 PM: INFO: Data Not Display In Report or Report Is not Update
+05/12/2023 12:30:30 PM: INFO: ====== WebDriver manager ======
+05/12/2023 12:30:30 PM: INFO: Get LATEST chromedriver version for google-chrome 113.0.5672
+05/12/2023 12:30:31 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\113.0.5672\chromedriver.exe] found in cache
+05/12/2023 12:31:43 PM: INFO: ====== WebDriver manager ======
+05/12/2023 12:31:44 PM: INFO: Get LATEST chromedriver version for google-chrome 113.0.5672
+05/12/2023 12:31:45 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\113.0.5672\chromedriver.exe] found in cache
+05/12/2023 12:36:25 PM: INFO: ====== WebDriver manager ======
+05/12/2023 12:36:26 PM: INFO: Get LATEST chromedriver version for google-chrome 113.0.5672
+05/12/2023 12:36:27 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\113.0.5672\chromedriver.exe] found in cache
+05/12/2023 12:57:13 PM: INFO: ====== WebDriver manager ======
+05/12/2023 12:57:14 PM: INFO: Get LATEST chromedriver version for google-chrome 113.0.5672
+05/12/2023 12:57:15 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\113.0.5672\chromedriver.exe] found in cache
+05/12/2023 12:58:15 PM: INFO: ====== WebDriver manager ======
+05/12/2023 12:58:17 PM: INFO: Get LATEST chromedriver version for google-chrome 113.0.5672
+05/12/2023 12:58:19 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\113.0.5672\chromedriver.exe] found in cache
+05/12/2023 01:00:09 PM: INFO: ====== WebDriver manager ======
+05/12/2023 01:00:11 PM: INFO: Get LATEST chromedriver version for google-chrome 113.0.5672
+05/12/2023 01:00:12 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\113.0.5672\chromedriver.exe] found in cache
+05/12/2023 01:01:28 PM: INFO: ====== WebDriver manager ======
+05/12/2023 01:01:30 PM: INFO: Get LATEST chromedriver version for google-chrome 113.0.5672
+05/12/2023 01:01:32 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\113.0.5672\chromedriver.exe] found in cache
+05/12/2023 01:02:04 PM: INFO: User login successfully
+05/12/2023 01:02:30 PM: INFO: Test Passed
+05/12/2023 01:02:30 PM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+05/12/2023 01:02:30 PM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+05/12/2023 02:04:39 PM: INFO: ====== WebDriver manager ======
+05/12/2023 02:04:40 PM: INFO: Get LATEST chromedriver version for google-chrome 113.0.5672
+05/12/2023 02:04:41 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\113.0.5672\chromedriver.exe] found in cache
+05/12/2023 02:11:55 PM: INFO: ====== WebDriver manager ======
+05/12/2023 02:11:56 PM: INFO: Get LATEST chromedriver version for google-chrome 113.0.5672
+05/12/2023 02:11:57 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\113.0.5672\chromedriver.exe] found in cache
+05/12/2023 02:14:35 PM: INFO: ====== WebDriver manager ======
+05/12/2023 02:14:36 PM: INFO: Get LATEST chromedriver version for google-chrome 113.0.5672
+05/12/2023 02:14:38 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\113.0.5672\chromedriver.exe] found in cache
+05/12/2023 02:18:58 PM: INFO: ====== WebDriver manager ======
+05/12/2023 02:19:00 PM: INFO: Get LATEST chromedriver version for google-chrome 113.0.5672
+05/12/2023 02:19:01 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\113.0.5672\chromedriver.exe] found in cache
+05/12/2023 02:20:07 PM: INFO: Test Passed
+05/12/2023 02:20:07 PM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+05/12/2023 02:20:07 PM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+05/12/2023 02:23:44 PM: INFO: ====== WebDriver manager ======
+05/12/2023 02:23:45 PM: INFO: Get LATEST chromedriver version for google-chrome 113.0.5672
+05/12/2023 02:23:46 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\113.0.5672\chromedriver.exe] found in cache
+05/12/2023 02:25:25 PM: INFO: Test Passed
+05/12/2023 02:25:25 PM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+05/12/2023 02:25:25 PM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+05/12/2023 02:28:51 PM: INFO: ====== WebDriver manager ======
+05/12/2023 02:28:52 PM: INFO: Get LATEST chromedriver version for google-chrome 113.0.5672
+05/12/2023 02:28:54 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\113.0.5672\chromedriver.exe] found in cache
+05/12/2023 02:30:01 PM: INFO: Test Passed
+05/12/2023 02:30:01 PM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+05/12/2023 02:30:01 PM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+05/12/2023 02:30:38 PM: INFO: ====== WebDriver manager ======
+05/12/2023 02:30:39 PM: INFO: Get LATEST chromedriver version for google-chrome 113.0.5672
+05/12/2023 02:30:40 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\113.0.5672\chromedriver.exe] found in cache
+05/12/2023 02:32:10 PM: INFO: Test Passed
+05/12/2023 02:32:10 PM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+05/12/2023 02:32:10 PM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+05/12/2023 04:28:22 PM: INFO: ====== WebDriver manager ======
+05/12/2023 04:28:23 PM: INFO: Get LATEST chromedriver version for google-chrome 113.0.5672
+05/12/2023 04:28:24 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\113.0.5672\chromedriver.exe] found in cache
+05/12/2023 04:38:06 PM: INFO: ====== WebDriver manager ======
+05/12/2023 04:38:07 PM: INFO: Get LATEST chromedriver version for google-chrome 113.0.5672
+05/12/2023 04:38:09 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\113.0.5672\chromedriver.exe] found in cache
+05/12/2023 04:38:53 PM: INFO: ====== WebDriver manager ======
+05/12/2023 04:38:54 PM: INFO: Get LATEST chromedriver version for google-chrome 113.0.5672
+05/12/2023 04:38:55 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\113.0.5672\chromedriver.exe] found in cache
+05/12/2023 04:38:59 PM: INFO: ====== WebDriver manager ======
+05/12/2023 04:39:00 PM: INFO: Get LATEST chromedriver version for google-chrome 113.0.5672
+05/12/2023 04:39:01 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\113.0.5672\chromedriver.exe] found in cache
+05/12/2023 04:39:41 PM: INFO: ====== WebDriver manager ======
+05/12/2023 04:39:41 PM: INFO: Get LATEST chromedriver version for google-chrome 113.0.5672
+05/12/2023 04:39:42 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\113.0.5672\chromedriver.exe] found in cache
+05/12/2023 04:39:49 PM: INFO: ====== WebDriver manager ======
+05/12/2023 04:39:50 PM: INFO: Get LATEST chromedriver version for google-chrome 113.0.5672
+05/12/2023 04:39:51 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\113.0.5672\chromedriver.exe] found in cache
+05/12/2023 04:44:56 PM: INFO: ====== WebDriver manager ======
+05/12/2023 04:44:57 PM: INFO: Get LATEST chromedriver version for google-chrome 113.0.5672
+05/12/2023 04:44:58 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\113.0.5672\chromedriver.exe] found in cache
+05/12/2023 04:45:03 PM: INFO: ====== WebDriver manager ======
+05/12/2023 04:45:04 PM: INFO: Get LATEST chromedriver version for google-chrome 113.0.5672
+05/12/2023 04:45:05 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\113.0.5672\chromedriver.exe] found in cache
+05/12/2023 04:45:12 PM: INFO: ====== WebDriver manager ======
+05/12/2023 04:45:13 PM: INFO: Get LATEST chromedriver version for google-chrome 113.0.5672
+05/12/2023 04:45:14 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\113.0.5672\chromedriver.exe] found in cache
+05/12/2023 04:45:21 PM: INFO: ====== WebDriver manager ======
+05/12/2023 04:45:21 PM: INFO: Get LATEST chromedriver version for google-chrome 113.0.5672
+05/12/2023 04:45:22 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\113.0.5672\chromedriver.exe] found in cache
+05/12/2023 04:45:29 PM: INFO: ====== WebDriver manager ======
+05/12/2023 04:45:30 PM: INFO: Get LATEST chromedriver version for google-chrome 113.0.5672
+05/12/2023 04:45:31 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\113.0.5672\chromedriver.exe] found in cache
+05/12/2023 04:45:37 PM: INFO: ====== WebDriver manager ======
+05/12/2023 04:45:38 PM: INFO: Get LATEST chromedriver version for google-chrome 113.0.5672
+05/12/2023 04:45:39 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\113.0.5672\chromedriver.exe] found in cache
+05/12/2023 04:45:46 PM: INFO: ====== WebDriver manager ======
+05/12/2023 04:45:47 PM: INFO: Get LATEST chromedriver version for google-chrome 113.0.5672
+05/12/2023 04:45:49 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\113.0.5672\chromedriver.exe] found in cache
+05/12/2023 04:45:54 PM: INFO: ====== WebDriver manager ======
+05/12/2023 04:45:55 PM: INFO: Get LATEST chromedriver version for google-chrome 113.0.5672
+05/12/2023 04:45:56 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\113.0.5672\chromedriver.exe] found in cache
+05/12/2023 04:46:01 PM: INFO: ====== WebDriver manager ======
+05/12/2023 04:46:02 PM: INFO: Get LATEST chromedriver version for google-chrome 113.0.5672
+05/12/2023 04:46:03 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\113.0.5672\chromedriver.exe] found in cache
+05/12/2023 04:46:11 PM: INFO: ====== WebDriver manager ======
+05/12/2023 04:46:12 PM: INFO: Get LATEST chromedriver version for google-chrome 113.0.5672
+05/12/2023 04:46:13 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\113.0.5672\chromedriver.exe] found in cache
+05/12/2023 04:46:19 PM: INFO: ====== WebDriver manager ======
+05/12/2023 04:46:20 PM: INFO: Get LATEST chromedriver version for google-chrome 113.0.5672
+05/12/2023 04:46:21 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\113.0.5672\chromedriver.exe] found in cache
+05/12/2023 04:46:27 PM: INFO: ====== WebDriver manager ======
+05/12/2023 04:46:27 PM: INFO: Get LATEST chromedriver version for google-chrome 113.0.5672
+05/12/2023 04:46:28 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\113.0.5672\chromedriver.exe] found in cache
+05/12/2023 04:46:33 PM: INFO: ====== WebDriver manager ======
+05/12/2023 04:46:34 PM: INFO: Get LATEST chromedriver version for google-chrome 113.0.5672
+05/12/2023 04:46:35 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\113.0.5672\chromedriver.exe] found in cache
+05/12/2023 04:46:42 PM: INFO: ====== WebDriver manager ======
+05/12/2023 04:46:43 PM: INFO: Get LATEST chromedriver version for google-chrome 113.0.5672
+05/12/2023 04:46:44 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\113.0.5672\chromedriver.exe] found in cache
+05/12/2023 04:46:50 PM: INFO: ====== WebDriver manager ======
+05/12/2023 04:46:51 PM: INFO: Get LATEST chromedriver version for google-chrome 113.0.5672
+05/12/2023 04:46:52 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\113.0.5672\chromedriver.exe] found in cache
+05/12/2023 04:47:01 PM: INFO: ====== WebDriver manager ======
+05/12/2023 04:47:01 PM: INFO: Get LATEST chromedriver version for google-chrome 113.0.5672
+05/12/2023 04:47:03 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\113.0.5672\chromedriver.exe] found in cache
+05/12/2023 04:47:10 PM: INFO: ====== WebDriver manager ======
+05/12/2023 04:47:11 PM: INFO: Get LATEST chromedriver version for google-chrome 113.0.5672
+05/12/2023 04:47:12 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\113.0.5672\chromedriver.exe] found in cache
+05/12/2023 04:47:19 PM: INFO: ====== WebDriver manager ======
+05/12/2023 04:47:19 PM: INFO: Get LATEST chromedriver version for google-chrome 113.0.5672
+05/12/2023 04:47:21 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\113.0.5672\chromedriver.exe] found in cache
+05/12/2023 04:47:27 PM: INFO: ====== WebDriver manager ======
+05/12/2023 04:47:27 PM: INFO: Get LATEST chromedriver version for google-chrome 113.0.5672
+05/12/2023 04:47:28 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\113.0.5672\chromedriver.exe] found in cache
+05/12/2023 04:47:34 PM: INFO: ====== WebDriver manager ======
+05/12/2023 04:47:35 PM: INFO: Get LATEST chromedriver version for google-chrome 113.0.5672
+05/12/2023 04:47:36 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\113.0.5672\chromedriver.exe] found in cache
+05/12/2023 04:47:46 PM: INFO: ====== WebDriver manager ======
+05/12/2023 04:47:47 PM: INFO: Get LATEST chromedriver version for google-chrome 113.0.5672
+05/12/2023 04:47:48 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\113.0.5672\chromedriver.exe] found in cache
+05/12/2023 04:47:58 PM: INFO: ====== WebDriver manager ======
+05/12/2023 04:47:58 PM: INFO: Get LATEST chromedriver version for google-chrome 113.0.5672
+05/12/2023 04:47:59 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\113.0.5672\chromedriver.exe] found in cache
+05/12/2023 04:48:06 PM: INFO: ====== WebDriver manager ======
+05/12/2023 04:48:06 PM: INFO: Get LATEST chromedriver version for google-chrome 113.0.5672
+05/12/2023 04:48:07 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\113.0.5672\chromedriver.exe] found in cache
+05/12/2023 04:48:14 PM: INFO: ====== WebDriver manager ======
+05/12/2023 04:48:15 PM: INFO: Get LATEST chromedriver version for google-chrome 113.0.5672
+05/12/2023 04:48:16 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\113.0.5672\chromedriver.exe] found in cache
+05/12/2023 04:48:23 PM: INFO: ====== WebDriver manager ======
+05/12/2023 04:48:24 PM: INFO: Get LATEST chromedriver version for google-chrome 113.0.5672
+05/12/2023 04:48:25 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\113.0.5672\chromedriver.exe] found in cache
+05/12/2023 04:48:30 PM: INFO: ====== WebDriver manager ======
+05/12/2023 04:48:31 PM: INFO: Get LATEST chromedriver version for google-chrome 113.0.5672
+05/12/2023 04:48:32 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\113.0.5672\chromedriver.exe] found in cache
+05/12/2023 04:48:37 PM: INFO: ====== WebDriver manager ======
+05/12/2023 04:48:38 PM: INFO: Get LATEST chromedriver version for google-chrome 113.0.5672
+05/12/2023 04:48:39 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\113.0.5672\chromedriver.exe] found in cache
+05/12/2023 04:48:46 PM: INFO: ====== WebDriver manager ======
+05/12/2023 04:48:46 PM: INFO: Get LATEST chromedriver version for google-chrome 113.0.5672
+05/12/2023 04:48:47 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\113.0.5672\chromedriver.exe] found in cache
+05/12/2023 04:48:54 PM: INFO: ====== WebDriver manager ======
+05/12/2023 04:48:55 PM: INFO: Get LATEST chromedriver version for google-chrome 113.0.5672
+05/12/2023 04:48:56 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\113.0.5672\chromedriver.exe] found in cache
+05/12/2023 04:49:02 PM: INFO: ====== WebDriver manager ======
+05/12/2023 04:49:03 PM: INFO: Get LATEST chromedriver version for google-chrome 113.0.5672
+05/12/2023 04:49:05 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\113.0.5672\chromedriver.exe] found in cache
+05/12/2023 04:49:12 PM: INFO: ====== WebDriver manager ======
+05/12/2023 04:49:13 PM: INFO: Get LATEST chromedriver version for google-chrome 113.0.5672
+05/12/2023 04:49:15 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\113.0.5672\chromedriver.exe] found in cache
+05/12/2023 04:49:23 PM: INFO: ====== WebDriver manager ======
+05/12/2023 04:49:24 PM: INFO: Get LATEST chromedriver version for google-chrome 113.0.5672
+05/12/2023 04:49:25 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\113.0.5672\chromedriver.exe] found in cache
+05/12/2023 04:49:32 PM: INFO: ====== WebDriver manager ======
+05/12/2023 04:49:33 PM: INFO: Get LATEST chromedriver version for google-chrome 113.0.5672
+05/12/2023 04:49:34 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\113.0.5672\chromedriver.exe] found in cache
+05/12/2023 04:49:40 PM: INFO: ====== WebDriver manager ======
+05/12/2023 04:49:41 PM: INFO: Get LATEST chromedriver version for google-chrome 113.0.5672
+05/12/2023 04:49:42 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\113.0.5672\chromedriver.exe] found in cache
+05/12/2023 04:49:48 PM: INFO: ====== WebDriver manager ======
+05/12/2023 04:49:49 PM: INFO: Get LATEST chromedriver version for google-chrome 113.0.5672
+05/12/2023 04:49:50 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\113.0.5672\chromedriver.exe] found in cache
+05/12/2023 04:49:55 PM: INFO: ====== WebDriver manager ======
+05/12/2023 04:49:57 PM: INFO: Get LATEST chromedriver version for google-chrome 113.0.5672
+05/12/2023 04:49:59 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\113.0.5672\chromedriver.exe] found in cache
+05/12/2023 04:50:07 PM: INFO: ====== WebDriver manager ======
+05/12/2023 04:50:08 PM: INFO: Get LATEST chromedriver version for google-chrome 113.0.5672
+05/12/2023 04:50:09 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\113.0.5672\chromedriver.exe] found in cache
+05/12/2023 04:50:16 PM: INFO: ====== WebDriver manager ======
+05/12/2023 04:50:18 PM: INFO: Get LATEST chromedriver version for google-chrome 113.0.5672
+05/12/2023 04:50:19 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\113.0.5672\chromedriver.exe] found in cache
+05/12/2023 04:50:25 PM: INFO: ====== WebDriver manager ======
+05/12/2023 04:50:27 PM: INFO: Get LATEST chromedriver version for google-chrome 113.0.5672
+05/12/2023 04:50:30 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\113.0.5672\chromedriver.exe] found in cache
+05/12/2023 04:50:37 PM: INFO: ====== WebDriver manager ======
+05/12/2023 04:50:39 PM: INFO: Get LATEST chromedriver version for google-chrome 113.0.5672
+05/12/2023 04:50:39 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\113.0.5672\chromedriver.exe] found in cache
+05/12/2023 04:50:45 PM: INFO: ====== WebDriver manager ======
+05/12/2023 04:50:46 PM: INFO: Get LATEST chromedriver version for google-chrome 113.0.5672
+05/12/2023 04:50:47 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\113.0.5672\chromedriver.exe] found in cache
+05/12/2023 04:50:52 PM: INFO: ====== WebDriver manager ======
+05/12/2023 04:50:57 PM: INFO: Get LATEST chromedriver version for google-chrome 113.0.5672
+05/12/2023 04:51:03 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\113.0.5672\chromedriver.exe] found in cache
+05/12/2023 04:51:12 PM: INFO: ====== WebDriver manager ======
+05/12/2023 04:51:14 PM: INFO: Get LATEST chromedriver version for google-chrome 113.0.5672
+05/12/2023 04:51:17 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\113.0.5672\chromedriver.exe] found in cache
+05/12/2023 04:55:40 PM: INFO: ====== WebDriver manager ======
+05/12/2023 04:55:41 PM: INFO: Get LATEST chromedriver version for google-chrome 113.0.5672
+05/12/2023 04:55:42 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\113.0.5672\chromedriver.exe] found in cache
+05/12/2023 04:56:19 PM: INFO: ====== WebDriver manager ======
+05/12/2023 04:56:20 PM: INFO: Get LATEST chromedriver version for google-chrome 113.0.5672
+05/12/2023 04:56:22 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\113.0.5672\chromedriver.exe] found in cache
+05/12/2023 04:56:41 PM: INFO: ====== WebDriver manager ======
+05/12/2023 04:56:42 PM: INFO: Get LATEST chromedriver version for google-chrome 113.0.5672
+05/12/2023 04:56:43 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\113.0.5672\chromedriver.exe] found in cache
+05/12/2023 05:05:36 PM: INFO: ====== WebDriver manager ======
+05/12/2023 05:05:37 PM: INFO: Get LATEST chromedriver version for google-chrome 113.0.5672
+05/12/2023 05:05:38 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\113.0.5672\chromedriver.exe] found in cache
+05/12/2023 05:06:21 PM: INFO: ====== WebDriver manager ======
+05/12/2023 05:06:22 PM: INFO: Get LATEST chromedriver version for google-chrome 113.0.5672
+05/12/2023 05:06:23 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\113.0.5672\chromedriver.exe] found in cache
+05/12/2023 05:07:06 PM: INFO: ====== WebDriver manager ======
+05/12/2023 05:07:06 PM: INFO: Get LATEST chromedriver version for google-chrome 113.0.5672
+05/12/2023 05:07:07 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\113.0.5672\chromedriver.exe] found in cache
+05/12/2023 05:07:51 PM: INFO: ====== WebDriver manager ======
+05/12/2023 05:07:52 PM: INFO: Get LATEST chromedriver version for google-chrome 113.0.5672
+05/12/2023 05:07:53 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\113.0.5672\chromedriver.exe] found in cache
+05/12/2023 05:18:11 PM: INFO: ====== WebDriver manager ======
+05/12/2023 05:18:12 PM: INFO: Get LATEST chromedriver version for google-chrome 113.0.5672
+05/12/2023 05:18:13 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\113.0.5672\chromedriver.exe] found in cache
+05/12/2023 05:18:34 PM: INFO: ====== WebDriver manager ======
+05/12/2023 05:18:36 PM: INFO: Get LATEST chromedriver version for google-chrome 113.0.5672
+05/12/2023 05:18:38 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\113.0.5672\chromedriver.exe] found in cache
+05/12/2023 05:18:41 PM: INFO: ====== WebDriver manager ======
+05/12/2023 05:18:42 PM: INFO: Get LATEST chromedriver version for google-chrome 113.0.5672
+05/12/2023 05:18:43 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\113.0.5672\chromedriver.exe] found in cache
+05/12/2023 05:21:15 PM: INFO: ====== WebDriver manager ======
+05/12/2023 05:21:16 PM: INFO: Get LATEST chromedriver version for google-chrome 113.0.5672
+05/12/2023 05:21:18 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\113.0.5672\chromedriver.exe] found in cache
+05/12/2023 05:21:22 PM: INFO: ====== WebDriver manager ======
+05/12/2023 05:21:23 PM: INFO: Get LATEST chromedriver version for google-chrome 113.0.5672
+05/12/2023 05:21:24 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\113.0.5672\chromedriver.exe] found in cache
+05/12/2023 05:21:45 PM: INFO: ====== WebDriver manager ======
+05/12/2023 05:21:46 PM: INFO: Get LATEST chromedriver version for google-chrome 113.0.5672
+05/12/2023 05:21:47 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\113.0.5672\chromedriver.exe] found in cache
+05/12/2023 05:21:51 PM: INFO: ====== WebDriver manager ======
+05/12/2023 05:21:52 PM: INFO: Get LATEST chromedriver version for google-chrome 113.0.5672
+05/12/2023 05:21:53 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\113.0.5672\chromedriver.exe] found in cache
+05/12/2023 05:23:14 PM: INFO: ====== WebDriver manager ======
+05/12/2023 05:23:15 PM: INFO: Get LATEST chromedriver version for google-chrome 113.0.5672
+05/12/2023 05:23:16 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\113.0.5672\chromedriver.exe] found in cache
+05/12/2023 05:23:20 PM: INFO: ====== WebDriver manager ======
+05/12/2023 05:23:21 PM: INFO: Get LATEST chromedriver version for google-chrome 113.0.5672
+05/12/2023 05:23:22 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\113.0.5672\chromedriver.exe] found in cache
+05/12/2023 05:23:58 PM: INFO: ====== WebDriver manager ======
+05/12/2023 05:23:58 PM: INFO: Get LATEST chromedriver version for google-chrome 113.0.5672
+05/12/2023 05:24:00 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\113.0.5672\chromedriver.exe] found in cache
+05/12/2023 05:24:05 PM: INFO: ====== WebDriver manager ======
+05/12/2023 05:24:05 PM: INFO: Get LATEST chromedriver version for google-chrome 113.0.5672
+05/12/2023 05:24:07 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\113.0.5672\chromedriver.exe] found in cache
+05/12/2023 05:24:24 PM: INFO: ====== WebDriver manager ======
+05/12/2023 05:24:25 PM: INFO: Get LATEST chromedriver version for google-chrome 113.0.5672
+05/12/2023 05:24:27 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\113.0.5672\chromedriver.exe] found in cache
+05/12/2023 05:24:36 PM: INFO: ====== WebDriver manager ======
+05/12/2023 05:24:37 PM: INFO: Get LATEST chromedriver version for google-chrome 113.0.5672
+05/12/2023 05:24:38 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\113.0.5672\chromedriver.exe] found in cache
+05/12/2023 05:25:23 PM: INFO: ====== WebDriver manager ======
+05/12/2023 05:25:24 PM: INFO: Get LATEST chromedriver version for google-chrome 113.0.5672
+05/12/2023 05:25:26 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\113.0.5672\chromedriver.exe] found in cache
+05/12/2023 05:25:29 PM: INFO: ====== WebDriver manager ======
+05/12/2023 05:25:30 PM: INFO: Get LATEST chromedriver version for google-chrome 113.0.5672
+05/12/2023 05:25:32 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\113.0.5672\chromedriver.exe] found in cache
+05/12/2023 05:25:52 PM: INFO: ====== WebDriver manager ======
+05/12/2023 05:25:53 PM: INFO: Get LATEST chromedriver version for google-chrome 113.0.5672
+05/12/2023 05:25:55 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\113.0.5672\chromedriver.exe] found in cache
+05/12/2023 05:26:02 PM: INFO: ====== WebDriver manager ======
+05/12/2023 05:26:03 PM: INFO: Get LATEST chromedriver version for google-chrome 113.0.5672
+05/12/2023 05:26:04 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\113.0.5672\chromedriver.exe] found in cache
+05/12/2023 05:28:57 PM: INFO: ====== WebDriver manager ======
+05/12/2023 05:28:57 PM: INFO: Get LATEST chromedriver version for google-chrome 113.0.5672
+05/12/2023 05:29:00 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\113.0.5672\chromedriver.exe] found in cache
+05/12/2023 05:29:04 PM: INFO: ====== WebDriver manager ======
+05/12/2023 05:29:05 PM: INFO: Get LATEST chromedriver version for google-chrome 113.0.5672
+05/12/2023 05:29:06 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\113.0.5672\chromedriver.exe] found in cache
+05/12/2023 05:30:58 PM: INFO: ====== WebDriver manager ======
+05/12/2023 05:30:59 PM: INFO: Get LATEST chromedriver version for google-chrome 113.0.5672
+05/12/2023 05:31:00 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\113.0.5672\chromedriver.exe] found in cache
+05/12/2023 05:31:07 PM: INFO: ====== WebDriver manager ======
+05/12/2023 05:31:07 PM: INFO: Get LATEST chromedriver version for google-chrome 113.0.5672
+05/12/2023 05:31:09 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\113.0.5672\chromedriver.exe] found in cache
+05/12/2023 05:31:55 PM: INFO: ====== WebDriver manager ======
+05/12/2023 05:31:56 PM: INFO: Get LATEST chromedriver version for google-chrome 113.0.5672
+05/12/2023 05:31:57 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\113.0.5672\chromedriver.exe] found in cache
+05/12/2023 05:32:03 PM: INFO: ====== WebDriver manager ======
+05/12/2023 05:32:04 PM: INFO: Get LATEST chromedriver version for google-chrome 113.0.5672
+05/12/2023 05:32:05 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\113.0.5672\chromedriver.exe] found in cache
+05/12/2023 05:33:23 PM: INFO: ====== WebDriver manager ======
+05/12/2023 05:33:24 PM: INFO: Get LATEST chromedriver version for google-chrome 113.0.5672
+05/12/2023 05:33:26 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\113.0.5672\chromedriver.exe] found in cache
+05/12/2023 05:34:08 PM: INFO: ====== WebDriver manager ======
+05/12/2023 05:34:09 PM: INFO: Get LATEST chromedriver version for google-chrome 113.0.5672
+05/12/2023 05:34:10 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\113.0.5672\chromedriver.exe] found in cache
+05/12/2023 05:36:31 PM: INFO: ====== WebDriver manager ======
+05/12/2023 05:36:31 PM: INFO: Get LATEST chromedriver version for google-chrome 113.0.5672
+05/12/2023 05:36:32 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\113.0.5672\chromedriver.exe] found in cache
+05/12/2023 05:37:07 PM: INFO: ====== WebDriver manager ======
+05/12/2023 05:37:08 PM: INFO: Get LATEST chromedriver version for google-chrome 113.0.5672
+05/12/2023 05:37:09 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\113.0.5672\chromedriver.exe] found in cache
+05/12/2023 06:04:11 PM: INFO: ====== WebDriver manager ======
+05/12/2023 06:04:12 PM: INFO: Get LATEST chromedriver version for google-chrome 113.0.5672
+05/12/2023 06:04:13 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\113.0.5672\chromedriver.exe] found in cache
+05/12/2023 06:04:17 PM: INFO: ====== WebDriver manager ======
+05/12/2023 06:04:18 PM: INFO: Get LATEST chromedriver version for google-chrome 113.0.5672
+05/12/2023 06:04:19 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\113.0.5672\chromedriver.exe] found in cache
+05/12/2023 06:05:52 PM: INFO: ====== WebDriver manager ======
+05/12/2023 06:05:53 PM: INFO: Get LATEST chromedriver version for google-chrome 113.0.5672
+05/12/2023 06:05:54 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\113.0.5672\chromedriver.exe] found in cache
+05/12/2023 06:06:43 PM: INFO: ====== WebDriver manager ======
+05/12/2023 06:06:44 PM: INFO: Get LATEST chromedriver version for google-chrome 113.0.5672
+05/12/2023 06:06:45 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\113.0.5672\chromedriver.exe] found in cache
+05/12/2023 06:08:28 PM: INFO: ====== WebDriver manager ======
+05/12/2023 06:08:29 PM: INFO: Get LATEST chromedriver version for google-chrome 113.0.5672
+05/12/2023 06:08:30 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\113.0.5672\chromedriver.exe] found in cache
+05/12/2023 06:09:21 PM: INFO: Test Passed
+05/12/2023 06:09:21 PM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+05/12/2023 06:09:21 PM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+05/12/2023 06:09:23 PM: INFO: ====== WebDriver manager ======
+05/12/2023 06:09:24 PM: INFO: Get LATEST chromedriver version for google-chrome 113.0.5672
+05/12/2023 06:09:25 PM: INFO: Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\113.0.5672\chromedriver.exe] found in cache
+05/12/2023 06:10:30 PM: INFO: Test Passed
+05/12/2023 06:10:30 PM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+05/12/2023 06:10:30 PM: INFO: Wallet Amount And Exposure are Updated After Place Bet
