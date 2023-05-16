@@ -13,18 +13,18 @@ class Test_B2Bcommonclass:
     logger = Logger.logen()
     websitelist = ["https://abdexch.com/#/login", "https://aura25.bet/#/login"]
 
-    abdexch = "https://abdexch.com/#/login"
-    aura25 = "https://aura25.bet/#/login"
-    badabet = "https://badaabet.com/#/login"
-    infinity = "https://infinityexch.co/#/login"
-    user365 = "https://user365day.com/#/login"
-    only333 = "https://only333.com/#/login"
-    pk7 = "https://pk7exch.com/#/login"
-    gamex = "https://gamex24.com/#/login"
-    aura26 = "https://aura26.com/#/login"
-    xtra999 = "https://xtra999.com/#/login"
-    username = "rocktest"
-    password = "Rock@1234"
+    # abdexch = "https://abdexch.com/#/login"
+    # aura25 = "https://aura25.bet/#/login"
+    # badabet = "https://badaabet.com/#/login"
+    # infinity = "https://infinityexch.co/#/login"
+    # user365 = "https://user365day.com/#/login"
+    # only333 = "https://only333.com/#/login"
+    # pk7 = "https://pk7exch.com/#/login"
+    # gamex = "https://gamex24.com/#/login"
+    # aura26 = "https://aura26.com/#/login"
+    # xtra999 = "https://xtra999.com/#/login"
+    username = "kt11"
+    password = "First@666"
     betprice = 202
 
     def newfunction(self):
@@ -195,7 +195,7 @@ class Test_B2Bcommonclass:
                 time.sleep(5)
                 backelement = self.driver.find_element(By.CSS_SELECTOR, self.cc.wintossback_css)
                 self.driver.execute_script("arguments[0].scrollIntoView();", backelement)
-                time.sleep(1)
+                time.sleep(1.5)
                 WebDriverWait(self.driver, 15).until(
                     EC.presence_of_element_located((By.CSS_SELECTOR, self.cc.wintossback_css)))
                 self.driver.find_element(By.CSS_SELECTOR, self.cc.wintossback_css).click()
