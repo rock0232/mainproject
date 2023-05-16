@@ -8,6 +8,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from utilities.customlogger import Logger
 from pageobjects.B2Bcommonclass import B2Bcommonclass
 
+
 class Test_B2Bcommonclass:
     logger = Logger.logen()
     websitelist = ["https://abdexch.com/#/login", "https://aura25.bet/#/login"]
@@ -34,7 +35,7 @@ class Test_B2Bcommonclass:
         prewalletamount = self.cc.getwalletamount()
         preexposure = self.cc.getliability()
         element = self.driver.find_elements(By.XPATH, self.cc.manualodds_xpath)
-        for sc in range(0,len(element)):
+        for sc in range(0, len(element)):
             try:
                 element1 = self.driver.find_elements(By.XPATH, self.cc.manualodds_xpath)
                 self.driver.execute_script("arguments[0].scrollIntoView();", element1[sc])
@@ -44,7 +45,8 @@ class Test_B2Bcommonclass:
                 backelement = self.driver.find_element(By.CSS_SELECTOR, self.cc.wintossback_css)
                 self.driver.execute_script("arguments[0].scrollIntoView();", backelement)
                 time.sleep(1)
-                WebDriverWait(self.driver, 15).until(EC.presence_of_element_located((By.CSS_SELECTOR, self.cc.wintossback_css)))
+                WebDriverWait(self.driver, 15).until(
+                    EC.presence_of_element_located((By.CSS_SELECTOR, self.cc.wintossback_css)))
                 self.driver.find_element(By.CSS_SELECTOR, self.cc.wintossback_css).click()
                 self.driver.find_element(By.CSS_SELECTOR, self.cc.manualbetprice_css).clear()
                 self.driver.find_element(By.CSS_SELECTOR, self.cc.manualbetprice_css).send_keys(self.betprice)
@@ -64,7 +66,7 @@ class Test_B2Bcommonclass:
             for s in range(0, len(totalinplaymatches)):
                 time.sleep(5)
                 matches = self.driver.find_elements(By.CSS_SELECTOR, self.cc.inplaylist_CSS)
-                self.driver.execute_script("arguments[0].scrollIntoView();",matches[s])
+                self.driver.execute_script("arguments[0].scrollIntoView();", matches[s])
                 time.sleep(2)
                 matches[s].click()
                 time.sleep(5)
@@ -74,7 +76,7 @@ class Test_B2Bcommonclass:
                         self.cc.setbetprice(self.betprice)
                         self.cc.clickplacebet()
                         alertmessage = WebDriverWait(self.driver, 15).until(
-            EC.visibility_of_element_located((By.CLASS_NAME, self.cc.alertmessage_class))).text
+                            EC.visibility_of_element_located((By.CLASS_NAME, self.cc.alertmessage_class))).text
                         # time.sleep(7)
                         if "success" in alertmessage or "0Unknown Error" in alertmessage or "Rate Exposure limit" in alertmessage:
                             break
@@ -160,25 +162,22 @@ class Test_B2Bcommonclass:
         else:
             self.logger.info("Bet Not Place Message After PLace Bet %s", alertmessage)
             assert False
-        self.driver.close()
+        # self.driver.close()
 
+    @pytest.mark.tst
     def test_login(self, setup, website_list):
         self.driver = setup
         self.cc = B2Bcommonclass(self.driver)
-        url = (website_list["website_name"])
-        cookies_name = str(website_list["name"])
-        cookies_value = str(website_list["value"])
+        url = website_list
         self.driver.get(url)
         self.driver.set_window_size(1366, 768)
-        self.driver.add_cookie({"name":cookies_name, "value":cookies_value})
-        time.sleep(15)
+        time.sleep(5)
         self.cc.clicksignin()
         time.sleep(3)
         self.cc.setusername(self.username)
         self.cc.setpassword(self.password)
         self.cc.clicklogin()
         time.sleep(10)
-        print(self.driver.current_url)
 
         alertmessage = ""
         self.cc = B2Bcommonclass(self.driver)
@@ -314,4 +313,4 @@ class Test_B2Bcommonclass:
         else:
             self.logger.info("Bet Not Place Message After PLace Bet %s", alertmessage)
             assert False
-        self.driver.close()
+        # self.driver.close()

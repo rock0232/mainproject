@@ -228,7 +228,7 @@ class B2Bcommonclass:
         self.driver.execute_script("arguments[0].scrollIntoView(true);", element)
 
     def clickclose(self):
-        WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located((By.XPATH, self.closebutton_xpath))).click()
+        WebDriverWait(self.driver, 15).until(EC.visibility_of_element_located((By.XPATH, self.closebutton_xpath))).click()
         # self.driver.find_element(By.XPATH, self.closebutton_xpath).click()
         # WebDriverWait(self.driver, 10).until(
         #             EC.visibility_of_element_located((By.CLASS_NAME, self.alertmessage_class))).text
@@ -245,7 +245,7 @@ class B2Bcommonclass:
         self.driver.find_element(By.ID, self.username_id).send_keys(username)
 
     def clicksignin(self):
-        WebDriverWait(self.driver, 15).until(EC.visibility_of_element_located((By.XPATH, self.signin_xpath)))
+        WebDriverWait(self.driver, 20).until(EC.visibility_of_element_located((By.XPATH, self.signin_xpath)))
         self.driver.find_element(By.XPATH, self.signin_xpath).click()
 
 
