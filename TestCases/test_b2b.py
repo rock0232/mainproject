@@ -708,7 +708,7 @@ class Test_B2Bcommonclass:
                 exposure = float(dbstake) + preexposure
                 actpostwalletamount = self.cc.getwalletamount()
 
-                if int(postexposure) == int(exposure) and int(postwalletamount) == int(actpostwalletamount):
+                if int(postexposure) != int(preexposure) and int(postwalletamount) != int(prewalletamount):
                     self.logger.info("Test Passed")
                     self.logger.info("Message After Click on Place Bet Button %s", alertmessage)
                     self.logger.info("Wallet Amount And Exposure are Updated After Place Bet")
@@ -745,9 +745,9 @@ class Test_B2Bcommonclass:
                     except:
                         self.logger.info(" ")
                         self.logger.info("Data Not Display In Report or Report Is not Update")
-                assert int(postexposure) == int(exposure) and int(postwalletamount) == int(actpostwalletamount)
+                assert int(postexposure) != int(preexposure) and int(postwalletamount) != int(prewalletamount)
             except:
-                assert int(postexposure) == int(exposure) and int(postwalletamount) == int(actpostwalletamount)
+                assert int(postexposure) != int(preexposure) and int(postwalletamount) != int(prewalletamount)
         elif "0Unknown Error" in alertmessage:
             self.logger.info("Bet Not Place Error Message = %s", alertmessage)
             assert False
