@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>Test Result Report</title>
+    <style>body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  /* do not increase min-width as some may use split screens */
+  min-width: 800px;
+  color: #999;
+}
+
+h1 {
+  font-size: 24px;
+  color: black;
+}
+
+h2 {
+  font-size: 16px;
+  color: black;
+}
+
+p {
+  color: black;
+}
+
+a {
+  color: #999;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+/******************************
+ * SUMMARY INFORMATION
+ ******************************/
+#environment td {
+  padding: 5px;
+  border: 1px solid #E6E6E6;
+}
+#environment tr:nth-child(odd) {
+  background-color: #f6f6f6;
+}
+
+/******************************
+ * TEST RESULT COLORS
+ ******************************/
+span.passed,
+.passed .col-result {
+  color: green;
+}
+
+span.skipped,
+span.xfailed,
+span.rerun,
+.skipped .col-result,
+.xfailed .col-result,
+.rerun .col-result {
+  color: orange;
+}
+
+span.error,
+span.failed,
+span.xpassed,
+.error .col-result,
+.failed .col-result,
+.xpassed .col-result {
+  color: red;
+}
+
+/******************************
+ * RESULTS TABLE
+ *
+ * 1. Table Layout
+ * 2. Extra
+ * 3. Sorting items
+ *
+ ******************************/
+/*------------------
+ * 1. Table Layout
+ *------------------*/
+#results-table {
+  border: 1px solid #e6e6e6;
+  color: #999;
+  font-size: 12px;
+  width: 100%;
+}
+#results-table th,
+#results-table td {
+  padding: 5px;
+  border: 1px solid #E6E6E6;
+  text-align: left;
+}
+#results-table th {
+  font-weight: bold;
+}
+
+/*------------------
+ * 2. Extra
+ *------------------*/
+.log {
+  background-color: #e6e6e6;
+  border: 1px solid #e6e6e6;
+  color: black;
+  display: block;
+  font-family: "Courier New", Courier, monospace;
+  height: 230px;
+  overflow-y: scroll;
+  padding: 5px;
+  white-space: pre-wrap;
+}
+.log:only-child {
+  height: inherit;
+}
+
+div.image {
+  border: 1px solid #e6e6e6;
+  float: right;
+  height: 240px;
+  margin-left: 5px;
+  overflow: hidden;
+  width: 320px;
+}
+div.image img {
+  width: 320px;
+}
+
+div.video {
+  border: 1px solid #e6e6e6;
+  float: right;
+  height: 240px;
+  margin-left: 5px;
+  overflow: hidden;
+  width: 320px;
+}
+div.video video {
+  overflow: hidden;
+  width: 320px;
+  height: 240px;
+}
+
+.collapsed {
+  display: none;
+}
+
+.expander::after {
+  content: " (show details)";
+  color: #BBB;
+  font-style: italic;
+  cursor: pointer;
+}
+
+.collapser::after {
+  content: " (hide details)";
+  color: #BBB;
+  font-style: italic;
+  cursor: pointer;
+}
+
+/*------------------
+ * 3. Sorting items
+ *------------------*/
+.sortable {
+  cursor: pointer;
+}
+
+.sort-icon {
+  font-size: 0px;
+  float: left;
+  margin-right: 5px;
+  margin-top: 5px;
+  /*triangle*/
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+}
+.inactive .sort-icon {
+  /*finish triangle*/
+  border-top: 8px solid #E6E6E6;
+}
+.asc.active .sort-icon {
+  /*finish triangle*/
+  border-bottom: 8px solid #999;
+}
+.desc.active .sort-icon {
+  /*finish triangle*/
+  border-top: 8px solid #999;
+}
+</style></head>
+  <body onLoad="init()">
+    <script>/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this file,
+ * You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+
+function toArray(iter) {
+    if (iter === null) {
+        return null;
+    }
+    return Array.prototype.slice.call(iter);
+}
+
+function find(selector, elem) { // eslint-disable-line no-redeclare
+    if (!elem) {
+        elem = document;
+    }
+    return elem.querySelector(selector);
+}
+
+function findAll(selector, elem) {
+    if (!elem) {
+        elem = document;
+    }
+    return toArray(elem.querySelectorAll(selector));
+}
+
+function sortColumn(elem) {
+    toggleSortStates(elem);
+    const colIndex = toArray(elem.parentNode.childNodes).indexOf(elem);
+    let key;
+    if (elem.classList.contains('result')) {
+        key = keyResult;
+    } else if (elem.classList.contains('links')) {
+        key = keyLink;
+    } else {
+        key = keyAlpha;
+    }
+    sortTable(elem, key(colIndex));
+}
+
+function showAllExtras() { // eslint-disable-line no-unused-vars
+    findAll('.col-result').forEach(showExtras);
+}
+
+function hideAllExtras() { // eslint-disable-line no-unused-vars
+    findAll('.col-result').forEach(hideExtras);
+}
+
+function showExtras(colresultElem) {
+    const extras = colresultElem.parentNode.nextElementSibling;
+    const expandcollapse = colresultElem.firstElementChild;
+    extras.classList.remove('collapsed');
+    expandcollapse.classList.remove('expander');
+    expandcollapse.classList.add('collapser');
+}
+
+function hideExtras(colresultElem) {
+    const extras = colresultElem.parentNode.nextElementSibling;
+    const expandcollapse = colresultElem.firstElementChild;
+    extras.classList.add('collapsed');
+    expandcollapse.classList.remove('collapser');
+    expandcollapse.classList.add('expander');
+}
+
+function showFilters() {
+    let visibleString = getQueryParameter('visible') || 'all';
+    visibleString = visibleString.toLowerCase();
+    const checkedItems = visibleString.split(',');
+
+    const filterItems = document.getElementsByClassName('filter');
+    for (let i = 0; i < filterItems.length; i++) {
+        filterItems[i].hidden = false;
+
+        if (visibleString != 'all') {
+            filterItems[i].checked = checkedItems.includes(filterItems[i].getAttribute('data-test-result'));
+            filterTable(filterItems[i]);
+        }
+    }
+}
+
+function addCollapse() {
+    // Add links for show/hide all
+    const resulttable = find('table#results-table');
+    const showhideall = document.createElement('p');
+    showhideall.innerHTML = '<a href="javascript:showAllExtras()">Show all details</a> / ' +
+                            '<a href="javascript:hideAllExtras()">Hide all details</a>';
+    resulttable.parentElement.insertBefore(showhideall, resulttable);
+
+    // Add show/hide link to each result
+    findAll('.col-result').forEach(function(elem) {
+        const collapsed = getQueryParameter('collapsed') || 'Passed';
+        const extras = elem.parentNode.nextElementSibling;
+        const expandcollapse = document.createElement('span');
+        if (extras.classList.contains('collapsed')) {
+            expandcollapse.classList.add('expander');
+        } else if (collapsed.includes(elem.innerHTML)) {
+            extras.classList.add('collapsed');
+            expandcollapse.classList.add('expander');
+        } else {
+            expandcollapse.classList.add('collapser');
+        }
+        elem.appendChild(expandcollapse);
+
+        elem.addEventListener('click', function(event) {
+            if (event.currentTarget.parentNode.nextElementSibling.classList.contains('collapsed')) {
+                showExtras(event.currentTarget);
+            } else {
+                hideExtras(event.currentTarget);
+            }
+        });
+    });
+}
+
+function getQueryParameter(name) {
+    const match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
+    return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
+}
+
+function init () { // eslint-disable-line no-unused-vars
+    resetSortHeaders();
+
+    addCollapse();
+
+    showFilters();
+
+    sortColumn(find('.initial-sort'));
+
+    findAll('.sortable').forEach(function(elem) {
+        elem.addEventListener('click',
+            function() {
+                sortColumn(elem);
+            }, false);
+    });
+}
+
+function sortTable(clicked, keyFunc) {
+    const rows = findAll('.results-table-row');
+    const reversed = !clicked.classList.contains('asc');
+    const sortedRows = sort(rows, keyFunc, reversed);
+    /* Whole table is removed here because browsers acts much slower
+     * when appending existing elements.
+     */
+    const thead = document.getElementById('results-table-head');
+    document.getElementById('results-table').remove();
+    const parent = document.createElement('table');
+    parent.id = 'results-table';
+    parent.appendChild(thead);
+    sortedRows.forEach(function(elem) {
+        parent.appendChild(elem);
+    });
+    document.getElementsByTagName('BODY')[0].appendChild(parent);
+}
+
+function sort(items, keyFunc, reversed) {
+    const sortArray = items.map(function(item, i) {
+        return [keyFunc(item), i];
+    });
+
+    sortArray.sort(function(a, b) {
+        const keyA = a[0];
+        const keyB = b[0];
+
+        if (keyA == keyB) return 0;
+
+        if (reversed) {
+            return keyA < keyB ? 1 : -1;
+        } else {
+            return keyA > keyB ? 1 : -1;
+        }
+    });
+
+    return sortArray.map(function(item) {
+        const index = item[1];
+        return items[index];
+    });
+}
+
+function keyAlpha(colIndex) {
+    return function(elem) {
+        return elem.childNodes[1].childNodes[colIndex].firstChild.data.toLowerCase();
+    };
+}
+
+function keyLink(colIndex) {
+    return function(elem) {
+        const dataCell = elem.childNodes[1].childNodes[colIndex].firstChild;
+        return dataCell == null ? '' : dataCell.innerText.toLowerCase();
+    };
+}
+
+function keyResult(colIndex) {
+    return function(elem) {
+        const strings = ['Error', 'Failed', 'Rerun', 'XFailed', 'XPassed',
+            'Skipped', 'Passed'];
+        return strings.indexOf(elem.childNodes[1].childNodes[colIndex].firstChild.data);
+    };
+}
+
+function resetSortHeaders() {
+    findAll('.sort-icon').forEach(function(elem) {
+        elem.parentNode.removeChild(elem);
+    });
+    findAll('.sortable').forEach(function(elem) {
+        const icon = document.createElement('div');
+        icon.className = 'sort-icon';
+        icon.textContent = 'vvv';
+        elem.insertBefore(icon, elem.firstChild);
+        elem.classList.remove('desc', 'active');
+        elem.classList.add('asc', 'inactive');
+    });
+}
+
+function toggleSortStates(elem) {
+    //if active, toggle between asc and desc
+    if (elem.classList.contains('active')) {
+        elem.classList.toggle('asc');
+        elem.classList.toggle('desc');
+    }
+
+    //if inactive, reset all other functions and add ascending active
+    if (elem.classList.contains('inactive')) {
+        resetSortHeaders();
+        elem.classList.remove('inactive');
+        elem.classList.add('active');
+    }
+}
+
+function isAllRowsHidden(value) {
+    return value.hidden == false;
+}
+
+function filterTable(elem) { // eslint-disable-line no-unused-vars
+    const outcomeAtt = 'data-test-result';
+    const outcome = elem.getAttribute(outcomeAtt);
+    const classOutcome = outcome + ' results-table-row';
+    const outcomeRows = document.getElementsByClassName(classOutcome);
+
+    for(let i = 0; i < outcomeRows.length; i++){
+        outcomeRows[i].hidden = !elem.checked;
+    }
+
+    const rows = findAll('.results-table-row').filter(isAllRowsHidden);
+    const allRowsHidden = rows.length == 0 ? true : false;
+    const notFoundMessage = document.getElementById('not-found-message');
+    notFoundMessage.hidden = !allRowsHidden;
+}
+</script>
+    <h1>Test Result Report</h1>
+    <p>Report generated on 11-May-2023 at 17:02:22 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.2.0</p>
+    <h2>Environment</h2>
+    <table id="environment">
+      <tr>
+        <td>Browser</td>
+        <td>Chrome</td></tr>
+      <tr>
+        <td>Module Name</td>
+        <td>Test Place Bet</td></tr>
+      <tr>
+        <td>Packages</td>
+        <td>{"pluggy": "0.13.1", "pytest": "7.3.0"}</td></tr>
+      <tr>
+        <td>Platform</td>
+        <td>Windows-10-10.0.19044-SP0</td></tr>
+      <tr>
+        <td>Project Name</td>
+        <td>Mainproject</td></tr>
+      <tr>
+        <td>Python</td>
+        <td>3.11.2</td></tr>
+      <tr>
+        <td>Tester</td>
+        <td>Rock</td></tr></table>
+    <h2>Summary</h2>
+    <p>4 tests ran in 314.33 seconds. </p>
+    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">2 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">2 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
+    <h2>Results</h2>
+    <table id="results-table">
+      <thead id="results-table-head">
+        <tr>
+          <th class="sortable result initial-sort" col="result">Result</th>
+          <th class="sortable" col="name">Test</th>
+          <th class="sortable" col="duration">Duration</th>
+          <th class="sortable links" col="links">Links</th></tr>
+        <tr hidden="true" id="not-found-message">
+          <th colspan="4">No results found. Try to check the filters</th></tr></thead>
+      <tbody class="failed results-table-row">
+        <tr>
+          <td class="col-result">Failed</td>
+          <td class="col-name">TestCases/test_b2b.py::Test_B2Bcommonclass::test_aura25</td>
+          <td class="col-duration">55.72</td>
+          <td class="col-links"><a class="url" href="https://aura25.bet/" target="_blank">https://aura25.bet/</a> </td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div><div> <img src="E:\Rock_Selenium\Automation Project\mainproject/TestCases/test_b2b.py_Test_B2Bcommonclass_test_aura25.png" alt="screenshot" style="width:304px;height:228px;" onclick="window.open(this.src)" align="right"/></div></div>
+            <div class="log">self = &lt;TestCases.test_b2b.Test_B2Bcommonclass object at 0x0000019AD24C5690&gt;<br/>setup = &lt;selenium.webdriver.chrome.webdriver.WebDriver (session=&quot;03d1a6e989ec1d5b7fa7f999d8fa8072&quot;)&gt;<br/><br/>    @pytest.mark.runall<br/>    @pytest.mark.b2bmarker<br/>    @pytest.mark.aura25<br/>    @pytest.mark.test<br/>    def test_aura25(self, setup):<br/>        self.driver = setup<br/>        self.driver.set_window_size(1366,768)<br/>        self.cc = B2Bcommonclass(self.driver)<br/>        self.driver.get(self.aura25)<br/>        time.sleep(5)<br/>&gt;       self.cc.clicksignin()<br/><br/>TestCases\test_b2b.py:770: <br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <br/>pageobjects\B2Bcommonclass.py:248: in clicksignin<br/>    WebDriverWait(self.driver, 40).until(EC.visibility_of_element_located((By.XPATH, self.signin_xpath)))<br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <br/><br/>self = &lt;selenium.webdriver.support.wait.WebDriverWait (session=&quot;03d1a6e989ec1d5b7fa7f999d8fa8072&quot;)&gt;<br/>method = &lt;function visibility_of_element_located.&lt;locals&gt;._predicate at 0x0000019AD24F5C60&gt;, message = &#x27;&#x27;<br/><br/>    def until(self, method, message: str = &quot;&quot;):<br/>        &quot;&quot;&quot;Calls the method provided with the driver as an argument until the \<br/>        return value does not evaluate to ``False``.<br/>    <br/>        :param method: callable(WebDriver)<br/>        :param message: optional message for :exc:`TimeoutException`<br/>        :returns: the result of the last call to `method`<br/>        :raises: :exc:`selenium.common.exceptions.TimeoutException` if timeout occurs<br/>        &quot;&quot;&quot;<br/>        screen = None<br/>        stacktrace = None<br/>    <br/>        end_time = time.monotonic() + self._timeout<br/>        while True:<br/>            try:<br/>                value = method(self._driver)<br/>                if value:<br/>                    return value<br/>            except self._ignored_exceptions as exc:<br/>                screen = getattr(exc, &quot;screen&quot;, None)<br/>                stacktrace = getattr(exc, &quot;stacktrace&quot;, None)<br/>            time.sleep(self._poll)<br/>            if time.monotonic() &gt; end_time:<br/>                break<br/>&gt;       raise TimeoutException(message, screen, stacktrace)<br/><span class="error">E       selenium.common.exceptions.TimeoutException: Message: </span><br/><span class="error">E       Stacktrace:</span><br/><span class="error">E       Backtrace:</span><br/><span class="error">E       	GetHandleVerifier [0x0061DCE3+50899]</span><br/><span class="error">E       	(No symbol) [0x005AE111]</span><br/><span class="error">E       	(No symbol) [0x004B5588]</span><br/><span class="error">E       	(No symbol) [0x004E08F9]</span><br/><span class="error">E       	(No symbol) [0x004E0AFB]</span><br/><span class="error">E       	(No symbol) [0x0050F902]</span><br/><span class="error">E       	(No symbol) [0x004FB944]</span><br/><span class="error">E       	(No symbol) [0x0050E01C]</span><br/><span class="error">E       	(No symbol) [0x004FB6F6]</span><br/><span class="error">E       	(No symbol) [0x004D7708]</span><br/><span class="error">E       	(No symbol) [0x004D886D]</span><br/><span class="error">E       	GetHandleVerifier [0x00883EAE+2566302]</span><br/><span class="error">E       	GetHandleVerifier [0x008B92B1+2784417]</span><br/><span class="error">E       	GetHandleVerifier [0x008B327C+2759788]</span><br/><span class="error">E       	GetHandleVerifier [0x006B5740+672048]</span><br/><span class="error">E       	(No symbol) [0x005B8872]</span><br/><span class="error">E       	(No symbol) [0x005B41C8]</span><br/><span class="error">E       	(No symbol) [0x005B42AB]</span><br/><span class="error">E       	(No symbol) [0x005A71B7]</span><br/><span class="error">E       	BaseThreadInitThunk [0x76D90099+25]</span><br/><span class="error">E       	RtlGetAppContainerNamedObjectPath [0x77557B6E+286]</span><br/><span class="error">E       	RtlGetAppContainerNamedObjectPath [0x77557B3E+238]</span><br/><br/>venv\Lib\site-packages\selenium\webdriver\support\wait.py:95: TimeoutException<br/> -------------------------------Captured log setup------------------------------- <br/>INFO     WDM:logger.py:11 ====== WebDriver manager ======
+INFO     WDM:logger.py:11 Get LATEST chromedriver version for google-chrome 112.0.5615
+INFO     WDM:logger.py:11 Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\112.0.5615\chromedriver.exe] found in cache<br/></div></td></tr></tbody>
+      <tbody class="failed results-table-row">
+        <tr>
+          <td class="col-result">Failed</td>
+          <td class="col-name">TestCases/test_b2b.py::Test_B2Bcommonclass::test_infinity</td>
+          <td class="col-duration">110.31</td>
+          <td class="col-links"><a class="url" href="https://infinityexch.co/" target="_blank">https://infinityexch.co/</a> </td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div><div> <img src="E:\Rock_Selenium\Automation Project\mainproject/TestCases/test_b2b.py_Test_B2Bcommonclass_test_infinity.png" alt="screenshot" style="width:304px;height:228px;" onclick="window.open(this.src)" align="right"/></div></div>
+            <div class="log">self = &lt;TestCases.test_b2b.Test_B2Bcommonclass object at 0x0000019AD24C6B50&gt;<br/><br/>    def newfunction(self):<br/>        alertmessage = &quot;&quot;<br/>        self.driver.implicitly_wait(15)<br/>        self.cc = B2Bcommonclass(self.driver)<br/>        self.cc.clickclose()<br/>        time.sleep(1.5)<br/>        prewalletamount = self.cc.getwalletamount()<br/>        preexposure = self.cc.getliability()<br/>        element = self.driver.find_elements(By.XPATH, self.cc.manualodds_xpath)<br/>        for sc in range(0,len(element)):<br/>            try:<br/>                element1 = self.driver.find_elements(By.XPATH, self.cc.manualodds_xpath)<br/>                self.driver.execute_script(&quot;arguments[0].scrollIntoView();&quot;, element1[sc])<br/>                time.sleep(2.2)<br/>                element1[sc].click()<br/>                WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located((By.CSS_SELECTOR, self.cc.wintossback_css)))<br/>                backelement = self.driver.find_element(By.CSS_SELECTOR, self.cc.wintossback_css)<br/>                self.driver.execute_script(&quot;arguments[0].scrollIntoView();&quot;, backelement)<br/>    <br/>                WebDriverWait(self.driver, 15).until(EC.presence_of_element_located((By.CSS_SELECTOR, self.cc.wintossback_css)))<br/>                self.driver.find_element(By.CSS_SELECTOR, self.cc.wintossback_css).click()<br/>                self.driver.find_element(By.CSS_SELECTOR, self.cc.manualbetprice_css).clear()<br/>                self.driver.find_element(By.CSS_SELECTOR, self.cc.manualbetprice_css).send_keys(self.betprice)<br/>                self.cc.clickplacebet()<br/>                alertmessage = self.cc.getalertmessage()<br/>                if &quot;success&quot; in alertmessage:<br/>                    self.cc.inplay = False<br/>                    break<br/>                else:<br/>                    self.cc.clicklogo()<br/>            except:<br/>                self.cc.clicklogo()<br/>    <br/>        if self.cc.inplay:<br/>            self.cc.clickinplay()<br/>            totalinplaymatches = self.driver.find_elements(By.CSS_SELECTOR, self.cc.inplaylist_CSS)<br/>            for s in range(0, len(totalinplaymatches)):<br/>                time.sleep(5)<br/>                matches = self.driver.find_elements(By.CSS_SELECTOR, self.cc.inplaylist_CSS)<br/>                self.driver.execute_script(&quot;arguments[0].scrollIntoView();&quot;,matches[s])<br/>                time.sleep(2)<br/>                matches[s].click()<br/>                time.sleep(5)<br/>                try:<br/>                    for c in range(0, 4):<br/>                        self.cc.clickbackrate()<br/>                        self.cc.setbetprice(self.betprice)<br/>                        self.cc.clickplacebet()<br/>                        alertmessage = WebDriverWait(self.driver, 15).until(EC.visibility_of_element_located((By.CLASS_NAME, self.cc.alertmessage_class))).text<br/>                        # time.sleep(7)<br/>                        if &quot;success&quot; in alertmessage or &quot;0Unknown Error&quot; in alertmessage or &quot;Rate Exposure limit&quot; in alertmessage:<br/>                            break<br/>                        else:<br/>                            self.cc.clickbackrate()<br/>                except:<br/>                    self.cc.clicklogo()<br/>                if &quot;success&quot; in alertmessage:<br/>                    assert &quot;success&quot; in alertmessage<br/>                    break<br/>            else:<br/>                self.logger.info(&quot;No Matches Are Availale To Place Bet %s&quot;, alertmessage)<br/>    <br/>        postexposure = None<br/>        exposure = None<br/>        postwalletamount = None<br/>        actpostwalletamount = None<br/>        dbselection = None<br/>        dbtypeofbet = None<br/>        dbstake = None<br/>        dbpl = None<br/>    <br/>        if &quot;success&quot; in alertmessage:<br/>            try:<br/>                dbselection = self.cc.getselection()<br/>                dbtypeofbet = self.cc.gettypeofbet()<br/>                dbstake = self.cc.getstake()<br/>                dbpl = self.cc.getpl()<br/>                self.cc.clickuserprofile()<br/>                self.cc.clickmybet()<br/>                time.sleep(2)<br/>                postexposure = self.cc.getliability()<br/>                postwalletamount = prewalletamount - float(dbstake)<br/>                exposure = float(dbstake) + preexposure<br/>                actpostwalletamount = self.cc.getwalletamount()<br/>    <br/>                if int(postexposure) == int(exposure) and int(postwalletamount) == int(actpostwalletamount):<br/>                    self.logger.info(&quot;Test Passed&quot;)<br/>                    self.logger.info(&quot;Message After Click on Place Bet Button %s&quot;, alertmessage)<br/>                    self.logger.info(&quot;Wallet Amount And Exposure are Updated After Place Bet&quot;)<br/>                else:<br/>                    try:<br/>                        self.logger.error(&quot;Test Failed&quot;)<br/>                        self.logger.info(&quot;Wallet balance and Exposure Balance is not Updated After Bet place&quot;)<br/>                        self.logger.info(&quot;Message After Place Bet %s&quot;, alertmessage)<br/>                        self.logger.info(&quot;User Login With %s&quot;, self.username)<br/>                        self.logger.info(&quot;Wallet Amount Before Place Bet %s&quot;, prewalletamount)<br/>                        self.logger.info(&quot;Wallet Amount After Place Bet %s&quot;, actpostwalletamount)<br/>                        self.logger.info(&quot;Bet Price %s&quot;, self.betprice)<br/>                        self.logger.info(&quot;Exposure Before Place Bet %s&quot;, preexposure)<br/>                        self.logger.info(&quot;Exposure After Place Bet %s&quot;, postexposure)<br/>                        self.logger.info(&quot;&quot;)<br/>                        self.logger.info(&quot;******************** Data From Dashboard Bet list ********************&quot;)<br/>                        self.logger.info(&quot;Bet Place Team Name is %s&quot;, dbselection)<br/>                        self.logger.info(&quot;Bet Place On %s&quot;, dbtypeofbet)<br/>                        self.logger.info(&quot;Bet Stake Amount is %s&quot;, dbstake)<br/>                        self.logger.info(&quot;P/L on Bet Place is %s&quot;, dbpl)<br/>    <br/>                        rpselection = self.cc.getreportselection()<br/>                        rptypeofbet = self.cc.getreporttype()<br/>                        rpstake = self.cc.getreportstake()<br/>                        rppl = self.cc.getreportpl()<br/>                        self.logger.info(&quot;&quot;)<br/>                        self.logger.info(&quot;******************** Data From Open Bet Report ********************&quot;)<br/>                        self.logger.info(&quot;Bet Place Team Name In Open Bet Report is %s&quot;, rpselection)<br/>                        self.logger.info(&quot;Bet Place Type In Open Bet Report is %s&quot;, rptypeofbet)<br/>                        self.logger.info(&quot;Bet Stake Amount In Open Bet Report is %s&quot;, rpstake)<br/>                        self.logger.info(&quot;P/L On Bet Place In Open Bet Report is %s&quot;, rppl)<br/>    <br/>                        assert rpselection == dbselection and rptypeofbet == dbtypeofbet and rpstake == dbstake and rppl == dbpl<br/>                    except:<br/>                        self.logger.info(&quot; &quot;)<br/>                        self.logger.info(&quot;Data Not Display In Report or Report Is not Update&quot;)<br/>&gt;               assert int(postexposure) == int(exposure) and int(postwalletamount) == int(actpostwalletamount)<br/><span class="error">E               assert (0 == 202)</span><br/><span class="error">E                +  where 0 = int(0.0)</span><br/><span class="error">E                +  and   202 = int(202.0)</span><br/><br/>TestCases\test_b2b.py:748: AssertionError<br/><br/>During handling of the above exception, another exception occurred:<br/><br/>self = &lt;TestCases.test_b2b.Test_B2Bcommonclass object at 0x0000019AD24C6B50&gt;<br/>setup = &lt;selenium.webdriver.chrome.webdriver.WebDriver (session=&quot;4e56cdc6b41e11e8edebc914ce9f7376&quot;)&gt;<br/><br/>    @pytest.mark.runall<br/>    @pytest.mark.b2bmarker<br/>    @pytest.mark.infinity<br/>    @pytest.mark.test<br/>    def test_infinity(self, setup):<br/>        self.driver = setup<br/>        self.driver.set_window_size(1366,768)<br/>        self.cc = B2Bcommonclass(self.driver)<br/>        self.driver.get(self.infinity)<br/>        time.sleep(5)<br/>        self.cc.clicksignin()<br/>        time.sleep(3)<br/>        self.cc.setusername(self.username)<br/>        self.cc.setpassword(self.password)<br/>        self.cc.clicklogin()<br/>        try:<br/>            WebDriverWait(self.driver, 15).until(<br/>                EC.visibility_of_element_located((By.TAG_NAME, &quot;app-dashboard&quot;)))<br/>        except:<br/>            self.logger.info(&quot;User Not login, Please Run This Test Again&quot;)<br/>            assert False<br/>&gt;       self.newfunction()<br/><br/>TestCases\test_b2b.py:851: <br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <br/><br/>self = &lt;TestCases.test_b2b.Test_B2Bcommonclass object at 0x0000019AD24C6B50&gt;<br/><br/>    def newfunction(self):<br/>        alertmessage = &quot;&quot;<br/>        self.driver.implicitly_wait(15)<br/>        self.cc = B2Bcommonclass(self.driver)<br/>        self.cc.clickclose()<br/>        time.sleep(1.5)<br/>        prewalletamount = self.cc.getwalletamount()<br/>        preexposure = self.cc.getliability()<br/>        element = self.driver.find_elements(By.XPATH, self.cc.manualodds_xpath)<br/>        for sc in range(0,len(element)):<br/>            try:<br/>                element1 = self.driver.find_elements(By.XPATH, self.cc.manualodds_xpath)<br/>                self.driver.execute_script(&quot;arguments[0].scrollIntoView();&quot;, element1[sc])<br/>                time.sleep(2.2)<br/>                element1[sc].click()<br/>                WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located((By.CSS_SELECTOR, self.cc.wintossback_css)))<br/>                backelement = self.driver.find_element(By.CSS_SELECTOR, self.cc.wintossback_css)<br/>                self.driver.execute_script(&quot;arguments[0].scrollIntoView();&quot;, backelement)<br/>    <br/>                WebDriverWait(self.driver, 15).until(EC.presence_of_element_located((By.CSS_SELECTOR, self.cc.wintossback_css)))<br/>                self.driver.find_element(By.CSS_SELECTOR, self.cc.wintossback_css).click()<br/>                self.driver.find_element(By.CSS_SELECTOR, self.cc.manualbetprice_css).clear()<br/>                self.driver.find_element(By.CSS_SELECTOR, self.cc.manualbetprice_css).send_keys(self.betprice)<br/>                self.cc.clickplacebet()<br/>                alertmessage = self.cc.getalertmessage()<br/>                if &quot;success&quot; in alertmessage:<br/>                    self.cc.inplay = False<br/>                    break<br/>                else:<br/>                    self.cc.clicklogo()<br/>            except:<br/>                self.cc.clicklogo()<br/>    <br/>        if self.cc.inplay:<br/>            self.cc.clickinplay()<br/>            totalinplaymatches = self.driver.find_elements(By.CSS_SELECTOR, self.cc.inplaylist_CSS)<br/>            for s in range(0, len(totalinplaymatches)):<br/>                time.sleep(5)<br/>                matches = self.driver.find_elements(By.CSS_SELECTOR, self.cc.inplaylist_CSS)<br/>                self.driver.execute_script(&quot;arguments[0].scrollIntoView();&quot;,matches[s])<br/>                time.sleep(2)<br/>                matches[s].click()<br/>                time.sleep(5)<br/>                try:<br/>                    for c in range(0, 4):<br/>                        self.cc.clickbackrate()<br/>                        self.cc.setbetprice(self.betprice)<br/>                        self.cc.clickplacebet()<br/>                        alertmessage = WebDriverWait(self.driver, 15).until(EC.visibility_of_element_located((By.CLASS_NAME, self.cc.alertmessage_class))).text<br/>                        # time.sleep(7)<br/>                        if &quot;success&quot; in alertmessage or &quot;0Unknown Error&quot; in alertmessage or &quot;Rate Exposure limit&quot; in alertmessage:<br/>                            break<br/>                        else:<br/>                            self.cc.clickbackrate()<br/>                except:<br/>                    self.cc.clicklogo()<br/>                if &quot;success&quot; in alertmessage:<br/>                    assert &quot;success&quot; in alertmessage<br/>                    break<br/>            else:<br/>                self.logger.info(&quot;No Matches Are Availale To Place Bet %s&quot;, alertmessage)<br/>    <br/>        postexposure = None<br/>        exposure = None<br/>        postwalletamount = None<br/>        actpostwalletamount = None<br/>        dbselection = None<br/>        dbtypeofbet = None<br/>        dbstake = None<br/>        dbpl = None<br/>    <br/>        if &quot;success&quot; in alertmessage:<br/>            try:<br/>                dbselection = self.cc.getselection()<br/>                dbtypeofbet = self.cc.gettypeofbet()<br/>                dbstake = self.cc.getstake()<br/>                dbpl = self.cc.getpl()<br/>                self.cc.clickuserprofile()<br/>                self.cc.clickmybet()<br/>                time.sleep(2)<br/>                postexposure = self.cc.getliability()<br/>                postwalletamount = prewalletamount - float(dbstake)<br/>                exposure = float(dbstake) + preexposure<br/>                actpostwalletamount = self.cc.getwalletamount()<br/>    <br/>                if int(postexposure) == int(exposure) and int(postwalletamount) == int(actpostwalletamount):<br/>                    self.logger.info(&quot;Test Passed&quot;)<br/>                    self.logger.info(&quot;Message After Click on Place Bet Button %s&quot;, alertmessage)<br/>                    self.logger.info(&quot;Wallet Amount And Exposure are Updated After Place Bet&quot;)<br/>                else:<br/>                    try:<br/>                        self.logger.error(&quot;Test Failed&quot;)<br/>                        self.logger.info(&quot;Wallet balance and Exposure Balance is not Updated After Bet place&quot;)<br/>                        self.logger.info(&quot;Message After Place Bet %s&quot;, alertmessage)<br/>                        self.logger.info(&quot;User Login With %s&quot;, self.username)<br/>                        self.logger.info(&quot;Wallet Amount Before Place Bet %s&quot;, prewalletamount)<br/>                        self.logger.info(&quot;Wallet Amount After Place Bet %s&quot;, actpostwalletamount)<br/>                        self.logger.info(&quot;Bet Price %s&quot;, self.betprice)<br/>                        self.logger.info(&quot;Exposure Before Place Bet %s&quot;, preexposure)<br/>                        self.logger.info(&quot;Exposure After Place Bet %s&quot;, postexposure)<br/>                        self.logger.info(&quot;&quot;)<br/>                        self.logger.info(&quot;******************** Data From Dashboard Bet list ********************&quot;)<br/>                        self.logger.info(&quot;Bet Place Team Name is %s&quot;, dbselection)<br/>                        self.logger.info(&quot;Bet Place On %s&quot;, dbtypeofbet)<br/>                        self.logger.info(&quot;Bet Stake Amount is %s&quot;, dbstake)<br/>                        self.logger.info(&quot;P/L on Bet Place is %s&quot;, dbpl)<br/>    <br/>                        rpselection = self.cc.getreportselection()<br/>                        rptypeofbet = self.cc.getreporttype()<br/>                        rpstake = self.cc.getreportstake()<br/>                        rppl = self.cc.getreportpl()<br/>                        self.logger.info(&quot;&quot;)<br/>                        self.logger.info(&quot;******************** Data From Open Bet Report ********************&quot;)<br/>                        self.logger.info(&quot;Bet Place Team Name In Open Bet Report is %s&quot;, rpselection)<br/>                        self.logger.info(&quot;Bet Place Type In Open Bet Report is %s&quot;, rptypeofbet)<br/>                        self.logger.info(&quot;Bet Stake Amount In Open Bet Report is %s&quot;, rpstake)<br/>                        self.logger.info(&quot;P/L On Bet Place In Open Bet Report is %s&quot;, rppl)<br/>    <br/>                        assert rpselection == dbselection and rptypeofbet == dbtypeofbet and rpstake == dbstake and rppl == dbpl<br/>                    except:<br/>                        self.logger.info(&quot; &quot;)<br/>                        self.logger.info(&quot;Data Not Display In Report or Report Is not Update&quot;)<br/>                assert int(postexposure) == int(exposure) and int(postwalletamount) == int(actpostwalletamount)<br/>            except:<br/>&gt;               assert int(postexposure) == int(exposure) and int(postwalletamount) == int(actpostwalletamount)<br/><span class="error">E               assert (0 == 202)</span><br/><span class="error">E                +  where 0 = int(0.0)</span><br/><span class="error">E                +  and   202 = int(202.0)</span><br/><br/>TestCases\test_b2b.py:750: AssertionError<br/> -------------------------------Captured log setup------------------------------- <br/>INFO     WDM:logger.py:11 ====== WebDriver manager ======
+INFO     WDM:logger.py:11 Get LATEST chromedriver version for google-chrome 112.0.5615
+INFO     WDM:logger.py:11 Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\112.0.5615\chromedriver.exe] found in cache<br/> -------------------------------Captured log call-------------------------------- <br/>ERROR    root:test_b2b.py:717 Test Failed
+INFO     root:test_b2b.py:718 Wallet balance and Exposure Balance is not Updated After Bet place
+INFO     root:test_b2b.py:719 Message After Place Bet Bet has been placed successfully.
+INFO     root:test_b2b.py:720 User Login With rocktest
+INFO     root:test_b2b.py:721 Wallet Amount Before Place Bet 21607.19
+INFO     root:test_b2b.py:722 Wallet Amount After Place Bet 21607.19
+INFO     root:test_b2b.py:723 Bet Price 202
+INFO     root:test_b2b.py:724 Exposure Before Place Bet 0.0
+INFO     root:test_b2b.py:725 Exposure After Place Bet 0.0
+INFO     root:test_b2b.py:726 
+INFO     root:test_b2b.py:727 ******************** Data From Dashboard Bet list ********************
+INFO     root:test_b2b.py:728 Bet Place Team Name is Mumbai Indians
+INFO     root:test_b2b.py:729 Bet Place On Back
+INFO     root:test_b2b.py:730 Bet Stake Amount is 202
+INFO     root:test_b2b.py:731 P/L on Bet Place is 195.94
+INFO     root:test_b2b.py:746  
+INFO     root:test_b2b.py:747 Data Not Display In Report or Report Is not Update<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">TestCases/test_b2b.py::Test_B2Bcommonclass::test_abdexch</td>
+          <td class="col-duration">62.80</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -------------------------------Captured log setup------------------------------- <br/>INFO     WDM:logger.py:11 ====== WebDriver manager ======
+INFO     WDM:logger.py:11 Get LATEST chromedriver version for google-chrome 112.0.5615
+INFO     WDM:logger.py:11 Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\112.0.5615\chromedriver.exe] found in cache<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     root:test_b2b.py:712 Test Passed
+INFO     root:test_b2b.py:713 Message After Click on Place Bet Button Bet has been placed successfully.
+INFO     root:test_b2b.py:714 Wallet Amount And Exposure are Updated After Place Bet<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">TestCases/test_b2b.py::Test_B2Bcommonclass::test_badabet</td>
+          <td class="col-duration">84.72</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -------------------------------Captured log setup------------------------------- <br/>INFO     WDM:logger.py:11 ====== WebDriver manager ======
+INFO     WDM:logger.py:11 Get LATEST chromedriver version for google-chrome 112.0.5615
+INFO     WDM:logger.py:11 Driver [C:\Users\KEY\.wdm\drivers\chromedriver\win32\112.0.5615\chromedriver.exe] found in cache<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     root:test_b2b.py:712 Test Passed
+INFO     root:test_b2b.py:713 Message After Click on Place Bet Button Bet has been placed successfully.
+INFO     root:test_b2b.py:714 Wallet Amount And Exposure are Updated After Place Bet<br/></div></td></tr></tbody></table></body></html>

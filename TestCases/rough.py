@@ -1,6 +1,6 @@
 import time
 import pytest
-from selenium.common import NoSuchElementException
+from selenium.common import NoSuchElementException, TimeoutException
 from selenium.webdriver import Keys
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
@@ -178,6 +178,10 @@ class Test_B2Bcommonclass:
         self.cc.setpassword(self.password)
         self.cc.clicklogin()
         time.sleep(10)
+        try:
+            WebDriverWait(self.driver, 15).until(EC.visibility_of_element_located((By.XPATH, self.cc.closebutton_xpath)))
+        except TimeoutException:
+            self.logger.info("User not login")
 
         alertmessage = ""
         self.cc = B2Bcommonclass(self.driver)
@@ -188,9 +192,13 @@ class Test_B2Bcommonclass:
         element = self.driver.find_elements(By.XPATH, self.cc.manualodds_xpath)
         for sc in range(0, len(element)):
             try:
+                team1names = self.driver.find_elements(By.XPATH, self.cc.team1name_xpath)
+                team2names = self.driver.find_elements(By.XPATH, self.cc.team2name_xpath)
                 element1 = self.driver.find_elements(By.XPATH, self.cc.manualodds_xpath)
                 self.driver.execute_script("arguments[0].scrollIntoView();", element1[sc])
                 time.sleep(2)
+                team1 = team1names[sc].text
+                team2 = team2names[sc].text
                 element1[sc].click()
                 time.sleep(5)
                 backelement = self.driver.find_element(By.CSS_SELECTOR, self.cc.wintossback_css)
@@ -204,9 +212,11 @@ class Test_B2Bcommonclass:
                 self.cc.clickplacebet()
                 alertmessage = self.cc.getalertmessage()
                 if "success" in alertmessage:
+                    self.logger.info("Bet places successfully in market name = %s VS %s", team1, team2)
                     self.cc.inplay = False
                     break
                 else:
+                    self.logger.info("Bet not place in market name = %s VS %s", team1, team2)
                     self.cc.clicklogo()
             except:
                 self.cc.clicklogo()
@@ -265,7 +275,7 @@ class Test_B2Bcommonclass:
                 actpostwalletamount = self.cc.getwalletamount()
 
                 if postexposure == exposure and postwalletamount == actpostwalletamount:
-                    self.logger.info("Test Passed")
+                    # self.logger.info("Test Passed")
                     self.logger.info("Message After Click on Place Bet Button %s", alertmessage)
                     self.logger.info("Wallet Amount And Exposure are Updated After Place Bet")
                 else:

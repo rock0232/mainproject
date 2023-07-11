@@ -2871,3 +2871,21 @@
 05/16/2023 04:53:11 PM: INFO: Test Passed
 05/16/2023 04:53:11 PM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
 05/16/2023 04:53:11 PM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+06/01/2023 02:16:10 PM: INFO: Test Passed
+06/01/2023 02:16:10 PM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+06/01/2023 02:16:10 PM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+06/05/2023 02:57:54 PM: INFO: User Not login, Please Run This Test Again
+06/05/2023 03:03:40 PM: INFO: Test Passed
+06/05/2023 03:03:40 PM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+06/05/2023 03:03:40 PM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+06/05/2023 03:05:49 PM: INFO: User Not login, Please Run This Test Again
+06/05/2023 03:08:06 PM: INFO: Test Passed
+06/05/2023 03:08:06 PM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+06/05/2023 03:08:06 PM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+06/14/2023 01:18:24 PM: INFO: User Not login, Please Run This Test Again
+06/14/2023 01:18:29 PM: WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001AE19CC4D90>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/355afef761db29f7944b0972ed385170/screenshot
+06/14/2023 01:18:33 PM: WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001AE19EFE150>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/355afef761db29f7944b0972ed385170/screenshot
+06/14/2023 01:18:37 PM: WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001AE19E728D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/355afef761db29f7944b0972ed385170/screenshot
+06/14/2023 02:06:43 PM: INFO: Bet Not Place Message After PLace Bet 
+06/22/2023 02:05:32 PM: INFO: No Matches Are Availale To Place Bet 
+06/22/2023 02:05:32 PM: INFO: Bet Not Place Message After PLace Bet 

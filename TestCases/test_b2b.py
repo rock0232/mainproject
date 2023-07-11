@@ -778,7 +778,6 @@ class Test_B2Bcommonclass:
         self.cc.setusername(self.username)
         self.cc.setpassword(self.password)
         self.cc.clicklogin()
-        assert True == False
         try:
             WebDriverWait(self.driver, 15).until(EC.visibility_of_element_located((By.TAG_NAME, "app-dashboard")))
             self.logger.info("User login successfully")

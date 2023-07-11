@@ -11,7 +11,8 @@ import sys
 import os
 from utilities import xlutils
 
-## read data from excel file
+
+# read data from Excel file
 def getwebsiteurl():
     websiteurl = []
     filepath = get_project_root()
@@ -26,8 +27,10 @@ def getwebsiteurl():
             break
     return websiteurl
 
+
 def get_project_root() -> Path:
     return Path(__file__).parent.parent
+
 
 @pytest.fixture(params=xlutils.read_sheet())
 def website_list(request):

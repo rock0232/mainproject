@@ -182,6 +182,7 @@ class commonclass:
         exposure1 = [exp for exp in exposure if exp != "-"]
         exposure2 = "".join(exposure1)
         strexp = str(exposure2)
+        print(strexp)
         exposure = float(strexp)
         return exposure
 

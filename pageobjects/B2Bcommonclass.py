@@ -6,9 +6,7 @@ from selenium.webdriver import ActionChains, Keys
 from selenium.webdriver.common.by import By
 
 
-
 class B2Bcommonclass:
-
     signin_xpath = "//a[@class='btn']//span[@class='animate-btn']"
     username_id = "user_name"
     password_id = "password"
@@ -39,16 +37,19 @@ class B2Bcommonclass:
     numofinplaymatch_xpath = '/html/body/app-root/app-home-layout/body/app-dashboard/main/div/div/app-common-dashboard/div/ngx-slick-carousel/div/div/div//child::a//child::div//child::span'
     wintossback_css = "body > app-market:nth-child(3) > main:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > app-match:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(4) > div:nth-child(2) > app-market-type:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(4)"
     manualodds_xpath = "//div//a[contains(@title,'ManualODD: 2')]"
+    team1name_xpath = "//div[@class='versis-img']"
+    team2name_xpath = "//div[@class='versis-img']/span"
     manualbetprice_css = "div[class='hide-on-med-and-down'] div:nth-child(2) > input"
     inplay = True
     inactivemarket_xpath = "//div[contains(text(),' Match Odds')]//ancestor::div[contains(@class,'bet-semiheader is-hidden is-show')]//following-sibling::div[contains(@class,'bet-list is-hidden is-show')]/div/div[2]/div"
-    #//div[contains(text(),' Match Odds')]//parent::div[contains(@class,'bet-semiheader is-hidden is-show')]
+    # //div[contains(text(),' Match Odds')]//parent::div[contains(@class,'bet-semiheader is-hidden is-show')]
     logo_class = "brand-logo"
     slidesports_xpath = "//ngx-slick-carousel[@class='slider slick-initialized slick-slider']//button[@aria-label='Next'][normalize-space()='Next']"
     sidebarinplaylogo_xpath = "//div[@class='sports-icon inplay']"
     inplaytext_xpath = "//span[normalize-space()='In Play']"
     inplaylist_CSS = "header .sidenav .upcoming-event ul li a"
     homebutton = "//ul[@class='left']//a[@class='active']"
+    matchodds_status_xpath = "//div[text()=' Match Odds ']//ancestor::div[@class='bet-semiheader is-hidden is-show']/following-sibling::div[@class='bet-list is-hidden is-show']//div[@class='suspend-cont']"
 
     def __init__(self, driver):
         self.driver = driver
@@ -69,7 +70,7 @@ class B2Bcommonclass:
         inplay = []
         intinplay = None
         for j in range(len(element)):
-            if j == 7 or j ==14 or j ==21:
+            if j == 7 or j == 14 or j == 21:
                 try:
                     self.driver.find_element(By.XPATH, self.slidesports_xpath).click()
                     time.sleep(2)
@@ -85,13 +86,13 @@ class B2Bcommonclass:
             index1 = inplay.index(f"start{j}")
             index2 = inplay.index(f"s{j}")
             index3 = inplay.index(f"end{j}")
-            inpl = inplay[index2+1:index3]
+            inpl = inplay[index2 + 1:index3]
             join = "".join(inpl)
             intinplay = int(join)
 
             if intinplay > 0:
                 element[j].click()
-                totalmatch = inplay[index1+1:index2]
+                totalmatch = inplay[index1 + 1:index2]
                 tmatch = "".join(totalmatch)
                 cctotalmatches = int(tmatch)
                 self.inplay = True
@@ -188,12 +189,12 @@ class B2Bcommonclass:
         self.driver.find_element(By.XPATH, self.market_xpath).click()
 
     def geteventname(self):
-        test1=[]
+        test1 = []
         ename = self.driver.find_element(By.XPATH, self.market_xpath).text
         for name in ename:
             if name == "\n":
                 test1.append(" ")
-            elif name !="\n":
+            elif name != "\n":
                 test1.append(name)
         eventname = "".join(test1)
         return eventname
@@ -201,9 +202,9 @@ class B2Bcommonclass:
     def clickinplaymarket(self):
         count = self.getinplaymatchcount()
         if count is not None:
-            relcount = int(count*1.5)
+            relcount = int(count * 1.5)
             eventname = []
-            for i in range(0,relcount):
+            for i in range(0, relcount):
                 self.driver.find_element(By.TAG_NAME, "body").send_keys(Keys.ARROW_DOWN)
                 try:
                     elememt = self.driver.find_element(By.XPATH, self.inplay_xpath)
@@ -220,15 +221,14 @@ class B2Bcommonclass:
             if eventname:
                 eventname = "".join(eventname)
                 return eventname
-        else:
-            pass
 
     def scrollmarket(self):
         element = self.driver.find_element(By.CLASS_NAME, self.scrollmarket_class)
         self.driver.execute_script("arguments[0].scrollIntoView(true);", element)
 
     def clickclose(self):
-        WebDriverWait(self.driver, 15).until(EC.visibility_of_element_located((By.XPATH, self.closebutton_xpath))).click()
+        WebDriverWait(self.driver, 15).until(
+            EC.visibility_of_element_located((By.XPATH, self.closebutton_xpath))).click()
         # self.driver.find_element(By.XPATH, self.closebutton_xpath).click()
         # WebDriverWait(self.driver, 10).until(
         #             EC.visibility_of_element_located((By.CLASS_NAME, self.alertmessage_class))).text
@@ -236,7 +236,7 @@ class B2Bcommonclass:
     def clicklogin(self):
         self.driver.find_element(By.XPATH, self.poplogin_xpath).click()
 
-    def setpassword(self,password):
+    def setpassword(self, password):
         self.driver.find_element(By.ID, self.password_id).clear()
         self.driver.find_element(By.ID, self.password_id).send_keys(password)
 
@@ -247,5 +247,3 @@ class B2Bcommonclass:
     def clicksignin(self):
         WebDriverWait(self.driver, 20).until(EC.visibility_of_element_located((By.XPATH, self.signin_xpath)))
         self.driver.find_element(By.XPATH, self.signin_xpath).click()
-
-
