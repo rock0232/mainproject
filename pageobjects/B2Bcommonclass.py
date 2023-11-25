@@ -1,12 +1,12 @@
 import time
-
+from TestCases.Basepage import BasePage
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver import ActionChains, Keys
 from selenium.webdriver.common.by import By
 
 
-class B2Bcommonclass:
+class B2Bcommonclass(BasePage):
     signin_xpath = "//a[@class='btn']//span[@class='animate-btn']"
     username_id = "user_name"
     password_id = "password"
@@ -37,8 +37,8 @@ class B2Bcommonclass:
     numofinplaymatch_xpath = '/html/body/app-root/app-home-layout/body/app-dashboard/main/div/div/app-common-dashboard/div/ngx-slick-carousel/div/div/div//child::a//child::div//child::span'
     wintossback_css = "body > app-market:nth-child(3) > main:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > app-match:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(4) > div:nth-child(2) > app-market-type:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(4)"
     manualodds_xpath = "//div//a[contains(@title,'ManualODD: 2')]"
-    team1name_xpath = "//div[@class='versis-img']"
-    team2name_xpath = "//div[@class='versis-img']/span"
+    team1name_xpath = "//div//a[contains(@title,'ManualODD: 2')]/parent::div/parent::div/preceding-sibling::a/div/div[1]/parent::div" # "//div[@class='versis-img']"
+    team2name_xpath = "//div//a[contains(@title,'ManualODD: 2')]/parent::div/parent::div/preceding-sibling::a/div/div[1]/parent::div"
     manualbetprice_css = "div[class='hide-on-med-and-down'] div:nth-child(2) > input"
     inplay = True
     inactivemarket_xpath = "//div[contains(text(),' Match Odds')]//ancestor::div[contains(@class,'bet-semiheader is-hidden is-show')]//following-sibling::div[contains(@class,'bet-list is-hidden is-show')]/div/div[2]/div"

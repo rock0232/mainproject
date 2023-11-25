@@ -1,12 +1,12 @@
-pytest==7.3.0
-selenium==4.8.3
+pytest==7.4.0
+selenium==4.11.2
 pytest-html == 3.2.0
 pytest-parallel == 0.1.1
-pytest-xdist == 3.2.1
+pytest-xdist==3.3.1
 webdrivermanager
-webdriver_manager
+webdriver_manager==4.0.0
 openpyxl~=3.1.2
-gspread
+gspread==5.10.0
 pandas
 oauth2client
-undetected_chromedriver
+undetected_chromedriver==3.5.3

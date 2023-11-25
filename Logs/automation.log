@@ -2889,3 +2889,347 @@
 06/14/2023 02:06:43 PM: INFO: Bet Not Place Message After PLace Bet 
 06/22/2023 02:05:32 PM: INFO: No Matches Are Availale To Place Bet 
 06/22/2023 02:05:32 PM: INFO: Bet Not Place Message After PLace Bet 
+07/18/2023 11:45:47 AM: INFO: User login successfully
+07/18/2023 11:47:40 AM: INFO: Test Passed
+07/18/2023 11:47:40 AM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+07/18/2023 11:47:40 AM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+07/18/2023 11:48:42 AM: INFO: User Not login, Please Run This Test Again
+07/18/2023 11:49:42 AM: INFO: User login successfully
+07/18/2023 11:50:55 AM: INFO: Test Passed
+07/18/2023 11:50:55 AM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+07/18/2023 11:50:55 AM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+07/18/2023 11:53:29 AM: INFO: User login successfully
+07/18/2023 11:53:55 AM: INFO: Test Passed
+07/18/2023 11:53:55 AM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+07/18/2023 11:53:55 AM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+07/18/2023 04:25:27 PM: INFO: Bet places successfully in market name = SRI LANKA PAKISTAN VS 
+07/18/2023 04:25:31 PM: INFO: Test Passed
+07/18/2023 04:25:31 PM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+07/18/2023 04:25:31 PM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+07/18/2023 04:26:32 PM: INFO: Bet places successfully in market name = SRI LANKA PAKISTAN VS 
+07/18/2023 04:26:36 PM: INFO: Test Passed
+07/18/2023 04:26:36 PM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+07/18/2023 04:26:36 PM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+07/18/2023 04:28:49 PM: INFO: Test Passed
+07/18/2023 04:28:49 PM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+07/18/2023 04:28:49 PM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+07/18/2023 04:29:43 PM: INFO: Bet places successfully in market name = ICC WORLD TWENTY20 2021 VS 
+07/18/2023 04:29:55 PM: INFO: Test Passed
+07/18/2023 04:29:55 PM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+07/18/2023 04:29:55 PM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+07/18/2023 04:31:39 PM: INFO: Test Passed
+07/18/2023 04:31:39 PM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+07/18/2023 04:31:39 PM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+07/18/2023 04:38:19 PM: ERROR: Test Failed
+07/18/2023 04:38:19 PM: INFO: Wallet balance and Exposure Balance is not Updated After Bet place
+07/18/2023 04:38:19 PM: INFO: Message After Place Bet Bet has been placed successfully.
+07/18/2023 04:38:19 PM: INFO: User Login With kt11
+07/18/2023 04:38:19 PM: INFO: Wallet Amount Before Place Bet 33750.29
+07/18/2023 04:38:19 PM: INFO: Wallet Amount After Place Bet 33346.29
+07/18/2023 04:38:19 PM: INFO: Bet Price 202
+07/18/2023 04:38:19 PM: INFO: Exposure Before Place Bet 1411.0
+07/18/2023 04:38:19 PM: INFO: Exposure After Place Bet 1815.0
+07/18/2023 04:38:19 PM: INFO: 
+07/18/2023 04:38:19 PM: INFO: ******************** Data From Dashboard Bet list ********************
+07/18/2023 04:38:19 PM: INFO: Bet Place Team Name is Zsombor Piros
+07/18/2023 04:38:19 PM: INFO: Bet Place On Back
+07/18/2023 04:38:19 PM: INFO: Bet Stake Amount is 202
+07/18/2023 04:38:19 PM: INFO: P/L on Bet Place is 18.18
+07/18/2023 04:38:25 PM: INFO: 
+07/18/2023 04:38:25 PM: INFO: ******************** Data From Open Bet Report ********************
+07/18/2023 04:38:25 PM: INFO: Bet Place Team Name In Open Bet Report is Zsombor Piros
+07/18/2023 04:38:25 PM: INFO: Bet Place Type In Open Bet Report is Back
+07/18/2023 04:38:25 PM: INFO: Bet Stake Amount In Open Bet Report is 202
+07/18/2023 04:38:25 PM: INFO: P/L On Bet Place In Open Bet Report is 18.18
+07/18/2023 04:39:46 PM: INFO: Bet places successfully in market name = SRI LANKA PAKISTAN VS 
+07/18/2023 04:39:51 PM: INFO: Test Passed
+07/18/2023 04:39:51 PM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+07/18/2023 04:39:51 PM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+07/18/2023 04:41:52 PM: INFO: Bet places successfully in market name = BANGLADESH A AFGHANISTAN A VS 
+07/18/2023 04:41:58 PM: INFO: Test Passed
+07/18/2023 04:41:58 PM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+07/18/2023 04:41:58 PM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+07/18/2023 04:43:46 PM: INFO: User not login
+07/18/2023 04:45:46 PM: INFO: User not login
+07/18/2023 04:58:15 PM: INFO: User login successfully
+07/18/2023 05:00:23 PM: INFO: Test Passed
+07/18/2023 05:00:23 PM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+07/18/2023 05:00:23 PM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+07/18/2023 05:05:16 PM: INFO: User login successfully
+07/18/2023 05:06:34 PM: INFO: Test Passed
+07/18/2023 05:06:34 PM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+07/18/2023 05:06:34 PM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+07/18/2023 05:28:03 PM: INFO: Bet places successfully in market name = ENGLAND AUSTRALIA VS 
+07/18/2023 05:28:08 PM: INFO: Test Passed
+07/18/2023 05:28:08 PM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+07/18/2023 05:28:08 PM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+07/18/2023 06:37:26 PM: INFO: User not login
+07/18/2023 06:56:37 PM: INFO: Bet not place in market name = SRI LANKA A VS OMAN A
+07/18/2023 06:56:37 PM: INFO: Bet Failed Reason =  
+07/18/2023 06:57:04 PM: INFO: Bet places successfully in market name = SRI LANKA A VS OMAN A
+07/18/2023 06:57:15 PM: INFO: Test Passed
+07/18/2023 06:57:15 PM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+07/18/2023 06:57:15 PM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+07/18/2023 06:58:49 PM: INFO: Bet not place in market name = SRI LANKA A VS OMAN A
+07/18/2023 06:58:49 PM: INFO: Bet Failed Reason =  
+07/18/2023 06:59:21 PM: INFO: Bet places successfully in market name = SRI LANKA A VS OMAN A
+07/18/2023 06:59:33 PM: INFO: Test Passed
+07/18/2023 06:59:33 PM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+07/18/2023 06:59:33 PM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+07/19/2023 10:35:55 AM: INFO: Test Started On, https://aura24.bet
+07/19/2023 10:37:29 AM: INFO: User not login
+07/19/2023 10:37:46 AM: INFO: Test Started On, https://park.bet
+07/19/2023 10:41:51 AM: INFO: Test Started On, https://aura24.bet
+07/19/2023 10:42:16 AM: INFO: User Login Successfully
+07/19/2023 10:43:44 AM: INFO: Bet places successfully in market name = SRI LANKA VS PAKISTAN
+07/19/2023 10:44:10 AM: INFO: Bet not place in market name = SRI LANKA VS PAKISTAN
+07/19/2023 10:44:10 AM: INFO: Bet Failed Reason =  Bet has been placed successfully.
+07/19/2023 10:45:11 AM: INFO: Bet not place in market name = SRI LANKA VS PAKISTAN
+07/19/2023 10:45:11 AM: INFO: Bet Failed Reason =  Bet has been placed successfully.
+07/19/2023 10:50:01 AM: INFO: Test Started On, https://aura24.bet
+07/19/2023 10:50:33 AM: INFO: User Login Successfully
+07/19/2023 10:52:03 AM: INFO: Bet places successfully in market name = SRI LANKA VS PAKISTAN
+07/19/2023 10:56:45 AM: INFO: Bet not place in market name = SRI LANKA VS PAKISTAN
+07/19/2023 10:56:45 AM: INFO: Bet Failed Reason =  Bet has been placed successfully.
+07/19/2023 10:57:43 AM: INFO: Bet not place in market name = SRI LANKA VS PAKISTAN
+07/19/2023 10:57:43 AM: INFO: Bet Failed Reason =  Bet has been placed successfully.
+07/19/2023 10:58:19 AM: INFO: Test Started On, https://aura24.bet
+07/19/2023 10:58:50 AM: INFO: User Login Successfully
+07/19/2023 10:59:45 AM: INFO: Bet places successfully in market name = SRI LANKA VS PAKISTAN
+07/19/2023 11:02:42 AM: INFO: Bet places successfully in market name = SRI LANKA VS PAKISTAN
+07/19/2023 11:04:13 AM: INFO: Bet not place in market name = SRI LANKA VS PAKISTAN
+07/19/2023 11:04:13 AM: INFO: Bet Failed Reason =  Bet has been placed successfully.
+07/19/2023 11:04:17 AM: INFO: No Matches Are Availale To Place Bet Bet has been placed successfully.
+07/19/2023 11:04:35 AM: INFO: Test Started On, https://park.bet
+07/19/2023 11:05:53 AM: INFO: User not login
+07/19/2023 11:06:17 AM: INFO: Test Started On, https://greenexch.com
+07/19/2023 11:06:37 AM: INFO: User Login Successfully
+07/19/2023 11:17:24 AM: INFO: Test Started On, https://aura24.bet
+07/19/2023 11:18:17 AM: INFO: User Login Successfully
+07/19/2023 11:20:24 AM: INFO: Bet places successfully in market name = <selenium.webdriver.remote.webelement.WebElement (session="c8a476d8d6b2ed0aeebf50bdeb0bb032", element="D2E9B943EAE79EF27572555BDAD11149_element_276")> VS <selenium.webdriver.remote.webelement.WebElement (session="c8a476d8d6b2ed0aeebf50bdeb0bb032", element="D2E9B943EAE79EF27572555BDAD11149_element_281")>
+07/19/2023 11:26:14 AM: INFO: Test Started On, https://aura24.bet
+07/19/2023 11:26:32 AM: INFO: User Login Successfully
+07/19/2023 11:32:48 AM: INFO: Bet places successfully in market name = NEPAL VS UNITED ARAB EMIRATES A
+07/19/2023 11:34:02 AM: INFO: Bet places successfully in market name = BANGLADESH WOMEN VS INDIA WOMEN
+07/19/2023 11:34:02 AM: INFO: No Matches Are Availale To Place Bet Bet has been placed successfully.
+07/19/2023 11:34:09 AM: INFO: Test Passed
+07/19/2023 11:34:09 AM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+07/19/2023 11:34:09 AM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+07/19/2023 11:34:15 AM: INFO: Test Started On, https://park.bet
+07/19/2023 11:35:12 AM: INFO: User not login
+07/19/2023 11:35:22 AM: INFO: Test Started On, https://greenexch.com
+07/19/2023 11:36:07 AM: INFO: User not login
+07/19/2023 11:36:14 AM: INFO: Test Started On, https://best365.in
+07/19/2023 11:36:47 AM: INFO: User Login Successfully
+07/19/2023 11:38:04 AM: INFO: Bet places successfully in market name = SRI LANKA VS PAKISTAN
+07/19/2023 11:39:44 AM: INFO: Bet places successfully in market name = NEPAL VS UNITED ARAB EMIRATES A
+07/19/2023 11:40:24 AM: INFO: Bet places successfully in market name = BANGLADESH WOMEN VS INDIA WOMEN
+07/19/2023 11:40:24 AM: INFO: No Matches Are Availale To Place Bet Bet has been placed successfully.
+07/19/2023 11:40:30 AM: INFO: Test Passed
+07/19/2023 11:40:30 AM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+07/19/2023 11:40:30 AM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+07/19/2023 11:40:36 AM: INFO: Test Started On, https://parkinplay.net
+07/19/2023 11:45:05 AM: INFO: Test Started On, https://aura24.bet
+07/19/2023 11:45:23 AM: INFO: User Login Successfully
+07/19/2023 11:46:24 AM: INFO: Bet places successfully in market name = SRI LANKA VS PAKISTAN
+07/19/2023 11:46:40 AM: INFO: Bet not place in market name = NAGAL VS VESELY
+07/19/2023 11:46:40 AM: INFO: Bet Failed Reason =  Low Liquidity
+07/19/2023 11:46:54 AM: INFO: Bet not place in market name = ER KIRKIN VS COPPEJANS
+07/19/2023 11:46:54 AM: INFO: Bet Failed Reason =  Low Liquidity
+07/19/2023 11:47:24 AM: INFO: Bet places successfully in market name = NEPAL VS UNITED ARAB EMIRATES A
+07/19/2023 11:47:54 AM: INFO: Bet places successfully in market name = BANGLADESH WOMEN VS INDIA WOMEN
+07/19/2023 11:47:54 AM: INFO: No Matches Are Availale To Place Bet Bet has been placed successfully.
+07/19/2023 11:48:00 AM: INFO: Test Passed
+07/19/2023 11:48:00 AM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+07/19/2023 11:48:00 AM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+07/19/2023 11:48:06 AM: INFO: Test Started On, https://park.bet
+07/19/2023 11:48:23 AM: INFO: User Login Successfully
+07/19/2023 11:50:49 AM: INFO: No Matches Are Availale To Place Bet 
+07/19/2023 11:50:49 AM: INFO: Bet Not Place Message After PLace Bet 
+07/19/2023 11:51:57 AM: INFO: Test Started On, https://aura24.bet
+07/19/2023 11:52:23 AM: INFO: User Login Successfully
+07/19/2023 11:53:10 AM: INFO: Bet places successfully in market name = SRI LANKA VS PAKISTAN
+07/19/2023 11:53:27 AM: INFO: Bet not place in market name = NAGAL VS VESELY
+07/19/2023 11:53:27 AM: INFO: Bet Failed Reason =  Low Liquidity
+07/19/2023 11:53:41 AM: INFO: Bet not place in market name = ER KIRKIN VS COPPEJANS
+07/19/2023 11:53:41 AM: INFO: Bet Failed Reason =  Low Liquidity
+07/19/2023 11:54:59 AM: INFO: Bet places successfully in market name = NEPAL VS UNITED ARAB EMIRATES A
+07/19/2023 11:55:37 AM: INFO: Bet places successfully in market name = BANGLADESH WOMEN VS INDIA WOMEN
+07/19/2023 11:55:38 AM: INFO: No Matches Are Availale To Place Bet Bet has been placed successfully.
+07/19/2023 11:55:46 AM: INFO: Test Passed
+07/19/2023 11:55:46 AM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+07/19/2023 11:55:46 AM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+07/19/2023 11:55:51 AM: INFO: Test Started On, https://park.bet
+07/19/2023 11:56:30 AM: INFO: User not login
+07/19/2023 11:56:43 AM: INFO: Test Started On, https://greenexch.com
+07/19/2023 11:57:11 AM: INFO: User Login Successfully
+07/19/2023 11:57:37 AM: INFO: No Matches Are Availale To Place Bet 
+07/19/2023 11:57:37 AM: INFO: Bet Not Place Message After PLace Bet 
+07/19/2023 11:57:47 AM: INFO: Test Started On, https://best365.in
+07/19/2023 11:58:07 AM: INFO: User Login Successfully
+07/19/2023 11:59:54 AM: INFO: Bet places successfully in market name = SRI LANKA VS PAKISTAN
+07/19/2023 12:00:12 PM: INFO: Bet not place in market name = NAGAL VS VESELY
+07/19/2023 12:00:12 PM: INFO: Bet Failed Reason =  Low Liquidity
+07/19/2023 12:00:27 PM: INFO: Bet not place in market name = ER KIRKIN VS COPPEJANS
+07/19/2023 12:00:27 PM: INFO: Bet Failed Reason =  Low Liquidity
+07/19/2023 12:03:10 PM: INFO: Test Started On, https://aura24.bet
+07/19/2023 12:03:26 PM: INFO: User Login Successfully
+07/19/2023 12:04:51 PM: INFO: Bet not place in market name = NAGAL VS VESELY
+07/19/2023 12:04:51 PM: INFO: Bet Failed Reason =  Low Liquidity
+07/19/2023 12:05:11 PM: INFO: Bet not place in market name = ER KIRKIN VS COPPEJANS
+07/19/2023 12:05:11 PM: INFO: Bet Failed Reason =  Low Liquidity
+07/19/2023 12:05:54 PM: INFO: Test Started On, https://aura24.bet
+07/19/2023 12:06:37 PM: INFO: User Login Successfully
+07/19/2023 12:07:32 PM: INFO: Bet not place in market name = SRI LANKA VS PAKISTAN
+07/19/2023 12:07:32 PM: INFO: Bet Failed Reason =  This market not allow unmatch bet.
+07/19/2023 12:07:52 PM: INFO: Bet not place in market name = SRI LANKA VS PAKISTAN
+07/19/2023 12:07:52 PM: INFO: Bet Failed Reason =  This market not allow unmatch bet.
+07/19/2023 12:08:10 PM: INFO: Bet not place in market name = SRI LANKA VS PAKISTAN
+07/19/2023 12:08:10 PM: INFO: Bet Failed Reason =  This market not allow unmatch bet.
+07/19/2023 12:08:30 PM: INFO: Bet places successfully in market name = SRI LANKA VS PAKISTAN
+07/19/2023 12:08:45 PM: INFO: Bet not place in market name = NAGAL VS VESELY
+07/19/2023 12:08:45 PM: INFO: Bet Failed Reason =  Low Liquidity
+07/19/2023 12:09:05 PM: INFO: Bet not place in market name = ER KIRKIN VS COPPEJANS
+07/19/2023 12:09:05 PM: INFO: Bet Failed Reason =  Low Liquidity
+07/19/2023 12:09:36 PM: INFO: Bet not place in market name = NEPAL VS UNITED ARAB EMIRATES A
+07/19/2023 12:09:36 PM: INFO: Bet Failed Reason = Market rate not display
+07/19/2023 12:10:38 PM: INFO: Bet not place in market name = BANGLADESH WOMEN VS INDIA WOMEN
+07/19/2023 12:10:38 PM: INFO: Bet Failed Reason = Market rate not display
+07/19/2023 12:10:38 PM: INFO: No Matches Are Availale To Place Bet Low Liquidity
+07/19/2023 12:10:38 PM: INFO: Bet Not Place Message After PLace Bet Low Liquidity
+07/19/2023 12:16:57 PM: INFO: Test Started On, https://aura24.bet
+07/19/2023 12:17:21 PM: INFO: User Login Successfully
+07/19/2023 12:18:10 PM: INFO: Bet not place in market name = SRI LANKA VS PAKISTAN
+07/19/2023 12:18:10 PM: INFO: Bet Failed Reason = Market rate not display
+07/19/2023 12:18:31 PM: INFO: Bet not place in market name = NAGAL VS VESELY
+07/19/2023 12:18:31 PM: INFO: Bet Failed Reason =  Low Liquidity
+07/19/2023 12:18:45 PM: INFO: Bet not place in market name = ER KIRKIN VS COPPEJANS
+07/19/2023 12:18:45 PM: INFO: Bet Failed Reason =  Low Liquidity
+07/19/2023 12:19:28 PM: INFO: Bet not place in market name = NEPAL VS UNITED ARAB EMIRATES A
+07/19/2023 12:19:28 PM: INFO: Bet Failed Reason =  This market not allow unmatch bet.
+07/19/2023 12:19:54 PM: INFO: Bet not place in market name = NEPAL VS UNITED ARAB EMIRATES A
+07/19/2023 12:19:54 PM: INFO: Bet Failed Reason =  This market not allow unmatch bet.
+07/19/2023 12:20:18 PM: INFO: Bet places successfully in market name = NEPAL VS UNITED ARAB EMIRATES A
+07/19/2023 12:20:50 PM: INFO: Bet places successfully in market name = BANGLADESH WOMEN VS INDIA WOMEN
+07/19/2023 12:20:50 PM: INFO: No Matches Are Availale To Place Bet Bet has been placed successfully.
+07/19/2023 12:20:55 PM: INFO: Test Passed
+07/19/2023 12:20:55 PM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+07/19/2023 12:20:55 PM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+07/19/2023 12:21:00 PM: INFO: Test Started On, https://park.bet
+07/19/2023 12:21:41 PM: INFO: User Login Successfully
+07/19/2023 12:37:25 PM: INFO: Test Started On, https://aura24.bet
+07/19/2023 12:37:46 PM: INFO: User Login Successfully
+07/19/2023 12:38:49 PM: INFO: Bet places successfully in market name = England VS Australia
+07/19/2023 12:38:53 PM: INFO: Test Passed
+07/19/2023 12:38:53 PM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+07/19/2023 12:38:53 PM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+07/19/2023 12:38:58 PM: INFO: Test Started On, https://park.bet
+07/19/2023 12:39:27 PM: INFO: User Login Successfully
+07/19/2023 12:39:59 PM: INFO: Bet places successfully in market name = England VS Australia
+07/19/2023 12:40:02 PM: INFO: Test Passed
+07/19/2023 12:40:02 PM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+07/19/2023 12:40:02 PM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+07/19/2023 12:40:06 PM: INFO: Test Started On, https://greenexch.com
+07/19/2023 12:40:26 PM: INFO: User Login Successfully
+07/19/2023 12:40:47 PM: INFO: Bet places successfully in market name = England VS Australia
+07/19/2023 12:40:50 PM: INFO: Test Passed
+07/19/2023 12:40:50 PM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+07/19/2023 12:40:50 PM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+07/19/2023 12:40:54 PM: INFO: Test Started On, https://best365.in
+07/19/2023 12:41:17 PM: INFO: User Login Successfully
+07/19/2023 12:43:34 PM: INFO: Bet places successfully in market name = SRI LANKA VS PAKISTAN
+07/19/2023 12:43:45 PM: INFO: Test Passed
+07/19/2023 12:43:45 PM: INFO: Message After Click on Place Bet Button Bet has been placed successfully.
+07/19/2023 12:43:45 PM: INFO: Wallet Amount And Exposure are Updated After Place Bet
+07/19/2023 12:43:50 PM: INFO: Test Started On, https://parkinplay.net
+07/19/2023 12:44:10 PM: INFO: User Login Successfully
+08/01/2023 12:47:35 PM: WARNING: Error getting version of chromedriver 115. Retrying with chromedriver 114 (attempt 1/5)
+08/01/2023 12:47:36 PM: INFO: Test Started On, https://aura24.bet
+08/01/2023 12:51:22 PM: INFO: Test Started On, https://aura24.bet
+08/01/2023 01:03:51 PM: INFO: Test Started On, https://aura24.bet
+08/01/2023 02:08:09 PM: INFO: Test Started On, https://aura24.bet
+08/01/2023 02:10:08 PM: INFO: Test Started On, https://aura24.bet
+08/01/2023 02:11:52 PM: INFO: Test Started On, https://aura24.bet
+08/01/2023 02:14:13 PM: INFO: Test Started On, https://aura24.bet
+08/01/2023 02:20:56 PM: INFO: Test Started On, https://aura24.bet
+08/01/2023 02:26:31 PM: INFO: Test Started On, https://aura24.bet
+08/01/2023 02:38:07 PM: INFO: Test Started On, https://aura25.bet
+08/01/2023 03:41:35 PM: INFO: Test Started On, https://aura25.bet
+08/02/2023 11:00:24 AM: INFO: Test Started On, https://aura25.bet
+08/02/2023 12:45:15 PM: INFO: Test Started On, https://aura25.bet
+08/02/2023 12:55:40 PM: INFO: Test Started On, https://aura25.bet
+08/02/2023 01:06:06 PM: INFO: Test Started On, https://aura25.bet
+08/02/2023 01:06:46 PM: INFO: User Login Successfully
+08/02/2023 01:51:19 PM: INFO: Test Started On, https://aura25.bet
+08/02/2023 01:51:58 PM: INFO: User not login
+08/02/2023 02:05:16 PM: INFO: Test Started On, https://aura25.bet
+08/02/2023 02:06:06 PM: INFO: User not login
+08/02/2023 02:12:04 PM: INFO: Test Started On, https://aura25.bet
+08/02/2023 02:12:56 PM: INFO: User not login
+08/02/2023 02:18:56 PM: INFO: Test Started On, https://aura25.bet
+08/02/2023 02:19:48 PM: INFO: User not login
+08/02/2023 02:22:30 PM: INFO: Test Started On, https://aura25.bet
+08/02/2023 02:22:41 PM: INFO: User not login
+08/02/2023 02:24:58 PM: INFO: Test Started On, https://aura25.bet
+08/02/2023 02:25:07 PM: INFO: User not login
+08/02/2023 02:31:02 PM: INFO: Test Started On, https://aura25.bet
+08/02/2023 02:31:12 PM: INFO: User not login
+08/02/2023 02:43:02 PM: INFO: Test Started On, https://aura24.bet
+08/02/2023 02:43:07 PM: INFO: Test Started On, https://park.bet
+08/02/2023 02:43:13 PM: INFO: Test Started On, https://greenexch.com
+08/02/2023 02:43:18 PM: INFO: Test Started On, https://best365.in
+08/02/2023 02:43:25 PM: INFO: Test Started On, https://parkinplay.net
+08/02/2023 02:43:32 PM: INFO: Test Started On, https://butterflyexch.net
+08/02/2023 02:43:36 PM: INFO: Test Started On, https://probook9.net
+08/02/2023 02:43:43 PM: INFO: Test Started On, https://11wonder.net
+08/02/2023 02:43:48 PM: INFO: Test Started On, https://winexch.net
+08/02/2023 02:43:52 PM: INFO: Test Started On, https://runexch.net
+08/02/2023 02:44:03 PM: INFO: Test Started On, https://cricbuz.net
+08/02/2023 02:44:11 PM: INFO: Test Started On, https://orange11.net
+08/02/2023 02:44:19 PM: INFO: Test Started On, https://khelo365.biz
+08/02/2023 02:44:24 PM: INFO: Test Started On, https://bright99.biz
+08/02/2023 02:44:33 PM: INFO: Test Started On, https://powerbets.biz
+08/02/2023 02:44:40 PM: INFO: Test Started On, https://9skyexch.com
+08/02/2023 02:44:45 PM: INFO: Test Started On, https://spice11.in
+08/02/2023 02:44:50 PM: INFO: Test Started On, https://gold9.in
+08/02/2023 02:44:57 PM: INFO: Test Started On, https://fancybook.live
+08/02/2023 02:45:08 PM: INFO: Test Started On, https://skyexch1.net
+08/02/2023 02:45:14 PM: INFO: Test Started On, https://Sunexchange.in
+08/02/2023 02:45:20 PM: INFO: Test Started On, https://7xbet.bet
+08/02/2023 02:45:27 PM: INFO: Test Started On, https://saiexch24.com
+08/02/2023 02:45:34 PM: INFO: Test Started On, https://lords99.com
+08/02/2023 02:45:43 PM: INFO: Test Started On, https://bengal22.bet
+08/02/2023 02:45:50 PM: INFO: Test Started On, https://all365day.com
+08/02/2023 02:45:57 PM: INFO: Test Started On, https://Spworld365.com
+08/02/2023 02:46:04 PM: INFO: Test Started On, https://euro11.net
+08/02/2023 02:46:12 PM: INFO: Test Started On, https://royalbet444.vip
+08/02/2023 02:46:20 PM: INFO: Test Started On, https://playwin247.bet
+08/02/2023 02:46:33 PM: INFO: Test Started On, https://jk3434.bet
+08/02/2023 02:46:37 PM: INFO: Test Started On, https://bajibet9.com
+08/02/2023 02:46:43 PM: INFO: Test Started On, https://abdexch.com
+08/02/2023 02:46:49 PM: INFO: Test Started On, https://aura25.bet
+08/02/2023 02:46:53 PM: INFO: Test Started On, https://badaabet.com
+08/02/2023 02:47:00 PM: INFO: Test Started On, https://infinityexch.co
+08/02/2023 02:47:06 PM: INFO: Test Started On, https://user365day.com
+08/02/2023 02:47:13 PM: INFO: Test Started On, https://only333.com
+08/02/2023 02:47:19 PM: INFO: Test Started On, https://pk7exch.com
+08/02/2023 02:47:25 PM: INFO: Test Started On, https://gamex24.com
+08/02/2023 02:47:31 PM: INFO: Test Started On, https://aura26.com
+08/02/2023 02:47:36 PM: INFO: Test Started On, https://xtra999.com
+08/02/2023 02:59:22 PM: INFO: Test Started On, https://aura25.bet
+08/02/2023 03:01:21 PM: INFO: Test Started On, https://aura25.bet
+08/02/2023 03:02:52 PM: INFO: Test Started On, https://aura25.bet
+08/02/2023 03:06:44 PM: INFO: Test Started On, https://aura25.bet
+08/02/2023 03:11:19 PM: INFO: Test Started On, https://aura24.bet
+08/02/2023 03:11:46 PM: INFO: Test Started On, https://park.bet
+08/02/2023 03:12:11 PM: INFO: Test Started On, https://greenexch.com
+08/02/2023 03:12:37 PM: INFO: Test Started On, https://best365.in
+08/02/2023 03:13:05 PM: INFO: Test Started On, https://parkinplay.net
+08/02/2023 03:13:37 PM: INFO: Test Started On, https://butterflyexch.net
+08/02/2023 03:14:14 PM: INFO: Test Started On, https://probook9.net
+08/02/2023 03:14:53 PM: INFO: Test Started On, https://11wonder.net
+08/02/2023 03:15:10 PM: INFO: Test Started On, https://winexch.net
+08/02/2023 03:16:29 PM: INFO: Test Started On, https://runexch.net
+08/02/2023 03:18:43 PM: INFO: Test Started On, https://cricbuz.net
+08/02/2023 03:21:36 PM: INFO: Test Started On, https://orange11.net
+08/02/2023 03:24:33 PM: INFO: Test Started On, https://khelo365.biz

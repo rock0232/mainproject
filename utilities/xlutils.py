@@ -44,7 +44,7 @@ credentials = ServiceAccountCredentials.from_json_keyfile_name(f'{filepath}/util
 client = gspread.authorize(credentials)
 
 # Open the Google Sheet
-sheet = client.open('B2B Website List').sheet1
+sheet = client.open('B2B Website List').get_worksheet(0)
 
 
 # Read data from the Google Sheet and return as a list
